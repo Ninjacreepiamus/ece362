@@ -1,0 +1,290 @@
+.syntax unified
+.cpu cortex-m0
+.fpu softvfp
+.thumb
+
+//==================================================================
+// ECE 362 Lab Experiment 3
+// General Purpose I/O
+//==================================================================
+
+.equ  RCC,      0x40021000
+.equ  AHBENR,   0x014
+.equ  GPIOAEN,  0x20000
+.equ  GPIOBEN,  0x40000
+.equ  GPIOCEN,  0x80000
+.equ  GPIOA,    0x48000000
+.equ  GPIOB,    0x48000400
+.equ  GPIOC,    0x48000800
+.equ  MODER,    0x00 
+.equ  PUPDR,    0x0c
+.equ  IDR,      0x10 
+.equ  ODR,      0x14
+.equ  BSRR,     0x18 
+.equ  BRR,      0x28
+.equ  OUT_8_11, 0x00550000
+.equ  OUT_4_7,	0x00005500
+.equ  CLEAR_4_7,0x0000ff00
+
+//==========================================================
+// initb:
+// Enable Port B in the RCC AHBENR register and configure
+// the pins as described in section 2.1 of the lab
+// No parameters.
+// No expected return value.
+.global initb
+initb:
+    push    {lr}
+    // Student code goes here
+	ldr r0, =RCC
+	ldr r1, [r0, #AHBENR]
+	ldr r2, =GPIOBEN
+	orrs r1, r2
+	str r1, [r0, #AHBENR]
+
+	ldr r0, =GPIOB
+	ldr r1, [r0, #MODER]
+	ldr r2, =0x00550000
+	ldr r3, =0x00ff0000
+	bics r1, r3
+	orrs r1, r2
+	str r1, [r0, #MODER]
+	ldr r1, [r0, #MODER]
+	ldr r2, =0x00000303
+	bics r1, r2
+	str r1, [r0, #MODER]
+
+    // End of student code
+    pop     {pc}
+
+//==========================================================
+// initc:
+// Enable Port C in the RCC AHBENR register and configure
+// the pins as described in section 2.2 of the lab
+// No parameters.
+// No expected return value.
+.global initc
+initc:
+    push    {lr}
+    // Student code goes here
+	ldr r0, =RCC
+	ldr r1, [r0, #AHBENR]
+	ldr r2, =GPIOCEN
+	orrs r1, r2
+	str r1, [r0, #AHBENR]
+
+	ldr r0, =GPIOC
+	ldr r1, [r0, #MODER]
+	ldr r3, =CLEAR_4_7
+	bics r1, r3
+	ldr r2, =OUT_4_7
+	orrs r1, r2
+	str r1, [r0, #MODER]
+
+	ldr r1, [r0, #MODER]
+	ldr r2, =0x000000ff
+	str r1, [r0, #MODER]
+
+	ldr r1, [r0, #PUPDR]
+	ldr r3, =0x000000ff
+	bics r1, r3
+	ldr r2, =0x000000aa
+	orrs r1, r2
+	str r1, [r0, #PUPDR]
+
+    // End of student code
+    pop     {pc}
+
+//==========================================================
+// setn:
+// Set given pin in GPIOB to given value in ODR
+// Param 1 - pin number
+// param 2 - value [zero or non-zero]
+// No expected retern value.
+.global setn
+setn:
+    push    {lr}
+    // Student code goes here
+	ldr r2, =GPIOB
+	ldr r3, [r2, #ODR] //r3 is the whole bit structure
+	cmp r1, #0 //checks if r1 is zero or not
+	beq zero1
+
+	movs r1, #1
+	lsls r1, r0
+	orrs r3, r1
+	str r3, [r2, #ODR]
+    pop     {pc}
+
+zero1: // clear bits
+	movs r1, #1
+	lsls r1, r0
+	bics r3, r1
+	str r3, [r2, #ODR]
+
+    // End of student code
+    pop     {pc}
+
+//==========================================================
+// readpin:
+// read the pin given in param 1 from GPIOB_IDR
+// Param 1 - pin to read
+// No expected return value.
+.global readpin
+readpin:
+    push    {lr}
+    // Student code goes here
+
+	ldr r2, =GPIOB
+	ldr r3, [r2, #IDR] //r3 is the whole bit structure
+	movs r1, #1 //Sets tester bit to 1
+	lsls r1, r0
+	tst r3, r1
+
+	beq zero2
+	movs r0, #1
+	pop		{pc}
+
+zero2:
+	movs r0, #0
+
+    // End of student code
+    pop     {pc}
+
+//==========================================================
+// buttons:
+// Check the pushbuttons and turn a light on or off as 
+// described in section 2.6 of the lab
+// No parameters.
+// No return value
+.global buttons
+buttons:
+    push    {lr}
+    // Student code goes here
+    movs r0, #0
+    bl readpin
+    movs r1, r0
+    movs r0, #8
+    bl setn
+
+    movs r0, #4
+    bl readpin
+    movs r1, r0
+    movs r0, #9
+    bl setn
+
+    // End of student code
+    pop     {pc}
+
+//==========================================================
+// keypad:
+// Cycle through columns and check rows of keypad to turn
+// LEDs on or off as described in section 2.7 of the lab
+// No parameters.
+// No expected return value.
+.global keypad
+keypad:
+    push    {r4, r5, r6, r7, lr}
+	movs r7, #8 // Initialize the count
+
+forcond1:
+	cmp r7, #0
+	ble fordone1
+forloop1:
+	ldr r2, =GPIOC
+	ldr r3, [r2, #ODR]
+	lsls r3, r7, #4
+	str r3, [r2, #ODR]
+
+	bl mysleep
+
+	ldr r3, [r2, #IDR]
+	movs r4, #0xf
+	ands r4, r3 // current r value
+
+	cmp r7, #8
+	bne elsec4
+
+	//C is 8, set pin 8 with r & 1
+    movs r0, #8
+    movs r1, #1
+    ands r1, r4 // r & 1
+    bl setn
+    b forinc1
+
+elsec4:
+	cmp r7, #4
+	bne elsec2
+
+	//C is 4, set pin 9 with r & 2
+    movs r0, #9
+    movs r1, #2
+    ands r1, r4 // r & 2
+    bl setn
+    b forinc1
+
+elsec2:
+	cmp r7, #2
+	bne else
+
+	//C is 2, set pin 10 with r & 4
+    movs r0, #10
+    movs r1, #4
+    ands r1, r4 // r & 4
+    bl setn
+    b forinc1
+
+else:
+	//C is none of the above, set pin 11 with r & 8
+    movs r0, #11
+    movs r1, #8
+    ands r1, r4 // r & 8
+    bl setn
+    b forinc1
+
+forinc1:
+	lsrs r7, r7, #1
+	b forcond1
+
+fordone1:
+    pop     {r4, r5, r6, r7, pc}
+
+//==========================================================
+// mysleep:
+// a do nothing loop so that row lines can be charged
+// as described in section 2.7 of the lab
+// No parameters.
+// No expected return value.
+.global mysleep
+
+mysleep:
+    push    {r1, lr}
+    movs r1, #0
+    // Student code goes here
+longloop:
+	cmp r1, #255
+	bge done
+	adds r1, #1
+done:
+	// End of student code
+    pop     {r1, pc}
+
+//==========================================================
+// The main subroutine calls everything else.
+// It never returns.
+.global main
+main:
+    push {lr}
+    bl   autotest // Uncomment when most things are working
+    bl   initb
+    bl   initc
+// uncomment one of the loops, below, when ready
+//loop1:
+//    bl   buttons
+//    b    loop1
+//loop2:
+//    bl   keypad
+//    b    loop2
+
+    wfi
+    pop {pc}
