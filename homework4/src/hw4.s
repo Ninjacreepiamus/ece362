@@ -34,20 +34,48 @@ showsub2:
 	bl printf
 	pop  {pc}
 
-showsub2_str: .string "%d * %d = %d\n"
+showsub2_str: .string "%d - %d = %d\n"
 .balign  2
 
 .global showsub3
 showsub3:
-	push {lr}
+	push {r4, r5, r6, r7, lr}
+	movs r4, r0
+	movs r5, r1
+	movs r6, r2
+	movs r1, r4
+	movs r2, r5
+	movs r3, r6
+	ldr r0, =showsub3_str
+	movs r4, #0
+	subs r4, r1, r2
+	subs r4, r3, r4
+	push {r4, r5, r6, r7}
+	bl printf
+	pop {r4, r5, r6, r7}
+	pop {r4, r5, r6, r7, pc}
 
-	pop {pc}
+
+showsub3_str: .string "%d - %d - %d = %d\n"
+.balign  2
 
 .global listing
 listing:
-	push {lr}
+	push {r4-r7, lr}
+	movs r6, r5
+	movs r5, r4
+	movs r4, r3
+	movs r3, r2
+	movs r2, r1
+	movs r1, r0
+	ldr r0, =listing_str
+	push {r4-r7}
+	bl printf
+	pop {r4-r7}
+	pop {r4-r7, pc}
 
-	pop {pc}
+listing_str: .string "%s %05d %s %d students in %s, %d\n"
+.balign  2
 
 .global trivial
 trivial:
@@ -57,9 +85,35 @@ trivial:
 
 .global depth
 depth:
-	push {lr}
+	push {r4-r7, lr}
+	movs r3, r0 // r3 stores x
+	movs r5, r1 // r5 stores original s
+	movs r0, r5 // stores s in r0 for parameter
+	push {r4-r7}
+	bl strlen // computes strlen with value s in r0
+	pop {r4-r7}
+	movs r6, r0 // this stores strlen length to r6
 
-	pop {pc}
+	cmp r3, #0 // if x == 0 then branch to start pooping
+	beq depthdone
+
+	movs r0, r5 // Prepare the r0 for the s parameter
+	push {r4-r7}
+	bl puts
+	pop {r4-r7}
+	movs r5, r0 // Updates s value in r5 register from puts
+	subs r0, r3, #1 // Subtracts 1 from x and puts it into first param
+	movs r1, r5
+	push {r4-r7}
+	bl depth // recursive call
+	pop {r4-r7}
+	adds r0, r6 // Adds len and depth recursive call value
+
+	pop {r4-r7, pc}
+
+depthdone:
+	movs r0, r6
+	pop {r4-r7, pc}
 
 .global collatz
 collatz:
