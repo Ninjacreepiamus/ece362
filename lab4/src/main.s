@@ -16,8 +16,8 @@
 .equ  GPIOCEN,  0x80000
 .equ  APB2ENR,  0x018
 .equ  SYSCFGCOMPEN, 1
-.equ  CLEAR_C,	0x0000ffff
-.equ  OUT_C,	0x00005500
+.equ  CLEAR_C,	0x000fffff
+.equ  OUT_C,	0x00055500
 .equ  PUPVAL,	0x000000aa
 .equ  PUPCLR,	0x000000ff
 .equ  CLEAR_B,	0x00ff03f3
@@ -188,7 +188,14 @@ initb:
 //                to use
 //             r1 holds the pin number to toggle
 // Write the entire subroutine below.
-
+.global togglexn
+togglexn:
+	ldr r3, [r0, #ODR]
+	movs r2, #1
+	lsls r2, r1
+	eors r3, r2
+	str r3, [r0, #ODR]
+	bx lr
 
 //==========================================================
 // Write the EXTI interrupt handler for pins 0 and 1 below.
@@ -198,18 +205,57 @@ initb:
 // It acknowledge the pending bit for pin 0, and it should
 // call togglexn(GPIOB, 8).
 
-
+.global EXTI0_1_IRQHandler
+.type EXTI0_1_IRQHandler, %function
+EXTI0_1_IRQHandler:
+	push {r4-r7, lr}
+	ldr r0, =EXTI
+	ldr r1, [r0, #PR]
+	ldr r2, =EXTI_PR_PR0
+	bics r1, r2
+	orrs r2, r1
+	str r2, [r0, #PR]
+	ldr r0, =GPIOB
+	movs r1, #8
+	bl togglexn
+	pop {r4-r7, pc}
 //==========================================================
 // Write the EXTI interrupt handler for pins 2-3 below.
 // It should acknowledge the pending bit for pin2, and it
 // should call togglexn(GPIOB, 9).
-
+.global EXTI2_3_IRQHandler
+.type EXTI2_3_IRQHandler, %function
+EXTI2_3_IRQHandler:
+	push {r4-r7, lr}
+	ldr r0, =EXTI
+	ldr r1, [r0, #PR]
+	ldr r2, =EXTI_PR_PR0
+	bics r1, r2
+	orrs r2, r1
+	str r2, [r0, #PR]
+	ldr r0, =GPIOB
+	movs r1, #9
+	bl togglexn
+	pop {r4-r7, pc}
 
 //==========================================================
 // Write the EXTI interrupt handler for pins 4-15 below.
 // It should acknowledge the pending bit for pin4, and it
 // should call togglxn(GPIOB, 10).
-
+.global EXTI4_15_IRQHandler
+.type EXTI4_15_IRQHandler, %function
+EXTI4_15_IRQHandler:
+	push {r4-r7, lr}
+	ldr r0, =EXTI
+	ldr r1, [r0, #PR]
+	ldr r2, =EXTI_PR_PR0
+	bics r1, r2
+	orrs r2, r1
+	str r2, [r0, #PR]
+	ldr r0, =GPIOB
+	movs r1, #10
+	bl togglexn
+	pop {r4-r7, pc}
 
 //==========================================================
 // init_exti
@@ -225,18 +271,93 @@ initb:
 // Parameters: none
 .global init_exti
 init_exti:
-	push {lr}
+	push {r4, r5, lr}
 	// Student code goes below
+	ldr r0, =RCC
+	ldr r1, [r0, APB2ENR]
+	ldr r2, =SYSCFGCOMPEN
+	orrs r1, r2
+	str r1, [r0, APB2ENR]
+
+	ldr r0, =SYSCFG
+	ldr r1, [r0, #EXTICR1]
+	ldr r2, [r0, #EXTICR2]
+	ldr r4, = 0x00001111
+	orrs r1, r4
+	orrs r2, r4
+	str r1, [r0, #EXTICR1]
+	str r2, [r0, #EXTICR2]
+
+	//RTSR
+	ldr r0, =EXTI
+	ldr r1, [r0, #RTSR]
+	ldr r2, =EXTI_RTSR_TR0
+	ldr r3, =EXTI_RTSR_TR2
+	ldr r4, =EXTI_RTSR_TR3
+	ldr r5, =EXTI_RTSR_TR4
+	orrs r1, r2
+	orrs r1, r3
+	orrs r1, r4
+	orrs r1, r5
+	str r1, [r0, #RTSR]
+
+	//IMR
+	ldr r1, [r0, #IMR]
+	ldr r2, =EXTI_IMR_MR0
+	ldr r3, =EXTI_IMR_MR2
+	ldr r4, =EXTI_IMR_MR3
+	ldr r5, =EXTI_IMR_MR4
+	orrs r1, r2
+	orrs r1, r3
+	orrs r1, r4
+	orrs r1, r5
+	str r1, [r0, #IMR]
+
+	//ISER
+	ldr r0, =NVIC
+	ldr r1, =ISER
+	ldr r2, =EXTI0_1_IRQn
+	ldr r3, =EXTI2_3_IRQn
+	ldr r4, =EXTI4_15_IRQn
+	movs r5, #1
+	lsls r5, r2
+	movs r2, r5 // new r2
+	movs r5, #1
+	lsls r5, r3
+	movs r3, r5 // new r3
+	movs r5, #1
+	lsls r5, r4
+	movs r4, r5 // new r4
+	orrs r2, r3
+	orrs r2, r4
+	str r2, [r0, r1]
 
 	// Student code goes above
-	pop  {pc}
+	pop  {r4, r5, pc}
 
 
 //==========================================================
 // set_col
 // Set the specified column level to logic "high.
 // Set the other three three columns to logic "low".
+.global set_col
+set_col:
+	push {r4-r7, lr}
 
+	ldr r1, =GPIOC
+	ldr r4, [r1, #BSRR]
+	movs r2, #0xf
+	movs r3, #16
+	adds r3, #4
+	lsls r2, r3
+	str r2, [r1, #BSRR]
+	movs r4, #1
+	movs r5, #8
+	subs r5, r0
+	lsls r4, r5
+	str r4, [r1, #BSRR]
+
+	pop {r4-r7, pc}
 
 //==========================================================
 // The current_col variable.
@@ -254,11 +375,96 @@ current_col:
 .global SysTick_Handler
 .type SysTick_Handler, %function
 SysTick_Handler:
-	push {lr}
+	push {r4-r7, lr}
 	// Student code goes below
+	ldr r0, =GPIOC
+	ldr r1, [r0, #IDR]
+	movs r6, #0xf
+	//row val is r6
+	ands r6, r1
+	//current_col will be r7
+
+	//Block 1
+	ldr r0, =current_col
+	ldr r7, [r0]
+	cmp r7, #1
+	bne elseif1
+	movs r2, #0x8
+	ands r2, r6
+	cmp r2, #0
+	beq elseif1
+	//Made it through block1
+	ldr r0, =GPIOB
+	movs r1, #8
+	bl togglexn
+	b doneif
+
+elseif1:
+	//Block 2
+	ldr r0, =current_col
+	ldr r7, [r0]
+	cmp r7, #2
+	bne elseif2
+	movs r2, #0x4
+	ands r2, r6
+	cmp r2, #0
+	beq elseif2
+	//Made it through block2
+	ldr r0, =GPIOB
+	movs r1, #9
+	bl togglexn
+	b doneif
+
+elseif2:
+	//Block 2
+	ldr r0, =current_col
+	ldr r7, [r0]
+	cmp r7, #3
+	bne elseif3
+	movs r2, #0x2
+	ands r2, r6
+	cmp r2, #0
+	beq elseif3
+	//Made it through block2
+	ldr r0, =GPIOB
+	movs r1, #10
+	bl togglexn
+	b doneif
+
+elseif3:
+	//Block 3
+	ldr r0, =current_col
+	ldr r7, [r0]
+	cmp r7, #4
+	bne doneif
+	movs r2, #0x1
+	ands r2, r6
+	cmp r2, #0
+	beq doneif
+	//Made it through block3
+	ldr r0, =GPIOB
+	movs r1, #11
+	bl togglexn
+	b doneif
+
+doneif:
+	adds r7, #1
+	ldr r0, =current_col
+	str r7, [r0]
+	cmp r7, #4
+	ble finalif
+	ldr r0, =current_col
+	movs r7, #1
+	str r7, [r0]
+
+finalif:
+	ldr r1, =current_col
+	ldr r7, [r1]
+	movs r0, r7
+	bl set_col
 
 	// Student code goes above
-	pop  {pc}
+	pop  {r4-r7, pc}
 
 //==========================================================
 // init_systick
@@ -268,6 +474,16 @@ SysTick_Handler:
 init_systick:
 	push {lr}
 	// Student code goes below
+
+	ldr r0, =STK
+	ldr r1, =0x5b8d7
+	str r1, [r0, #RVR]
+	ldr r1, [r0, #CSR]
+	ldr r2, =0x00000008
+	bics r2, r1
+	ldr r3, =0x00000003
+	orrs r2, r3
+	str r2, [r0, #CSR]
 
 	// Student code goes above
 	pop  {pc}
@@ -291,7 +507,7 @@ adjust_priorities:
 // It will never return.
 .global main
 main:
-	//bl autotest // Uncomment when most things are working
+	bl autotest // Uncomment when most things are working
 	bl initb
 	bl initc
 	bl init_exti
