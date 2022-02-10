@@ -1,4 +1,4 @@
-11:51:24 **** Incremental Build of configuration Debug for project lab4 ****
+13:56:57 **** Incremental Build of configuration Debug for project lab4 ****
 make -j16 all 
 Building file: ../src/main.s
 Invoking: MCU GCC Assembler
@@ -16,8 +16,8 @@ Generating binary and Printing size information:
 arm-none-eabi-objcopy -O binary "lab4.elf" "lab4.bin"
 arm-none-eabi-size "lab4.elf"
    text	   data	    bss	    dec	    hex	filename
-  45008	   2492	   1168	  48668	   be1c	lab4.elf
+  45400	   2492	   1168	  49060	   bfa4	lab4.elf
  
 
-11:51:24 Build Finished (took 260ms)
+13:56:58 Build Finished (took 312ms)
 

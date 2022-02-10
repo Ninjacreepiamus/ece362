@@ -1,16 +1,19 @@
-11:45:25 **** Incremental Build of configuration Debug for project lab4 ****
+13:41:08 **** Incremental Build of configuration Debug for project lab4 ****
 make -j16 all 
 make: Nothing to be done for 'all'.
-11:45:27 **** Incremental Build of configuration Debug for project lab4 ****
+13:41:11 **** Incremental Build of configuration Debug for project lab4 ****
 make -j16 all 
 make: Nothing to be done for 'all'.
-11:45:53 **** Incremental Build of configuration Debug for project lab4 ****
+13:42:10 **** Incremental Build of configuration Debug for project lab4 ****
 make -j16 all 
 make: Nothing to be done for 'all'.
-11:46:06 **** Incremental Build of configuration Debug for project lab4 ****
+13:43:19 **** Incremental Build of configuration Debug for project lab4 ****
 make -j16 all 
 make: Nothing to be done for 'all'.
-11:47:21 **** Incremental Build of configuration Debug for project lab4 ****
+13:43:36 **** Incremental Build of configuration Debug for project lab4 ****
+make -j16 all 
+make: Nothing to be done for 'all'.
+13:46:47 **** Incremental Build of configuration Debug for project lab4 ****
 make -j16 all 
 Building file: ../src/main.s
 Invoking: MCU GCC Assembler
@@ -28,9 +31,12 @@ Generating binary and Printing size information:
 arm-none-eabi-objcopy -O binary "lab4.elf" "lab4.bin"
 arm-none-eabi-size "lab4.elf"
    text	   data	    bss	    dec	    hex	filename
-  45040	   2492	   1168	  48700	   be3c	lab4.elf
+  45384	   2492	   1168	  49044	   bf94	lab4.elf
  
-11:49:12 **** Incremental Build of configuration Debug for project lab4 ****
+13:47:20 **** Incremental Build of configuration Debug for project lab4 ****
+make -j16 all 
+make: Nothing to be done for 'all'.
+13:51:01 **** Incremental Build of configuration Debug for project lab4 ****
 make -j16 all 
 Building file: ../src/main.s
 Invoking: MCU GCC Assembler
@@ -48,9 +54,12 @@ Generating binary and Printing size information:
 arm-none-eabi-objcopy -O binary "lab4.elf" "lab4.bin"
 arm-none-eabi-size "lab4.elf"
    text	   data	    bss	    dec	    hex	filename
-  45040	   2492	   1168	  48700	   be3c	lab4.elf
+  45384	   2492	   1168	  49044	   bf94	lab4.elf
  
-11:49:45 **** Incremental Build of configuration Debug for project lab4 ****
+13:51:09 **** Incremental Build of configuration Debug for project lab4 ****
+make -j16 all 
+make: Nothing to be done for 'all'.
+13:56:57 **** Incremental Build of configuration Debug for project lab4 ****
 make -j16 all 
 Building file: ../src/main.s
 Invoking: MCU GCC Assembler
@@ -68,45 +77,5 @@ Generating binary and Printing size information:
 arm-none-eabi-objcopy -O binary "lab4.elf" "lab4.bin"
 arm-none-eabi-size "lab4.elf"
    text	   data	    bss	    dec	    hex	filename
-  45008	   2492	   1168	  48668	   be1c	lab4.elf
- 
-11:50:40 **** Incremental Build of configuration Debug for project lab4 ****
-make -j16 all 
-Building file: ../src/main.s
-Invoking: MCU GCC Assembler
-/home/shay/a/will2253/workspace/lab4/Debug
-arm-none-eabi-as -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -I"/home/shay/a/will2253/workspace/lab4/StdPeriph_Driver/inc" -I"/home/shay/a/will2253/workspace/lab4/inc" -I"/home/shay/a/will2253/workspace/lab4/CMSIS/device" -I"/home/shay/a/will2253/workspace/lab4/CMSIS/core" -g -o "src/main.o" "../src/main.s"
-Finished building: ../src/main.s
- 
-Building target: lab4.elf
-Invoking: MCU GCC Linker
-arm-none-eabi-gcc -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -T"/home/shay/a/will2253/workspace/lab4/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "lab4.elf" @"objects.list" /home/shay/a/will2253/workspace/lab4/src/autotest.o  -lm
-Finished building target: lab4.elf
- 
-make --no-print-directory post-build
-Generating binary and Printing size information:
-arm-none-eabi-objcopy -O binary "lab4.elf" "lab4.bin"
-arm-none-eabi-size "lab4.elf"
-   text	   data	    bss	    dec	    hex	filename
-  45008	   2492	   1168	  48668	   be1c	lab4.elf
- 
-11:51:24 **** Incremental Build of configuration Debug for project lab4 ****
-make -j16 all 
-Building file: ../src/main.s
-Invoking: MCU GCC Assembler
-/home/shay/a/will2253/workspace/lab4/Debug
-arm-none-eabi-as -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -I"/home/shay/a/will2253/workspace/lab4/StdPeriph_Driver/inc" -I"/home/shay/a/will2253/workspace/lab4/inc" -I"/home/shay/a/will2253/workspace/lab4/CMSIS/device" -I"/home/shay/a/will2253/workspace/lab4/CMSIS/core" -g -o "src/main.o" "../src/main.s"
-Finished building: ../src/main.s
- 
-Building target: lab4.elf
-Invoking: MCU GCC Linker
-arm-none-eabi-gcc -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -T"/home/shay/a/will2253/workspace/lab4/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "lab4.elf" @"objects.list" /home/shay/a/will2253/workspace/lab4/src/autotest.o  -lm
-Finished building target: lab4.elf
- 
-make --no-print-directory post-build
-Generating binary and Printing size information:
-arm-none-eabi-objcopy -O binary "lab4.elf" "lab4.bin"
-arm-none-eabi-size "lab4.elf"
-   text	   data	    bss	    dec	    hex	filename
-  45008	   2492	   1168	  48668	   be1c	lab4.elf
+  45400	   2492	   1168	  49060	   bfa4	lab4.elf
  

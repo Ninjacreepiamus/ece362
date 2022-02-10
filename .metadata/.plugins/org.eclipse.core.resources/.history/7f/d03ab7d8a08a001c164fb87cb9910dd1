@@ -436,11 +436,11 @@ elseif3:
 	ldr r0, =current_col
 	ldr r7, [r0]
 	cmp r7, #4
-	bne doneif
+	bne elseif3
 	movs r2, #0x1
 	ands r2, r6
 	cmp r2, #0
-	beq doneif
+	beq elseif3
 	//Made it through block3
 	ldr r0, =GPIOB
 	movs r1, #11
@@ -453,9 +453,9 @@ doneif:
 	str r7, [r0]
 	cmp r7, #4
 	ble finalif
-	ldr r0, =current_col
 	movs r7, #1
 	str r7, [r0]
+	b finalif
 
 finalif:
 	ldr r1, =current_col
@@ -474,16 +474,9 @@ finalif:
 init_systick:
 	push {lr}
 	// Student code goes below
-
 	ldr r0, =STK
-	ldr r1, =0x5b8d7
+	ldr r1, =5b8d7
 	str r1, [r0, #RVR]
-	ldr r1, [r0, #CSR]
-	ldr r2, =0x00000008
-	bics r2, r1
-	ldr r3, =0x00000003
-	orrs r2, r3
-	str r2, [r0, #CSR]
 
 	// Student code goes above
 	pop  {pc}
@@ -507,7 +500,7 @@ adjust_priorities:
 // It will never return.
 .global main
 main:
-	bl autotest // Uncomment when most things are working
+	//bl autotest // Uncomment when most things are working
 	bl initb
 	bl initc
 	bl init_exti

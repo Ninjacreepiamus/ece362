@@ -474,17 +474,9 @@ finalif:
 init_systick:
 	push {lr}
 	// Student code goes below
-
 	ldr r0, =STK
 	ldr r1, =0x5b8d7
 	str r1, [r0, #RVR]
-	ldr r1, [r0, #CSR]
-	ldr r2, =0x00000008
-	bics r2, r1
-	ldr r3, =0x00000003
-	orrs r2, r3
-	str r2, [r0, #CSR]
-
 	// Student code goes above
 	pop  {pc}
 
