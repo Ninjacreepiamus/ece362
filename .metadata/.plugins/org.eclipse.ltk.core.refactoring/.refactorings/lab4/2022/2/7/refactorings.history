@@ -1,4 +1,3 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<session version="1.0">
-<refactoring comment="Rename resource &apos;lab4/src/main (1).s&apos; to &apos;main.s&apos;" description="Rename resource &apos;main (1).s&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="src/main (1).s" name="main.s" stamp="1644498412252" updateReferences="true"/>
+<session version="1.0">&#x0A;<refactoring comment="Rename resource &apos;lab4/src/main (1).s&apos; to &apos;main.s&apos;" description="Rename resource &apos;main (1).s&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="src/main (1).s" name="main.s" stamp="1644498412252" updateReferences="true"/>&#x0A;<refactoring comment="Rename resource &apos;lab4/src/autotest (2).o&apos; to &apos;autotest.o&apos;" description="Rename resource &apos;autotest (2).o&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="src/autotest (2).o" name="autotest.o" stamp="1644511446512" updateReferences="true"/>
 </session>

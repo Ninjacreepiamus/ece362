@@ -22,8 +22,12 @@
 .equ  ODR,      0x14
 .equ  BSRR,     0x18 
 .equ  BRR,      0x28
-.equ  OUT_8_11, 0x00550000
-.equ  OUT_4_7,	0x00005500
+.equ  OUT_ALL, 0x00550000
+.equ  CLEAR_ALL, 0x00ff0303
+.equ  CLEAR_C,	0x0000ffff
+.equ  OUT_C,	0x00005500
+.equ  PUPVAL,	0x000000aa
+.equ  PUPCLR,	0x000000ff
 
 //==========================================================
 // initb:
@@ -43,7 +47,9 @@ initb:
 
 	ldr r0, =GPIOB
 	ldr r1, [r0, #MODER]
-	ldr r2, =OUT_8_11
+	ldr r3, =CLEAR_ALL
+	bics r1, r3
+	ldr r2, =OUT_ALL
 	orrs r1, r2
 	str r1, [r0, #MODER]
 
@@ -62,15 +68,24 @@ initc:
     // Student code goes here
 	ldr r0, =RCC
 	ldr r1, [r0, #AHBENR]
-	ldr r2, =GPIOBEN
+	ldr r2, =GPIOCEN
 	orrs r1, r2
 	str r1, [r0, #AHBENR]
 
 	ldr r0, =GPIOC
 	ldr r1, [r0, #MODER]
-	ldr r2, =OUT_4_7
+	ldr r3, =CLEAR_C
+	bics r1, r3
+	ldr r2, =OUT_C
 	orrs r1, r2
 	str r1, [r0, #MODER]
+
+	ldr r1, [r0, #PUPDR]
+	ldr r3, =PUPCLR
+	bics r1, r3
+	ldr r2, =PUPVAL
+	orrs r1, r2
+	str r1, [r0, #PUPDR]
     // End of student code
     pop     {pc}
 
@@ -82,11 +97,27 @@ initc:
 // No expected retern value.
 .global setn
 setn:
-    push    {lr}
+    push    {r4-r7, lr}
     // Student code goes here
+	ldr r2, =GPIOB
+	ldr r3, [r2, #ODR]
+	cmp r1, #0
+	beq zero
+
+	movs r1, #1
+	lsls r1, r0
+	orrs r3, r1
+	str r3, [r2, #ODR]
+    pop     {r4-r7, pc}
+
+zero:
+	movs r1, #1
+	lsls r1, r0
+	bics r3, r1
+	str r3, [r2, #ODR]
 
     // End of student code
-    pop     {pc}
+    pop     {r4-r7, pc}
 
 //==========================================================
 // readpin:
@@ -95,12 +126,19 @@ setn:
 // No expected return value.
 .global readpin
 readpin:
-    push    {lr}
+    push    {r4-r7, lr}
     // Student code goes here
+	ldr r2, =GPIOB
+	ldr r3, [r2, #IDR]
+	lsrs r3, r0
+	movs r1, #1
+	ands r3, r1
+	ldr r1, =0xfffffffe
+	bics r3, r1
+	movs r0, r3
 
     // End of student code
-    pop     {pc}
-
+    pop     {r4-r7, pc}
 //==========================================================
 // buttons:
 // Check the pushbuttons and turn a light on or off as 
@@ -111,6 +149,19 @@ readpin:
 buttons:
     push    {lr}
     // Student code goes here
+	movs r0, #0
+	movs r2, #8
+	bl readpin
+	movs r1, r0
+	movs r0, r2
+	bl setn
+
+	movs r0, #4
+	movs r2, #9
+	bl readpin
+	movs r1, r0
+	movs r0, r2
+	bl setn
 
     // End of student code
     pop     {pc}
@@ -123,11 +174,59 @@ buttons:
 // No expected return value.
 .global keypad
 keypad:
-    push    {lr}
+    push    {r4-r7, lr}
     // Student code goes here
+    movs r7, #8
+forloopcond1:
+	cmp r7, #0
+	ble fordone1
+forloop1:
+	ldr r3, =GPIOC
+	ldr r2, [r3, #ODR]
+	movs r1, #4
+	movs r6, r7
+	lsls r6, r1
+	str r6, [r3, #ODR]
 
-    // End of student code
-    pop     {pc}
+	bl mysleep
+	movs r5, #0xf
+	ldr r2, [r3, #IDR]
+	ands r5, r2 // r value
+
+	cmp r7, #8
+	bne if1
+	movs r0, #8
+	movs r1, #1
+	ands r1, r5
+	bl setn
+	b forinc1
+if1:
+	cmp r7, #4
+	bne if2
+	movs r0, #9
+	movs r1, #2
+	ands r1, r5
+	bl setn
+	b forinc1
+if2:
+	cmp r7, #2
+	bne else
+	movs r0, #10
+	movs r1, #4
+	ands r1, r5
+	bl setn
+	b forinc1
+else:
+	movs r0, #11
+	movs r1, #8
+	ands r1, r5
+	bl setn
+	b forinc1
+forinc1:
+	lsrs r7, #1
+	b forloopcond1
+fordone1:
+    pop     {r4-r7, pc}
 
 //==========================================================
 // mysleep:
@@ -139,7 +238,13 @@ keypad:
 mysleep:
     push    {lr}
     // Student code goes here
-
+	movs r1, #0
+forcond2:
+	cmp r1, #255
+	bge fordone2
+forinc2:
+	adds r1, #1
+fordone2:
     // End of student code
     pop     {pc}
 
@@ -149,7 +254,7 @@ mysleep:
 .global main
 main:
     push {lr}
-    //bl   autotest // Uncomment when most things are working
+    bl   autotest // Uncomment when most things are working
     bl   initb
     bl   initc
 // uncomment one of the loops, below, when ready

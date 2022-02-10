@@ -16,8 +16,8 @@
 .equ  GPIOCEN,  0x80000
 .equ  APB2ENR,  0x018
 .equ  SYSCFGCOMPEN, 1
-.equ  CLEAR_C,	0x0000ffff
-.equ  OUT_C,	0x00005500
+.equ  CLEAR_C,	0x000fffff
+.equ  OUT_C,	0x00055500
 .equ  PUPVAL,	0x000000aa
 .equ  PUPCLR,	0x000000ff
 .equ  CLEAR_B,	0x00ff03f3
@@ -188,7 +188,14 @@ initb:
 //                to use
 //             r1 holds the pin number to toggle
 // Write the entire subroutine below.
-
+.global togglexn
+togglexn:
+	ldr r3, [r0, #ODR]
+	movs r2, #1
+	lsls r2, r1
+	eors r3, r2
+	str r3, [r0, #ODR]
+	bx lr
 
 //==========================================================
 // Write the EXTI interrupt handler for pins 0 and 1 below.
@@ -198,18 +205,51 @@ initb:
 // It acknowledge the pending bit for pin 0, and it should
 // call togglexn(GPIOB, 8).
 
-
+.global EXTI0_1_IRQHandler
+.type EXTI0_1_IRQHandler, %function
+EXTI0_1_IRQHandler:
+	push {r4-r7, lr}
+	ldr r0, =EXTI
+	ldr r1, [r0, #PR]
+	ldr r2, =EXTI_PR_PR0
+	str r2, [r0, #PR]
+	ldr r0, =GPIOB
+	movs r1, #8
+	bl togglexn
+	pop {r4-r7, pc}
 //==========================================================
 // Write the EXTI interrupt handler for pins 2-3 below.
 // It should acknowledge the pending bit for pin2, and it
 // should call togglexn(GPIOB, 9).
-
+.global EXTI2_3_IRQHandler
+.type EXTI2_3_IRQHandler, %function
+EXTI2_3_IRQHandler:
+	push {r4-r7, lr}
+	ldr r0, =EXTI
+	ldr r1, [r0, #PR]
+	ldr r2, =EXTI_PR_PR0
+	str r2, [r0, #PR]
+	ldr r0, =GPIOB
+	movs r1, #9
+	bl togglexn
+	pop {r4-r7, pc}
 
 //==========================================================
 // Write the EXTI interrupt handler for pins 4-15 below.
 // It should acknowledge the pending bit for pin4, and it
 // should call togglxn(GPIOB, 10).
-
+.global EXTI4_15_IRQHandler
+.type EXTI4_15_IRQHandler, %function
+EXTI4_15_IRQHandler:
+	push {r4-r7, lr}
+	ldr r0, =EXTI
+	ldr r1, [r0, #PR]
+	ldr r2, =EXTI_PR_PR0
+	str r2, [r0, #PR]
+	ldr r0, =GPIOB
+	movs r1, #10
+	bl togglexn
+	pop {r4-r7, pc}
 
 //==========================================================
 // init_exti
@@ -225,11 +265,55 @@ initb:
 // Parameters: none
 .global init_exti
 init_exti:
-	push {lr}
+	push {r4, r5, lr}
 	// Student code goes below
+	ldr r0, =SYSCFG
+	ldr r1, [r0, #EXTICR1]
+	ldr r2, [r0, #EXTICR2]
+	ldr r4, = 0x00001111
+	orrs r1, r4
+	orrs r2, r4
+	str r1, [r0, #EXTICR1]
+	str r2, [r0, #EXTICR2]
+
+	//RTSR
+	ldr r1, [r0, #RTSR]
+	ldr r5, =0x0000001d
+	orrs r1, r5
+	ldr r1, [r0, #RTSR]
+
+	//IMR
+	ldr r1, [r0, #IMR]
+	ldr r2, =EXTI_IMR_MR2
+	ldr r3, =EXTI_IMR_MR3
+	ldr r4, =EXTI_IMR_MR4
+	orrs r1, r2
+	orrs r1, r3
+	orrs r1, r4
+	str r1, [r0, #IMR]
+
+	//ISER
+	ldr r0, =NVIC
+	ldr r1, =ISER
+	ldr r2, =EXTI0_1_IRQn
+	ldr r3, =EXTI2_3_IRQn
+	ldr r4, =EXTI4_15_IRQn
+	movs r5, #1
+	lsls r5, r2
+	movs r2, r5 // new r2
+	movs r5, #1
+	lsls r5, r3
+	movs r3, r5 // new r3
+	movs r5, #1
+	lsls r5, r4
+	movs r4, r5 // new r4
+	orrs r2, r3
+	orrs r2, r4
+	str r2, [r0, r1]
+
 
 	// Student code goes above
-	pop  {pc}
+	pop  {r4, r5, pc}
 
 
 //==========================================================
@@ -291,7 +375,7 @@ adjust_priorities:
 // It will never return.
 .global main
 main:
-	//bl autotest // Uncomment when most things are working
+	bl autotest // Uncomment when most things are working
 	bl initb
 	bl initc
 	bl init_exti

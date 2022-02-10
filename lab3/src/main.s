@@ -106,6 +106,7 @@ setn:
 
 	movs r1, #1
 	lsls r1, r0
+	bics r3, r1
 	orrs r3, r1
 	str r3, [r2, #ODR]
     pop     {r4-r7, pc}
@@ -150,16 +151,18 @@ buttons:
     push    {lr}
     // Student code goes here
 	movs r0, #0
-	movs r2, #8
 	bl readpin
-	movs r1, r0
+	movs r2, #8
+	movs r3, r0
+	movs r1, r3
 	movs r0, r2
 	bl setn
 
 	movs r0, #4
-	movs r2, #9
 	bl readpin
-	movs r1, r0
+	movs r2, #9
+	movs r3, r0
+	movs r1, r3
 	movs r0, r2
 	bl setn
 
