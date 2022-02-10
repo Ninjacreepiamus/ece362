@@ -117,9 +117,28 @@ depthdone:
 
 .global collatz
 collatz:
-	push {lr}
+	push {r4-r7, lr}
+	movs r4, r0 // n moved to r4
+	cmp r4, #1
+	beq donecollatz
 
-	pop {pc}
+	movs r5, #1
+	ands r5, r4
+	cmp r5, #0
+	bne notdonecollatz
+	movs r7, #1
+	lsls r6, r2, #2
+
+	pop {r4-r7, pc}
+
+donecollatz:
+	movs r0, #0
+	pop {r4-r7, pc}
+
+notdonecollatz:
+
+	bx lr
+
 
 .global permute
 permute:
