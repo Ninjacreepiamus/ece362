@@ -68,10 +68,10 @@ listing:
 	movs r3, r2
 	movs r2, r1
 	movs r1, r0
+	str r4, [sp, #0]
+	str r5, [sp, #4]
 	ldr r0, =listing_str
-	push {r4-r7}
 	bl printf
-	pop {r4-r7}
 	pop {r4-r7, pc}
 
 listing_str: .string "%s %05d %s %d students in %s, %d\n"
@@ -79,9 +79,16 @@ listing_str: .string "%s %05d %s %d students in %s, %d\n"
 
 .global trivial
 trivial:
-	push {lr}
-
-	pop {pc}
+	push {r4-r7, lr}
+	sub sp, #400
+forloop5:
+	movs r7, #0
+forloopcond5:
+	ldr r0, [sp]
+	bl sizeof
+	ldr r0, [sp, #0]
+	
+	pop {r4-r7, pc}
 
 .global depth
 depth:
@@ -126,9 +133,18 @@ collatz:
 	ands r5, r4
 	cmp r5, #0
 	bne notdonecollatz
-	movs r7, #1
-	lsls r6, r2, #2
-
+	
+	// Ready to go inside the IF
+	movs r2, r7 // moves current n value to division register
+	lsls r0, r2, #1 // stores divided value in parameter register
+	
+	//Calls collatz recursively
+	push {r4-r7}
+	bl collatz
+	pop {r4-r7}
+	
+	movs r6, #1
+	adds r6, r0
 	pop {r4-r7, pc}
 
 donecollatz:
@@ -136,7 +152,14 @@ donecollatz:
 	pop {r4-r7, pc}
 
 notdonecollatz:
-
+	movs r0, #1
+	movs r5, #3
+	muls r5, r7
+	adds r0, r5
+	
+	push {r4-r7}
+	bl collatz
+	pop {r4-r7}
 	bx lr
 
 
