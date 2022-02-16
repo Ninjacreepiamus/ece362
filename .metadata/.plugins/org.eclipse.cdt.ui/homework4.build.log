@@ -1,6 +1,6 @@
-00:55:49 **** Incremental Build of configuration Debug for project homework4 ****
+17:54:30 **** Incremental Build of configuration Debug for project homework4 ****
 make -j16 all 
 make: Nothing to be done for 'all'.
 
-00:55:49 Build Finished (took 163ms)
+17:54:30 Build Finished (took 161ms)
 

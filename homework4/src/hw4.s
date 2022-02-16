@@ -6,7 +6,7 @@
 .text
 
 .global login
-login: .string "xyz"
+login: .string "will2253"
 hello_str: .string "Hello, %s!\n"
 .balign  2
 
@@ -62,15 +62,20 @@ showsub3_str: .string "%d - %d - %d = %d\n"
 .global listing
 listing:
 	push {r4-r7, lr}
-	movs r6, r5
-	movs r5, r4
+	ldr r5, [sp, #20]
+	ldr r6, [sp, #24]
+
+	//movs r7, r6
+	//movs r6, r5
 	movs r4, r3
 	movs r3, r2
 	movs r2, r1
 	movs r1, r0
+	ldr r0, =listing_str
 	str r4, [sp, #0]
 	str r5, [sp, #4]
-	ldr r0, =listing_str
+	str r6, [sp, #8]
+
 	bl printf
 	pop {r4-r7, pc}
 
@@ -80,15 +85,37 @@ listing_str: .string "%s %05d %s %d students in %s, %d\n"
 .global trivial
 trivial:
 	push {r4-r7, lr}
+	movs r1, r0
 	sub sp, #400
 forloop5:
 	movs r7, #0
 forloopcond5:
-	ldr r0, [sp]
-	bl sizeof
-	ldr r0, [sp, #0]
+	ldr r0, [sp, #20]
+	//size of temp is 100
+	movs r6, #100
+	cmp r7, #100
+	bge ifblock5
+
+forloopblock5:
+	//FOR LOOP BLOCK
+	movs r5, #20
+	movs r6, #4
+	muls r6, r7
+	adds r5, r6
+	movs r4, #1
+	adds r4, r7
+	//str r6, [sp, r5]
+
+ifblock5:
+	cmp r1, #100
+	blt returnstuff
+	movs r2, #99
+doifstuff:
+
+
+returnstuff:
 	
-	pop {r4-r7, pc}
+pop {r4-r7, pc}
 
 .global depth
 depth:
@@ -125,42 +152,48 @@ depthdone:
 .global collatz
 collatz:
 	push {r4-r7, lr}
-	movs r4, r0 // n moved to r4
+	movs r4, r0 // r4 is our n value
+
+	//IF N == 1
 	cmp r4, #1
-	beq donecollatz
+	beq weredone
 
 	movs r5, #1
 	ands r5, r4
+
+	//IF N & 1 == 0
 	cmp r5, #0
-	bne notdonecollatz
+	bne afterif
 	
 	// Ready to go inside the IF
-	movs r2, r7 // moves current n value to division register
+	movs r2, r4 // moves current n value to division register
 	lsls r0, r2, #1 // stores divided value in parameter register
 	
 	//Calls collatz recursively
 	push {r4-r7}
 	bl collatz
 	pop {r4-r7}
-	
-	movs r6, #1
-	adds r6, r0
+
+	adds r0, #1
 	pop {r4-r7, pc}
 
-donecollatz:
+weredone:
 	movs r0, #0
 	pop {r4-r7, pc}
 
-notdonecollatz:
-	movs r0, #1
+afterif:
+	movs r6, #1
 	movs r5, #3
-	muls r5, r7
-	adds r0, r5
+	muls r5, r4
+	adds r6, r5
+	movs r0, r6
 	
 	push {r4-r7}
 	bl collatz
 	pop {r4-r7}
-	bx lr
+	adds r0, #1
+
+	pop {r4-r7, pc}
 
 
 .global permute
