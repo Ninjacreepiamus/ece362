@@ -54,12 +54,53 @@
 .equ  BSRR,     0x18
 .equ  BRR,      0x28
 
+// OTHER STUFF
+.equ CLEAR_B,	0x003fffff
+.equ SET_B,		0x00155555
+.equ CLEAR_C,	0x0003ffff
+.equ SET_C,		0x00015500
+.equ PUP_CLEAR,	0x000000ff
+.equ PUP_SET,	0x000000aa
+
 //============================================================================
 // enable_ports() {
 // Set up the ports and pins exactly as directed.
 // }
 .global enable_ports
 enable_ports:
+	push {lr}
+	ldr r0, =RCC
+	ldr r1, [r0, #AHBENR]
+	ldr r2, =GPIOBEN
+	orrs r1, r2
+	ldr r3, =GPIOCEN
+	orrs r1, r3
+	str r1, [r0, #AHBENR]
+
+	ldr r0, =GPIOB
+	ldr r1, [r0, #MODER]
+	ldr r3, =CLEAR_B
+	bics r1, r3
+	ldr r2, =SET_B
+	orrs r1, r2
+	str r1, [r0, #MODER]
+
+	ldr r0, =GPIOC
+	ldr r1, [r0, #MODER]
+	ldr r3, =CLEAR_C
+	bics r1, r3
+	ldr r2, =SET_C
+	orrs r1, r2
+	str r1, [r0, #MODER]
+
+	ldr r0, =GPIOC
+	ldr r1, [r0, #PUPDR]
+	ldr r3, =PUP_CLEAR
+	bics r1, r3
+	ldr r2, =PUP_SET
+	orrs r1, r2
+	str r1, [r0, #PUPDR]
+	pop {pc}
 
 
 //============================================================================
@@ -71,12 +112,73 @@ enable_ports:
 //     GPIOC->BSRR = 1<<8;
 // }
 
-
 //============================================================================
+ .global TIM6_DAC_IRQHandler
+ .type TIM6_DAC_IRQHandler, %function
+ TIM6_DAC_IRQHandler:
+	push {lr}
+
+	ldr r0, =TIM6
+	ldr r1, [r0, #TIM_SR]
+	ldr r3, =TIM_SR_UIF
+	bics r1, r3
+	str r1, [r0, #TIM_SR]
+
+	ldr r0, =GPIOC
+	ldr r1, [r0, #ODR]
+	movs r2, #1
+	lsls r2, r2, #8
+	ands r1, r2
+	cmp r1, #1
+
+	bne elsetim
+	str r2, [r0, #BRR]
+	pop {pc}
+
+elsetim:
+	str r2, [r0, #BSRR]
+
+	pop {pc}
+
 // Implement the setup_tim6 subroutine below.  Follow the instructions in the
 // lab text.
+
 .global setup_tim6
 setup_tim6:
+	push {lr}
+
+	ldr r0, =RCC
+	ldr r1, [r0, #APB1ENR]
+	ldr r2, =0x00000100
+	orrs r1, r2
+	str r1, [r0, #APB1ENR]
+
+	ldr r0, =TIM6
+	ldr r1, =48000-1
+	str r1, [r0, #TIM_PSC]
+	ldr r1, =500-1
+	str r1, [r0, #TIM_ARR]
+
+	ldr r1, [r0, #TIM_DIER]
+	ldr r3, =TIM_DIER_UIE
+	orrs r1, r3
+	str r1, [r0, #TIM_DIER]
+
+	ldr r1, [r0, #TIM_CR1]
+	ldr r2, =TIM_CR1_CEN
+	orrs r1, r2
+	str r1, [r0, #TIM_CR1]
+
+	ldr r0, =NVIC
+	ldr r1, =ISER
+	ldr r2, =TIM6_DAC_IRQHandler
+	movs r3, #1
+
+	lsls r3, r2
+	str r3, [r0, r1]
+
+	pop {pc}
+
 
 
 //============================================================================
@@ -85,6 +187,20 @@ setup_tim6:
 // }
 .global show_char
 show_char:
+
+	push {lr}
+
+	movs r3, r0
+	movs r2, #7
+	ands r3, r2 // n = n & 7
+	lsls r3, r3, #8
+	ldr r0, =font
+	ldrb r2, [r0, r1]
+	orrs r3, r2
+	ldr r0, =GPIOB
+	str r3, [r0, #ODR]
+
+	pop {pc}
 
 
 //============================================================================
@@ -241,7 +357,7 @@ login: .string "will2253" // Replace with your login.
 main:
 	//bl check_wiring
 	//bl fill_alpha
-	bl autotest
+	//bl autotest
 	//bl enable_ports
 	//bl setup_tim6
 	//bl setup_tim7
