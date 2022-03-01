@@ -68,7 +68,7 @@
 // }
 .global enable_ports
 enable_ports:
-	push {lr}
+	push {r4, lr}
 	ldr r0, =RCC
 	ldr r1, [r0, #AHBENR]
 	ldr r2, =GPIOBEN
@@ -100,7 +100,9 @@ enable_ports:
 	ldr r2, =PUP_SET
 	orrs r1, r2
 	str r1, [r0, #PUPDR]
-	pop {pc}
+
+	ldr r4, =(1<<1)
+	pop {r4, pc}
 
 
 //============================================================================
@@ -357,7 +359,7 @@ login: .string "will2253" // Replace with your login.
 main:
 	//bl check_wiring
 	//bl fill_alpha
-	//bl autotest
+	bl autotest
 	//bl enable_ports
 	//bl setup_tim6
 	//bl setup_tim7
