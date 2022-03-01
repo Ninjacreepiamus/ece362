@@ -131,9 +131,9 @@ enable_ports:
 	movs r2, #1
 	lsls r2, r2, #8
 	ands r1, r2
-	cmp r1, #1
+	cmp r1, #0
 
-	bne elsetim
+	beq elsetim
 	str r2, [r0, #BRR]
 	pop {pc}
 
@@ -151,7 +151,7 @@ setup_tim6:
 
 	ldr r0, =RCC
 	ldr r1, [r0, #APB1ENR]
-	ldr r2, =0x00000100
+	ldr r2, =TIM6EN
 	orrs r1, r2
 	str r1, [r0, #APB1ENR]
 
@@ -173,9 +173,8 @@ setup_tim6:
 
 	ldr r0, =NVIC
 	ldr r1, =ISER
-	ldr r2, =TIM6_DAC_IRQHandler
+	ldr r2, =TIM6_DAC_IRQn
 	movs r3, #1
-
 	lsls r3, r2
 	str r3, [r0, r1]
 
@@ -242,7 +241,19 @@ fillloop:
 // }
 .global drive_column
 drive_column:
+	push {lr}
+		movs r2, #3
+		ands r2, r0 // c = c & 3
+		adds r2, #4
+		movs r3, #1
+		lsls r3, r2
+		ldr r1, =0xf00000
+		orrs r3, r1
 
+		ldr r0, =GPIOC
+		str r3, [r0, #BSRR]
+
+	pop {pc}
 
 //============================================================================
 // int read_rows(void) {
@@ -250,7 +261,13 @@ drive_column:
 // }
 .global read_rows
 read_rows:
-
+	push {lr}
+		ldr r1, =GPIOC
+		ldr r2, [r1, #IDR]
+		movs r3, #0xf
+		ands r3, r2
+		movs r0, r3
+	pop {pc}
 
 //============================================================================
 // char rows_to_key(int rows) {
@@ -266,6 +283,39 @@ read_rows:
 // }
 .global rows_to_key
 rows_to_key:
+	push {r4-r7, lr}
+	movs r7, r0 //r7 is the rows variable
+	movs r2, #0x3
+	ldr r3, =col
+	ldrb r4, [r3] // r4 is col variable
+	movs r5, #4
+	ands r2, r4 // col & 0x3
+	muls r2, r5 // * 4
+	movs r6, r2 // R6 is our INT N
+
+do:
+	movs r2, #1
+	ands r2, r7 // rows & 1
+	cmp r2, #0
+	beq elsedo
+	b donewithdo
+
+elsedo:
+	adds r6, #1 // n++
+	movs r2, #1
+	lsrs r7, r2 // rows = rows >> 1
+
+while:
+	cmp r7, #0
+	bne do
+
+donewithdo:
+	//r6 is still n
+	ldr r1, =keymap
+	ldrb r2, [r1, r6]
+	movs r0, r2
+
+	pop {r4-r7, pc}
 
 
 //============================================================================
@@ -281,13 +331,80 @@ rows_to_key:
 //    col = (col + 1) & 7;
 //    drive_column(col);
 // }
+ .global TIM7_IRQHandler
+ .type TIM7_IRQHandler, %function
+ TIM7_IRQHandler:
+ 	push {r4-r7, lr}
+ 	ldr r0, =TIM7
+	ldr r1, [r0, #TIM_SR]
+	ldr r3, =TIM_SR_UIF
+	bics r1, r3
+	str r1, [r0, #TIM_SR]
+
+ 	bl read_rows
+ 	cmp r0, #0
+ 	beq skipif
+ 	bl rows_to_key
+ 	bl handle_key
+
+ skipif:
+ 	ldr r0, =col
+ 	ldrb r3, [r0]
+ 	movs r0, r3
+ 	ldr r6, =disp
+ 	ldrb r0, [r6, r3]
+ 	movs r1, r0
+ 	movs r0, r3
+ 	movs r7, r3
+ 	bl show_char
+ 	movs r4, #1
+ 	adds r4, r7
+ 	movs r5, #7
+ 	ands r4, r5
+ 	ldr r0, =col
+ 	strb r4, [r0]
+ 	movs r0, r4
+ 	bl drive_column
+
+ 	pop {r4-r7, pc}
 
 //============================================================================
 // Implement the setup_tim7 subroutine below.  Follow the instructions
 // in the lab text.
 .global setup_tim7
 setup_tim7:
+	push {lr}
 
+	ldr r0, =RCC
+	ldr r1, [r0, #APB1ENR]
+	ldr r2, =TIM7EN
+	orrs r1, r2
+	str r1, [r0, #APB1ENR]
+
+	ldr r0, =TIM6
+	ldr r1, =48000-1
+	str r1, [r0, #TIM_PSC]
+	ldr r1, =4800-1
+	str r1, [r0, #TIM_ARR]
+
+	ldr r1, [r0, #TIM_DIER]
+	ldr r3, =TIM_DIER_UIE
+	orrs r1, r3
+	str r1, [r0, #TIM_DIER]
+
+	ldr r1, [r0, #TIM_CR2]
+	ldr r2, =TIM_CR1_CEN
+	orrs r1, r2
+	str r1, [r0, #TIM_CR2]
+
+	ldr r0, =NVIC
+	ldr r1, =ISER
+	ldr r2, =TIM7_IRQn
+	movs r3, #1
+	lsls r3, r2
+	str r3, [r0, r1]
+
+	pop {pc}
 
 //============================================================================
 // void handle_key(char key)
@@ -297,6 +414,34 @@ setup_tim7:
 //     else if (key &gt;= '0' && key &lt;= '9')
 //         thrust = key - '0';
 // }
+.global handle_key
+handle_key:
+	push {lr}
+		cmp r0, #65
+		beq firstoption
+		cmp r0, #66
+		beq firstoption
+		cmp r0, #68
+		beq firstoption
+		b secondoption
+
+secondoption:
+	cmp r0, #48
+	blt finaldone
+	cmp r0, #57
+	bgt finaldone
+	ldr r1, =thrust
+	subs r0, #48
+	strb r0, [r1]
+	pop {pc}
+
+firstoption:
+	ldr r1, =mode
+	strb r0, [r1]
+	pop {pc}
+
+finaldone:
+	pop {pc}
 
 
 //============================================================================
@@ -313,6 +458,63 @@ setup_tim7:
 //     else if (mode == 'D')
 //         snprintf(disp, 9, "Spd %4d", velo);
 // }
+.global write_display
+write_display:
+	push {r4-r5, lr}
+	ldr r0, =mode
+	ldrb r1, [r0]
+
+	cmp r1, #'C'
+	beq case1
+	cmp r1, #'L'
+	beq case2
+	cmp r1, #'A'
+	beq case3
+	cmp r1, #'B'
+	beq case4
+	cmp r1, #'D'
+	beq case5
+
+case1:
+	ldr r0, =disp
+	movs r1, #9
+	ldr r2, =crashed
+	bl snprintf
+	pop {r4-r5, pc}
+
+case2:
+	ldr r0, =disp
+	movs r1, #9
+	ldr r2, =landed
+	bl snprintf
+	pop {r4-r5, pc}
+
+case3:
+	ldr r0, =disp
+	movs r1, #9
+	ldr r2, =altitude
+	ldr r4, =alt
+	ldrh r3, [r4]
+	bl snprintf
+	pop {r4-r5, pc}
+
+case4:
+	ldr r0, =disp
+	movs r1, #9
+	ldr r2, =fueling
+	ldr r4, =fuel
+	ldrh r3, [r4]
+	bl snprintf
+	pop {r4-r5, pc}
+
+case5:
+	ldr r0, =disp
+	movs r1, #9
+	ldr r2, =spd
+	ldr r4, =velo
+	ldrh r3, [r4]
+	bl snprintf
+	pop {r4-r5, pc}
 
 
 //============================================================================
@@ -335,7 +537,63 @@ setup_tim7:
 //
 //     velo += thrust - 5;
 // }
+.global update_variables
+update_variables:
+	push {r4-r7, lr}
+		ldr r0, =fuel
+		movs r7, #0
+		ldrsh r1, [r0, r7] //r1 is fuel
+		ldr r0, =thrust
+		ldrb r2, [r0] // r2 is thrust
+		subs r1, r2
+		ldr r0, =fuel
+		strh r1, [r0]
 
+		cmp r1, #0
+		bgt afterif
+		movs r1, #0
+		movs r2, #0
+		ldr r0, =fuel
+		strh r1, [r0]
+		ldr r0, =thrust
+		strb r2, [r0]
+
+afterif:
+	ldr r0, =alt
+	movs r7, #0
+	ldrsh r3, [r0, r7] // r3 is altitude
+	ldr r0, =velo
+	ldrsh r4, [r0, r7] // r4 is velocity
+
+	adds r3, r4
+	ldr r0, =alt
+	strh r3, [r0]
+	cmp r3, #0
+	bgt endofstuff
+	movs r5, r4 // neg velocity
+	movs r6, #0
+	subs r6, r5 // real neg velocity
+	cmp r6, #10
+	bge checkforc
+	//made it through so it is L
+	ldr r0, =mode
+	movs r5, #'L'
+	strb r5, [r0]
+	pop {r4-r7, pc}
+
+checkforc:
+	ldr r0, =mode
+	movs r5, #'C'
+	strb r5, [r0]
+	pop {r4-r7, pc}
+
+endofstuff:
+	adds r4, r2
+	subs r4, #5
+	ldr r0, =velo
+	strh r4, [r0]
+
+	pop {r4-r7, pc}
 
 //============================================================================
 // TIM14_ISR() {
@@ -343,12 +601,58 @@ setup_tim7:
 //    update_variables();
 //    write_display();
 // }
+ .global TIM14_IRQHandler
+ .type TIM14_IRQHandler, %function
+ TIM14_IRQHandler:
+	push {lr}
+	ldr r0, =TIM14
+	ldr r1, [r0, #TIM_SR]
+	ldr r3, =TIM_SR_UIF
+	bics r1, r3
+	str r1, [r0, #TIM_SR]
+	bl update_variables
+	bl write_display
 
+	pop {pc}
+
+
+.global setup_tim14
+setup_tim14:
+	push {lr}
+
+	ldr r0, =RCC
+	ldr r1, [r0, #APB1ENR]
+	ldr r2, =TIM14EN
+	orrs r1, r2
+	str r1, [r0, #APB1ENR]
+
+	ldr r0, =TIM14
+	ldr r1, =48000-1
+	str r1, [r0, #TIM_PSC]
+	ldr r1, =500-1
+	str r1, [r0, #TIM_ARR]
+
+	ldr r1, [r0, #TIM_DIER]
+	ldr r3, =TIM_DIER_UIE
+	orrs r1, r3
+	str r1, [r0, #TIM_DIER]
+
+	ldr r1, [r0, #TIM_CR1]
+	ldr r2, =TIM_CR1_CEN
+	orrs r1, r2
+	str r1, [r0, #TIM_CR1]
+
+	ldr r0, =NVIC
+	ldr r1, =ISER
+	ldr r2, =TIM14_IRQn
+	movs r3, #1
+	lsls r3, r2
+	str r3, [r0, r1]
+
+	pop {pc}
 
 //============================================================================
 // Implement setup_tim14 as directed.
-.global setup_tim14
-setup_tim14:
 
 
 .global login
@@ -444,3 +748,18 @@ fuel: .hword 800
 alt: .hword 4500
 .hword 0 // put this here to make sure next hword is not word-aligned
 velo: .hword 0
+
+.global crashed
+crashed: .string "Crashed"
+
+.global landed
+landed: .string "Landed "
+
+.global altitude
+altitude: .string "ALt%5d"
+
+.global fueling
+fueling: .string "FUEL %3d"
+
+.global spd
+spd: .string "Spd %4d"

@@ -4,3 +4,914 @@ make: Nothing to be done for 'all'.
 18:25:34 **** Incremental Build of configuration Debug for project lab5 ****
 make -j16 all 
 make: Nothing to be done for 'all'.
+12:02:04 **** Incremental Build of configuration Debug for project lab5 ****
+make -j16 all 
+Building file: ../src/main.s
+Invoking: MCU GCC Assembler
+/home/shay/a/will2253/workspace/lab5/Debug
+arm-none-eabi-as -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -I"/home/shay/a/will2253/workspace/lab5/StdPeriph_Driver/inc" -I"/home/shay/a/will2253/workspace/lab5/inc" -I"/home/shay/a/will2253/workspace/lab5/CMSIS/device" -I"/home/shay/a/will2253/workspace/lab5/CMSIS/core" -g -o "src/main.o" "../src/main.s"
+Finished building: ../src/main.s
+ 
+Building target: lab5.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -T"/home/shay/a/will2253/workspace/lab5/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "lab5.elf" @"objects.list" /home/shay/a/will2253/workspace/lab5/src/autotest.o  -lm
+Finished building target: lab5.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "lab5.elf" "lab5.bin"
+arm-none-eabi-size "lab5.elf"
+   text	   data	    bss	    dec	    hex	filename
+  58028	   2636	   1208	  61872	   f1b0	lab5.elf
+ 
+12:02:18 **** Incremental Build of configuration Debug for project lab5 ****
+make -j16 all 
+make: Nothing to be done for 'all'.
+12:03:11 **** Incremental Build of configuration Debug for project lab5 ****
+make -j16 all 
+Building file: ../src/main.s
+Invoking: MCU GCC Assembler
+/home/shay/a/will2253/workspace/lab5/Debug
+arm-none-eabi-as -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -I"/home/shay/a/will2253/workspace/lab5/StdPeriph_Driver/inc" -I"/home/shay/a/will2253/workspace/lab5/inc" -I"/home/shay/a/will2253/workspace/lab5/CMSIS/device" -I"/home/shay/a/will2253/workspace/lab5/CMSIS/core" -g -o "src/main.o" "../src/main.s"
+Finished building: ../src/main.s
+ 
+Building target: lab5.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -T"/home/shay/a/will2253/workspace/lab5/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "lab5.elf" @"objects.list" /home/shay/a/will2253/workspace/lab5/src/autotest.o  -lm
+Finished building target: lab5.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "lab5.elf" "lab5.bin"
+arm-none-eabi-size "lab5.elf"
+   text	   data	    bss	    dec	    hex	filename
+  61012	   2636	   1208	  64856	   fd58	lab5.elf
+ 
+12:05:11 **** Incremental Build of configuration Debug for project lab5 ****
+make -j16 all 
+Building file: ../src/main.s
+Invoking: MCU GCC Assembler
+/home/shay/a/will2253/workspace/lab5/Debug
+arm-none-eabi-as -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -I"/home/shay/a/will2253/workspace/lab5/StdPeriph_Driver/inc" -I"/home/shay/a/will2253/workspace/lab5/inc" -I"/home/shay/a/will2253/workspace/lab5/CMSIS/device" -I"/home/shay/a/will2253/workspace/lab5/CMSIS/core" -g -o "src/main.o" "../src/main.s"
+Finished building: ../src/main.s
+ 
+Building target: lab5.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -T"/home/shay/a/will2253/workspace/lab5/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "lab5.elf" @"objects.list" /home/shay/a/will2253/workspace/lab5/src/autotest.o  -lm
+Finished building target: lab5.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "lab5.elf" "lab5.bin"
+arm-none-eabi-size "lab5.elf"
+   text	   data	    bss	    dec	    hex	filename
+  61012	   2636	   1208	  64856	   fd58	lab5.elf
+ 
+12:11:10 **** Incremental Build of configuration Debug for project lab5 ****
+make -j16 all 
+Building file: ../src/main.s
+Invoking: MCU GCC Assembler
+/home/shay/a/will2253/workspace/lab5/Debug
+arm-none-eabi-as -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -I"/home/shay/a/will2253/workspace/lab5/StdPeriph_Driver/inc" -I"/home/shay/a/will2253/workspace/lab5/inc" -I"/home/shay/a/will2253/workspace/lab5/CMSIS/device" -I"/home/shay/a/will2253/workspace/lab5/CMSIS/core" -g -o "src/main.o" "../src/main.s"
+Finished building: ../src/main.s
+ 
+Building target: lab5.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -T"/home/shay/a/will2253/workspace/lab5/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "lab5.elf" @"objects.list" /home/shay/a/will2253/workspace/lab5/src/autotest.o  -lm
+Finished building target: lab5.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "lab5.elf" "lab5.bin"
+arm-none-eabi-size "lab5.elf"
+   text	   data	    bss	    dec	    hex	filename
+  61016	   2636	   1208	  64860	   fd5c	lab5.elf
+ 
+12:13:00 **** Incremental Build of configuration Debug for project lab5 ****
+make -j16 all 
+Building file: ../src/main.s
+Invoking: MCU GCC Assembler
+/home/shay/a/will2253/workspace/lab5/Debug
+arm-none-eabi-as -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -I"/home/shay/a/will2253/workspace/lab5/StdPeriph_Driver/inc" -I"/home/shay/a/will2253/workspace/lab5/inc" -I"/home/shay/a/will2253/workspace/lab5/CMSIS/device" -I"/home/shay/a/will2253/workspace/lab5/CMSIS/core" -g -o "src/main.o" "../src/main.s"
+../src/main.s: Assembler messages:
+../src/main.s:174: Error: syntax error -- `ldr r2,=(1<<TIM6_DAC_IRQHandler)'
+src/subdir.mk:28: recipe for target 'src/main.o' failed
+make: *** [src/main.o] Error 1
+12:13:45 **** Incremental Build of configuration Debug for project lab5 ****
+make -j16 all 
+Building file: ../src/main.s
+Invoking: MCU GCC Assembler
+/home/shay/a/will2253/workspace/lab5/Debug
+arm-none-eabi-as -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -I"/home/shay/a/will2253/workspace/lab5/StdPeriph_Driver/inc" -I"/home/shay/a/will2253/workspace/lab5/inc" -I"/home/shay/a/will2253/workspace/lab5/CMSIS/device" -I"/home/shay/a/will2253/workspace/lab5/CMSIS/core" -g -o "src/main.o" "../src/main.s"
+Finished building: ../src/main.s
+ 
+Building target: lab5.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -T"/home/shay/a/will2253/workspace/lab5/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "lab5.elf" @"objects.list" /home/shay/a/will2253/workspace/lab5/src/autotest.o  -lm
+Finished building target: lab5.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "lab5.elf" "lab5.bin"
+arm-none-eabi-size "lab5.elf"
+   text	   data	    bss	    dec	    hex	filename
+  61016	   2636	   1208	  64860	   fd5c	lab5.elf
+ 
+12:17:30 **** Incremental Build of configuration Debug for project lab5 ****
+make -j16 all 
+make: Nothing to be done for 'all'.
+12:18:32 **** Incremental Build of configuration Debug for project lab5 ****
+make -j16 all 
+Building file: ../src/main.s
+Invoking: MCU GCC Assembler
+/home/shay/a/will2253/workspace/lab5/Debug
+arm-none-eabi-as -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -I"/home/shay/a/will2253/workspace/lab5/StdPeriph_Driver/inc" -I"/home/shay/a/will2253/workspace/lab5/inc" -I"/home/shay/a/will2253/workspace/lab5/CMSIS/device" -I"/home/shay/a/will2253/workspace/lab5/CMSIS/core" -g -o "src/main.o" "../src/main.s"
+Finished building: ../src/main.s
+ 
+Building target: lab5.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -T"/home/shay/a/will2253/workspace/lab5/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "lab5.elf" @"objects.list" /home/shay/a/will2253/workspace/lab5/src/autotest.o  -lm
+Finished building target: lab5.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "lab5.elf" "lab5.bin"
+arm-none-eabi-size "lab5.elf"
+   text	   data	    bss	    dec	    hex	filename
+  61016	   2636	   1208	  64860	   fd5c	lab5.elf
+ 
+12:23:18 **** Incremental Build of configuration Debug for project lab5 ****
+make -j16 all 
+Building file: ../src/main.s
+Invoking: MCU GCC Assembler
+/home/shay/a/will2253/workspace/lab5/Debug
+arm-none-eabi-as -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -I"/home/shay/a/will2253/workspace/lab5/StdPeriph_Driver/inc" -I"/home/shay/a/will2253/workspace/lab5/inc" -I"/home/shay/a/will2253/workspace/lab5/CMSIS/device" -I"/home/shay/a/will2253/workspace/lab5/CMSIS/core" -g -o "src/main.o" "../src/main.s"
+Finished building: ../src/main.s
+ 
+Building target: lab5.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -T"/home/shay/a/will2253/workspace/lab5/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "lab5.elf" @"objects.list" /home/shay/a/will2253/workspace/lab5/src/autotest.o  -lm
+Finished building target: lab5.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "lab5.elf" "lab5.bin"
+arm-none-eabi-size "lab5.elf"
+   text	   data	    bss	    dec	    hex	filename
+  61016	   2636	   1208	  64860	   fd5c	lab5.elf
+ 
+12:24:50 **** Incremental Build of configuration Debug for project lab5 ****
+make -j16 all 
+Building file: ../src/main.s
+Invoking: MCU GCC Assembler
+/home/shay/a/will2253/workspace/lab5/Debug
+arm-none-eabi-as -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -I"/home/shay/a/will2253/workspace/lab5/StdPeriph_Driver/inc" -I"/home/shay/a/will2253/workspace/lab5/inc" -I"/home/shay/a/will2253/workspace/lab5/CMSIS/device" -I"/home/shay/a/will2253/workspace/lab5/CMSIS/core" -g -o "src/main.o" "../src/main.s"
+Finished building: ../src/main.s
+ 
+Building target: lab5.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -T"/home/shay/a/will2253/workspace/lab5/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "lab5.elf" @"objects.list" /home/shay/a/will2253/workspace/lab5/src/autotest.o  -lm
+Finished building target: lab5.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "lab5.elf" "lab5.bin"
+arm-none-eabi-size "lab5.elf"
+   text	   data	    bss	    dec	    hex	filename
+  61020	   2636	   1208	  64864	   fd60	lab5.elf
+ 
+12:25:16 **** Incremental Build of configuration Debug for project lab5 ****
+make -j16 all 
+make: Nothing to be done for 'all'.
+12:27:58 **** Incremental Build of configuration Debug for project lab5 ****
+make -j16 all 
+Building file: ../src/main.s
+Invoking: MCU GCC Assembler
+/home/shay/a/will2253/workspace/lab5/Debug
+arm-none-eabi-as -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -I"/home/shay/a/will2253/workspace/lab5/StdPeriph_Driver/inc" -I"/home/shay/a/will2253/workspace/lab5/inc" -I"/home/shay/a/will2253/workspace/lab5/CMSIS/device" -I"/home/shay/a/will2253/workspace/lab5/CMSIS/core" -g -o "src/main.o" "../src/main.s"
+Finished building: ../src/main.s
+ 
+Building target: lab5.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -T"/home/shay/a/will2253/workspace/lab5/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "lab5.elf" @"objects.list" /home/shay/a/will2253/workspace/lab5/src/autotest.o  -lm
+Finished building target: lab5.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "lab5.elf" "lab5.bin"
+arm-none-eabi-size "lab5.elf"
+   text	   data	    bss	    dec	    hex	filename
+  61020	   2636	   1208	  64864	   fd60	lab5.elf
+ 
+12:31:18 **** Incremental Build of configuration Debug for project lab5 ****
+make -j16 all 
+Building file: ../src/main.s
+Invoking: MCU GCC Assembler
+/home/shay/a/will2253/workspace/lab5/Debug
+arm-none-eabi-as -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -I"/home/shay/a/will2253/workspace/lab5/StdPeriph_Driver/inc" -I"/home/shay/a/will2253/workspace/lab5/inc" -I"/home/shay/a/will2253/workspace/lab5/CMSIS/device" -I"/home/shay/a/will2253/workspace/lab5/CMSIS/core" -g -o "src/main.o" "../src/main.s"
+Finished building: ../src/main.s
+ 
+Building target: lab5.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -T"/home/shay/a/will2253/workspace/lab5/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "lab5.elf" @"objects.list" /home/shay/a/will2253/workspace/lab5/src/autotest.o  -lm
+src/main.o: In function `font':
+/home/shay/a/will2253/workspace/lab5/Debug/../src/main.s:312: undefined reference to `keypad'
+makefile:35: recipe for target 'lab5.elf' failed
+collect2: error: ld returned 1 exit status
+make: *** [lab5.elf] Error 1
+12:31:28 **** Incremental Build of configuration Debug for project lab5 ****
+make -j16 all 
+Building file: ../src/main.s
+Invoking: MCU GCC Assembler
+/home/shay/a/will2253/workspace/lab5/Debug
+arm-none-eabi-as -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -I"/home/shay/a/will2253/workspace/lab5/StdPeriph_Driver/inc" -I"/home/shay/a/will2253/workspace/lab5/inc" -I"/home/shay/a/will2253/workspace/lab5/CMSIS/device" -I"/home/shay/a/will2253/workspace/lab5/CMSIS/core" -g -o "src/main.o" "../src/main.s"
+Finished building: ../src/main.s
+ 
+Building target: lab5.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -T"/home/shay/a/will2253/workspace/lab5/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "lab5.elf" @"objects.list" /home/shay/a/will2253/workspace/lab5/src/autotest.o  -lm
+Finished building target: lab5.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "lab5.elf" "lab5.bin"
+arm-none-eabi-size "lab5.elf"
+   text	   data	    bss	    dec	    hex	filename
+  61024	   2636	   1208	  64868	   fd64	lab5.elf
+ 
+12:31:52 **** Incremental Build of configuration Debug for project lab5 ****
+make -j16 all 
+Building file: ../src/main.s
+Invoking: MCU GCC Assembler
+/home/shay/a/will2253/workspace/lab5/Debug
+arm-none-eabi-as -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -I"/home/shay/a/will2253/workspace/lab5/StdPeriph_Driver/inc" -I"/home/shay/a/will2253/workspace/lab5/inc" -I"/home/shay/a/will2253/workspace/lab5/CMSIS/device" -I"/home/shay/a/will2253/workspace/lab5/CMSIS/core" -g -o "src/main.o" "../src/main.s"
+Finished building: ../src/main.s
+ 
+Building target: lab5.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -T"/home/shay/a/will2253/workspace/lab5/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "lab5.elf" @"objects.list" /home/shay/a/will2253/workspace/lab5/src/autotest.o  -lm
+Finished building target: lab5.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "lab5.elf" "lab5.bin"
+arm-none-eabi-size "lab5.elf"
+   text	   data	    bss	    dec	    hex	filename
+  61024	   2636	   1208	  64868	   fd64	lab5.elf
+ 
+12:32:12 **** Incremental Build of configuration Debug for project lab5 ****
+make -j16 all 
+make: Nothing to be done for 'all'.
+12:32:32 **** Incremental Build of configuration Debug for project lab5 ****
+make -j16 all 
+make: Nothing to be done for 'all'.
+12:35:18 **** Incremental Build of configuration Debug for project lab5 ****
+make -j16 all 
+Building file: ../src/main.s
+Invoking: MCU GCC Assembler
+/home/shay/a/will2253/workspace/lab5/Debug
+arm-none-eabi-as -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -I"/home/shay/a/will2253/workspace/lab5/StdPeriph_Driver/inc" -I"/home/shay/a/will2253/workspace/lab5/inc" -I"/home/shay/a/will2253/workspace/lab5/CMSIS/device" -I"/home/shay/a/will2253/workspace/lab5/CMSIS/core" -g -o "src/main.o" "../src/main.s"
+Finished building: ../src/main.s
+ 
+Building target: lab5.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -T"/home/shay/a/will2253/workspace/lab5/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "lab5.elf" @"objects.list" /home/shay/a/will2253/workspace/lab5/src/autotest.o  -lm
+Finished building target: lab5.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "lab5.elf" "lab5.bin"
+arm-none-eabi-size "lab5.elf"
+   text	   data	    bss	    dec	    hex	filename
+  61024	   2636	   1208	  64868	   fd64	lab5.elf
+ 
+12:35:41 **** Incremental Build of configuration Debug for project lab5 ****
+make -j16 all 
+make: Nothing to be done for 'all'.
+12:36:03 **** Incremental Build of configuration Debug for project lab5 ****
+make -j16 all 
+make: Nothing to be done for 'all'.
+12:36:29 **** Incremental Build of configuration Debug for project lab5 ****
+make -j16 all 
+make: Nothing to be done for 'all'.
+12:37:56 **** Incremental Build of configuration Debug for project lab5 ****
+make -j16 all 
+Building file: ../src/main.s
+Invoking: MCU GCC Assembler
+/home/shay/a/will2253/workspace/lab5/Debug
+arm-none-eabi-as -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -I"/home/shay/a/will2253/workspace/lab5/StdPeriph_Driver/inc" -I"/home/shay/a/will2253/workspace/lab5/inc" -I"/home/shay/a/will2253/workspace/lab5/CMSIS/device" -I"/home/shay/a/will2253/workspace/lab5/CMSIS/core" -g -o "src/main.o" "../src/main.s"
+Finished building: ../src/main.s
+ 
+Building target: lab5.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -T"/home/shay/a/will2253/workspace/lab5/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "lab5.elf" @"objects.list" /home/shay/a/will2253/workspace/lab5/src/autotest.o  -lm
+Finished building target: lab5.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "lab5.elf" "lab5.bin"
+arm-none-eabi-size "lab5.elf"
+   text	   data	    bss	    dec	    hex	filename
+  61024	   2636	   1208	  64868	   fd64	lab5.elf
+ 
+12:38:37 **** Incremental Build of configuration Debug for project lab5 ****
+make -j16 all 
+make: Nothing to be done for 'all'.
+12:45:43 **** Incremental Build of configuration Debug for project lab5 ****
+make -j16 all 
+Building file: ../src/main.s
+Invoking: MCU GCC Assembler
+/home/shay/a/will2253/workspace/lab5/Debug
+arm-none-eabi-as -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -I"/home/shay/a/will2253/workspace/lab5/StdPeriph_Driver/inc" -I"/home/shay/a/will2253/workspace/lab5/inc" -I"/home/shay/a/will2253/workspace/lab5/CMSIS/device" -I"/home/shay/a/will2253/workspace/lab5/CMSIS/core" -g -o "src/main.o" "../src/main.s"
+Finished building: ../src/main.s
+ 
+Building target: lab5.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -T"/home/shay/a/will2253/workspace/lab5/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "lab5.elf" @"objects.list" /home/shay/a/will2253/workspace/lab5/src/autotest.o  -lm
+Finished building target: lab5.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "lab5.elf" "lab5.bin"
+arm-none-eabi-size "lab5.elf"
+   text	   data	    bss	    dec	    hex	filename
+  61036	   2636	   1208	  64880	   fd70	lab5.elf
+ 
+12:47:51 **** Incremental Build of configuration Debug for project lab5 ****
+make -j16 all 
+make: Nothing to be done for 'all'.
+12:48:11 **** Incremental Build of configuration Debug for project lab5 ****
+make -j16 all 
+make: Nothing to be done for 'all'.
+12:48:45 **** Incremental Build of configuration Debug for project lab5 ****
+make -j16 all 
+Building file: ../src/main.s
+Invoking: MCU GCC Assembler
+/home/shay/a/will2253/workspace/lab5/Debug
+arm-none-eabi-as -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -I"/home/shay/a/will2253/workspace/lab5/StdPeriph_Driver/inc" -I"/home/shay/a/will2253/workspace/lab5/inc" -I"/home/shay/a/will2253/workspace/lab5/CMSIS/device" -I"/home/shay/a/will2253/workspace/lab5/CMSIS/core" -g -o "src/main.o" "../src/main.s"
+Finished building: ../src/main.s
+ 
+Building target: lab5.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -T"/home/shay/a/will2253/workspace/lab5/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "lab5.elf" @"objects.list" /home/shay/a/will2253/workspace/lab5/src/autotest.o  -lm
+Finished building target: lab5.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "lab5.elf" "lab5.bin"
+arm-none-eabi-size "lab5.elf"
+   text	   data	    bss	    dec	    hex	filename
+  61036	   2636	   1208	  64880	   fd70	lab5.elf
+ 
+12:49:36 **** Incremental Build of configuration Debug for project lab5 ****
+make -j16 all 
+Building file: ../src/main.s
+Invoking: MCU GCC Assembler
+/home/shay/a/will2253/workspace/lab5/Debug
+arm-none-eabi-as -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -I"/home/shay/a/will2253/workspace/lab5/StdPeriph_Driver/inc" -I"/home/shay/a/will2253/workspace/lab5/inc" -I"/home/shay/a/will2253/workspace/lab5/CMSIS/device" -I"/home/shay/a/will2253/workspace/lab5/CMSIS/core" -g -o "src/main.o" "../src/main.s"
+Finished building: ../src/main.s
+ 
+Building target: lab5.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -T"/home/shay/a/will2253/workspace/lab5/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "lab5.elf" @"objects.list" /home/shay/a/will2253/workspace/lab5/src/autotest.o  -lm
+Finished building target: lab5.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "lab5.elf" "lab5.bin"
+arm-none-eabi-size "lab5.elf"
+   text	   data	    bss	    dec	    hex	filename
+  61036	   2636	   1208	  64880	   fd70	lab5.elf
+ 
+12:51:49 **** Incremental Build of configuration Debug for project lab5 ****
+make -j16 all 
+Building file: ../src/main.s
+Invoking: MCU GCC Assembler
+/home/shay/a/will2253/workspace/lab5/Debug
+arm-none-eabi-as -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -I"/home/shay/a/will2253/workspace/lab5/StdPeriph_Driver/inc" -I"/home/shay/a/will2253/workspace/lab5/inc" -I"/home/shay/a/will2253/workspace/lab5/CMSIS/device" -I"/home/shay/a/will2253/workspace/lab5/CMSIS/core" -g -o "src/main.o" "../src/main.s"
+Finished building: ../src/main.s
+ 
+Building target: lab5.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -T"/home/shay/a/will2253/workspace/lab5/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "lab5.elf" @"objects.list" /home/shay/a/will2253/workspace/lab5/src/autotest.o  -lm
+Finished building target: lab5.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "lab5.elf" "lab5.bin"
+arm-none-eabi-size "lab5.elf"
+   text	   data	    bss	    dec	    hex	filename
+  61036	   2636	   1208	  64880	   fd70	lab5.elf
+ 
+12:52:06 **** Incremental Build of configuration Debug for project lab5 ****
+make -j16 all 
+make: Nothing to be done for 'all'.
+12:52:27 **** Incremental Build of configuration Debug for project lab5 ****
+make -j16 all 
+Building file: ../src/main.s
+Invoking: MCU GCC Assembler
+/home/shay/a/will2253/workspace/lab5/Debug
+arm-none-eabi-as -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -I"/home/shay/a/will2253/workspace/lab5/StdPeriph_Driver/inc" -I"/home/shay/a/will2253/workspace/lab5/inc" -I"/home/shay/a/will2253/workspace/lab5/CMSIS/device" -I"/home/shay/a/will2253/workspace/lab5/CMSIS/core" -g -o "src/main.o" "../src/main.s"
+Finished building: ../src/main.s
+ 
+Building target: lab5.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -T"/home/shay/a/will2253/workspace/lab5/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "lab5.elf" @"objects.list" /home/shay/a/will2253/workspace/lab5/src/autotest.o  -lm
+Finished building target: lab5.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "lab5.elf" "lab5.bin"
+arm-none-eabi-size "lab5.elf"
+   text	   data	    bss	    dec	    hex	filename
+  61036	   2636	   1208	  64880	   fd70	lab5.elf
+ 
+12:55:26 **** Incremental Build of configuration Debug for project lab5 ****
+make -j16 all 
+make: Nothing to be done for 'all'.
+12:56:58 **** Incremental Build of configuration Debug for project lab5 ****
+make -j16 all 
+Building file: ../src/main.s
+Invoking: MCU GCC Assembler
+/home/shay/a/will2253/workspace/lab5/Debug
+arm-none-eabi-as -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -I"/home/shay/a/will2253/workspace/lab5/StdPeriph_Driver/inc" -I"/home/shay/a/will2253/workspace/lab5/inc" -I"/home/shay/a/will2253/workspace/lab5/CMSIS/device" -I"/home/shay/a/will2253/workspace/lab5/CMSIS/core" -g -o "src/main.o" "../src/main.s"
+Finished building: ../src/main.s
+ 
+Building target: lab5.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -T"/home/shay/a/will2253/workspace/lab5/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "lab5.elf" @"objects.list" /home/shay/a/will2253/workspace/lab5/src/autotest.o  -lm
+Finished building target: lab5.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "lab5.elf" "lab5.bin"
+arm-none-eabi-size "lab5.elf"
+   text	   data	    bss	    dec	    hex	filename
+  61040	   2636	   1208	  64884	   fd74	lab5.elf
+ 
+12:59:37 **** Incremental Build of configuration Debug for project lab5 ****
+make -j16 all 
+Building file: ../src/main.s
+Invoking: MCU GCC Assembler
+/home/shay/a/will2253/workspace/lab5/Debug
+arm-none-eabi-as -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -I"/home/shay/a/will2253/workspace/lab5/StdPeriph_Driver/inc" -I"/home/shay/a/will2253/workspace/lab5/inc" -I"/home/shay/a/will2253/workspace/lab5/CMSIS/device" -I"/home/shay/a/will2253/workspace/lab5/CMSIS/core" -g -o "src/main.o" "../src/main.s"
+Finished building: ../src/main.s
+ 
+Building target: lab5.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -T"/home/shay/a/will2253/workspace/lab5/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "lab5.elf" @"objects.list" /home/shay/a/will2253/workspace/lab5/src/autotest.o  -lm
+Finished building target: lab5.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "lab5.elf" "lab5.bin"
+arm-none-eabi-size "lab5.elf"
+   text	   data	    bss	    dec	    hex	filename
+  61040	   2636	   1208	  64884	   fd74	lab5.elf
+ 
+13:25:38 **** Incremental Build of configuration Debug for project lab5 ****
+make -j16 all 
+Building file: ../src/main.s
+Invoking: MCU GCC Assembler
+/home/shay/a/will2253/workspace/lab5/Debug
+arm-none-eabi-as -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -I"/home/shay/a/will2253/workspace/lab5/StdPeriph_Driver/inc" -I"/home/shay/a/will2253/workspace/lab5/inc" -I"/home/shay/a/will2253/workspace/lab5/CMSIS/device" -I"/home/shay/a/will2253/workspace/lab5/CMSIS/core" -g -o "src/main.o" "../src/main.s"
+../src/main.s: Assembler messages:
+../src/main.s:352: Error: ARM register expected -- `movs'
+../src/main.s:355: Error: cannot honor width suffix -- `pop {lr}'
+../src/main.s:609: Error: symbol `crashed' is already defined
+../src/main.s:612: Error: symbol `crashed' is already defined
+../src/main.s:615: Error: symbol `crashed' is already defined
+src/subdir.mk:28: recipe for target 'src/main.o' failed
+../src/main.s:618: Error: symbol `crashed' is already defined
+make: *** [src/main.o] Error 1
+13:25:58 **** Incremental Build of configuration Debug for project lab5 ****
+make -j16 all 
+Building file: ../src/main.s
+Invoking: MCU GCC Assembler
+/home/shay/a/will2253/workspace/lab5/Debug
+arm-none-eabi-as -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -I"/home/shay/a/will2253/workspace/lab5/StdPeriph_Driver/inc" -I"/home/shay/a/will2253/workspace/lab5/inc" -I"/home/shay/a/will2253/workspace/lab5/CMSIS/device" -I"/home/shay/a/will2253/workspace/lab5/CMSIS/core" -g -o "src/main.o" "../src/main.s"
+../src/main.s: Assembler messages:
+../src/main.s:352: Error: ARM register expected -- `movs'
+../src/main.s:355: Error: cannot honor width suffix -- `pop {lr}'
+make: *** [src/main.o] Error 1
+src/subdir.mk:28: recipe for target 'src/main.o' failed
+13:27:41 **** Incremental Build of configuration Debug for project lab5 ****
+make -j16 all 
+Building file: ../src/main.s
+Invoking: MCU GCC Assembler
+/home/shay/a/will2253/workspace/lab5/Debug
+arm-none-eabi-as -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -I"/home/shay/a/will2253/workspace/lab5/StdPeriph_Driver/inc" -I"/home/shay/a/will2253/workspace/lab5/inc" -I"/home/shay/a/will2253/workspace/lab5/CMSIS/device" -I"/home/shay/a/will2253/workspace/lab5/CMSIS/core" -g -o "src/main.o" "../src/main.s"
+../src/main.s: Assembler messages:
+../src/main.s:351: Error: cannot honor width suffix -- `pop {lr}'
+make: *** [src/main.o] Error 1
+src/subdir.mk:28: recipe for target 'src/main.o' failed
+13:27:47 **** Incremental Build of configuration Debug for project lab5 ****
+make -j16 all 
+Building file: ../src/main.s
+Invoking: MCU GCC Assembler
+/home/shay/a/will2253/workspace/lab5/Debug
+arm-none-eabi-as -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -I"/home/shay/a/will2253/workspace/lab5/StdPeriph_Driver/inc" -I"/home/shay/a/will2253/workspace/lab5/inc" -I"/home/shay/a/will2253/workspace/lab5/CMSIS/device" -I"/home/shay/a/will2253/workspace/lab5/CMSIS/core" -g -o "src/main.o" "../src/main.s"
+../src/main.s: Assembler messages:
+../src/main.s:418: Error: cannot represent THUMB_IMM relocation in this object file format
+../src/main.s:420: Error: cannot represent THUMB_IMM relocation in this object file format
+../src/main.s:422: Error: cannot represent THUMB_IMM relocation in this object file format
+../src/main.s:424: Error: cannot represent THUMB_IMM relocation in this object file format
+../src/main.s:426: Error: cannot represent THUMB_IMM relocation in this object file format
+make: *** [src/main.o] Error 1
+src/subdir.mk:28: recipe for target 'src/main.o' failed
+13:28:13 **** Incremental Build of configuration Debug for project lab5 ****
+make -j16 all 
+Building file: ../src/main.s
+Invoking: MCU GCC Assembler
+/home/shay/a/will2253/workspace/lab5/Debug
+arm-none-eabi-as -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -I"/home/shay/a/will2253/workspace/lab5/StdPeriph_Driver/inc" -I"/home/shay/a/will2253/workspace/lab5/inc" -I"/home/shay/a/will2253/workspace/lab5/CMSIS/device" -I"/home/shay/a/will2253/workspace/lab5/CMSIS/core" -g -o "src/main.o" "../src/main.s"
+Finished building: ../src/main.s
+ 
+Building target: lab5.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -T"/home/shay/a/will2253/workspace/lab5/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "lab5.elf" @"objects.list" /home/shay/a/will2253/workspace/lab5/src/autotest.o  -lm
+src/main.o: In function `font':
+/home/shay/a/will2253/workspace/lab5/Debug/../src/main.s:347: undefined reference to `ch'
+makefile:35: recipe for target 'lab5.elf' failed
+collect2: error: ld returned 1 exit status
+make: *** [lab5.elf] Error 1
+13:29:18 **** Incremental Build of configuration Debug for project lab5 ****
+make -j16 all 
+Building file: ../src/main.s
+Invoking: MCU GCC Assembler
+/home/shay/a/will2253/workspace/lab5/Debug
+arm-none-eabi-as -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -I"/home/shay/a/will2253/workspace/lab5/StdPeriph_Driver/inc" -I"/home/shay/a/will2253/workspace/lab5/inc" -I"/home/shay/a/will2253/workspace/lab5/CMSIS/device" -I"/home/shay/a/will2253/workspace/lab5/CMSIS/core" -g -o "src/main.o" "../src/main.s"
+Finished building: ../src/main.s
+ 
+Building target: lab5.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -T"/home/shay/a/will2253/workspace/lab5/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "lab5.elf" @"objects.list" /home/shay/a/will2253/workspace/lab5/src/autotest.o  -lm
+Finished building target: lab5.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "lab5.elf" "lab5.bin"
+arm-none-eabi-size "lab5.elf"
+   text	   data	    bss	    dec	    hex	filename
+  61188	   2676	   1208	  65072	   fe30	lab5.elf
+ 
+13:39:52 **** Incremental Build of configuration Debug for project lab5 ****
+make -j16 all 
+Building file: ../src/main.s
+Invoking: MCU GCC Assembler
+/home/shay/a/will2253/workspace/lab5/Debug
+arm-none-eabi-as -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -I"/home/shay/a/will2253/workspace/lab5/StdPeriph_Driver/inc" -I"/home/shay/a/will2253/workspace/lab5/inc" -I"/home/shay/a/will2253/workspace/lab5/CMSIS/device" -I"/home/shay/a/will2253/workspace/lab5/CMSIS/core" -g -o "src/main.o" "../src/main.s"
+../src/main.s: Assembler messages:
+../src/main.s:521: Error: bad expression -- `movs r5,=#76'
+../src/main.s:527: Error: bad expression -- `movs r5,=#67'
+src/subdir.mk:28: recipe for target 'src/main.o' failed
+make: *** [src/main.o] Error 1
+13:41:24 **** Incremental Build of configuration Debug for project lab5 ****
+make -j16 all 
+Building file: ../src/main.s
+Invoking: MCU GCC Assembler
+/home/shay/a/will2253/workspace/lab5/Debug
+arm-none-eabi-as -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -I"/home/shay/a/will2253/workspace/lab5/StdPeriph_Driver/inc" -I"/home/shay/a/will2253/workspace/lab5/inc" -I"/home/shay/a/will2253/workspace/lab5/CMSIS/device" -I"/home/shay/a/will2253/workspace/lab5/CMSIS/core" -g -o "src/main.o" "../src/main.s"
+Finished building: ../src/main.s
+ 
+Building target: lab5.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -T"/home/shay/a/will2253/workspace/lab5/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "lab5.elf" @"objects.list" /home/shay/a/will2253/workspace/lab5/src/autotest.o  -lm
+Finished building target: lab5.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "lab5.elf" "lab5.bin"
+arm-none-eabi-size "lab5.elf"
+   text	   data	    bss	    dec	    hex	filename
+  61236	   2676	   1208	  65120	   fe60	lab5.elf
+ 
+13:41:51 **** Incremental Build of configuration Debug for project lab5 ****
+make -j16 all 
+make: Nothing to be done for 'all'.
+13:41:57 **** Incremental Build of configuration Debug for project lab5 ****
+make -j16 all 
+make: Nothing to be done for 'all'.
+13:42:30 **** Incremental Build of configuration Debug for project lab5 ****
+make -j16 all 
+make: Nothing to be done for 'all'.
+13:43:32 **** Incremental Build of configuration Debug for project lab5 ****
+make -j16 all 
+Building file: ../src/main.s
+Invoking: MCU GCC Assembler
+/home/shay/a/will2253/workspace/lab5/Debug
+arm-none-eabi-as -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -I"/home/shay/a/will2253/workspace/lab5/StdPeriph_Driver/inc" -I"/home/shay/a/will2253/workspace/lab5/inc" -I"/home/shay/a/will2253/workspace/lab5/CMSIS/device" -I"/home/shay/a/will2253/workspace/lab5/CMSIS/core" -g -o "src/main.o" "../src/main.s"
+Finished building: ../src/main.s
+ 
+Building target: lab5.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -T"/home/shay/a/will2253/workspace/lab5/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "lab5.elf" @"objects.list" /home/shay/a/will2253/workspace/lab5/src/autotest.o  -lm
+Finished building target: lab5.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "lab5.elf" "lab5.bin"
+arm-none-eabi-size "lab5.elf"
+   text	   data	    bss	    dec	    hex	filename
+  61236	   2676	   1208	  65120	   fe60	lab5.elf
+ 
+13:45:12 **** Incremental Build of configuration Debug for project lab5 ****
+make -j16 all 
+Building file: ../src/main.s
+Invoking: MCU GCC Assembler
+/home/shay/a/will2253/workspace/lab5/Debug
+arm-none-eabi-as -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -I"/home/shay/a/will2253/workspace/lab5/StdPeriph_Driver/inc" -I"/home/shay/a/will2253/workspace/lab5/inc" -I"/home/shay/a/will2253/workspace/lab5/CMSIS/device" -I"/home/shay/a/will2253/workspace/lab5/CMSIS/core" -g -o "src/main.o" "../src/main.s"
+Finished building: ../src/main.s
+ 
+Building target: lab5.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -T"/home/shay/a/will2253/workspace/lab5/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "lab5.elf" @"objects.list" /home/shay/a/will2253/workspace/lab5/src/autotest.o  -lm
+Finished building target: lab5.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "lab5.elf" "lab5.bin"
+arm-none-eabi-size "lab5.elf"
+   text	   data	    bss	    dec	    hex	filename
+  61244	   2676	   1208	  65128	   fe68	lab5.elf
+ 
+13:46:42 **** Incremental Build of configuration Debug for project lab5 ****
+make -j16 all 
+Building file: ../src/main.s
+Invoking: MCU GCC Assembler
+/home/shay/a/will2253/workspace/lab5/Debug
+arm-none-eabi-as -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -I"/home/shay/a/will2253/workspace/lab5/StdPeriph_Driver/inc" -I"/home/shay/a/will2253/workspace/lab5/inc" -I"/home/shay/a/will2253/workspace/lab5/CMSIS/device" -I"/home/shay/a/will2253/workspace/lab5/CMSIS/core" -g -o "src/main.o" "../src/main.s"
+Finished building: ../src/main.s
+ 
+Building target: lab5.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -T"/home/shay/a/will2253/workspace/lab5/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "lab5.elf" @"objects.list" /home/shay/a/will2253/workspace/lab5/src/autotest.o  -lm
+Finished building target: lab5.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "lab5.elf" "lab5.bin"
+arm-none-eabi-size "lab5.elf"
+   text	   data	    bss	    dec	    hex	filename
+  61236	   2676	   1208	  65120	   fe60	lab5.elf
+ 
+13:52:47 **** Incremental Build of configuration Debug for project lab5 ****
+make -j16 all 
+Building file: ../src/main.s
+Invoking: MCU GCC Assembler
+/home/shay/a/will2253/workspace/lab5/Debug
+arm-none-eabi-as -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -I"/home/shay/a/will2253/workspace/lab5/StdPeriph_Driver/inc" -I"/home/shay/a/will2253/workspace/lab5/inc" -I"/home/shay/a/will2253/workspace/lab5/CMSIS/device" -I"/home/shay/a/will2253/workspace/lab5/CMSIS/core" -g -o "src/main.o" "../src/main.s"
+Finished building: ../src/main.s
+ 
+Building target: lab5.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -T"/home/shay/a/will2253/workspace/lab5/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "lab5.elf" @"objects.list" /home/shay/a/will2253/workspace/lab5/src/autotest.o  -lm
+Finished building target: lab5.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "lab5.elf" "lab5.bin"
+arm-none-eabi-size "lab5.elf"
+   text	   data	    bss	    dec	    hex	filename
+  61260	   2676	   1208	  65144	   fe78	lab5.elf
+ 
+13:53:50 **** Incremental Build of configuration Debug for project lab5 ****
+make -j16 all 
+make: Nothing to be done for 'all'.
+13:57:41 **** Incremental Build of configuration Debug for project lab5 ****
+make -j16 all 
+Building file: ../src/main.s
+Invoking: MCU GCC Assembler
+/home/shay/a/will2253/workspace/lab5/Debug
+arm-none-eabi-as -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -I"/home/shay/a/will2253/workspace/lab5/StdPeriph_Driver/inc" -I"/home/shay/a/will2253/workspace/lab5/inc" -I"/home/shay/a/will2253/workspace/lab5/CMSIS/device" -I"/home/shay/a/will2253/workspace/lab5/CMSIS/core" -g -o "src/main.o" "../src/main.s"
+Finished building: ../src/main.s
+ 
+Building target: lab5.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -T"/home/shay/a/will2253/workspace/lab5/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "lab5.elf" @"objects.list" /home/shay/a/will2253/workspace/lab5/src/autotest.o  -lm
+Finished building target: lab5.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "lab5.elf" "lab5.bin"
+arm-none-eabi-size "lab5.elf"
+   text	   data	    bss	    dec	    hex	filename
+  61324	   2676	   1208	  65208	   feb8	lab5.elf
+ 
+14:01:30 **** Incremental Build of configuration Debug for project lab5 ****
+make -j16 all 
+Building file: ../src/main.s
+Invoking: MCU GCC Assembler
+/home/shay/a/will2253/workspace/lab5/Debug
+arm-none-eabi-as -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -I"/home/shay/a/will2253/workspace/lab5/StdPeriph_Driver/inc" -I"/home/shay/a/will2253/workspace/lab5/inc" -I"/home/shay/a/will2253/workspace/lab5/CMSIS/device" -I"/home/shay/a/will2253/workspace/lab5/CMSIS/core" -g -o "src/main.o" "../src/main.s"
+Finished building: ../src/main.s
+ 
+Building target: lab5.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -T"/home/shay/a/will2253/workspace/lab5/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "lab5.elf" @"objects.list" /home/shay/a/will2253/workspace/lab5/src/autotest.o  -lm
+Finished building target: lab5.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "lab5.elf" "lab5.bin"
+arm-none-eabi-size "lab5.elf"
+   text	   data	    bss	    dec	    hex	filename
+  61312	   2676	   1208	  65196	   feac	lab5.elf
+ 
+14:02:39 **** Incremental Build of configuration Debug for project lab5 ****
+make -j16 all 
+Building file: ../src/main.s
+Invoking: MCU GCC Assembler
+/home/shay/a/will2253/workspace/lab5/Debug
+arm-none-eabi-as -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -I"/home/shay/a/will2253/workspace/lab5/StdPeriph_Driver/inc" -I"/home/shay/a/will2253/workspace/lab5/inc" -I"/home/shay/a/will2253/workspace/lab5/CMSIS/device" -I"/home/shay/a/will2253/workspace/lab5/CMSIS/core" -g -o "src/main.o" "../src/main.s"
+Finished building: ../src/main.s
+ 
+Building target: lab5.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -T"/home/shay/a/will2253/workspace/lab5/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "lab5.elf" @"objects.list" /home/shay/a/will2253/workspace/lab5/src/autotest.o  -lm
+Finished building target: lab5.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "lab5.elf" "lab5.bin"
+arm-none-eabi-size "lab5.elf"
+   text	   data	    bss	    dec	    hex	filename
+  61324	   2676	   1208	  65208	   feb8	lab5.elf
+ 
+14:04:36 **** Incremental Build of configuration Debug for project lab5 ****
+make -j16 all 
+Building file: ../src/main.s
+Invoking: MCU GCC Assembler
+/home/shay/a/will2253/workspace/lab5/Debug
+arm-none-eabi-as -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -I"/home/shay/a/will2253/workspace/lab5/StdPeriph_Driver/inc" -I"/home/shay/a/will2253/workspace/lab5/inc" -I"/home/shay/a/will2253/workspace/lab5/CMSIS/device" -I"/home/shay/a/will2253/workspace/lab5/CMSIS/core" -g -o "src/main.o" "../src/main.s"
+Finished building: ../src/main.s
+ 
+Building target: lab5.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -T"/home/shay/a/will2253/workspace/lab5/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "lab5.elf" @"objects.list" /home/shay/a/will2253/workspace/lab5/src/autotest.o  -lm
+Finished building target: lab5.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "lab5.elf" "lab5.bin"
+arm-none-eabi-size "lab5.elf"
+   text	   data	    bss	    dec	    hex	filename
+  61328	   2676	   1208	  65212	   febc	lab5.elf
+ 
+14:05:45 **** Incremental Build of configuration Debug for project lab5 ****
+make -j16 all 
+Building file: ../src/main.s
+Invoking: MCU GCC Assembler
+/home/shay/a/will2253/workspace/lab5/Debug
+arm-none-eabi-as -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -I"/home/shay/a/will2253/workspace/lab5/StdPeriph_Driver/inc" -I"/home/shay/a/will2253/workspace/lab5/inc" -I"/home/shay/a/will2253/workspace/lab5/CMSIS/device" -I"/home/shay/a/will2253/workspace/lab5/CMSIS/core" -g -o "src/main.o" "../src/main.s"
+Finished building: ../src/main.s
+ 
+Building target: lab5.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -T"/home/shay/a/will2253/workspace/lab5/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "lab5.elf" @"objects.list" /home/shay/a/will2253/workspace/lab5/src/autotest.o  -lm
+src/main.o: In function `font':
+/home/shay/a/will2253/workspace/lab5/Debug/../src/main.s:394: undefined reference to `TIM_CR2_CEN'
+makefile:35: recipe for target 'lab5.elf' failed
+collect2: error: ld returned 1 exit status
+make: *** [lab5.elf] Error 1
+14:05:55 **** Incremental Build of configuration Debug for project lab5 ****
+make -j16 all 
+Building file: ../src/main.s
+Invoking: MCU GCC Assembler
+/home/shay/a/will2253/workspace/lab5/Debug
+arm-none-eabi-as -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -I"/home/shay/a/will2253/workspace/lab5/StdPeriph_Driver/inc" -I"/home/shay/a/will2253/workspace/lab5/inc" -I"/home/shay/a/will2253/workspace/lab5/CMSIS/device" -I"/home/shay/a/will2253/workspace/lab5/CMSIS/core" -g -o "src/main.o" "../src/main.s"
+Finished building: ../src/main.s
+ 
+Building target: lab5.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -T"/home/shay/a/will2253/workspace/lab5/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "lab5.elf" @"objects.list" /home/shay/a/will2253/workspace/lab5/src/autotest.o  -lm
+Finished building target: lab5.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "lab5.elf" "lab5.bin"
+arm-none-eabi-size "lab5.elf"
+   text	   data	    bss	    dec	    hex	filename
+  61328	   2676	   1208	  65212	   febc	lab5.elf
+ 
+14:08:53 **** Incremental Build of configuration Debug for project lab5 ****
+make -j16 all 
+Building file: ../src/main.s
+Invoking: MCU GCC Assembler
+/home/shay/a/will2253/workspace/lab5/Debug
+arm-none-eabi-as -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -I"/home/shay/a/will2253/workspace/lab5/StdPeriph_Driver/inc" -I"/home/shay/a/will2253/workspace/lab5/inc" -I"/home/shay/a/will2253/workspace/lab5/CMSIS/device" -I"/home/shay/a/will2253/workspace/lab5/CMSIS/core" -g -o "src/main.o" "../src/main.s"
+../src/main.s: Assembler messages:
+../src/main.s:542: Error: cannot honor width suffix -- `ldrsh r1,[r0]'
+../src/main.s:554: Error: cannot honor width suffix -- `ldrsh r3,[r0]'
+src/subdir.mk:28: recipe for target 'src/main.o' failed
+make: *** [src/main.o] Error 1
+14:09:40 **** Incremental Build of configuration Debug for project lab5 ****
+make -j16 all 
+Building file: ../src/main.s
+Invoking: MCU GCC Assembler
+/home/shay/a/will2253/workspace/lab5/Debug
+arm-none-eabi-as -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -I"/home/shay/a/will2253/workspace/lab5/StdPeriph_Driver/inc" -I"/home/shay/a/will2253/workspace/lab5/inc" -I"/home/shay/a/will2253/workspace/lab5/CMSIS/device" -I"/home/shay/a/will2253/workspace/lab5/CMSIS/core" -g -o "src/main.o" "../src/main.s"
+../src/main.s: Assembler messages:
+../src/main.s:542: Error: cannot honor width suffix -- `ldrsh r1,[r0]'
+make: *** [src/main.o] Error 1
+src/subdir.mk:28: recipe for target 'src/main.o' failed
+14:10:00 **** Incremental Build of configuration Debug for project lab5 ****
+make -j16 all 
+Building file: ../src/main.s
+Invoking: MCU GCC Assembler
+/home/shay/a/will2253/workspace/lab5/Debug
+arm-none-eabi-as -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -I"/home/shay/a/will2253/workspace/lab5/StdPeriph_Driver/inc" -I"/home/shay/a/will2253/workspace/lab5/inc" -I"/home/shay/a/will2253/workspace/lab5/CMSIS/device" -I"/home/shay/a/will2253/workspace/lab5/CMSIS/core" -g -o "src/main.o" "../src/main.s"
+Finished building: ../src/main.s
+ 
+Building target: lab5.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -T"/home/shay/a/will2253/workspace/lab5/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "lab5.elf" @"objects.list" /home/shay/a/will2253/workspace/lab5/src/autotest.o  -lm
+Finished building target: lab5.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "lab5.elf" "lab5.bin"
+arm-none-eabi-size "lab5.elf"
+   text	   data	    bss	    dec	    hex	filename
+  61332	   2676	   1208	  65216	   fec0	lab5.elf
+ 
+14:12:25 **** Incremental Build of configuration Debug for project lab5 ****
+make -j16 all 
+Building file: ../src/main.s
+Invoking: MCU GCC Assembler
+/home/shay/a/will2253/workspace/lab5/Debug
+arm-none-eabi-as -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -I"/home/shay/a/will2253/workspace/lab5/StdPeriph_Driver/inc" -I"/home/shay/a/will2253/workspace/lab5/inc" -I"/home/shay/a/will2253/workspace/lab5/CMSIS/device" -I"/home/shay/a/will2253/workspace/lab5/CMSIS/core" -g -o "src/main.o" "../src/main.s"
+Finished building: ../src/main.s
+ 
+Building target: lab5.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -T"/home/shay/a/will2253/workspace/lab5/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "lab5.elf" @"objects.list" /home/shay/a/will2253/workspace/lab5/src/autotest.o  -lm
+Finished building target: lab5.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "lab5.elf" "lab5.bin"
+arm-none-eabi-size "lab5.elf"
+   text	   data	    bss	    dec	    hex	filename
+  61344	   2676	   1208	  65228	   fecc	lab5.elf
+ 
+14:13:45 **** Incremental Build of configuration Debug for project lab5 ****
+make -j16 all 
+Building file: ../src/main.s
+Invoking: MCU GCC Assembler
+/home/shay/a/will2253/workspace/lab5/Debug
+arm-none-eabi-as -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -I"/home/shay/a/will2253/workspace/lab5/StdPeriph_Driver/inc" -I"/home/shay/a/will2253/workspace/lab5/inc" -I"/home/shay/a/will2253/workspace/lab5/CMSIS/device" -I"/home/shay/a/will2253/workspace/lab5/CMSIS/core" -g -o "src/main.o" "../src/main.s"
+../src/main.s: Assembler messages:
+../src/main.s:591: Error: cannot honor width suffix -- `ldrh r0,=velo'
+src/subdir.mk:28: recipe for target 'src/main.o' failed
+make: *** [src/main.o] Error 1
+14:13:57 **** Incremental Build of configuration Debug for project lab5 ****
+make -j16 all 
+Building file: ../src/main.s
+Invoking: MCU GCC Assembler
+/home/shay/a/will2253/workspace/lab5/Debug
+arm-none-eabi-as -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -I"/home/shay/a/will2253/workspace/lab5/StdPeriph_Driver/inc" -I"/home/shay/a/will2253/workspace/lab5/inc" -I"/home/shay/a/will2253/workspace/lab5/CMSIS/device" -I"/home/shay/a/will2253/workspace/lab5/CMSIS/core" -g -o "src/main.o" "../src/main.s"
+Finished building: ../src/main.s
+ 
+Building target: lab5.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -T"/home/shay/a/will2253/workspace/lab5/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "lab5.elf" @"objects.list" /home/shay/a/will2253/workspace/lab5/src/autotest.o  -lm
+Finished building target: lab5.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "lab5.elf" "lab5.bin"
+arm-none-eabi-size "lab5.elf"
+   text	   data	    bss	    dec	    hex	filename
+  61352	   2676	   1208	  65236	   fed4	lab5.elf
+ 
+14:18:59 **** Incremental Build of configuration Debug for project lab5 ****
+make -j16 all 
+Building file: ../src/main.s
+Invoking: MCU GCC Assembler
+/home/shay/a/will2253/workspace/lab5/Debug
+arm-none-eabi-as -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -I"/home/shay/a/will2253/workspace/lab5/StdPeriph_Driver/inc" -I"/home/shay/a/will2253/workspace/lab5/inc" -I"/home/shay/a/will2253/workspace/lab5/CMSIS/device" -I"/home/shay/a/will2253/workspace/lab5/CMSIS/core" -g -o "src/main.o" "../src/main.s"
+../src/main.s: Assembler messages:
+../src/main.s:655: Error: symbol `setup_tim14' is already defined
+make: *** [src/main.o] Error 1
+src/subdir.mk:28: recipe for target 'src/main.o' failed
+14:19:15 **** Incremental Build of configuration Debug for project lab5 ****
+make -j16 all 
+Building file: ../src/main.s
+Invoking: MCU GCC Assembler
+/home/shay/a/will2253/workspace/lab5/Debug
+arm-none-eabi-as -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -I"/home/shay/a/will2253/workspace/lab5/StdPeriph_Driver/inc" -I"/home/shay/a/will2253/workspace/lab5/inc" -I"/home/shay/a/will2253/workspace/lab5/CMSIS/device" -I"/home/shay/a/will2253/workspace/lab5/CMSIS/core" -g -o "src/main.o" "../src/main.s"
+Finished building: ../src/main.s
+ 
+Building target: lab5.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -T"/home/shay/a/will2253/workspace/lab5/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "lab5.elf" @"objects.list" /home/shay/a/will2253/workspace/lab5/src/autotest.o  -lm
+Finished building target: lab5.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "lab5.elf" "lab5.bin"
+arm-none-eabi-size "lab5.elf"
+   text	   data	    bss	    dec	    hex	filename
+  61432	   2676	   1208	  65316	   ff24	lab5.elf
+ 
