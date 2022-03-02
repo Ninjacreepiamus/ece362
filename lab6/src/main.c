@@ -32,6 +32,13 @@ void enable_ports(void)
                     | GPIO_MODER_MODER6 | GPIO_MODER_MODER7
                     | GPIO_MODER_MODER8 | GPIO_MODER_MODER9
                     | GPIO_MODER_MODER10);
+    //Set PB0-10 as outputs
+    GPIOB->MODER |= ( GPIO_MODER_MODER0_0 | GPIO_MODER_MODER1_0
+                    | GPIO_MODER_MODER2_0 | GPIO_MODER_MODER3_0
+                    | GPIO_MODER_MODER4_0 | GPIO_MODER_MODER5_0
+                    | GPIO_MODER_MODER6_0 | GPIO_MODER_MODER7_0
+                    | GPIO_MODER_MODER8_0 | GPIO_MODER_MODER9_0
+                    | GPIO_MODER_MODER10_0);
     //Clear PC0-7
     GPIOC->MODER &= ~(GPIO_MODER_MODER0 | GPIO_MODER_MODER1
                     | GPIO_MODER_MODER2 | GPIO_MODER_MODER3
@@ -57,7 +64,13 @@ void enable_ports(void)
 void setup_dma(void)
 {
     RCC->AHBENR |= RCC_AHBENR_DMAEN;
-    ADC1->CFGR1 |= ;
+    DMA1_Channel5->CCR &= ~DMA_CCR_EN;
+    DMA1_Channel5->CPAR = (uint32_t) &(GPIOB -> ODR);
+    DMA1_Channel5->CMAR = (uint32_t) msg;//message base address
+    DMA1_Channel5->CNDTR = 8;
+    DMA1_Channel5->CCR |= DMA_CCR_DIR;
+    DMA1_Channel5->CCR |= DMA_CCR_MINC;
+    DMA1_Channel5->CCR |= DMA_CCR_MSIZE_0 | DMA_CCR_PSIZE_0 | DMA_CCR_CIRC;
 }
 
 //============================================================================
@@ -65,7 +78,7 @@ void setup_dma(void)
 //============================================================================
 void enable_dma(void)
 {
-
+    DMA1_Channel5->CCR |= DMA_CCR_EN;
 }
 
 //============================================================================
@@ -73,7 +86,11 @@ void enable_dma(void)
 //============================================================================
 void init_tim15(void)
 {
-
+    RCC->APB2ENR |= RCC_APB2ENR_TIM15EN;
+    TIM15->PSC = 24000-1;
+    TIM15->ARR = 2-1;
+    TIM15->CR1 |= TIM_CR1_CEN;
+    TIM15->DIER |= TIM_DIER_UDE;
 }
 
 //=============================================================================
@@ -95,13 +112,25 @@ void show_keys(void);     // demonstrate get_key_event()
 //============================================================================
 
 // Write the Timer 7 ISR here.  Be sure to give it the right name.
+void TIM7_IRQHandler() {
+    TIM7->SR &= ~TIM_SR_UIF;
+    int rows = read_rows();
+    update_history(col, rows);
+    col = (col + 1) & 3;
+    drive_column(col);
+}
 
 //============================================================================
 // init_tim7()
 //============================================================================
 void init_tim7(void)
 {
-
+    RCC->APB1ENR |= RCC_APB1ENR_TIM7EN;
+    TIM7->PSC = 24000-1;
+    TIM7->ARR = 2-1;
+    TIM7->CR1 |= TIM_CR1_CEN;
+    TIM7->DIER |= TIM_DIER_UIE;
+    //Set NVIC
 }
 
 //=============================================================================
@@ -240,7 +269,7 @@ int main(void)
     init_tim7();
 
     // Demonstrate part 2
-//#define SHOW_KEY_EVENTS
+#define SHOW_KEY_EVENTS
 #ifdef SHOW_KEY_EVENTS
     show_keys();
 #endif

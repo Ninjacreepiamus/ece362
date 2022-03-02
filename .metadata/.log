@@ -3061,3 +3061,1819 @@ java.io.FileNotFoundException: /home/shay/a/ece362/Ac6/SystemWorkbench/p2/org.ec
 	at org.eclipse.equinox.internal.p2.engine.SimpleProfileRegistry.getProfile(SimpleProfileRegistry.java:179)
 	at org.eclipse.equinox.internal.p2.updatechecker.UpdateChecker.checkForUpdates(UpdateChecker.java:125)
 	at org.eclipse.equinox.internal.p2.updatechecker.UpdateChecker$UpdateCheckThread.run(UpdateChecker.java:74)
+!SESSION 2022-03-01 19:39:16.842 -----------------------------------------------
+eclipse.buildId=4.6.3.M20170301-0400
+java.version=1.8.0_151
+java.vendor=Oracle Corporation
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_US
+Framework arguments:  -pluginCustomization configuration/st_pref.ini -product org.eclipse.epp.package.cpp.product
+Command-line arguments:  -os linux -ws gtk -arch x86_64 -pluginCustomization configuration/st_pref.ini -product org.eclipse.epp.package.cpp.product
+
+!ENTRY org.eclipse.ui 4 4 2022-03-01 19:39:21.949
+!MESSAGE Unable to create part
+!SUBENTRY 1 org.eclipse.core.filebuffers 4 0 2022-03-01 19:39:21.949
+!MESSAGE Cannot determine URI for '/lab5/src/main.s'.
+!STACK 1
+org.eclipse.core.runtime.CoreException: Cannot determine URI for '/lab5/src/main.s'.
+	at org.eclipse.core.internal.filebuffers.ResourceFileBuffer.create(ResourceFileBuffer.java:239)
+	at org.eclipse.core.internal.filebuffers.TextFileBufferManager.connect(TextFileBufferManager.java:112)
+	at org.eclipse.ui.editors.text.TextFileDocumentProvider.createFileInfo(TextFileDocumentProvider.java:560)
+	at org.eclipse.cdt.internal.ui.editor.CDocumentProvider.createFileInfo(CDocumentProvider.java:789)
+	at org.eclipse.ui.editors.text.TextFileDocumentProvider.connect(TextFileDocumentProvider.java:478)
+	at org.eclipse.cdt.internal.ui.editor.CDocumentProvider.connect(CDocumentProvider.java:721)
+	at org.eclipse.ui.texteditor.AbstractTextEditor.doSetInput(AbstractTextEditor.java:4178)
+	at org.eclipse.ui.texteditor.StatusTextEditor.doSetInput(StatusTextEditor.java:229)
+	at org.eclipse.ui.texteditor.AbstractDecoratedTextEditor.doSetInput(AbstractDecoratedTextEditor.java:1466)
+	at org.eclipse.ui.editors.text.TextEditor.doSetInput(TextEditor.java:150)
+	at org.eclipse.ui.texteditor.AbstractTextEditor$5.run(AbstractTextEditor.java:3154)
+	at org.eclipse.ui.internal.WorkbenchWindow.run(WorkbenchWindow.java:2126)
+	at org.eclipse.ui.texteditor.AbstractTextEditor.internalInit(AbstractTextEditor.java:3172)
+	at org.eclipse.ui.texteditor.AbstractTextEditor.init(AbstractTextEditor.java:3197)
+	at org.eclipse.ui.internal.EditorReference.initialize(EditorReference.java:362)
+	at org.eclipse.ui.internal.e4.compatibility.CompatibilityPart.create(CompatibilityPart.java:318)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:55)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.processAnnotated(InjectorImpl.java:966)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.processAnnotated(InjectorImpl.java:931)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.inject(InjectorImpl.java:151)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.internalMake(InjectorImpl.java:375)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.make(InjectorImpl.java:294)
+	at org.eclipse.e4.core.contexts.ContextInjectionFactory.make(ContextInjectionFactory.java:162)
+	at org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.createFromBundle(ReflectionContributionFactory.java:105)
+	at org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.doCreate(ReflectionContributionFactory.java:74)
+	at org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.create(ReflectionContributionFactory.java:56)
+	at org.eclipse.e4.ui.workbench.renderers.swt.ContributedPartRenderer.createWidget(ContributedPartRenderer.java:129)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createWidget(PartRenderingEngine.java:975)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:651)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:757)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.access$0(PartRenderingEngine.java:728)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$2.run(PartRenderingEngine.java:722)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:706)
+	at org.eclipse.e4.ui.workbench.renderers.swt.StackRenderer.showTab(StackRenderer.java:1324)
+	at org.eclipse.e4.ui.workbench.renderers.swt.LazyStackRenderer.postProcess(LazyStackRenderer.java:103)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:669)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:757)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.access$0(PartRenderingEngine.java:728)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$2.run(PartRenderingEngine.java:722)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:706)
+	at org.eclipse.e4.ui.workbench.renderers.swt.SWTPartRenderer.processContents(SWTPartRenderer.java:70)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:665)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$1.run(PartRenderingEngine.java:536)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:520)
+	at org.eclipse.e4.ui.workbench.renderers.swt.ElementReferenceRenderer.createWidget(ElementReferenceRenderer.java:70)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createWidget(PartRenderingEngine.java:975)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:651)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:757)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.access$0(PartRenderingEngine.java:728)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$2.run(PartRenderingEngine.java:722)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:706)
+	at org.eclipse.e4.ui.workbench.renderers.swt.SWTPartRenderer.processContents(SWTPartRenderer.java:70)
+	at org.eclipse.e4.ui.workbench.renderers.swt.SashRenderer.processContents(SashRenderer.java:142)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:665)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:757)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.access$0(PartRenderingEngine.java:728)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$2.run(PartRenderingEngine.java:722)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:706)
+	at org.eclipse.e4.ui.workbench.renderers.swt.SWTPartRenderer.processContents(SWTPartRenderer.java:70)
+	at org.eclipse.e4.ui.workbench.renderers.swt.SashRenderer.processContents(SashRenderer.java:142)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:665)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:757)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.access$0(PartRenderingEngine.java:728)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$2.run(PartRenderingEngine.java:722)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:706)
+	at org.eclipse.e4.ui.workbench.renderers.swt.SWTPartRenderer.processContents(SWTPartRenderer.java:70)
+	at org.eclipse.e4.ui.workbench.renderers.swt.SashRenderer.processContents(SashRenderer.java:142)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:665)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:757)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.access$0(PartRenderingEngine.java:728)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$2.run(PartRenderingEngine.java:722)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:706)
+	at org.eclipse.e4.ui.workbench.renderers.swt.SWTPartRenderer.processContents(SWTPartRenderer.java:70)
+	at org.eclipse.e4.ui.workbench.renderers.swt.PerspectiveRenderer.processContents(PerspectiveRenderer.java:49)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:665)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:757)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.access$0(PartRenderingEngine.java:728)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$2.run(PartRenderingEngine.java:722)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:706)
+	at org.eclipse.e4.ui.workbench.renderers.swt.PerspectiveStackRenderer.showTab(PerspectiveStackRenderer.java:82)
+	at org.eclipse.e4.ui.workbench.renderers.swt.LazyStackRenderer.postProcess(LazyStackRenderer.java:103)
+	at org.eclipse.e4.ui.workbench.renderers.swt.PerspectiveStackRenderer.postProcess(PerspectiveStackRenderer.java:63)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:669)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:757)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.access$0(PartRenderingEngine.java:728)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$2.run(PartRenderingEngine.java:722)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:706)
+	at org.eclipse.e4.ui.workbench.renderers.swt.SWTPartRenderer.processContents(SWTPartRenderer.java:70)
+	at org.eclipse.e4.ui.workbench.renderers.swt.SashRenderer.processContents(SashRenderer.java:142)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:665)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:757)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.access$0(PartRenderingEngine.java:728)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$2.run(PartRenderingEngine.java:722)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:706)
+	at org.eclipse.e4.ui.workbench.renderers.swt.SWTPartRenderer.processContents(SWTPartRenderer.java:70)
+	at org.eclipse.e4.ui.workbench.renderers.swt.WBWRenderer.processContents(WBWRenderer.java:725)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:665)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:757)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.access$0(PartRenderingEngine.java:728)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$2.run(PartRenderingEngine.java:722)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:706)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$4.run(PartRenderingEngine.java:1059)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:336)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1022)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:150)
+	at org.eclipse.ui.internal.Workbench$5.run(Workbench.java:693)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:336)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:610)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:148)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:138)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:388)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:243)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:673)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:610)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1519)
+	at org.eclipse.equinox.launcher.Main.main(Main.java:1492)
+!SUBENTRY 2 org.eclipse.core.filebuffers 4 0 2022-03-01 19:39:21.950
+!MESSAGE Cannot determine URI for '/lab5/src/main.s'.
+
+!ENTRY org.eclipse.equinox.p2.engine 4 0 2022-03-01 19:39:22.456
+!MESSAGE Error parsing profile /home/shay/a/ece362/Ac6/SystemWorkbench/p2/org.eclipse.equinox.p2.engine/profileRegistry/epp.package.cpp.profile/1577997803437.profile.gz.
+!STACK 0
+java.io.FileNotFoundException: /home/shay/a/ece362/Ac6/SystemWorkbench/p2/org.eclipse.equinox.p2.engine/profileRegistry/epp.package.cpp.profile/1577997803437.profile.gz (Permission denied)
+	at java.io.FileInputStream.open0(Native Method)
+	at java.io.FileInputStream.open(FileInputStream.java:195)
+	at java.io.FileInputStream.<init>(FileInputStream.java:138)
+	at org.eclipse.equinox.internal.p2.engine.SimpleProfileRegistry$Parser.parse(SimpleProfileRegistry.java:716)
+	at org.eclipse.equinox.internal.p2.engine.SimpleProfileRegistry.getProfile(SimpleProfileRegistry.java:208)
+	at org.eclipse.equinox.internal.p2.engine.SurrogateProfileHandler.getSharedProfile(SurrogateProfileHandler.java:164)
+	at org.eclipse.equinox.internal.p2.engine.SurrogateProfileHandler.createProfile(SurrogateProfileHandler.java:210)
+	at org.eclipse.oomph.p2.internal.core.LazyProfileRegistry$AdjustingSurrogateProfileHandler.createProfile(LazyProfileRegistry.java:394)
+	at org.eclipse.equinox.internal.p2.engine.SimpleProfileRegistry.createSurrogateProfile(SimpleProfileRegistry.java:337)
+	at org.eclipse.equinox.internal.p2.engine.SimpleProfileRegistry.internalGetProfile(SimpleProfileRegistry.java:258)
+	at org.eclipse.equinox.internal.p2.engine.SimpleProfileRegistry.getProfile(SimpleProfileRegistry.java:179)
+	at org.eclipse.equinox.internal.p2.ui.sdk.scheduler.AutomaticUpdateScheduler.earlyStartup(AutomaticUpdateScheduler.java:73)
+	at org.eclipse.ui.internal.EarlyStartupRunnable.runEarlyStartup(EarlyStartupRunnable.java:77)
+	at org.eclipse.ui.internal.EarlyStartupRunnable.run(EarlyStartupRunnable.java:53)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.ui.internal.Workbench$55.run(Workbench.java:2835)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY fr.ac6.mcu.ide 1 1 2022-03-01 19:39:22.641
+!MESSAGE Started RMI Server, listening on port 21112
+
+!ENTRY org.eclipse.equinox.p2.engine 4 0 2022-03-01 19:39:22.710
+!MESSAGE Error parsing profile /home/shay/a/ece362/Ac6/SystemWorkbench/p2/org.eclipse.equinox.p2.engine/profileRegistry/epp.package.cpp.profile/1577997803437.profile.gz.
+!STACK 0
+java.io.FileNotFoundException: /home/shay/a/ece362/Ac6/SystemWorkbench/p2/org.eclipse.equinox.p2.engine/profileRegistry/epp.package.cpp.profile/1577997803437.profile.gz (Permission denied)
+	at java.io.FileInputStream.open0(Native Method)
+	at java.io.FileInputStream.open(FileInputStream.java:195)
+	at java.io.FileInputStream.<init>(FileInputStream.java:138)
+	at org.eclipse.equinox.internal.p2.engine.SimpleProfileRegistry$Parser.parse(SimpleProfileRegistry.java:716)
+	at org.eclipse.equinox.internal.p2.engine.SimpleProfileRegistry.getProfile(SimpleProfileRegistry.java:208)
+	at org.eclipse.equinox.internal.p2.engine.SurrogateProfileHandler.getSharedProfile(SurrogateProfileHandler.java:164)
+	at org.eclipse.equinox.internal.p2.engine.SurrogateProfileHandler.createProfile(SurrogateProfileHandler.java:210)
+	at org.eclipse.oomph.p2.internal.core.LazyProfileRegistry$AdjustingSurrogateProfileHandler.createProfile(LazyProfileRegistry.java:394)
+	at org.eclipse.equinox.internal.p2.engine.SimpleProfileRegistry.createSurrogateProfile(SimpleProfileRegistry.java:337)
+	at org.eclipse.equinox.internal.p2.engine.SimpleProfileRegistry.internalGetProfile(SimpleProfileRegistry.java:258)
+	at org.eclipse.equinox.internal.p2.engine.SimpleProfileRegistry.getProfile(SimpleProfileRegistry.java:179)
+	at org.eclipse.oomph.p2.internal.core.AgentImpl.getCurrentProfile(AgentImpl.java:369)
+	at org.eclipse.oomph.p2.internal.core.AgentImpl.initializeProvisioningAgent(AgentImpl.java:530)
+	at org.eclipse.oomph.p2.internal.core.AgentManagerImpl.getCurrentAgent(AgentManagerImpl.java:188)
+	at org.eclipse.oomph.p2.core.P2Util.getCurrentProvisioningAgent(P2Util.java:71)
+	at org.eclipse.oomph.setup.internal.core.util.SetupCoreUtil.<clinit>(SetupCoreUtil.java:136)
+	at org.eclipse.oomph.setup.ui.recorder.RecorderManager.<clinit>(RecorderManager.java:119)
+	at org.eclipse.oomph.setup.ui.SetupUIPlugin.performStartup(SetupUIPlugin.java:205)
+	at org.eclipse.oomph.setup.ui.EarlyStartup.earlyStartup(EarlyStartup.java:22)
+	at org.eclipse.ui.internal.EarlyStartupRunnable.runEarlyStartup(EarlyStartupRunnable.java:77)
+	at org.eclipse.ui.internal.EarlyStartupRunnable.run(EarlyStartupRunnable.java:53)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.ui.internal.Workbench$55.run(Workbench.java:2835)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.epp.logging.aeri.ide 2 17 2022-03-01 19:39:22.737
+!MESSAGE Server ‘org.eclipse.epp.logging.aeri.ide.server’ failed with exception: Received fatal alert: handshake_failure. ; version: 2.0.4.v20170307-1435
+!STACK 0
+javax.net.ssl.SSLHandshakeException: Received fatal alert: handshake_failure
+	at sun.security.ssl.Alerts.getSSLException(Alerts.java:192)
+	at sun.security.ssl.Alerts.getSSLException(Alerts.java:154)
+	at sun.security.ssl.SSLSocketImpl.recvAlert(SSLSocketImpl.java:2033)
+	at sun.security.ssl.SSLSocketImpl.readRecord(SSLSocketImpl.java:1135)
+	at sun.security.ssl.SSLSocketImpl.performInitialHandshake(SSLSocketImpl.java:1385)
+	at sun.security.ssl.SSLSocketImpl.startHandshake(SSLSocketImpl.java:1413)
+	at sun.security.ssl.SSLSocketImpl.startHandshake(SSLSocketImpl.java:1397)
+	at org.apache.http.conn.ssl.SSLConnectionSocketFactory.createLayeredSocket(SSLConnectionSocketFactory.java:290)
+	at org.apache.http.conn.ssl.SSLConnectionSocketFactory.connectSocket(SSLConnectionSocketFactory.java:259)
+	at org.apache.http.impl.conn.HttpClientConnectionOperator.connect(HttpClientConnectionOperator.java:125)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:319)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:363)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:219)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:195)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:86)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:108)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:184)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:57)
+	at org.apache.http.client.fluent.Executor.execute(Executor.java:206)
+	at org.eclipse.epp.internal.logging.aeri.ide.server.mars.IO.request(IO.java:206)
+	at org.eclipse.epp.internal.logging.aeri.ide.server.mars.IO.refreshConfiguration(IO.java:68)
+	at org.eclipse.epp.internal.logging.aeri.ide.server.mars.ServerConnection.startUp(ServerConnection.java:124)
+	at com.google.common.util.concurrent.AbstractIdleService$2$1.run(AbstractIdleService.java:54)
+	at com.google.common.util.concurrent.Callables$3.run(Callables.java:93)
+	at java.lang.Thread.run(Thread.java:748)
+
+!ENTRY org.eclipse.equinox.p2.engine 4 0 2022-03-01 19:39:23.036
+!MESSAGE Error parsing profile /home/shay/a/ece362/Ac6/SystemWorkbench/p2/org.eclipse.equinox.p2.engine/profileRegistry/epp.package.cpp.profile/1577997803437.profile.gz.
+!STACK 0
+java.io.FileNotFoundException: /home/shay/a/ece362/Ac6/SystemWorkbench/p2/org.eclipse.equinox.p2.engine/profileRegistry/epp.package.cpp.profile/1577997803437.profile.gz (Permission denied)
+	at java.io.FileInputStream.open0(Native Method)
+	at java.io.FileInputStream.open(FileInputStream.java:195)
+	at java.io.FileInputStream.<init>(FileInputStream.java:138)
+	at org.eclipse.equinox.internal.p2.engine.SimpleProfileRegistry$Parser.parse(SimpleProfileRegistry.java:716)
+	at org.eclipse.equinox.internal.p2.engine.SimpleProfileRegistry.getProfile(SimpleProfileRegistry.java:208)
+	at org.eclipse.equinox.internal.p2.engine.SurrogateProfileHandler.getSharedProfile(SurrogateProfileHandler.java:164)
+	at org.eclipse.equinox.internal.p2.engine.SurrogateProfileHandler.createProfile(SurrogateProfileHandler.java:210)
+	at org.eclipse.oomph.p2.internal.core.LazyProfileRegistry$AdjustingSurrogateProfileHandler.createProfile(LazyProfileRegistry.java:394)
+	at org.eclipse.equinox.internal.p2.engine.SimpleProfileRegistry.createSurrogateProfile(SimpleProfileRegistry.java:337)
+	at org.eclipse.equinox.internal.p2.engine.SimpleProfileRegistry.internalGetProfile(SimpleProfileRegistry.java:258)
+	at org.eclipse.equinox.internal.p2.engine.SimpleProfileRegistry.getProfile(SimpleProfileRegistry.java:179)
+	at org.eclipse.oomph.p2.internal.core.AgentImpl.getCurrentProfile(AgentImpl.java:369)
+	at org.eclipse.oomph.setup.ui.SetupUIPlugin.performStartup(SetupUIPlugin.java:422)
+	at org.eclipse.oomph.setup.ui.SetupUIPlugin.access$5(SetupUIPlugin.java:414)
+	at org.eclipse.oomph.setup.ui.SetupUIPlugin$1$1.run(SetupUIPlugin.java:253)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.equinox.p2.engine 4 0 2022-03-01 19:39:23.038
+!MESSAGE Error parsing profile /home/shay/a/ece362/Ac6/SystemWorkbench/p2/org.eclipse.equinox.p2.engine/profileRegistry/epp.package.cpp.profile/1577997803437.profile.gz.
+!STACK 0
+java.io.FileNotFoundException: /home/shay/a/ece362/Ac6/SystemWorkbench/p2/org.eclipse.equinox.p2.engine/profileRegistry/epp.package.cpp.profile/1577997803437.profile.gz (Permission denied)
+	at java.io.FileInputStream.open0(Native Method)
+	at java.io.FileInputStream.open(FileInputStream.java:195)
+	at java.io.FileInputStream.<init>(FileInputStream.java:138)
+	at org.eclipse.equinox.internal.p2.engine.SimpleProfileRegistry$Parser.parse(SimpleProfileRegistry.java:716)
+	at org.eclipse.equinox.internal.p2.engine.SimpleProfileRegistry.getProfile(SimpleProfileRegistry.java:208)
+	at org.eclipse.equinox.internal.p2.engine.SurrogateProfileHandler.getSharedProfile(SurrogateProfileHandler.java:164)
+	at org.eclipse.equinox.internal.p2.engine.SurrogateProfileHandler.createProfile(SurrogateProfileHandler.java:210)
+	at org.eclipse.oomph.p2.internal.core.LazyProfileRegistry$AdjustingSurrogateProfileHandler.createProfile(LazyProfileRegistry.java:394)
+	at org.eclipse.equinox.internal.p2.engine.SimpleProfileRegistry.createSurrogateProfile(SimpleProfileRegistry.java:337)
+	at org.eclipse.equinox.internal.p2.engine.SimpleProfileRegistry.internalGetProfile(SimpleProfileRegistry.java:258)
+	at org.eclipse.equinox.internal.p2.engine.SimpleProfileRegistry.getProfile(SimpleProfileRegistry.java:179)
+	at org.eclipse.oomph.p2.internal.core.AgentImpl.getCurrentProfile(AgentImpl.java:369)
+	at org.eclipse.oomph.setup.ui.SetupUIPlugin.performStartup(SetupUIPlugin.java:442)
+	at org.eclipse.oomph.setup.ui.SetupUIPlugin.access$5(SetupUIPlugin.java:414)
+	at org.eclipse.oomph.setup.ui.SetupUIPlugin$1$1.run(SetupUIPlugin.java:253)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.oomph.setup.ui 2 0 2022-03-01 19:39:23.040
+!MESSAGE java.lang.NullPointerException
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.oomph.setup.ui.SetupUIPlugin.performStartup(SetupUIPlugin.java:443)
+	at org.eclipse.oomph.setup.ui.SetupUIPlugin.access$5(SetupUIPlugin.java:414)
+	at org.eclipse.oomph.setup.ui.SetupUIPlugin$1$1.run(SetupUIPlugin.java:253)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.equinox.p2.engine 4 0 2022-03-01 19:39:23.191
+!MESSAGE Error parsing profile /home/shay/a/ece362/Ac6/SystemWorkbench/p2/org.eclipse.equinox.p2.engine/profileRegistry/epp.package.cpp.profile/1577997803437.profile.gz.
+!STACK 0
+java.io.FileNotFoundException: /home/shay/a/ece362/Ac6/SystemWorkbench/p2/org.eclipse.equinox.p2.engine/profileRegistry/epp.package.cpp.profile/1577997803437.profile.gz (Permission denied)
+	at java.io.FileInputStream.open0(Native Method)
+	at java.io.FileInputStream.open(FileInputStream.java:195)
+	at java.io.FileInputStream.<init>(FileInputStream.java:138)
+	at org.eclipse.equinox.internal.p2.engine.SimpleProfileRegistry$Parser.parse(SimpleProfileRegistry.java:716)
+	at org.eclipse.equinox.internal.p2.engine.SimpleProfileRegistry.getProfile(SimpleProfileRegistry.java:208)
+	at org.eclipse.equinox.internal.p2.engine.SurrogateProfileHandler.getSharedProfile(SurrogateProfileHandler.java:164)
+	at org.eclipse.equinox.internal.p2.engine.SurrogateProfileHandler.createProfile(SurrogateProfileHandler.java:210)
+	at org.eclipse.oomph.p2.internal.core.LazyProfileRegistry$AdjustingSurrogateProfileHandler.createProfile(LazyProfileRegistry.java:394)
+	at org.eclipse.equinox.internal.p2.engine.SimpleProfileRegistry.createSurrogateProfile(SimpleProfileRegistry.java:337)
+	at org.eclipse.equinox.internal.p2.engine.SimpleProfileRegistry.internalGetProfile(SimpleProfileRegistry.java:258)
+	at org.eclipse.equinox.internal.p2.engine.SimpleProfileRegistry.getProfile(SimpleProfileRegistry.java:179)
+	at org.eclipse.oomph.setup.internal.core.util.SelfProductCatalogURIHandlerImpl.create(SelfProductCatalogURIHandlerImpl.java:189)
+	at org.eclipse.oomph.setup.internal.core.util.SelfProductCatalogURIHandlerImpl.access$0(SelfProductCatalogURIHandlerImpl.java:122)
+	at org.eclipse.oomph.setup.internal.core.util.SelfProductCatalogURIHandlerImpl$1ProductCatalogInput.loadResource(SelfProductCatalogURIHandlerImpl.java:95)
+	at org.eclipse.emf.ecore.xmi.impl.XMLResourceImpl.doLoad(XMLResourceImpl.java:196)
+	at org.eclipse.oomph.base.util.BaseResourceImpl.doLoad(BaseResourceImpl.java:100)
+	at org.eclipse.emf.ecore.resource.impl.ResourceImpl.load(ResourceImpl.java:1518)
+	at org.eclipse.emf.ecore.resource.impl.ResourceImpl.load(ResourceImpl.java:1297)
+	at org.eclipse.oomph.setup.internal.core.util.ResourceMirror$LoadJob.perform(ResourceMirror.java:224)
+	at org.eclipse.oomph.util.WorkerPool$Worker.run(WorkerPool.java:428)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.equinox.p2.engine 4 0 2022-03-01 19:39:23.498
+!MESSAGE Error parsing profile /home/shay/a/ece362/Ac6/SystemWorkbench/p2/org.eclipse.equinox.p2.engine/profileRegistry/epp.package.cpp.profile/1577997803437.profile.gz.
+!STACK 0
+java.io.FileNotFoundException: /home/shay/a/ece362/Ac6/SystemWorkbench/p2/org.eclipse.equinox.p2.engine/profileRegistry/epp.package.cpp.profile/1577997803437.profile.gz (Permission denied)
+	at java.io.FileInputStream.open0(Native Method)
+	at java.io.FileInputStream.open(FileInputStream.java:195)
+	at java.io.FileInputStream.<init>(FileInputStream.java:138)
+	at org.eclipse.equinox.internal.p2.engine.SimpleProfileRegistry$Parser.parse(SimpleProfileRegistry.java:716)
+	at org.eclipse.equinox.internal.p2.engine.SimpleProfileRegistry.getProfile(SimpleProfileRegistry.java:208)
+	at org.eclipse.equinox.internal.p2.engine.SurrogateProfileHandler.getSharedProfile(SurrogateProfileHandler.java:164)
+	at org.eclipse.equinox.internal.p2.engine.SurrogateProfileHandler.createProfile(SurrogateProfileHandler.java:210)
+	at org.eclipse.oomph.p2.internal.core.LazyProfileRegistry$AdjustingSurrogateProfileHandler.createProfile(LazyProfileRegistry.java:394)
+	at org.eclipse.equinox.internal.p2.engine.SimpleProfileRegistry.createSurrogateProfile(SimpleProfileRegistry.java:337)
+	at org.eclipse.equinox.internal.p2.engine.SimpleProfileRegistry.internalGetProfile(SimpleProfileRegistry.java:258)
+	at org.eclipse.equinox.internal.p2.engine.SimpleProfileRegistry.getProfile(SimpleProfileRegistry.java:179)
+	at org.eclipse.oomph.setup.internal.core.util.SelfProductCatalogURIHandlerImpl.create(SelfProductCatalogURIHandlerImpl.java:189)
+	at org.eclipse.oomph.setup.internal.core.util.SelfProductCatalogURIHandlerImpl.access$0(SelfProductCatalogURIHandlerImpl.java:122)
+	at org.eclipse.oomph.setup.internal.core.util.SelfProductCatalogURIHandlerImpl$1ProductCatalogInput.loadResource(SelfProductCatalogURIHandlerImpl.java:95)
+	at org.eclipse.emf.ecore.xmi.impl.XMLResourceImpl.doLoad(XMLResourceImpl.java:196)
+	at org.eclipse.oomph.base.util.BaseResourceImpl.doLoad(BaseResourceImpl.java:100)
+	at org.eclipse.emf.ecore.resource.impl.ResourceImpl.load(ResourceImpl.java:1518)
+	at org.eclipse.emf.ecore.resource.impl.ResourceImpl.load(ResourceImpl.java:1297)
+	at org.eclipse.oomph.setup.internal.core.util.ResourceMirror$LoadJob.perform(ResourceMirror.java:224)
+	at org.eclipse.oomph.util.WorkerPool$Worker.run(WorkerPool.java:428)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.equinox.p2.engine 4 0 2022-03-01 19:39:23.654
+!MESSAGE Error parsing profile /home/shay/a/ece362/Ac6/SystemWorkbench/p2/org.eclipse.equinox.p2.engine/profileRegistry/epp.package.cpp.profile/1577997803437.profile.gz.
+!STACK 0
+java.io.FileNotFoundException: /home/shay/a/ece362/Ac6/SystemWorkbench/p2/org.eclipse.equinox.p2.engine/profileRegistry/epp.package.cpp.profile/1577997803437.profile.gz (Permission denied)
+	at java.io.FileInputStream.open0(Native Method)
+	at java.io.FileInputStream.open(FileInputStream.java:195)
+	at java.io.FileInputStream.<init>(FileInputStream.java:138)
+	at org.eclipse.equinox.internal.p2.engine.SimpleProfileRegistry$Parser.parse(SimpleProfileRegistry.java:716)
+	at org.eclipse.equinox.internal.p2.engine.SimpleProfileRegistry.getProfile(SimpleProfileRegistry.java:208)
+	at org.eclipse.equinox.internal.p2.engine.SurrogateProfileHandler.getSharedProfile(SurrogateProfileHandler.java:164)
+	at org.eclipse.equinox.internal.p2.engine.SurrogateProfileHandler.createProfile(SurrogateProfileHandler.java:210)
+	at org.eclipse.oomph.p2.internal.core.LazyProfileRegistry$AdjustingSurrogateProfileHandler.createProfile(LazyProfileRegistry.java:394)
+	at org.eclipse.equinox.internal.p2.engine.SimpleProfileRegistry.createSurrogateProfile(SimpleProfileRegistry.java:337)
+	at org.eclipse.equinox.internal.p2.engine.SimpleProfileRegistry.internalGetProfile(SimpleProfileRegistry.java:258)
+	at org.eclipse.equinox.internal.p2.engine.SimpleProfileRegistry.getProfile(SimpleProfileRegistry.java:179)
+	at org.eclipse.oomph.p2.internal.core.AgentImpl.getCurrentProfile(AgentImpl.java:369)
+	at org.eclipse.oomph.setup.internal.core.AbstractSetupTaskContext.isSelfHosting(AbstractSetupTaskContext.java:213)
+	at org.eclipse.oomph.setup.p2.impl.P2TaskImpl.isNeeded(P2TaskImpl.java:583)
+	at org.eclipse.oomph.setup.internal.core.SetupTaskPerformer.initNeededSetupTasks(SetupTaskPerformer.java:1809)
+	at org.eclipse.oomph.setup.ui.SetupUIPlugin.performStartup(SetupUIPlugin.java:675)
+	at org.eclipse.oomph.setup.ui.SetupUIPlugin.access$5(SetupUIPlugin.java:414)
+	at org.eclipse.oomph.setup.ui.SetupUIPlugin$1$1.run(SetupUIPlugin.java:253)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.ui 4 4 2022-03-01 19:42:34.177
+!MESSAGE Unable to create part
+!SUBENTRY 1 org.eclipse.core.filebuffers 4 0 2022-03-01 19:42:34.177
+!MESSAGE Cannot determine URI for '/lab5/startup/startup_stm32.s'.
+!STACK 1
+org.eclipse.core.runtime.CoreException: Cannot determine URI for '/lab5/startup/startup_stm32.s'.
+	at org.eclipse.core.internal.filebuffers.ResourceFileBuffer.create(ResourceFileBuffer.java:239)
+	at org.eclipse.core.internal.filebuffers.TextFileBufferManager.connect(TextFileBufferManager.java:112)
+	at org.eclipse.ui.editors.text.TextFileDocumentProvider.createFileInfo(TextFileDocumentProvider.java:560)
+	at org.eclipse.cdt.internal.ui.editor.CDocumentProvider.createFileInfo(CDocumentProvider.java:789)
+	at org.eclipse.ui.editors.text.TextFileDocumentProvider.connect(TextFileDocumentProvider.java:478)
+	at org.eclipse.cdt.internal.ui.editor.CDocumentProvider.connect(CDocumentProvider.java:721)
+	at org.eclipse.ui.texteditor.AbstractTextEditor.doSetInput(AbstractTextEditor.java:4178)
+	at org.eclipse.ui.texteditor.StatusTextEditor.doSetInput(StatusTextEditor.java:229)
+	at org.eclipse.ui.texteditor.AbstractDecoratedTextEditor.doSetInput(AbstractDecoratedTextEditor.java:1466)
+	at org.eclipse.ui.editors.text.TextEditor.doSetInput(TextEditor.java:150)
+	at org.eclipse.ui.texteditor.AbstractTextEditor$5.run(AbstractTextEditor.java:3154)
+	at org.eclipse.jface.operation.ModalContext.runInCurrentThread(ModalContext.java:437)
+	at org.eclipse.jface.operation.ModalContext.run(ModalContext.java:353)
+	at org.eclipse.ui.internal.WorkbenchWindow$14.run(WorkbenchWindow.java:2184)
+	at org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:70)
+	at org.eclipse.ui.internal.WorkbenchWindow.run(WorkbenchWindow.java:2180)
+	at org.eclipse.ui.texteditor.AbstractTextEditor.internalInit(AbstractTextEditor.java:3172)
+	at org.eclipse.ui.texteditor.AbstractTextEditor.init(AbstractTextEditor.java:3197)
+	at org.eclipse.ui.internal.EditorReference.initialize(EditorReference.java:362)
+	at org.eclipse.ui.internal.e4.compatibility.CompatibilityPart.create(CompatibilityPart.java:318)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:55)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.processAnnotated(InjectorImpl.java:966)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.processAnnotated(InjectorImpl.java:931)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.inject(InjectorImpl.java:151)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.internalMake(InjectorImpl.java:375)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.make(InjectorImpl.java:294)
+	at org.eclipse.e4.core.contexts.ContextInjectionFactory.make(ContextInjectionFactory.java:162)
+	at org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.createFromBundle(ReflectionContributionFactory.java:105)
+	at org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.doCreate(ReflectionContributionFactory.java:74)
+	at org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.create(ReflectionContributionFactory.java:56)
+	at org.eclipse.e4.ui.workbench.renderers.swt.ContributedPartRenderer.createWidget(ContributedPartRenderer.java:129)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createWidget(PartRenderingEngine.java:975)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:651)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:757)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.access$0(PartRenderingEngine.java:728)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$2.run(PartRenderingEngine.java:722)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:706)
+	at org.eclipse.e4.ui.internal.workbench.PartServiceImpl$1.handleEvent(PartServiceImpl.java:104)
+	at org.eclipse.e4.ui.services.internal.events.UIEventHandler$1.run(UIEventHandler.java:40)
+	at org.eclipse.swt.widgets.Synchronizer.syncExec(Synchronizer.java:233)
+	at org.eclipse.ui.internal.UISynchronizer.syncExec(UISynchronizer.java:145)
+	at org.eclipse.swt.widgets.Display.syncExec(Display.java:5414)
+	at org.eclipse.e4.ui.internal.workbench.swt.E4Application$1.syncExec(E4Application.java:211)
+	at org.eclipse.e4.ui.services.internal.events.UIEventHandler.handleEvent(UIEventHandler.java:36)
+	at org.eclipse.equinox.internal.event.EventHandlerWrapper.handleEvent(EventHandlerWrapper.java:201)
+	at org.eclipse.equinox.internal.event.EventHandlerTracker.dispatchEvent(EventHandlerTracker.java:197)
+	at org.eclipse.equinox.internal.event.EventHandlerTracker.dispatchEvent(EventHandlerTracker.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.ListenerQueue.dispatchEventSynchronous(ListenerQueue.java:148)
+	at org.eclipse.equinox.internal.event.EventAdminImpl.dispatchEvent(EventAdminImpl.java:135)
+	at org.eclipse.equinox.internal.event.EventAdminImpl.sendEvent(EventAdminImpl.java:78)
+	at org.eclipse.equinox.internal.event.EventComponent.sendEvent(EventComponent.java:39)
+	at org.eclipse.e4.ui.services.internal.events.EventBroker.send(EventBroker.java:94)
+	at org.eclipse.e4.ui.internal.workbench.UIEventPublisher.notifyChanged(UIEventPublisher.java:60)
+	at org.eclipse.emf.common.notify.impl.BasicNotifierImpl.eNotify(BasicNotifierImpl.java:374)
+	at org.eclipse.e4.ui.model.application.ui.impl.ElementContainerImpl.setSelectedElement(ElementContainerImpl.java:173)
+	at org.eclipse.e4.ui.workbench.renderers.swt.StackRenderer$5.widgetSelected(StackRenderer.java:1102)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:249)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:5227)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1340)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1366)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1349)
+	at org.eclipse.swt.widgets.Widget.notifyListeners(Widget.java:1134)
+	at org.eclipse.swt.custom.CTabFolder.setSelection(CTabFolder.java:3167)
+	at org.eclipse.swt.custom.CTabFolder.onMouse(CTabFolder.java:1850)
+	at org.eclipse.swt.custom.CTabFolder$1.handleEvent(CTabFolder.java:333)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:5227)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1340)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4561)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:4151)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$4.run(PartRenderingEngine.java:1121)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:336)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1022)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:150)
+	at org.eclipse.ui.internal.Workbench$5.run(Workbench.java:693)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:336)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:610)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:148)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:138)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:388)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:243)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:673)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:610)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1519)
+	at org.eclipse.equinox.launcher.Main.main(Main.java:1492)
+!SUBENTRY 2 org.eclipse.core.filebuffers 4 0 2022-03-01 19:42:34.178
+!MESSAGE Cannot determine URI for '/lab5/startup/startup_stm32.s'.
+
+!ENTRY org.eclipse.equinox.p2.engine 4 0 2022-03-01 19:44:17.477
+!MESSAGE Error parsing profile /home/shay/a/ece362/Ac6/SystemWorkbench/p2/org.eclipse.equinox.p2.engine/profileRegistry/epp.package.cpp.profile/1577997803437.profile.gz.
+!STACK 0
+java.io.FileNotFoundException: /home/shay/a/ece362/Ac6/SystemWorkbench/p2/org.eclipse.equinox.p2.engine/profileRegistry/epp.package.cpp.profile/1577997803437.profile.gz (Permission denied)
+	at java.io.FileInputStream.open0(Native Method)
+	at java.io.FileInputStream.open(FileInputStream.java:195)
+	at java.io.FileInputStream.<init>(FileInputStream.java:138)
+	at org.eclipse.equinox.internal.p2.engine.SimpleProfileRegistry$Parser.parse(SimpleProfileRegistry.java:716)
+	at org.eclipse.equinox.internal.p2.engine.SimpleProfileRegistry.getProfile(SimpleProfileRegistry.java:208)
+	at org.eclipse.equinox.internal.p2.engine.SurrogateProfileHandler.getSharedProfile(SurrogateProfileHandler.java:164)
+	at org.eclipse.equinox.internal.p2.engine.SurrogateProfileHandler.createProfile(SurrogateProfileHandler.java:210)
+	at org.eclipse.oomph.p2.internal.core.LazyProfileRegistry$AdjustingSurrogateProfileHandler.createProfile(LazyProfileRegistry.java:394)
+	at org.eclipse.equinox.internal.p2.engine.SimpleProfileRegistry.createSurrogateProfile(SimpleProfileRegistry.java:337)
+	at org.eclipse.equinox.internal.p2.engine.SimpleProfileRegistry.internalGetProfile(SimpleProfileRegistry.java:258)
+	at org.eclipse.equinox.internal.p2.engine.SimpleProfileRegistry.getProfile(SimpleProfileRegistry.java:179)
+	at org.eclipse.equinox.internal.p2.updatechecker.UpdateChecker.checkForUpdates(UpdateChecker.java:125)
+	at org.eclipse.equinox.internal.p2.updatechecker.UpdateChecker$UpdateCheckThread.run(UpdateChecker.java:74)
+!SESSION 2022-03-01 19:46:26.637 -----------------------------------------------
+eclipse.buildId=4.6.3.M20170301-0400
+java.version=1.8.0_151
+java.vendor=Oracle Corporation
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_US
+Framework arguments:  -pluginCustomization configuration/st_pref.ini -product org.eclipse.epp.package.cpp.product
+Command-line arguments:  -os linux -ws gtk -arch x86_64 -pluginCustomization configuration/st_pref.ini -product org.eclipse.epp.package.cpp.product
+
+!ENTRY org.eclipse.equinox.p2.engine 4 0 2022-03-01 19:46:32.191
+!MESSAGE Error parsing profile /home/shay/a/ece362/Ac6/SystemWorkbench/p2/org.eclipse.equinox.p2.engine/profileRegistry/epp.package.cpp.profile/1577997803437.profile.gz.
+!STACK 0
+java.io.FileNotFoundException: /home/shay/a/ece362/Ac6/SystemWorkbench/p2/org.eclipse.equinox.p2.engine/profileRegistry/epp.package.cpp.profile/1577997803437.profile.gz (Permission denied)
+	at java.io.FileInputStream.open0(Native Method)
+	at java.io.FileInputStream.open(FileInputStream.java:195)
+	at java.io.FileInputStream.<init>(FileInputStream.java:138)
+	at org.eclipse.equinox.internal.p2.engine.SimpleProfileRegistry$Parser.parse(SimpleProfileRegistry.java:716)
+	at org.eclipse.equinox.internal.p2.engine.SimpleProfileRegistry.getProfile(SimpleProfileRegistry.java:208)
+	at org.eclipse.equinox.internal.p2.engine.SurrogateProfileHandler.getSharedProfile(SurrogateProfileHandler.java:164)
+	at org.eclipse.equinox.internal.p2.engine.SurrogateProfileHandler.createProfile(SurrogateProfileHandler.java:210)
+	at org.eclipse.oomph.p2.internal.core.LazyProfileRegistry$AdjustingSurrogateProfileHandler.createProfile(LazyProfileRegistry.java:394)
+	at org.eclipse.equinox.internal.p2.engine.SimpleProfileRegistry.createSurrogateProfile(SimpleProfileRegistry.java:337)
+	at org.eclipse.equinox.internal.p2.engine.SimpleProfileRegistry.internalGetProfile(SimpleProfileRegistry.java:258)
+	at org.eclipse.equinox.internal.p2.engine.SimpleProfileRegistry.getProfile(SimpleProfileRegistry.java:179)
+	at org.eclipse.equinox.internal.p2.ui.sdk.scheduler.AutomaticUpdateScheduler.earlyStartup(AutomaticUpdateScheduler.java:73)
+	at org.eclipse.ui.internal.EarlyStartupRunnable.runEarlyStartup(EarlyStartupRunnable.java:77)
+	at org.eclipse.ui.internal.EarlyStartupRunnable.run(EarlyStartupRunnable.java:53)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.ui.internal.Workbench$55.run(Workbench.java:2835)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY fr.ac6.mcu.ide 1 1 2022-03-01 19:46:32.287
+!MESSAGE Started RMI Server, listening on port 21112
+
+!ENTRY org.eclipse.equinox.p2.engine 4 0 2022-03-01 19:46:32.371
+!MESSAGE Error parsing profile /home/shay/a/ece362/Ac6/SystemWorkbench/p2/org.eclipse.equinox.p2.engine/profileRegistry/epp.package.cpp.profile/1577997803437.profile.gz.
+!STACK 0
+java.io.FileNotFoundException: /home/shay/a/ece362/Ac6/SystemWorkbench/p2/org.eclipse.equinox.p2.engine/profileRegistry/epp.package.cpp.profile/1577997803437.profile.gz (Permission denied)
+	at java.io.FileInputStream.open0(Native Method)
+	at java.io.FileInputStream.open(FileInputStream.java:195)
+	at java.io.FileInputStream.<init>(FileInputStream.java:138)
+	at org.eclipse.equinox.internal.p2.engine.SimpleProfileRegistry$Parser.parse(SimpleProfileRegistry.java:716)
+	at org.eclipse.equinox.internal.p2.engine.SimpleProfileRegistry.getProfile(SimpleProfileRegistry.java:208)
+	at org.eclipse.equinox.internal.p2.engine.SurrogateProfileHandler.getSharedProfile(SurrogateProfileHandler.java:164)
+	at org.eclipse.equinox.internal.p2.engine.SurrogateProfileHandler.createProfile(SurrogateProfileHandler.java:210)
+	at org.eclipse.oomph.p2.internal.core.LazyProfileRegistry$AdjustingSurrogateProfileHandler.createProfile(LazyProfileRegistry.java:394)
+	at org.eclipse.equinox.internal.p2.engine.SimpleProfileRegistry.createSurrogateProfile(SimpleProfileRegistry.java:337)
+	at org.eclipse.equinox.internal.p2.engine.SimpleProfileRegistry.internalGetProfile(SimpleProfileRegistry.java:258)
+	at org.eclipse.equinox.internal.p2.engine.SimpleProfileRegistry.getProfile(SimpleProfileRegistry.java:179)
+	at org.eclipse.oomph.p2.internal.core.AgentImpl.getCurrentProfile(AgentImpl.java:369)
+	at org.eclipse.oomph.p2.internal.core.AgentImpl.initializeProvisioningAgent(AgentImpl.java:530)
+	at org.eclipse.oomph.p2.internal.core.AgentManagerImpl.getCurrentAgent(AgentManagerImpl.java:188)
+	at org.eclipse.oomph.p2.core.P2Util.getCurrentProvisioningAgent(P2Util.java:71)
+	at org.eclipse.oomph.setup.internal.core.util.SetupCoreUtil.<clinit>(SetupCoreUtil.java:136)
+	at org.eclipse.oomph.setup.ui.recorder.RecorderManager.<clinit>(RecorderManager.java:119)
+	at org.eclipse.oomph.setup.ui.SetupUIPlugin.performStartup(SetupUIPlugin.java:205)
+	at org.eclipse.oomph.setup.ui.EarlyStartup.earlyStartup(EarlyStartup.java:22)
+	at org.eclipse.ui.internal.EarlyStartupRunnable.runEarlyStartup(EarlyStartupRunnable.java:77)
+	at org.eclipse.ui.internal.EarlyStartupRunnable.run(EarlyStartupRunnable.java:53)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.ui.internal.Workbench$55.run(Workbench.java:2835)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.epp.logging.aeri.ide 2 17 2022-03-01 19:46:32.486
+!MESSAGE Server ‘org.eclipse.epp.logging.aeri.ide.server’ failed with exception: Received fatal alert: handshake_failure. ; version: 2.0.4.v20170307-1435
+!STACK 0
+javax.net.ssl.SSLHandshakeException: Received fatal alert: handshake_failure
+	at sun.security.ssl.Alerts.getSSLException(Alerts.java:192)
+	at sun.security.ssl.Alerts.getSSLException(Alerts.java:154)
+	at sun.security.ssl.SSLSocketImpl.recvAlert(SSLSocketImpl.java:2033)
+	at sun.security.ssl.SSLSocketImpl.readRecord(SSLSocketImpl.java:1135)
+	at sun.security.ssl.SSLSocketImpl.performInitialHandshake(SSLSocketImpl.java:1385)
+	at sun.security.ssl.SSLSocketImpl.startHandshake(SSLSocketImpl.java:1413)
+	at sun.security.ssl.SSLSocketImpl.startHandshake(SSLSocketImpl.java:1397)
+	at org.apache.http.conn.ssl.SSLConnectionSocketFactory.createLayeredSocket(SSLConnectionSocketFactory.java:290)
+	at org.apache.http.conn.ssl.SSLConnectionSocketFactory.connectSocket(SSLConnectionSocketFactory.java:259)
+	at org.apache.http.impl.conn.HttpClientConnectionOperator.connect(HttpClientConnectionOperator.java:125)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:319)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:363)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:219)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:195)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:86)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:108)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:184)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:57)
+	at org.apache.http.client.fluent.Executor.execute(Executor.java:206)
+	at org.eclipse.epp.internal.logging.aeri.ide.server.mars.IO.request(IO.java:206)
+	at org.eclipse.epp.internal.logging.aeri.ide.server.mars.IO.refreshConfiguration(IO.java:68)
+	at org.eclipse.epp.internal.logging.aeri.ide.server.mars.ServerConnection.startUp(ServerConnection.java:124)
+	at com.google.common.util.concurrent.AbstractIdleService$2$1.run(AbstractIdleService.java:54)
+	at com.google.common.util.concurrent.Callables$3.run(Callables.java:93)
+	at java.lang.Thread.run(Thread.java:748)
+
+!ENTRY org.eclipse.equinox.p2.engine 4 0 2022-03-01 19:46:32.549
+!MESSAGE Error parsing profile /home/shay/a/ece362/Ac6/SystemWorkbench/p2/org.eclipse.equinox.p2.engine/profileRegistry/epp.package.cpp.profile/1577997803437.profile.gz.
+!STACK 0
+java.io.FileNotFoundException: /home/shay/a/ece362/Ac6/SystemWorkbench/p2/org.eclipse.equinox.p2.engine/profileRegistry/epp.package.cpp.profile/1577997803437.profile.gz (Permission denied)
+	at java.io.FileInputStream.open0(Native Method)
+	at java.io.FileInputStream.open(FileInputStream.java:195)
+	at java.io.FileInputStream.<init>(FileInputStream.java:138)
+	at org.eclipse.equinox.internal.p2.engine.SimpleProfileRegistry$Parser.parse(SimpleProfileRegistry.java:716)
+	at org.eclipse.equinox.internal.p2.engine.SimpleProfileRegistry.getProfile(SimpleProfileRegistry.java:208)
+	at org.eclipse.equinox.internal.p2.engine.SurrogateProfileHandler.getSharedProfile(SurrogateProfileHandler.java:164)
+	at org.eclipse.equinox.internal.p2.engine.SurrogateProfileHandler.createProfile(SurrogateProfileHandler.java:210)
+	at org.eclipse.oomph.p2.internal.core.LazyProfileRegistry$AdjustingSurrogateProfileHandler.createProfile(LazyProfileRegistry.java:394)
+	at org.eclipse.equinox.internal.p2.engine.SimpleProfileRegistry.createSurrogateProfile(SimpleProfileRegistry.java:337)
+	at org.eclipse.equinox.internal.p2.engine.SimpleProfileRegistry.internalGetProfile(SimpleProfileRegistry.java:258)
+	at org.eclipse.equinox.internal.p2.engine.SimpleProfileRegistry.getProfile(SimpleProfileRegistry.java:179)
+	at org.eclipse.oomph.p2.internal.core.AgentImpl.getCurrentProfile(AgentImpl.java:369)
+	at org.eclipse.oomph.setup.ui.SetupUIPlugin.performStartup(SetupUIPlugin.java:422)
+	at org.eclipse.oomph.setup.ui.SetupUIPlugin.access$5(SetupUIPlugin.java:414)
+	at org.eclipse.oomph.setup.ui.SetupUIPlugin$1$1.run(SetupUIPlugin.java:253)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.equinox.p2.engine 4 0 2022-03-01 19:46:32.552
+!MESSAGE Error parsing profile /home/shay/a/ece362/Ac6/SystemWorkbench/p2/org.eclipse.equinox.p2.engine/profileRegistry/epp.package.cpp.profile/1577997803437.profile.gz.
+!STACK 0
+java.io.FileNotFoundException: /home/shay/a/ece362/Ac6/SystemWorkbench/p2/org.eclipse.equinox.p2.engine/profileRegistry/epp.package.cpp.profile/1577997803437.profile.gz (Permission denied)
+	at java.io.FileInputStream.open0(Native Method)
+	at java.io.FileInputStream.open(FileInputStream.java:195)
+	at java.io.FileInputStream.<init>(FileInputStream.java:138)
+	at org.eclipse.equinox.internal.p2.engine.SimpleProfileRegistry$Parser.parse(SimpleProfileRegistry.java:716)
+	at org.eclipse.equinox.internal.p2.engine.SimpleProfileRegistry.getProfile(SimpleProfileRegistry.java:208)
+	at org.eclipse.equinox.internal.p2.engine.SurrogateProfileHandler.getSharedProfile(SurrogateProfileHandler.java:164)
+	at org.eclipse.equinox.internal.p2.engine.SurrogateProfileHandler.createProfile(SurrogateProfileHandler.java:210)
+	at org.eclipse.oomph.p2.internal.core.LazyProfileRegistry$AdjustingSurrogateProfileHandler.createProfile(LazyProfileRegistry.java:394)
+	at org.eclipse.equinox.internal.p2.engine.SimpleProfileRegistry.createSurrogateProfile(SimpleProfileRegistry.java:337)
+	at org.eclipse.equinox.internal.p2.engine.SimpleProfileRegistry.internalGetProfile(SimpleProfileRegistry.java:258)
+	at org.eclipse.equinox.internal.p2.engine.SimpleProfileRegistry.getProfile(SimpleProfileRegistry.java:179)
+	at org.eclipse.oomph.p2.internal.core.AgentImpl.getCurrentProfile(AgentImpl.java:369)
+	at org.eclipse.oomph.setup.ui.SetupUIPlugin.performStartup(SetupUIPlugin.java:442)
+	at org.eclipse.oomph.setup.ui.SetupUIPlugin.access$5(SetupUIPlugin.java:414)
+	at org.eclipse.oomph.setup.ui.SetupUIPlugin$1$1.run(SetupUIPlugin.java:253)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.oomph.setup.ui 2 0 2022-03-01 19:46:32.553
+!MESSAGE java.lang.NullPointerException
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.oomph.setup.ui.SetupUIPlugin.performStartup(SetupUIPlugin.java:443)
+	at org.eclipse.oomph.setup.ui.SetupUIPlugin.access$5(SetupUIPlugin.java:414)
+	at org.eclipse.oomph.setup.ui.SetupUIPlugin$1$1.run(SetupUIPlugin.java:253)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.equinox.p2.engine 4 0 2022-03-01 19:46:32.709
+!MESSAGE Error parsing profile /home/shay/a/ece362/Ac6/SystemWorkbench/p2/org.eclipse.equinox.p2.engine/profileRegistry/epp.package.cpp.profile/1577997803437.profile.gz.
+!STACK 0
+java.io.FileNotFoundException: /home/shay/a/ece362/Ac6/SystemWorkbench/p2/org.eclipse.equinox.p2.engine/profileRegistry/epp.package.cpp.profile/1577997803437.profile.gz (Permission denied)
+	at java.io.FileInputStream.open0(Native Method)
+	at java.io.FileInputStream.open(FileInputStream.java:195)
+	at java.io.FileInputStream.<init>(FileInputStream.java:138)
+	at org.eclipse.equinox.internal.p2.engine.SimpleProfileRegistry$Parser.parse(SimpleProfileRegistry.java:716)
+	at org.eclipse.equinox.internal.p2.engine.SimpleProfileRegistry.getProfile(SimpleProfileRegistry.java:208)
+	at org.eclipse.equinox.internal.p2.engine.SurrogateProfileHandler.getSharedProfile(SurrogateProfileHandler.java:164)
+	at org.eclipse.equinox.internal.p2.engine.SurrogateProfileHandler.createProfile(SurrogateProfileHandler.java:210)
+	at org.eclipse.oomph.p2.internal.core.LazyProfileRegistry$AdjustingSurrogateProfileHandler.createProfile(LazyProfileRegistry.java:394)
+	at org.eclipse.equinox.internal.p2.engine.SimpleProfileRegistry.createSurrogateProfile(SimpleProfileRegistry.java:337)
+	at org.eclipse.equinox.internal.p2.engine.SimpleProfileRegistry.internalGetProfile(SimpleProfileRegistry.java:258)
+	at org.eclipse.equinox.internal.p2.engine.SimpleProfileRegistry.getProfile(SimpleProfileRegistry.java:179)
+	at org.eclipse.oomph.setup.internal.core.util.SelfProductCatalogURIHandlerImpl.create(SelfProductCatalogURIHandlerImpl.java:189)
+	at org.eclipse.oomph.setup.internal.core.util.SelfProductCatalogURIHandlerImpl.access$0(SelfProductCatalogURIHandlerImpl.java:122)
+	at org.eclipse.oomph.setup.internal.core.util.SelfProductCatalogURIHandlerImpl$1ProductCatalogInput.loadResource(SelfProductCatalogURIHandlerImpl.java:95)
+	at org.eclipse.emf.ecore.xmi.impl.XMLResourceImpl.doLoad(XMLResourceImpl.java:196)
+	at org.eclipse.oomph.base.util.BaseResourceImpl.doLoad(BaseResourceImpl.java:100)
+	at org.eclipse.emf.ecore.resource.impl.ResourceImpl.load(ResourceImpl.java:1518)
+	at org.eclipse.emf.ecore.resource.impl.ResourceImpl.load(ResourceImpl.java:1297)
+	at org.eclipse.oomph.setup.internal.core.util.ResourceMirror$LoadJob.perform(ResourceMirror.java:224)
+	at org.eclipse.oomph.util.WorkerPool$Worker.run(WorkerPool.java:428)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.equinox.p2.engine 4 0 2022-03-01 19:46:32.950
+!MESSAGE Error parsing profile /home/shay/a/ece362/Ac6/SystemWorkbench/p2/org.eclipse.equinox.p2.engine/profileRegistry/epp.package.cpp.profile/1577997803437.profile.gz.
+!STACK 0
+java.io.FileNotFoundException: /home/shay/a/ece362/Ac6/SystemWorkbench/p2/org.eclipse.equinox.p2.engine/profileRegistry/epp.package.cpp.profile/1577997803437.profile.gz (Permission denied)
+	at java.io.FileInputStream.open0(Native Method)
+	at java.io.FileInputStream.open(FileInputStream.java:195)
+	at java.io.FileInputStream.<init>(FileInputStream.java:138)
+	at org.eclipse.equinox.internal.p2.engine.SimpleProfileRegistry$Parser.parse(SimpleProfileRegistry.java:716)
+	at org.eclipse.equinox.internal.p2.engine.SimpleProfileRegistry.getProfile(SimpleProfileRegistry.java:208)
+	at org.eclipse.equinox.internal.p2.engine.SurrogateProfileHandler.getSharedProfile(SurrogateProfileHandler.java:164)
+	at org.eclipse.equinox.internal.p2.engine.SurrogateProfileHandler.createProfile(SurrogateProfileHandler.java:210)
+	at org.eclipse.oomph.p2.internal.core.LazyProfileRegistry$AdjustingSurrogateProfileHandler.createProfile(LazyProfileRegistry.java:394)
+	at org.eclipse.equinox.internal.p2.engine.SimpleProfileRegistry.createSurrogateProfile(SimpleProfileRegistry.java:337)
+	at org.eclipse.equinox.internal.p2.engine.SimpleProfileRegistry.internalGetProfile(SimpleProfileRegistry.java:258)
+	at org.eclipse.equinox.internal.p2.engine.SimpleProfileRegistry.getProfile(SimpleProfileRegistry.java:179)
+	at org.eclipse.oomph.setup.internal.core.util.SelfProductCatalogURIHandlerImpl.create(SelfProductCatalogURIHandlerImpl.java:189)
+	at org.eclipse.oomph.setup.internal.core.util.SelfProductCatalogURIHandlerImpl.access$0(SelfProductCatalogURIHandlerImpl.java:122)
+	at org.eclipse.oomph.setup.internal.core.util.SelfProductCatalogURIHandlerImpl$1ProductCatalogInput.loadResource(SelfProductCatalogURIHandlerImpl.java:95)
+	at org.eclipse.emf.ecore.xmi.impl.XMLResourceImpl.doLoad(XMLResourceImpl.java:196)
+	at org.eclipse.oomph.base.util.BaseResourceImpl.doLoad(BaseResourceImpl.java:100)
+	at org.eclipse.emf.ecore.resource.impl.ResourceImpl.load(ResourceImpl.java:1518)
+	at org.eclipse.emf.ecore.resource.impl.ResourceImpl.load(ResourceImpl.java:1297)
+	at org.eclipse.oomph.setup.internal.core.util.ResourceMirror$LoadJob.perform(ResourceMirror.java:224)
+	at org.eclipse.oomph.util.WorkerPool$Worker.run(WorkerPool.java:428)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.equinox.p2.engine 4 0 2022-03-01 19:46:33.390
+!MESSAGE Error parsing profile /home/shay/a/ece362/Ac6/SystemWorkbench/p2/org.eclipse.equinox.p2.engine/profileRegistry/epp.package.cpp.profile/1577997803437.profile.gz.
+!STACK 0
+java.io.FileNotFoundException: /home/shay/a/ece362/Ac6/SystemWorkbench/p2/org.eclipse.equinox.p2.engine/profileRegistry/epp.package.cpp.profile/1577997803437.profile.gz (Permission denied)
+	at java.io.FileInputStream.open0(Native Method)
+	at java.io.FileInputStream.open(FileInputStream.java:195)
+	at java.io.FileInputStream.<init>(FileInputStream.java:138)
+	at org.eclipse.equinox.internal.p2.engine.SimpleProfileRegistry$Parser.parse(SimpleProfileRegistry.java:716)
+	at org.eclipse.equinox.internal.p2.engine.SimpleProfileRegistry.getProfile(SimpleProfileRegistry.java:208)
+	at org.eclipse.equinox.internal.p2.engine.SurrogateProfileHandler.getSharedProfile(SurrogateProfileHandler.java:164)
+	at org.eclipse.equinox.internal.p2.engine.SurrogateProfileHandler.createProfile(SurrogateProfileHandler.java:210)
+	at org.eclipse.oomph.p2.internal.core.LazyProfileRegistry$AdjustingSurrogateProfileHandler.createProfile(LazyProfileRegistry.java:394)
+	at org.eclipse.equinox.internal.p2.engine.SimpleProfileRegistry.createSurrogateProfile(SimpleProfileRegistry.java:337)
+	at org.eclipse.equinox.internal.p2.engine.SimpleProfileRegistry.internalGetProfile(SimpleProfileRegistry.java:258)
+	at org.eclipse.equinox.internal.p2.engine.SimpleProfileRegistry.getProfile(SimpleProfileRegistry.java:179)
+	at org.eclipse.oomph.p2.internal.core.AgentImpl.getCurrentProfile(AgentImpl.java:369)
+	at org.eclipse.oomph.setup.internal.core.AbstractSetupTaskContext.isSelfHosting(AbstractSetupTaskContext.java:213)
+	at org.eclipse.oomph.setup.p2.impl.P2TaskImpl.isNeeded(P2TaskImpl.java:583)
+	at org.eclipse.oomph.setup.internal.core.SetupTaskPerformer.initNeededSetupTasks(SetupTaskPerformer.java:1809)
+	at org.eclipse.oomph.setup.ui.SetupUIPlugin.performStartup(SetupUIPlugin.java:675)
+	at org.eclipse.oomph.setup.ui.SetupUIPlugin.access$5(SetupUIPlugin.java:414)
+	at org.eclipse.oomph.setup.ui.SetupUIPlugin$1$1.run(SetupUIPlugin.java:253)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.core.resources 2 567 2022-03-01 19:47:01.400
+!MESSAGE Failure occurred reading .project file.
+!SUBENTRY 1 org.eclipse.core.resources 2 567 2022-03-01 19:47:01.400
+!MESSAGE For input string: ""
+!STACK 0
+java.lang.NumberFormatException: For input string: ""
+	at java.lang.NumberFormatException.forInputString(NumberFormatException.java:65)
+	at java.lang.Integer.parseInt(Integer.java:592)
+	at java.lang.Integer.parseInt(Integer.java:615)
+	at org.eclipse.core.internal.resources.ProjectDescriptionReader.endLinkType(ProjectDescriptionReader.java:769)
+	at org.eclipse.core.internal.resources.ProjectDescriptionReader.endElement(ProjectDescriptionReader.java:388)
+	at com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser.endElement(AbstractSAXParser.java:609)
+	at com.sun.org.apache.xerces.internal.parsers.AbstractXMLDocumentParser.emptyElement(AbstractXMLDocumentParser.java:183)
+	at com.sun.org.apache.xerces.internal.impl.XMLNSDocumentScannerImpl.scanStartElement(XMLNSDocumentScannerImpl.java:351)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl$FragmentContentDriver.next(XMLDocumentFragmentScannerImpl.java:2784)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl.next(XMLDocumentScannerImpl.java:602)
+	at com.sun.org.apache.xerces.internal.impl.XMLNSDocumentScannerImpl.next(XMLNSDocumentScannerImpl.java:112)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanDocument(XMLDocumentFragmentScannerImpl.java:505)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:841)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:770)
+	at com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(XMLParser.java:141)
+	at com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser.parse(AbstractSAXParser.java:1213)
+	at com.sun.org.apache.xerces.internal.jaxp.SAXParserImpl$JAXPSAXParser.parse(SAXParserImpl.java:643)
+	at com.sun.org.apache.xerces.internal.jaxp.SAXParserImpl.parse(SAXParserImpl.java:327)
+	at org.eclipse.core.internal.resources.ProjectDescriptionReader.read(ProjectDescriptionReader.java:926)
+	at org.eclipse.core.internal.resources.ProjectDescriptionReader.read(ProjectDescriptionReader.java:958)
+	at org.eclipse.core.internal.resources.Workspace.loadProjectDescription(Workspace.java:1919)
+	at org.eclipse.ui.internal.wizards.datatransfer.SmartImportJob.createOrImportProject(SmartImportJob.java:540)
+	at org.eclipse.ui.internal.wizards.datatransfer.SmartImportJob.toExistingOrNewProject(SmartImportJob.java:505)
+	at org.eclipse.ui.internal.wizards.datatransfer.SmartImportJob.run(SmartImportJob.java:192)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 1 org.eclipse.core.resources 2 567 2022-03-01 19:47:01.400
+!MESSAGE Empty name detected for linked resource with type '1' and location ''.
+
+!ENTRY org.eclipse.core.resources 2 567 2022-03-01 19:47:01.412
+!MESSAGE Failure occurred reading .project file.
+!SUBENTRY 1 org.eclipse.core.resources 2 567 2022-03-01 19:47:01.412
+!MESSAGE Could not read metadata for 'STM32F030'.
+!STACK 0
+java.lang.NumberFormatException: For input string: ""
+	at java.lang.NumberFormatException.forInputString(NumberFormatException.java:65)
+	at java.lang.Integer.parseInt(Integer.java:592)
+	at java.lang.Integer.parseInt(Integer.java:615)
+	at org.eclipse.core.internal.resources.ProjectDescriptionReader.endLinkType(ProjectDescriptionReader.java:769)
+	at org.eclipse.core.internal.resources.ProjectDescriptionReader.endElement(ProjectDescriptionReader.java:388)
+	at com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser.endElement(AbstractSAXParser.java:609)
+	at com.sun.org.apache.xerces.internal.parsers.AbstractXMLDocumentParser.emptyElement(AbstractXMLDocumentParser.java:183)
+	at com.sun.org.apache.xerces.internal.impl.XMLNSDocumentScannerImpl.scanStartElement(XMLNSDocumentScannerImpl.java:351)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl$FragmentContentDriver.next(XMLDocumentFragmentScannerImpl.java:2784)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl.next(XMLDocumentScannerImpl.java:602)
+	at com.sun.org.apache.xerces.internal.impl.XMLNSDocumentScannerImpl.next(XMLNSDocumentScannerImpl.java:112)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanDocument(XMLDocumentFragmentScannerImpl.java:505)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:841)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:770)
+	at com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(XMLParser.java:141)
+	at com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser.parse(AbstractSAXParser.java:1213)
+	at com.sun.org.apache.xerces.internal.jaxp.SAXParserImpl$JAXPSAXParser.parse(SAXParserImpl.java:643)
+	at com.sun.org.apache.xerces.internal.jaxp.SAXParserImpl.parse(SAXParserImpl.java:327)
+	at org.eclipse.core.internal.resources.ProjectDescriptionReader.read(ProjectDescriptionReader.java:926)
+	at org.eclipse.core.internal.localstore.FileSystemResourceManager.read(FileSystemResourceManager.java:896)
+	at org.eclipse.core.internal.resources.Project.updateDescription(Project.java:1328)
+	at org.eclipse.core.internal.resources.Project.create(Project.java:284)
+	at org.eclipse.core.internal.resources.Project.create(Project.java:247)
+	at org.eclipse.ui.internal.wizards.datatransfer.SmartImportJob.createOrImportProject(SmartImportJob.java:557)
+	at org.eclipse.ui.internal.wizards.datatransfer.SmartImportJob.toExistingOrNewProject(SmartImportJob.java:505)
+	at org.eclipse.ui.internal.wizards.datatransfer.SmartImportJob.run(SmartImportJob.java:192)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 1 org.eclipse.core.resources 2 567 2022-03-01 19:47:01.413
+!MESSAGE Empty name detected for linked resource with type '1' and location ''.
+
+!ENTRY org.eclipse.core.resources 2 567 2022-03-01 19:47:01.463
+!MESSAGE Failure occurred reading .project file.
+!SUBENTRY 1 org.eclipse.core.resources 2 567 2022-03-01 19:47:01.463
+!MESSAGE For input string: ""
+!STACK 0
+java.lang.NumberFormatException: For input string: ""
+	at java.lang.NumberFormatException.forInputString(NumberFormatException.java:65)
+	at java.lang.Integer.parseInt(Integer.java:592)
+	at java.lang.Integer.parseInt(Integer.java:615)
+	at org.eclipse.core.internal.resources.ProjectDescriptionReader.endLinkType(ProjectDescriptionReader.java:769)
+	at org.eclipse.core.internal.resources.ProjectDescriptionReader.endElement(ProjectDescriptionReader.java:388)
+	at com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser.endElement(AbstractSAXParser.java:609)
+	at com.sun.org.apache.xerces.internal.parsers.AbstractXMLDocumentParser.emptyElement(AbstractXMLDocumentParser.java:183)
+	at com.sun.org.apache.xerces.internal.impl.XMLNSDocumentScannerImpl.scanStartElement(XMLNSDocumentScannerImpl.java:351)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl$FragmentContentDriver.next(XMLDocumentFragmentScannerImpl.java:2784)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl.next(XMLDocumentScannerImpl.java:602)
+	at com.sun.org.apache.xerces.internal.impl.XMLNSDocumentScannerImpl.next(XMLNSDocumentScannerImpl.java:112)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanDocument(XMLDocumentFragmentScannerImpl.java:505)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:841)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:770)
+	at com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(XMLParser.java:141)
+	at com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser.parse(AbstractSAXParser.java:1213)
+	at com.sun.org.apache.xerces.internal.jaxp.SAXParserImpl$JAXPSAXParser.parse(SAXParserImpl.java:643)
+	at com.sun.org.apache.xerces.internal.jaxp.SAXParserImpl.parse(SAXParserImpl.java:327)
+	at org.eclipse.core.internal.resources.ProjectDescriptionReader.read(ProjectDescriptionReader.java:926)
+	at org.eclipse.core.internal.resources.ProjectDescriptionReader.read(ProjectDescriptionReader.java:958)
+	at org.eclipse.core.internal.resources.Workspace.loadProjectDescription(Workspace.java:1919)
+	at org.eclipse.ui.internal.wizards.datatransfer.SmartImportJob.createOrImportProject(SmartImportJob.java:540)
+	at org.eclipse.ui.internal.wizards.datatransfer.SmartImportJob.toExistingOrNewProject(SmartImportJob.java:505)
+	at org.eclipse.ui.internal.wizards.datatransfer.SmartImportJob.run(SmartImportJob.java:192)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 1 org.eclipse.core.resources 2 567 2022-03-01 19:47:01.463
+!MESSAGE Empty name detected for linked resource with type '1' and location ''.
+
+!ENTRY org.eclipse.core.resources 2 567 2022-03-01 19:47:01.473
+!MESSAGE Failure occurred reading .project file.
+!SUBENTRY 1 org.eclipse.core.resources 2 567 2022-03-01 19:47:01.473
+!MESSAGE Could not read metadata for 'STM32F031'.
+!STACK 0
+java.lang.NumberFormatException: For input string: ""
+	at java.lang.NumberFormatException.forInputString(NumberFormatException.java:65)
+	at java.lang.Integer.parseInt(Integer.java:592)
+	at java.lang.Integer.parseInt(Integer.java:615)
+	at org.eclipse.core.internal.resources.ProjectDescriptionReader.endLinkType(ProjectDescriptionReader.java:769)
+	at org.eclipse.core.internal.resources.ProjectDescriptionReader.endElement(ProjectDescriptionReader.java:388)
+	at com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser.endElement(AbstractSAXParser.java:609)
+	at com.sun.org.apache.xerces.internal.parsers.AbstractXMLDocumentParser.emptyElement(AbstractXMLDocumentParser.java:183)
+	at com.sun.org.apache.xerces.internal.impl.XMLNSDocumentScannerImpl.scanStartElement(XMLNSDocumentScannerImpl.java:351)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl$FragmentContentDriver.next(XMLDocumentFragmentScannerImpl.java:2784)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl.next(XMLDocumentScannerImpl.java:602)
+	at com.sun.org.apache.xerces.internal.impl.XMLNSDocumentScannerImpl.next(XMLNSDocumentScannerImpl.java:112)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanDocument(XMLDocumentFragmentScannerImpl.java:505)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:841)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:770)
+	at com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(XMLParser.java:141)
+	at com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser.parse(AbstractSAXParser.java:1213)
+	at com.sun.org.apache.xerces.internal.jaxp.SAXParserImpl$JAXPSAXParser.parse(SAXParserImpl.java:643)
+	at com.sun.org.apache.xerces.internal.jaxp.SAXParserImpl.parse(SAXParserImpl.java:327)
+	at org.eclipse.core.internal.resources.ProjectDescriptionReader.read(ProjectDescriptionReader.java:926)
+	at org.eclipse.core.internal.localstore.FileSystemResourceManager.read(FileSystemResourceManager.java:896)
+	at org.eclipse.core.internal.resources.Project.updateDescription(Project.java:1328)
+	at org.eclipse.core.internal.resources.Project.create(Project.java:284)
+	at org.eclipse.core.internal.resources.Project.create(Project.java:247)
+	at org.eclipse.ui.internal.wizards.datatransfer.SmartImportJob.createOrImportProject(SmartImportJob.java:557)
+	at org.eclipse.ui.internal.wizards.datatransfer.SmartImportJob.toExistingOrNewProject(SmartImportJob.java:505)
+	at org.eclipse.ui.internal.wizards.datatransfer.SmartImportJob.run(SmartImportJob.java:192)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 1 org.eclipse.core.resources 2 567 2022-03-01 19:47:01.473
+!MESSAGE Empty name detected for linked resource with type '1' and location ''.
+
+!ENTRY org.eclipse.core.resources 2 567 2022-03-01 19:47:01.732
+!MESSAGE Failure occurred reading .project file.
+!SUBENTRY 1 org.eclipse.core.resources 2 567 2022-03-01 19:47:01.732
+!MESSAGE For input string: ""
+!STACK 0
+java.lang.NumberFormatException: For input string: ""
+	at java.lang.NumberFormatException.forInputString(NumberFormatException.java:65)
+	at java.lang.Integer.parseInt(Integer.java:592)
+	at java.lang.Integer.parseInt(Integer.java:615)
+	at org.eclipse.core.internal.resources.ProjectDescriptionReader.endLinkType(ProjectDescriptionReader.java:769)
+	at org.eclipse.core.internal.resources.ProjectDescriptionReader.endElement(ProjectDescriptionReader.java:388)
+	at com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser.endElement(AbstractSAXParser.java:609)
+	at com.sun.org.apache.xerces.internal.parsers.AbstractXMLDocumentParser.emptyElement(AbstractXMLDocumentParser.java:183)
+	at com.sun.org.apache.xerces.internal.impl.XMLNSDocumentScannerImpl.scanStartElement(XMLNSDocumentScannerImpl.java:351)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl$FragmentContentDriver.next(XMLDocumentFragmentScannerImpl.java:2784)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl.next(XMLDocumentScannerImpl.java:602)
+	at com.sun.org.apache.xerces.internal.impl.XMLNSDocumentScannerImpl.next(XMLNSDocumentScannerImpl.java:112)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanDocument(XMLDocumentFragmentScannerImpl.java:505)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:841)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:770)
+	at com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(XMLParser.java:141)
+	at com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser.parse(AbstractSAXParser.java:1213)
+	at com.sun.org.apache.xerces.internal.jaxp.SAXParserImpl$JAXPSAXParser.parse(SAXParserImpl.java:643)
+	at com.sun.org.apache.xerces.internal.jaxp.SAXParserImpl.parse(SAXParserImpl.java:327)
+	at org.eclipse.core.internal.resources.ProjectDescriptionReader.read(ProjectDescriptionReader.java:926)
+	at org.eclipse.core.internal.resources.ProjectDescriptionReader.read(ProjectDescriptionReader.java:958)
+	at org.eclipse.core.internal.resources.Workspace.loadProjectDescription(Workspace.java:1919)
+	at org.eclipse.ui.internal.wizards.datatransfer.SmartImportJob.createOrImportProject(SmartImportJob.java:540)
+	at org.eclipse.ui.internal.wizards.datatransfer.SmartImportJob.toExistingOrNewProject(SmartImportJob.java:505)
+	at org.eclipse.ui.internal.wizards.datatransfer.SmartImportJob.run(SmartImportJob.java:192)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 1 org.eclipse.core.resources 2 567 2022-03-01 19:47:01.732
+!MESSAGE Empty name detected for linked resource with type '1' and location ''.
+
+!ENTRY org.eclipse.core.resources 2 567 2022-03-01 19:47:01.740
+!MESSAGE Failure occurred reading .project file.
+!SUBENTRY 1 org.eclipse.core.resources 2 567 2022-03-01 19:47:01.740
+!MESSAGE Could not read metadata for 'STM32F042'.
+!STACK 0
+java.lang.NumberFormatException: For input string: ""
+	at java.lang.NumberFormatException.forInputString(NumberFormatException.java:65)
+	at java.lang.Integer.parseInt(Integer.java:592)
+	at java.lang.Integer.parseInt(Integer.java:615)
+	at org.eclipse.core.internal.resources.ProjectDescriptionReader.endLinkType(ProjectDescriptionReader.java:769)
+	at org.eclipse.core.internal.resources.ProjectDescriptionReader.endElement(ProjectDescriptionReader.java:388)
+	at com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser.endElement(AbstractSAXParser.java:609)
+	at com.sun.org.apache.xerces.internal.parsers.AbstractXMLDocumentParser.emptyElement(AbstractXMLDocumentParser.java:183)
+	at com.sun.org.apache.xerces.internal.impl.XMLNSDocumentScannerImpl.scanStartElement(XMLNSDocumentScannerImpl.java:351)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl$FragmentContentDriver.next(XMLDocumentFragmentScannerImpl.java:2784)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl.next(XMLDocumentScannerImpl.java:602)
+	at com.sun.org.apache.xerces.internal.impl.XMLNSDocumentScannerImpl.next(XMLNSDocumentScannerImpl.java:112)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanDocument(XMLDocumentFragmentScannerImpl.java:505)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:841)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:770)
+	at com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(XMLParser.java:141)
+	at com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser.parse(AbstractSAXParser.java:1213)
+	at com.sun.org.apache.xerces.internal.jaxp.SAXParserImpl$JAXPSAXParser.parse(SAXParserImpl.java:643)
+	at com.sun.org.apache.xerces.internal.jaxp.SAXParserImpl.parse(SAXParserImpl.java:327)
+	at org.eclipse.core.internal.resources.ProjectDescriptionReader.read(ProjectDescriptionReader.java:926)
+	at org.eclipse.core.internal.localstore.FileSystemResourceManager.read(FileSystemResourceManager.java:896)
+	at org.eclipse.core.internal.resources.Project.updateDescription(Project.java:1328)
+	at org.eclipse.core.internal.resources.Project.create(Project.java:284)
+	at org.eclipse.core.internal.resources.Project.create(Project.java:247)
+	at org.eclipse.ui.internal.wizards.datatransfer.SmartImportJob.createOrImportProject(SmartImportJob.java:557)
+	at org.eclipse.ui.internal.wizards.datatransfer.SmartImportJob.toExistingOrNewProject(SmartImportJob.java:505)
+	at org.eclipse.ui.internal.wizards.datatransfer.SmartImportJob.run(SmartImportJob.java:192)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 1 org.eclipse.core.resources 2 567 2022-03-01 19:47:01.740
+!MESSAGE Empty name detected for linked resource with type '1' and location ''.
+
+!ENTRY org.eclipse.core.resources 2 567 2022-03-01 19:47:01.794
+!MESSAGE Failure occurred reading .project file.
+!SUBENTRY 1 org.eclipse.core.resources 2 567 2022-03-01 19:47:01.794
+!MESSAGE For input string: ""
+!STACK 0
+java.lang.NumberFormatException: For input string: ""
+	at java.lang.NumberFormatException.forInputString(NumberFormatException.java:65)
+	at java.lang.Integer.parseInt(Integer.java:592)
+	at java.lang.Integer.parseInt(Integer.java:615)
+	at org.eclipse.core.internal.resources.ProjectDescriptionReader.endLinkType(ProjectDescriptionReader.java:769)
+	at org.eclipse.core.internal.resources.ProjectDescriptionReader.endElement(ProjectDescriptionReader.java:388)
+	at com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser.endElement(AbstractSAXParser.java:609)
+	at com.sun.org.apache.xerces.internal.parsers.AbstractXMLDocumentParser.emptyElement(AbstractXMLDocumentParser.java:183)
+	at com.sun.org.apache.xerces.internal.impl.XMLNSDocumentScannerImpl.scanStartElement(XMLNSDocumentScannerImpl.java:351)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl$FragmentContentDriver.next(XMLDocumentFragmentScannerImpl.java:2784)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl.next(XMLDocumentScannerImpl.java:602)
+	at com.sun.org.apache.xerces.internal.impl.XMLNSDocumentScannerImpl.next(XMLNSDocumentScannerImpl.java:112)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanDocument(XMLDocumentFragmentScannerImpl.java:505)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:841)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:770)
+	at com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(XMLParser.java:141)
+	at com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser.parse(AbstractSAXParser.java:1213)
+	at com.sun.org.apache.xerces.internal.jaxp.SAXParserImpl$JAXPSAXParser.parse(SAXParserImpl.java:643)
+	at com.sun.org.apache.xerces.internal.jaxp.SAXParserImpl.parse(SAXParserImpl.java:327)
+	at org.eclipse.core.internal.resources.ProjectDescriptionReader.read(ProjectDescriptionReader.java:926)
+	at org.eclipse.core.internal.resources.ProjectDescriptionReader.read(ProjectDescriptionReader.java:958)
+	at org.eclipse.core.internal.resources.Workspace.loadProjectDescription(Workspace.java:1919)
+	at org.eclipse.ui.internal.wizards.datatransfer.SmartImportJob.createOrImportProject(SmartImportJob.java:540)
+	at org.eclipse.ui.internal.wizards.datatransfer.SmartImportJob.toExistingOrNewProject(SmartImportJob.java:505)
+	at org.eclipse.ui.internal.wizards.datatransfer.SmartImportJob.run(SmartImportJob.java:192)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 1 org.eclipse.core.resources 2 567 2022-03-01 19:47:01.794
+!MESSAGE Empty name detected for linked resource with type '1' and location ''.
+
+!ENTRY org.eclipse.core.resources 2 567 2022-03-01 19:47:01.801
+!MESSAGE Failure occurred reading .project file.
+!SUBENTRY 1 org.eclipse.core.resources 2 567 2022-03-01 19:47:01.801
+!MESSAGE Could not read metadata for 'STM32F051'.
+!STACK 0
+java.lang.NumberFormatException: For input string: ""
+	at java.lang.NumberFormatException.forInputString(NumberFormatException.java:65)
+	at java.lang.Integer.parseInt(Integer.java:592)
+	at java.lang.Integer.parseInt(Integer.java:615)
+	at org.eclipse.core.internal.resources.ProjectDescriptionReader.endLinkType(ProjectDescriptionReader.java:769)
+	at org.eclipse.core.internal.resources.ProjectDescriptionReader.endElement(ProjectDescriptionReader.java:388)
+	at com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser.endElement(AbstractSAXParser.java:609)
+	at com.sun.org.apache.xerces.internal.parsers.AbstractXMLDocumentParser.emptyElement(AbstractXMLDocumentParser.java:183)
+	at com.sun.org.apache.xerces.internal.impl.XMLNSDocumentScannerImpl.scanStartElement(XMLNSDocumentScannerImpl.java:351)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl$FragmentContentDriver.next(XMLDocumentFragmentScannerImpl.java:2784)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl.next(XMLDocumentScannerImpl.java:602)
+	at com.sun.org.apache.xerces.internal.impl.XMLNSDocumentScannerImpl.next(XMLNSDocumentScannerImpl.java:112)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanDocument(XMLDocumentFragmentScannerImpl.java:505)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:841)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:770)
+	at com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(XMLParser.java:141)
+	at com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser.parse(AbstractSAXParser.java:1213)
+	at com.sun.org.apache.xerces.internal.jaxp.SAXParserImpl$JAXPSAXParser.parse(SAXParserImpl.java:643)
+	at com.sun.org.apache.xerces.internal.jaxp.SAXParserImpl.parse(SAXParserImpl.java:327)
+	at org.eclipse.core.internal.resources.ProjectDescriptionReader.read(ProjectDescriptionReader.java:926)
+	at org.eclipse.core.internal.localstore.FileSystemResourceManager.read(FileSystemResourceManager.java:896)
+	at org.eclipse.core.internal.resources.Project.updateDescription(Project.java:1328)
+	at org.eclipse.core.internal.resources.Project.create(Project.java:284)
+	at org.eclipse.core.internal.resources.Project.create(Project.java:247)
+	at org.eclipse.ui.internal.wizards.datatransfer.SmartImportJob.createOrImportProject(SmartImportJob.java:557)
+	at org.eclipse.ui.internal.wizards.datatransfer.SmartImportJob.toExistingOrNewProject(SmartImportJob.java:505)
+	at org.eclipse.ui.internal.wizards.datatransfer.SmartImportJob.run(SmartImportJob.java:192)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 1 org.eclipse.core.resources 2 567 2022-03-01 19:47:01.802
+!MESSAGE Empty name detected for linked resource with type '1' and location ''.
+
+!ENTRY org.eclipse.core.resources 2 567 2022-03-01 19:47:01.857
+!MESSAGE Failure occurred reading .project file.
+!SUBENTRY 1 org.eclipse.core.resources 2 567 2022-03-01 19:47:01.857
+!MESSAGE For input string: ""
+!STACK 0
+java.lang.NumberFormatException: For input string: ""
+	at java.lang.NumberFormatException.forInputString(NumberFormatException.java:65)
+	at java.lang.Integer.parseInt(Integer.java:592)
+	at java.lang.Integer.parseInt(Integer.java:615)
+	at org.eclipse.core.internal.resources.ProjectDescriptionReader.endLinkType(ProjectDescriptionReader.java:769)
+	at org.eclipse.core.internal.resources.ProjectDescriptionReader.endElement(ProjectDescriptionReader.java:388)
+	at com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser.endElement(AbstractSAXParser.java:609)
+	at com.sun.org.apache.xerces.internal.parsers.AbstractXMLDocumentParser.emptyElement(AbstractXMLDocumentParser.java:183)
+	at com.sun.org.apache.xerces.internal.impl.XMLNSDocumentScannerImpl.scanStartElement(XMLNSDocumentScannerImpl.java:351)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl$FragmentContentDriver.next(XMLDocumentFragmentScannerImpl.java:2784)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl.next(XMLDocumentScannerImpl.java:602)
+	at com.sun.org.apache.xerces.internal.impl.XMLNSDocumentScannerImpl.next(XMLNSDocumentScannerImpl.java:112)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanDocument(XMLDocumentFragmentScannerImpl.java:505)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:841)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:770)
+	at com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(XMLParser.java:141)
+	at com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser.parse(AbstractSAXParser.java:1213)
+	at com.sun.org.apache.xerces.internal.jaxp.SAXParserImpl$JAXPSAXParser.parse(SAXParserImpl.java:643)
+	at com.sun.org.apache.xerces.internal.jaxp.SAXParserImpl.parse(SAXParserImpl.java:327)
+	at org.eclipse.core.internal.resources.ProjectDescriptionReader.read(ProjectDescriptionReader.java:926)
+	at org.eclipse.core.internal.resources.ProjectDescriptionReader.read(ProjectDescriptionReader.java:958)
+	at org.eclipse.core.internal.resources.Workspace.loadProjectDescription(Workspace.java:1919)
+	at org.eclipse.ui.internal.wizards.datatransfer.SmartImportJob.createOrImportProject(SmartImportJob.java:540)
+	at org.eclipse.ui.internal.wizards.datatransfer.SmartImportJob.toExistingOrNewProject(SmartImportJob.java:505)
+	at org.eclipse.ui.internal.wizards.datatransfer.SmartImportJob.run(SmartImportJob.java:192)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 1 org.eclipse.core.resources 2 567 2022-03-01 19:47:01.857
+!MESSAGE Empty name detected for linked resource with type '1' and location ''.
+
+!ENTRY org.eclipse.core.resources 2 567 2022-03-01 19:47:01.876
+!MESSAGE Failure occurred reading .project file.
+!SUBENTRY 1 org.eclipse.core.resources 2 567 2022-03-01 19:47:01.876
+!MESSAGE Could not read metadata for 'STM32F072'.
+!STACK 0
+java.lang.NumberFormatException: For input string: ""
+	at java.lang.NumberFormatException.forInputString(NumberFormatException.java:65)
+	at java.lang.Integer.parseInt(Integer.java:592)
+	at java.lang.Integer.parseInt(Integer.java:615)
+	at org.eclipse.core.internal.resources.ProjectDescriptionReader.endLinkType(ProjectDescriptionReader.java:769)
+	at org.eclipse.core.internal.resources.ProjectDescriptionReader.endElement(ProjectDescriptionReader.java:388)
+	at com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser.endElement(AbstractSAXParser.java:609)
+	at com.sun.org.apache.xerces.internal.parsers.AbstractXMLDocumentParser.emptyElement(AbstractXMLDocumentParser.java:183)
+	at com.sun.org.apache.xerces.internal.impl.XMLNSDocumentScannerImpl.scanStartElement(XMLNSDocumentScannerImpl.java:351)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl$FragmentContentDriver.next(XMLDocumentFragmentScannerImpl.java:2784)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl.next(XMLDocumentScannerImpl.java:602)
+	at com.sun.org.apache.xerces.internal.impl.XMLNSDocumentScannerImpl.next(XMLNSDocumentScannerImpl.java:112)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanDocument(XMLDocumentFragmentScannerImpl.java:505)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:841)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:770)
+	at com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(XMLParser.java:141)
+	at com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser.parse(AbstractSAXParser.java:1213)
+	at com.sun.org.apache.xerces.internal.jaxp.SAXParserImpl$JAXPSAXParser.parse(SAXParserImpl.java:643)
+	at com.sun.org.apache.xerces.internal.jaxp.SAXParserImpl.parse(SAXParserImpl.java:327)
+	at org.eclipse.core.internal.resources.ProjectDescriptionReader.read(ProjectDescriptionReader.java:926)
+	at org.eclipse.core.internal.localstore.FileSystemResourceManager.read(FileSystemResourceManager.java:896)
+	at org.eclipse.core.internal.resources.Project.updateDescription(Project.java:1328)
+	at org.eclipse.core.internal.resources.Project.create(Project.java:284)
+	at org.eclipse.core.internal.resources.Project.create(Project.java:247)
+	at org.eclipse.ui.internal.wizards.datatransfer.SmartImportJob.createOrImportProject(SmartImportJob.java:557)
+	at org.eclipse.ui.internal.wizards.datatransfer.SmartImportJob.toExistingOrNewProject(SmartImportJob.java:505)
+	at org.eclipse.ui.internal.wizards.datatransfer.SmartImportJob.run(SmartImportJob.java:192)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 1 org.eclipse.core.resources 2 567 2022-03-01 19:47:01.876
+!MESSAGE Empty name detected for linked resource with type '1' and location ''.
+
+!ENTRY org.eclipse.core.resources 2 567 2022-03-01 19:47:02.756
+!MESSAGE Failure occurred reading .project file.
+!SUBENTRY 1 org.eclipse.core.resources 2 567 2022-03-01 19:47:02.757
+!MESSAGE For input string: ""
+!STACK 0
+java.lang.NumberFormatException: For input string: ""
+	at java.lang.NumberFormatException.forInputString(NumberFormatException.java:65)
+	at java.lang.Integer.parseInt(Integer.java:592)
+	at java.lang.Integer.parseInt(Integer.java:615)
+	at org.eclipse.core.internal.resources.ProjectDescriptionReader.endLinkType(ProjectDescriptionReader.java:769)
+	at org.eclipse.core.internal.resources.ProjectDescriptionReader.endElement(ProjectDescriptionReader.java:388)
+	at com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser.endElement(AbstractSAXParser.java:609)
+	at com.sun.org.apache.xerces.internal.parsers.AbstractXMLDocumentParser.emptyElement(AbstractXMLDocumentParser.java:183)
+	at com.sun.org.apache.xerces.internal.impl.XMLNSDocumentScannerImpl.scanStartElement(XMLNSDocumentScannerImpl.java:351)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl$FragmentContentDriver.next(XMLDocumentFragmentScannerImpl.java:2784)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl.next(XMLDocumentScannerImpl.java:602)
+	at com.sun.org.apache.xerces.internal.impl.XMLNSDocumentScannerImpl.next(XMLNSDocumentScannerImpl.java:112)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanDocument(XMLDocumentFragmentScannerImpl.java:505)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:841)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:770)
+	at com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(XMLParser.java:141)
+	at com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser.parse(AbstractSAXParser.java:1213)
+	at com.sun.org.apache.xerces.internal.jaxp.SAXParserImpl$JAXPSAXParser.parse(SAXParserImpl.java:643)
+	at com.sun.org.apache.xerces.internal.jaxp.SAXParserImpl.parse(SAXParserImpl.java:327)
+	at org.eclipse.core.internal.resources.ProjectDescriptionReader.read(ProjectDescriptionReader.java:926)
+	at org.eclipse.core.internal.resources.ProjectDescriptionReader.read(ProjectDescriptionReader.java:958)
+	at org.eclipse.core.internal.resources.Workspace.loadProjectDescription(Workspace.java:1919)
+	at org.eclipse.ui.internal.wizards.datatransfer.SmartImportJob.createOrImportProject(SmartImportJob.java:540)
+	at org.eclipse.ui.internal.wizards.datatransfer.SmartImportJob.toExistingOrNewProject(SmartImportJob.java:505)
+	at org.eclipse.ui.internal.wizards.datatransfer.SmartImportJob.run(SmartImportJob.java:192)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 1 org.eclipse.core.resources 2 567 2022-03-01 19:47:02.757
+!MESSAGE Empty name detected for linked resource with type '1' and location ''.
+
+!ENTRY org.eclipse.core.resources 2 567 2022-03-01 19:47:02.787
+!MESSAGE Failure occurred reading .project file.
+!SUBENTRY 1 org.eclipse.core.resources 2 567 2022-03-01 19:47:02.787
+!MESSAGE Could not read metadata for 'STM32F030xC'.
+!STACK 0
+java.lang.NumberFormatException: For input string: ""
+	at java.lang.NumberFormatException.forInputString(NumberFormatException.java:65)
+	at java.lang.Integer.parseInt(Integer.java:592)
+	at java.lang.Integer.parseInt(Integer.java:615)
+	at org.eclipse.core.internal.resources.ProjectDescriptionReader.endLinkType(ProjectDescriptionReader.java:769)
+	at org.eclipse.core.internal.resources.ProjectDescriptionReader.endElement(ProjectDescriptionReader.java:388)
+	at com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser.endElement(AbstractSAXParser.java:609)
+	at com.sun.org.apache.xerces.internal.parsers.AbstractXMLDocumentParser.emptyElement(AbstractXMLDocumentParser.java:183)
+	at com.sun.org.apache.xerces.internal.impl.XMLNSDocumentScannerImpl.scanStartElement(XMLNSDocumentScannerImpl.java:351)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl$FragmentContentDriver.next(XMLDocumentFragmentScannerImpl.java:2784)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl.next(XMLDocumentScannerImpl.java:602)
+	at com.sun.org.apache.xerces.internal.impl.XMLNSDocumentScannerImpl.next(XMLNSDocumentScannerImpl.java:112)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanDocument(XMLDocumentFragmentScannerImpl.java:505)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:841)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:770)
+	at com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(XMLParser.java:141)
+	at com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser.parse(AbstractSAXParser.java:1213)
+	at com.sun.org.apache.xerces.internal.jaxp.SAXParserImpl$JAXPSAXParser.parse(SAXParserImpl.java:643)
+	at com.sun.org.apache.xerces.internal.jaxp.SAXParserImpl.parse(SAXParserImpl.java:327)
+	at org.eclipse.core.internal.resources.ProjectDescriptionReader.read(ProjectDescriptionReader.java:926)
+	at org.eclipse.core.internal.localstore.FileSystemResourceManager.read(FileSystemResourceManager.java:896)
+	at org.eclipse.core.internal.resources.Project.updateDescription(Project.java:1328)
+	at org.eclipse.core.internal.resources.Project.create(Project.java:284)
+	at org.eclipse.core.internal.resources.Project.create(Project.java:247)
+	at org.eclipse.ui.internal.wizards.datatransfer.SmartImportJob.createOrImportProject(SmartImportJob.java:557)
+	at org.eclipse.ui.internal.wizards.datatransfer.SmartImportJob.toExistingOrNewProject(SmartImportJob.java:505)
+	at org.eclipse.ui.internal.wizards.datatransfer.SmartImportJob.run(SmartImportJob.java:192)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 1 org.eclipse.core.resources 2 567 2022-03-01 19:47:02.787
+!MESSAGE Empty name detected for linked resource with type '1' and location ''.
+
+!ENTRY org.eclipse.core.resources 2 567 2022-03-01 19:47:02.845
+!MESSAGE Failure occurred reading .project file.
+!SUBENTRY 1 org.eclipse.core.resources 2 567 2022-03-01 19:47:02.845
+!MESSAGE For input string: ""
+!STACK 0
+java.lang.NumberFormatException: For input string: ""
+	at java.lang.NumberFormatException.forInputString(NumberFormatException.java:65)
+	at java.lang.Integer.parseInt(Integer.java:592)
+	at java.lang.Integer.parseInt(Integer.java:615)
+	at org.eclipse.core.internal.resources.ProjectDescriptionReader.endLinkType(ProjectDescriptionReader.java:769)
+	at org.eclipse.core.internal.resources.ProjectDescriptionReader.endElement(ProjectDescriptionReader.java:388)
+	at com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser.endElement(AbstractSAXParser.java:609)
+	at com.sun.org.apache.xerces.internal.parsers.AbstractXMLDocumentParser.emptyElement(AbstractXMLDocumentParser.java:183)
+	at com.sun.org.apache.xerces.internal.impl.XMLNSDocumentScannerImpl.scanStartElement(XMLNSDocumentScannerImpl.java:351)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl$FragmentContentDriver.next(XMLDocumentFragmentScannerImpl.java:2784)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl.next(XMLDocumentScannerImpl.java:602)
+	at com.sun.org.apache.xerces.internal.impl.XMLNSDocumentScannerImpl.next(XMLNSDocumentScannerImpl.java:112)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanDocument(XMLDocumentFragmentScannerImpl.java:505)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:841)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:770)
+	at com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(XMLParser.java:141)
+	at com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser.parse(AbstractSAXParser.java:1213)
+	at com.sun.org.apache.xerces.internal.jaxp.SAXParserImpl$JAXPSAXParser.parse(SAXParserImpl.java:643)
+	at com.sun.org.apache.xerces.internal.jaxp.SAXParserImpl.parse(SAXParserImpl.java:327)
+	at org.eclipse.core.internal.resources.ProjectDescriptionReader.read(ProjectDescriptionReader.java:926)
+	at org.eclipse.core.internal.resources.ProjectDescriptionReader.read(ProjectDescriptionReader.java:958)
+	at org.eclipse.core.internal.resources.Workspace.loadProjectDescription(Workspace.java:1919)
+	at org.eclipse.ui.internal.wizards.datatransfer.SmartImportJob.createOrImportProject(SmartImportJob.java:540)
+	at org.eclipse.ui.internal.wizards.datatransfer.SmartImportJob.toExistingOrNewProject(SmartImportJob.java:505)
+	at org.eclipse.ui.internal.wizards.datatransfer.SmartImportJob.run(SmartImportJob.java:192)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 1 org.eclipse.core.resources 2 567 2022-03-01 19:47:02.845
+!MESSAGE Empty name detected for linked resource with type '1' and location ''.
+
+!ENTRY org.eclipse.core.resources 2 567 2022-03-01 19:47:02.875
+!MESSAGE Failure occurred reading .project file.
+!SUBENTRY 1 org.eclipse.core.resources 2 567 2022-03-01 19:47:02.875
+!MESSAGE Could not read metadata for 'STM32F070x6'.
+!STACK 0
+java.lang.NumberFormatException: For input string: ""
+	at java.lang.NumberFormatException.forInputString(NumberFormatException.java:65)
+	at java.lang.Integer.parseInt(Integer.java:592)
+	at java.lang.Integer.parseInt(Integer.java:615)
+	at org.eclipse.core.internal.resources.ProjectDescriptionReader.endLinkType(ProjectDescriptionReader.java:769)
+	at org.eclipse.core.internal.resources.ProjectDescriptionReader.endElement(ProjectDescriptionReader.java:388)
+	at com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser.endElement(AbstractSAXParser.java:609)
+	at com.sun.org.apache.xerces.internal.parsers.AbstractXMLDocumentParser.emptyElement(AbstractXMLDocumentParser.java:183)
+	at com.sun.org.apache.xerces.internal.impl.XMLNSDocumentScannerImpl.scanStartElement(XMLNSDocumentScannerImpl.java:351)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl$FragmentContentDriver.next(XMLDocumentFragmentScannerImpl.java:2784)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl.next(XMLDocumentScannerImpl.java:602)
+	at com.sun.org.apache.xerces.internal.impl.XMLNSDocumentScannerImpl.next(XMLNSDocumentScannerImpl.java:112)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanDocument(XMLDocumentFragmentScannerImpl.java:505)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:841)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:770)
+	at com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(XMLParser.java:141)
+	at com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser.parse(AbstractSAXParser.java:1213)
+	at com.sun.org.apache.xerces.internal.jaxp.SAXParserImpl$JAXPSAXParser.parse(SAXParserImpl.java:643)
+	at com.sun.org.apache.xerces.internal.jaxp.SAXParserImpl.parse(SAXParserImpl.java:327)
+	at org.eclipse.core.internal.resources.ProjectDescriptionReader.read(ProjectDescriptionReader.java:926)
+	at org.eclipse.core.internal.localstore.FileSystemResourceManager.read(FileSystemResourceManager.java:896)
+	at org.eclipse.core.internal.resources.Project.updateDescription(Project.java:1328)
+	at org.eclipse.core.internal.resources.Project.create(Project.java:284)
+	at org.eclipse.core.internal.resources.Project.create(Project.java:247)
+	at org.eclipse.ui.internal.wizards.datatransfer.SmartImportJob.createOrImportProject(SmartImportJob.java:557)
+	at org.eclipse.ui.internal.wizards.datatransfer.SmartImportJob.toExistingOrNewProject(SmartImportJob.java:505)
+	at org.eclipse.ui.internal.wizards.datatransfer.SmartImportJob.run(SmartImportJob.java:192)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 1 org.eclipse.core.resources 2 567 2022-03-01 19:47:02.875
+!MESSAGE Empty name detected for linked resource with type '1' and location ''.
+
+!ENTRY org.eclipse.core.resources 2 567 2022-03-01 19:47:02.917
+!MESSAGE Failure occurred reading .project file.
+!SUBENTRY 1 org.eclipse.core.resources 2 567 2022-03-01 19:47:02.917
+!MESSAGE For input string: ""
+!STACK 0
+java.lang.NumberFormatException: For input string: ""
+	at java.lang.NumberFormatException.forInputString(NumberFormatException.java:65)
+	at java.lang.Integer.parseInt(Integer.java:592)
+	at java.lang.Integer.parseInt(Integer.java:615)
+	at org.eclipse.core.internal.resources.ProjectDescriptionReader.endLinkType(ProjectDescriptionReader.java:769)
+	at org.eclipse.core.internal.resources.ProjectDescriptionReader.endElement(ProjectDescriptionReader.java:388)
+	at com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser.endElement(AbstractSAXParser.java:609)
+	at com.sun.org.apache.xerces.internal.parsers.AbstractXMLDocumentParser.emptyElement(AbstractXMLDocumentParser.java:183)
+	at com.sun.org.apache.xerces.internal.impl.XMLNSDocumentScannerImpl.scanStartElement(XMLNSDocumentScannerImpl.java:351)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl$FragmentContentDriver.next(XMLDocumentFragmentScannerImpl.java:2784)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl.next(XMLDocumentScannerImpl.java:602)
+	at com.sun.org.apache.xerces.internal.impl.XMLNSDocumentScannerImpl.next(XMLNSDocumentScannerImpl.java:112)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanDocument(XMLDocumentFragmentScannerImpl.java:505)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:841)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:770)
+	at com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(XMLParser.java:141)
+	at com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser.parse(AbstractSAXParser.java:1213)
+	at com.sun.org.apache.xerces.internal.jaxp.SAXParserImpl$JAXPSAXParser.parse(SAXParserImpl.java:643)
+	at com.sun.org.apache.xerces.internal.jaxp.SAXParserImpl.parse(SAXParserImpl.java:327)
+	at org.eclipse.core.internal.resources.ProjectDescriptionReader.read(ProjectDescriptionReader.java:926)
+	at org.eclipse.core.internal.resources.ProjectDescriptionReader.read(ProjectDescriptionReader.java:958)
+	at org.eclipse.core.internal.resources.Workspace.loadProjectDescription(Workspace.java:1919)
+	at org.eclipse.ui.internal.wizards.datatransfer.SmartImportJob.createOrImportProject(SmartImportJob.java:540)
+	at org.eclipse.ui.internal.wizards.datatransfer.SmartImportJob.toExistingOrNewProject(SmartImportJob.java:505)
+	at org.eclipse.ui.internal.wizards.datatransfer.SmartImportJob.run(SmartImportJob.java:192)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 1 org.eclipse.core.resources 2 567 2022-03-01 19:47:02.917
+!MESSAGE Empty name detected for linked resource with type '1' and location ''.
+
+!ENTRY org.eclipse.core.resources 2 567 2022-03-01 19:47:02.925
+!MESSAGE Failure occurred reading .project file.
+!SUBENTRY 1 org.eclipse.core.resources 2 567 2022-03-01 19:47:02.925
+!MESSAGE Could not read metadata for 'STM32F070xB'.
+!STACK 0
+java.lang.NumberFormatException: For input string: ""
+	at java.lang.NumberFormatException.forInputString(NumberFormatException.java:65)
+	at java.lang.Integer.parseInt(Integer.java:592)
+	at java.lang.Integer.parseInt(Integer.java:615)
+	at org.eclipse.core.internal.resources.ProjectDescriptionReader.endLinkType(ProjectDescriptionReader.java:769)
+	at org.eclipse.core.internal.resources.ProjectDescriptionReader.endElement(ProjectDescriptionReader.java:388)
+	at com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser.endElement(AbstractSAXParser.java:609)
+	at com.sun.org.apache.xerces.internal.parsers.AbstractXMLDocumentParser.emptyElement(AbstractXMLDocumentParser.java:183)
+	at com.sun.org.apache.xerces.internal.impl.XMLNSDocumentScannerImpl.scanStartElement(XMLNSDocumentScannerImpl.java:351)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl$FragmentContentDriver.next(XMLDocumentFragmentScannerImpl.java:2784)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl.next(XMLDocumentScannerImpl.java:602)
+	at com.sun.org.apache.xerces.internal.impl.XMLNSDocumentScannerImpl.next(XMLNSDocumentScannerImpl.java:112)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanDocument(XMLDocumentFragmentScannerImpl.java:505)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:841)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:770)
+	at com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(XMLParser.java:141)
+	at com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser.parse(AbstractSAXParser.java:1213)
+	at com.sun.org.apache.xerces.internal.jaxp.SAXParserImpl$JAXPSAXParser.parse(SAXParserImpl.java:643)
+	at com.sun.org.apache.xerces.internal.jaxp.SAXParserImpl.parse(SAXParserImpl.java:327)
+	at org.eclipse.core.internal.resources.ProjectDescriptionReader.read(ProjectDescriptionReader.java:926)
+	at org.eclipse.core.internal.localstore.FileSystemResourceManager.read(FileSystemResourceManager.java:896)
+	at org.eclipse.core.internal.resources.Project.updateDescription(Project.java:1328)
+	at org.eclipse.core.internal.resources.Project.create(Project.java:284)
+	at org.eclipse.core.internal.resources.Project.create(Project.java:247)
+	at org.eclipse.ui.internal.wizards.datatransfer.SmartImportJob.createOrImportProject(SmartImportJob.java:557)
+	at org.eclipse.ui.internal.wizards.datatransfer.SmartImportJob.toExistingOrNewProject(SmartImportJob.java:505)
+	at org.eclipse.ui.internal.wizards.datatransfer.SmartImportJob.run(SmartImportJob.java:192)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 1 org.eclipse.core.resources 2 567 2022-03-01 19:47:02.925
+!MESSAGE Empty name detected for linked resource with type '1' and location ''.
+
+!ENTRY org.eclipse.cdt.core 4 0 2022-03-01 19:47:04.689
+!MESSAGE Error loading provider class=[com.atollic.truestudio.mbs.GCCSpecsDetectorAtollicArm] in project=STM32F070x6, cfg=[com.atollic.truestudio.exe.debug.1518366166]
+!STACK 1
+org.eclipse.core.runtime.CoreException: Not able to load provider class=com.atollic.truestudio.mbs.GCCSpecsDetectorAtollicArm
+	at org.eclipse.cdt.internal.core.language.settings.providers.LanguageSettingsExtensionManager.instantiateProviderClass(LanguageSettingsExtensionManager.java:278)
+	at org.eclipse.cdt.internal.core.language.settings.providers.LanguageSettingsProvidersSerializer.loadProvider(LanguageSettingsProvidersSerializer.java:1126)
+	at org.eclipse.cdt.internal.core.language.settings.providers.LanguageSettingsProvidersSerializer.loadLanguageSettingsInternal(LanguageSettingsProvidersSerializer.java:1021)
+	at org.eclipse.cdt.internal.core.language.settings.providers.LanguageSettingsProvidersSerializer.loadLanguageSettings(LanguageSettingsProvidersSerializer.java:1162)
+	at org.eclipse.cdt.internal.core.settings.model.xml.XmlProjectDescriptionStorage.loadProjectDescription(XmlProjectDescriptionStorage.java:499)
+	at org.eclipse.cdt.internal.core.settings.model.xml.XmlProjectDescriptionStorage.getProjectDescription(XmlProjectDescriptionStorage.java:237)
+	at org.eclipse.cdt.internal.core.settings.model.CProjectDescriptionManager.getProjectDescriptionInternal(CProjectDescriptionManager.java:426)
+	at org.eclipse.cdt.internal.core.settings.model.CProjectDescriptionManager.getProjectDescription(CProjectDescriptionManager.java:408)
+	at org.eclipse.cdt.managedbuilder.core.ManagedBuildManager.findBuildInfo(ManagedBuildManager.java:2730)
+	at org.eclipse.cdt.managedbuilder.core.ManagedBuildManager.getBuildInfo(ManagedBuildManager.java:2991)
+	at org.eclipse.cdt.managedbuilder.core.ManagedBuildManager.getBuildInfo(ManagedBuildManager.java:2946)
+	at org.eclipse.cdt.managedbuilder.core.ResourceChangeHandler2$Visitor.visit(ResourceChangeHandler2.java:123)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:64)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:75)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:48)
+	at org.eclipse.cdt.managedbuilder.core.ResourceChangeHandler2.resourceChanged(ResourceChangeHandler2.java:180)
+	at org.eclipse.core.internal.events.NotificationManager$1.run(NotificationManager.java:299)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.NotificationManager.notify(NotificationManager.java:289)
+	at org.eclipse.core.internal.events.NotificationManager.broadcastChanges(NotificationManager.java:152)
+	at org.eclipse.core.internal.resources.Workspace.broadcastPostChange(Workspace.java:374)
+	at org.eclipse.core.internal.resources.Workspace.endOperation(Workspace.java:1469)
+	at org.eclipse.core.internal.resources.Project.touch(Project.java:1311)
+	at org.eclipse.team.core.RepositoryProvider.map(RepositoryProvider.java:132)
+	at org.eclipse.egit.core.op.ConnectProviderOperation.connectProject(ConnectProviderOperation.java:156)
+	at org.eclipse.egit.core.op.ConnectProviderOperation.execute(ConnectProviderOperation.java:102)
+	at org.eclipse.egit.core.internal.job.JobUtil$1.run(JobUtil.java:53)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 1 org.eclipse.cdt.core 4 0 2022-03-01 19:47:04.689
+!MESSAGE Not able to load provider class=com.atollic.truestudio.mbs.GCCSpecsDetectorAtollicArm
+
+!ENTRY org.eclipse.cdt.managedbuilder.core 4 0 2022-03-01 19:47:04.692
+!MESSAGE Orphaned CDT build configuration [com.atollic.truestudio.exe.debug.1518366166]: parent extension cfg [com.atollic.truestudio.exe.debug] not found
+!STACK 0
+java.lang.Exception
+	at org.eclipse.cdt.managedbuilder.core.ManagedBuilderCorePlugin.error(ManagedBuilderCorePlugin.java:226)
+	at org.eclipse.cdt.managedbuilder.internal.core.Configuration.loadFromProject(Configuration.java:844)
+	at org.eclipse.cdt.managedbuilder.internal.core.Configuration.<init>(Configuration.java:402)
+	at org.eclipse.cdt.managedbuilder.internal.dataprovider.ConfigurationDataProvider.load(ConfigurationDataProvider.java:391)
+	at org.eclipse.cdt.managedbuilder.internal.dataprovider.ConfigurationDataProvider.loadConfiguration(ConfigurationDataProvider.java:557)
+	at org.eclipse.cdt.internal.core.settings.model.CConfigurationDescriptionCache.loadData(CConfigurationDescriptionCache.java:136)
+	at org.eclipse.cdt.internal.core.settings.model.CProjectDescription.loadDatas(CProjectDescription.java:196)
+	at org.eclipse.cdt.internal.core.settings.model.xml.XmlProjectDescriptionStorage.loadProjectDescription(XmlProjectDescriptionStorage.java:500)
+	at org.eclipse.cdt.internal.core.settings.model.xml.XmlProjectDescriptionStorage.getProjectDescription(XmlProjectDescriptionStorage.java:237)
+	at org.eclipse.cdt.internal.core.settings.model.CProjectDescriptionManager.getProjectDescriptionInternal(CProjectDescriptionManager.java:426)
+	at org.eclipse.cdt.internal.core.settings.model.CProjectDescriptionManager.getProjectDescription(CProjectDescriptionManager.java:408)
+	at org.eclipse.cdt.managedbuilder.core.ManagedBuildManager.findBuildInfo(ManagedBuildManager.java:2730)
+	at org.eclipse.cdt.managedbuilder.core.ManagedBuildManager.getBuildInfo(ManagedBuildManager.java:2991)
+	at org.eclipse.cdt.managedbuilder.core.ManagedBuildManager.getBuildInfo(ManagedBuildManager.java:2946)
+	at org.eclipse.cdt.managedbuilder.core.ResourceChangeHandler2$Visitor.visit(ResourceChangeHandler2.java:123)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:64)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:75)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:48)
+	at org.eclipse.cdt.managedbuilder.core.ResourceChangeHandler2.resourceChanged(ResourceChangeHandler2.java:180)
+	at org.eclipse.core.internal.events.NotificationManager$1.run(NotificationManager.java:299)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.NotificationManager.notify(NotificationManager.java:289)
+	at org.eclipse.core.internal.events.NotificationManager.broadcastChanges(NotificationManager.java:152)
+	at org.eclipse.core.internal.resources.Workspace.broadcastPostChange(Workspace.java:374)
+	at org.eclipse.core.internal.resources.Workspace.endOperation(Workspace.java:1469)
+	at org.eclipse.core.internal.resources.Project.touch(Project.java:1311)
+	at org.eclipse.team.core.RepositoryProvider.map(RepositoryProvider.java:132)
+	at org.eclipse.egit.core.op.ConnectProviderOperation.connectProject(ConnectProviderOperation.java:156)
+	at org.eclipse.egit.core.op.ConnectProviderOperation.execute(ConnectProviderOperation.java:102)
+	at org.eclipse.egit.core.internal.job.JobUtil$1.run(JobUtil.java:53)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.cdt.core 4 0 2022-03-01 19:47:04.771
+!MESSAGE Error loading provider class=[com.atollic.truestudio.mbs.GCCSpecsDetectorAtollicArm] in project=STM32F070xB, cfg=[com.atollic.truestudio.exe.debug.1518366166]
+!STACK 1
+org.eclipse.core.runtime.CoreException: Not able to load provider class=com.atollic.truestudio.mbs.GCCSpecsDetectorAtollicArm
+	at org.eclipse.cdt.internal.core.language.settings.providers.LanguageSettingsExtensionManager.instantiateProviderClass(LanguageSettingsExtensionManager.java:278)
+	at org.eclipse.cdt.internal.core.language.settings.providers.LanguageSettingsProvidersSerializer.loadProvider(LanguageSettingsProvidersSerializer.java:1126)
+	at org.eclipse.cdt.internal.core.language.settings.providers.LanguageSettingsProvidersSerializer.loadLanguageSettingsInternal(LanguageSettingsProvidersSerializer.java:1021)
+	at org.eclipse.cdt.internal.core.language.settings.providers.LanguageSettingsProvidersSerializer.loadLanguageSettings(LanguageSettingsProvidersSerializer.java:1162)
+	at org.eclipse.cdt.internal.core.settings.model.xml.XmlProjectDescriptionStorage.loadProjectDescription(XmlProjectDescriptionStorage.java:499)
+	at org.eclipse.cdt.internal.core.settings.model.xml.XmlProjectDescriptionStorage.getProjectDescription(XmlProjectDescriptionStorage.java:237)
+	at org.eclipse.cdt.internal.core.settings.model.CProjectDescriptionManager.getProjectDescriptionInternal(CProjectDescriptionManager.java:426)
+	at org.eclipse.cdt.internal.core.settings.model.CProjectDescriptionManager.getProjectDescription(CProjectDescriptionManager.java:408)
+	at org.eclipse.cdt.managedbuilder.core.ManagedBuildManager.findBuildInfo(ManagedBuildManager.java:2730)
+	at org.eclipse.cdt.managedbuilder.core.ManagedBuildManager.getBuildInfo(ManagedBuildManager.java:2991)
+	at org.eclipse.cdt.managedbuilder.core.ManagedBuildManager.getBuildInfo(ManagedBuildManager.java:2946)
+	at org.eclipse.cdt.managedbuilder.core.ResourceChangeHandler2$Visitor.visit(ResourceChangeHandler2.java:123)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:64)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:75)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:48)
+	at org.eclipse.cdt.managedbuilder.core.ResourceChangeHandler2.resourceChanged(ResourceChangeHandler2.java:180)
+	at org.eclipse.core.internal.events.NotificationManager$1.run(NotificationManager.java:299)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.NotificationManager.notify(NotificationManager.java:289)
+	at org.eclipse.core.internal.events.NotificationManager.broadcastChanges(NotificationManager.java:152)
+	at org.eclipse.core.internal.resources.Workspace.broadcastPostChange(Workspace.java:374)
+	at org.eclipse.core.internal.resources.Workspace.endOperation(Workspace.java:1469)
+	at org.eclipse.core.internal.resources.Project.touch(Project.java:1311)
+	at org.eclipse.team.core.RepositoryProvider.map(RepositoryProvider.java:132)
+	at org.eclipse.egit.core.op.ConnectProviderOperation.connectProject(ConnectProviderOperation.java:156)
+	at org.eclipse.egit.core.op.ConnectProviderOperation.execute(ConnectProviderOperation.java:102)
+	at org.eclipse.egit.core.internal.job.JobUtil$1.run(JobUtil.java:53)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 1 org.eclipse.cdt.core 4 0 2022-03-01 19:47:04.772
+!MESSAGE Not able to load provider class=com.atollic.truestudio.mbs.GCCSpecsDetectorAtollicArm
+
+!ENTRY org.eclipse.cdt.managedbuilder.core 4 0 2022-03-01 19:47:04.775
+!MESSAGE Orphaned CDT build configuration [com.atollic.truestudio.exe.debug.1518366166]: parent extension cfg [com.atollic.truestudio.exe.debug] not found
+!STACK 0
+java.lang.Exception
+	at org.eclipse.cdt.managedbuilder.core.ManagedBuilderCorePlugin.error(ManagedBuilderCorePlugin.java:226)
+	at org.eclipse.cdt.managedbuilder.internal.core.Configuration.loadFromProject(Configuration.java:844)
+	at org.eclipse.cdt.managedbuilder.internal.core.Configuration.<init>(Configuration.java:402)
+	at org.eclipse.cdt.managedbuilder.internal.dataprovider.ConfigurationDataProvider.load(ConfigurationDataProvider.java:391)
+	at org.eclipse.cdt.managedbuilder.internal.dataprovider.ConfigurationDataProvider.loadConfiguration(ConfigurationDataProvider.java:557)
+	at org.eclipse.cdt.internal.core.settings.model.CConfigurationDescriptionCache.loadData(CConfigurationDescriptionCache.java:136)
+	at org.eclipse.cdt.internal.core.settings.model.CProjectDescription.loadDatas(CProjectDescription.java:196)
+	at org.eclipse.cdt.internal.core.settings.model.xml.XmlProjectDescriptionStorage.loadProjectDescription(XmlProjectDescriptionStorage.java:500)
+	at org.eclipse.cdt.internal.core.settings.model.xml.XmlProjectDescriptionStorage.getProjectDescription(XmlProjectDescriptionStorage.java:237)
+	at org.eclipse.cdt.internal.core.settings.model.CProjectDescriptionManager.getProjectDescriptionInternal(CProjectDescriptionManager.java:426)
+	at org.eclipse.cdt.internal.core.settings.model.CProjectDescriptionManager.getProjectDescription(CProjectDescriptionManager.java:408)
+	at org.eclipse.cdt.managedbuilder.core.ManagedBuildManager.findBuildInfo(ManagedBuildManager.java:2730)
+	at org.eclipse.cdt.managedbuilder.core.ManagedBuildManager.getBuildInfo(ManagedBuildManager.java:2991)
+	at org.eclipse.cdt.managedbuilder.core.ManagedBuildManager.getBuildInfo(ManagedBuildManager.java:2946)
+	at org.eclipse.cdt.managedbuilder.core.ResourceChangeHandler2$Visitor.visit(ResourceChangeHandler2.java:123)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:64)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:75)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:48)
+	at org.eclipse.cdt.managedbuilder.core.ResourceChangeHandler2.resourceChanged(ResourceChangeHandler2.java:180)
+	at org.eclipse.core.internal.events.NotificationManager$1.run(NotificationManager.java:299)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.NotificationManager.notify(NotificationManager.java:289)
+	at org.eclipse.core.internal.events.NotificationManager.broadcastChanges(NotificationManager.java:152)
+	at org.eclipse.core.internal.resources.Workspace.broadcastPostChange(Workspace.java:374)
+	at org.eclipse.core.internal.resources.Workspace.endOperation(Workspace.java:1469)
+	at org.eclipse.core.internal.resources.Project.touch(Project.java:1311)
+	at org.eclipse.team.core.RepositoryProvider.map(RepositoryProvider.java:132)
+	at org.eclipse.egit.core.op.ConnectProviderOperation.connectProject(ConnectProviderOperation.java:156)
+	at org.eclipse.egit.core.op.ConnectProviderOperation.execute(ConnectProviderOperation.java:102)
+	at org.eclipse.egit.core.internal.job.JobUtil$1.run(JobUtil.java:53)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.cdt.managedbuilder.core 4 0 2022-03-01 19:47:05.199
+!MESSAGE Orphaned CDT build configuration [com.atollic.truestudio.exe.debug.1518366166]: parent extension cfg [com.atollic.truestudio.exe.debug] not found
+!STACK 0
+java.lang.Exception
+	at org.eclipse.cdt.managedbuilder.core.ManagedBuilderCorePlugin.error(ManagedBuilderCorePlugin.java:226)
+	at org.eclipse.cdt.managedbuilder.internal.core.Configuration.loadFromProject(Configuration.java:844)
+	at org.eclipse.cdt.managedbuilder.internal.core.Configuration.<init>(Configuration.java:402)
+	at org.eclipse.cdt.managedbuilder.internal.dataprovider.ConfigurationDataProvider.load(ConfigurationDataProvider.java:391)
+	at org.eclipse.cdt.managedbuilder.internal.dataprovider.ConfigurationDataProvider.loadConfiguration(ConfigurationDataProvider.java:557)
+	at org.eclipse.cdt.internal.core.settings.model.CConfigurationDescriptionCache.loadData(CConfigurationDescriptionCache.java:136)
+	at org.eclipse.cdt.internal.core.settings.model.CProjectDescription.loadDatas(CProjectDescription.java:196)
+	at org.eclipse.cdt.internal.core.settings.model.xml.XmlProjectDescriptionStorage.loadProjectDescription(XmlProjectDescriptionStorage.java:500)
+	at org.eclipse.cdt.internal.core.settings.model.xml.XmlProjectDescriptionStorage.getProjectDescription(XmlProjectDescriptionStorage.java:237)
+	at org.eclipse.cdt.internal.core.settings.model.CProjectDescriptionManager.getProjectDescriptionInternal(CProjectDescriptionManager.java:426)
+	at org.eclipse.cdt.internal.core.settings.model.CProjectDescriptionManager.getProjectDescription(CProjectDescriptionManager.java:408)
+	at org.eclipse.cdt.managedbuilder.core.ManagedBuildManager.findBuildInfo(ManagedBuildManager.java:2730)
+	at org.eclipse.cdt.managedbuilder.core.ManagedBuildManager.getBuildInfo(ManagedBuildManager.java:2991)
+	at org.eclipse.cdt.managedbuilder.core.ManagedBuildManager.getBuildInfo(ManagedBuildManager.java:2946)
+	at org.eclipse.cdt.managedbuilder.core.ResourceChangeHandler2$Visitor.visit(ResourceChangeHandler2.java:123)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:64)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:75)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:48)
+	at org.eclipse.cdt.managedbuilder.core.ResourceChangeHandler2.resourceChanged(ResourceChangeHandler2.java:180)
+	at org.eclipse.core.internal.events.NotificationManager$1.run(NotificationManager.java:299)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.NotificationManager.notify(NotificationManager.java:289)
+	at org.eclipse.core.internal.events.NotificationManager.broadcastChanges(NotificationManager.java:152)
+	at org.eclipse.core.internal.resources.Workspace.broadcastPostChange(Workspace.java:374)
+	at org.eclipse.core.internal.resources.Workspace.endOperation(Workspace.java:1469)
+	at org.eclipse.core.internal.resources.Project.touch(Project.java:1311)
+	at org.eclipse.team.core.RepositoryProvider.map(RepositoryProvider.java:132)
+	at org.eclipse.egit.core.op.ConnectProviderOperation.connectProject(ConnectProviderOperation.java:156)
+	at org.eclipse.egit.core.op.ConnectProviderOperation.execute(ConnectProviderOperation.java:102)
+	at org.eclipse.egit.core.internal.job.JobUtil$1.run(JobUtil.java:53)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.cdt.managedbuilder.core 4 0 2022-03-01 19:47:05.279
+!MESSAGE Orphaned CDT build configuration [com.atollic.truestudio.exe.debug.1518366166]: parent extension cfg [com.atollic.truestudio.exe.debug] not found
+!STACK 0
+java.lang.Exception
+	at org.eclipse.cdt.managedbuilder.core.ManagedBuilderCorePlugin.error(ManagedBuilderCorePlugin.java:226)
+	at org.eclipse.cdt.managedbuilder.internal.core.Configuration.loadFromProject(Configuration.java:844)
+	at org.eclipse.cdt.managedbuilder.internal.core.Configuration.<init>(Configuration.java:402)
+	at org.eclipse.cdt.managedbuilder.internal.dataprovider.ConfigurationDataProvider.load(ConfigurationDataProvider.java:391)
+	at org.eclipse.cdt.managedbuilder.internal.dataprovider.ConfigurationDataProvider.loadConfiguration(ConfigurationDataProvider.java:557)
+	at org.eclipse.cdt.internal.core.settings.model.CConfigurationDescriptionCache.loadData(CConfigurationDescriptionCache.java:136)
+	at org.eclipse.cdt.internal.core.settings.model.CProjectDescription.loadDatas(CProjectDescription.java:196)
+	at org.eclipse.cdt.internal.core.settings.model.xml.XmlProjectDescriptionStorage.loadProjectDescription(XmlProjectDescriptionStorage.java:500)
+	at org.eclipse.cdt.internal.core.settings.model.xml.XmlProjectDescriptionStorage.getProjectDescription(XmlProjectDescriptionStorage.java:237)
+	at org.eclipse.cdt.internal.core.settings.model.CProjectDescriptionManager.getProjectDescriptionInternal(CProjectDescriptionManager.java:426)
+	at org.eclipse.cdt.internal.core.settings.model.CProjectDescriptionManager.getProjectDescription(CProjectDescriptionManager.java:408)
+	at org.eclipse.cdt.managedbuilder.core.ManagedBuildManager.findBuildInfo(ManagedBuildManager.java:2730)
+	at org.eclipse.cdt.managedbuilder.core.ManagedBuildManager.getBuildInfo(ManagedBuildManager.java:2991)
+	at org.eclipse.cdt.managedbuilder.core.ManagedBuildManager.getBuildInfo(ManagedBuildManager.java:2946)
+	at org.eclipse.cdt.managedbuilder.core.ResourceChangeHandler2$Visitor.visit(ResourceChangeHandler2.java:123)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:64)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:75)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:48)
+	at org.eclipse.cdt.managedbuilder.core.ResourceChangeHandler2.resourceChanged(ResourceChangeHandler2.java:180)
+	at org.eclipse.core.internal.events.NotificationManager$1.run(NotificationManager.java:299)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.NotificationManager.notify(NotificationManager.java:289)
+	at org.eclipse.core.internal.events.NotificationManager.broadcastChanges(NotificationManager.java:152)
+	at org.eclipse.core.internal.resources.Workspace.broadcastPostChange(Workspace.java:374)
+	at org.eclipse.core.internal.resources.Workspace.endOperation(Workspace.java:1469)
+	at org.eclipse.core.internal.resources.Project.touch(Project.java:1311)
+	at org.eclipse.team.core.RepositoryProvider.map(RepositoryProvider.java:132)
+	at org.eclipse.egit.core.op.ConnectProviderOperation.connectProject(ConnectProviderOperation.java:156)
+	at org.eclipse.egit.core.op.ConnectProviderOperation.execute(ConnectProviderOperation.java:102)
+	at org.eclipse.egit.core.internal.job.JobUtil$1.run(JobUtil.java:53)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.cdt.managedbuilder.core 4 0 2022-03-01 19:47:05.326
+!MESSAGE Orphaned CDT build configuration [com.atollic.truestudio.exe.debug.1518366166]: parent extension cfg [com.atollic.truestudio.exe.debug] not found
+!STACK 0
+java.lang.Exception
+	at org.eclipse.cdt.managedbuilder.core.ManagedBuilderCorePlugin.error(ManagedBuilderCorePlugin.java:226)
+	at org.eclipse.cdt.managedbuilder.internal.core.Configuration.loadFromProject(Configuration.java:844)
+	at org.eclipse.cdt.managedbuilder.internal.core.Configuration.<init>(Configuration.java:402)
+	at org.eclipse.cdt.managedbuilder.internal.dataprovider.ConfigurationDataProvider.load(ConfigurationDataProvider.java:391)
+	at org.eclipse.cdt.managedbuilder.internal.dataprovider.ConfigurationDataProvider.loadConfiguration(ConfigurationDataProvider.java:557)
+	at org.eclipse.cdt.internal.core.settings.model.CConfigurationDescriptionCache.loadData(CConfigurationDescriptionCache.java:136)
+	at org.eclipse.cdt.internal.core.settings.model.CProjectDescription.loadDatas(CProjectDescription.java:196)
+	at org.eclipse.cdt.internal.core.settings.model.xml.XmlProjectDescriptionStorage.loadProjectDescription(XmlProjectDescriptionStorage.java:500)
+	at org.eclipse.cdt.internal.core.settings.model.xml.XmlProjectDescriptionStorage.getProjectDescription(XmlProjectDescriptionStorage.java:237)
+	at org.eclipse.cdt.internal.core.settings.model.CProjectDescriptionManager.getProjectDescriptionInternal(CProjectDescriptionManager.java:426)
+	at org.eclipse.cdt.internal.core.settings.model.CProjectDescriptionManager.getProjectDescription(CProjectDescriptionManager.java:408)
+	at org.eclipse.cdt.managedbuilder.core.ManagedBuildManager.findBuildInfo(ManagedBuildManager.java:2730)
+	at org.eclipse.cdt.managedbuilder.core.ManagedBuildManager.getBuildInfo(ManagedBuildManager.java:2991)
+	at org.eclipse.cdt.managedbuilder.core.ManagedBuildManager.getBuildInfo(ManagedBuildManager.java:2946)
+	at org.eclipse.cdt.managedbuilder.core.ResourceChangeHandler2$Visitor.visit(ResourceChangeHandler2.java:123)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:64)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:75)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:48)
+	at org.eclipse.cdt.managedbuilder.core.ResourceChangeHandler2.resourceChanged(ResourceChangeHandler2.java:180)
+	at org.eclipse.core.internal.events.NotificationManager$1.run(NotificationManager.java:299)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.NotificationManager.notify(NotificationManager.java:289)
+	at org.eclipse.core.internal.events.NotificationManager.broadcastChanges(NotificationManager.java:152)
+	at org.eclipse.core.internal.resources.Workspace.broadcastPostChange(Workspace.java:374)
+	at org.eclipse.core.internal.resources.Workspace.endOperation(Workspace.java:1469)
+	at org.eclipse.core.internal.resources.Project.touch(Project.java:1311)
+	at org.eclipse.team.core.RepositoryProvider.map(RepositoryProvider.java:132)
+	at org.eclipse.egit.core.op.ConnectProviderOperation.connectProject(ConnectProviderOperation.java:156)
+	at org.eclipse.egit.core.op.ConnectProviderOperation.execute(ConnectProviderOperation.java:102)
+	at org.eclipse.egit.core.internal.job.JobUtil$1.run(JobUtil.java:53)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.cdt.managedbuilder.core 4 0 2022-03-01 19:47:05.385
+!MESSAGE Orphaned CDT build configuration [com.atollic.truestudio.exe.debug.1518366166]: parent extension cfg [com.atollic.truestudio.exe.debug] not found
+!STACK 0
+java.lang.Exception
+	at org.eclipse.cdt.managedbuilder.core.ManagedBuilderCorePlugin.error(ManagedBuilderCorePlugin.java:226)
+	at org.eclipse.cdt.managedbuilder.internal.core.Configuration.loadFromProject(Configuration.java:844)
+	at org.eclipse.cdt.managedbuilder.internal.core.Configuration.<init>(Configuration.java:402)
+	at org.eclipse.cdt.managedbuilder.internal.dataprovider.ConfigurationDataProvider.load(ConfigurationDataProvider.java:391)
+	at org.eclipse.cdt.managedbuilder.internal.dataprovider.ConfigurationDataProvider.loadConfiguration(ConfigurationDataProvider.java:557)
+	at org.eclipse.cdt.internal.core.settings.model.CConfigurationDescriptionCache.loadData(CConfigurationDescriptionCache.java:136)
+	at org.eclipse.cdt.internal.core.settings.model.CProjectDescription.loadDatas(CProjectDescription.java:196)
+	at org.eclipse.cdt.internal.core.settings.model.xml.XmlProjectDescriptionStorage.loadProjectDescription(XmlProjectDescriptionStorage.java:500)
+	at org.eclipse.cdt.internal.core.settings.model.xml.XmlProjectDescriptionStorage.getProjectDescription(XmlProjectDescriptionStorage.java:237)
+	at org.eclipse.cdt.internal.core.settings.model.CProjectDescriptionManager.getProjectDescriptionInternal(CProjectDescriptionManager.java:426)
+	at org.eclipse.cdt.internal.core.settings.model.CProjectDescriptionManager.getProjectDescription(CProjectDescriptionManager.java:408)
+	at org.eclipse.cdt.managedbuilder.core.ManagedBuildManager.findBuildInfo(ManagedBuildManager.java:2730)
+	at org.eclipse.cdt.managedbuilder.core.ManagedBuildManager.getBuildInfo(ManagedBuildManager.java:2991)
+	at org.eclipse.cdt.managedbuilder.core.ManagedBuildManager.getBuildInfo(ManagedBuildManager.java:2946)
+	at org.eclipse.cdt.managedbuilder.core.ResourceChangeHandler2$Visitor.visit(ResourceChangeHandler2.java:123)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:64)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:75)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:48)
+	at org.eclipse.cdt.managedbuilder.core.ResourceChangeHandler2.resourceChanged(ResourceChangeHandler2.java:180)
+	at org.eclipse.core.internal.events.NotificationManager$1.run(NotificationManager.java:299)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.NotificationManager.notify(NotificationManager.java:289)
+	at org.eclipse.core.internal.events.NotificationManager.broadcastChanges(NotificationManager.java:152)
+	at org.eclipse.core.internal.resources.Workspace.broadcastPostChange(Workspace.java:374)
+	at org.eclipse.core.internal.resources.Workspace.endOperation(Workspace.java:1469)
+	at org.eclipse.core.internal.resources.Project.touch(Project.java:1311)
+	at org.eclipse.team.core.RepositoryProvider.map(RepositoryProvider.java:132)
+	at org.eclipse.egit.core.op.ConnectProviderOperation.connectProject(ConnectProviderOperation.java:156)
+	at org.eclipse.egit.core.op.ConnectProviderOperation.execute(ConnectProviderOperation.java:102)
+	at org.eclipse.egit.core.internal.job.JobUtil$1.run(JobUtil.java:53)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.cdt.core 1 0 2022-03-01 19:47:05.423
+!MESSAGE Indexed 'hw52' (26 sources, 82 headers) in 1.61 sec: 5,909 declarations; 20,780 references; 0 unresolved inclusions; 1 syntax errors; 0 unresolved names (0%)
+
+!ENTRY org.eclipse.cdt.core 4 0 2022-03-01 19:47:05.428
+!MESSAGE Error loading provider class=[com.atollic.truestudio.mbs.GCCSpecsDetectorAtollicArm] in project=STM32F030xC, cfg=[com.atollic.truestudio.exe.debug.1518366166]
+!STACK 1
+org.eclipse.core.runtime.CoreException: Not able to load provider class=com.atollic.truestudio.mbs.GCCSpecsDetectorAtollicArm
+	at org.eclipse.cdt.internal.core.language.settings.providers.LanguageSettingsExtensionManager.instantiateProviderClass(LanguageSettingsExtensionManager.java:278)
+	at org.eclipse.cdt.internal.core.language.settings.providers.LanguageSettingsProvidersSerializer.loadProvider(LanguageSettingsProvidersSerializer.java:1126)
+	at org.eclipse.cdt.internal.core.language.settings.providers.LanguageSettingsProvidersSerializer.loadLanguageSettingsInternal(LanguageSettingsProvidersSerializer.java:1021)
+	at org.eclipse.cdt.internal.core.language.settings.providers.LanguageSettingsProvidersSerializer.loadLanguageSettings(LanguageSettingsProvidersSerializer.java:1162)
+	at org.eclipse.cdt.internal.core.settings.model.xml.XmlProjectDescriptionStorage.loadProjectDescription(XmlProjectDescriptionStorage.java:499)
+	at org.eclipse.cdt.internal.core.settings.model.xml.XmlProjectDescriptionStorage.getProjectDescription(XmlProjectDescriptionStorage.java:237)
+	at org.eclipse.cdt.internal.core.settings.model.CProjectDescriptionManager.getProjectDescriptionInternal(CProjectDescriptionManager.java:426)
+	at org.eclipse.cdt.internal.core.settings.model.CProjectDescriptionManager.getProjectDescription(CProjectDescriptionManager.java:408)
+	at org.eclipse.cdt.managedbuilder.core.ManagedBuildManager.findBuildInfo(ManagedBuildManager.java:2730)
+	at org.eclipse.cdt.managedbuilder.core.ManagedBuildManager.getBuildInfo(ManagedBuildManager.java:2991)
+	at org.eclipse.cdt.managedbuilder.core.ManagedBuildManager.getBuildInfo(ManagedBuildManager.java:2946)
+	at org.eclipse.cdt.managedbuilder.core.ResourceChangeHandler2$Visitor.visit(ResourceChangeHandler2.java:123)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:64)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:75)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:48)
+	at org.eclipse.cdt.managedbuilder.core.ResourceChangeHandler2.resourceChanged(ResourceChangeHandler2.java:180)
+	at org.eclipse.core.internal.events.NotificationManager$1.run(NotificationManager.java:299)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.NotificationManager.notify(NotificationManager.java:289)
+	at org.eclipse.core.internal.events.NotificationManager.broadcastChanges(NotificationManager.java:152)
+	at org.eclipse.core.internal.resources.Workspace.broadcastPostChange(Workspace.java:374)
+	at org.eclipse.core.internal.resources.Workspace.endOperation(Workspace.java:1469)
+	at org.eclipse.core.internal.resources.Project.touch(Project.java:1311)
+	at org.eclipse.team.core.RepositoryProvider.map(RepositoryProvider.java:132)
+	at org.eclipse.egit.core.op.ConnectProviderOperation.connectProject(ConnectProviderOperation.java:156)
+	at org.eclipse.egit.core.op.ConnectProviderOperation.execute(ConnectProviderOperation.java:102)
+	at org.eclipse.egit.core.internal.job.JobUtil$1.run(JobUtil.java:53)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 1 org.eclipse.cdt.core 4 0 2022-03-01 19:47:05.428
+!MESSAGE Not able to load provider class=com.atollic.truestudio.mbs.GCCSpecsDetectorAtollicArm
+
+!ENTRY org.eclipse.cdt.managedbuilder.core 4 0 2022-03-01 19:47:05.431
+!MESSAGE Orphaned CDT build configuration [com.atollic.truestudio.exe.debug.1518366166]: parent extension cfg [com.atollic.truestudio.exe.debug] not found
+!STACK 0
+java.lang.Exception
+	at org.eclipse.cdt.managedbuilder.core.ManagedBuilderCorePlugin.error(ManagedBuilderCorePlugin.java:226)
+	at org.eclipse.cdt.managedbuilder.internal.core.Configuration.loadFromProject(Configuration.java:844)
+	at org.eclipse.cdt.managedbuilder.internal.core.Configuration.<init>(Configuration.java:402)
+	at org.eclipse.cdt.managedbuilder.internal.dataprovider.ConfigurationDataProvider.load(ConfigurationDataProvider.java:391)
+	at org.eclipse.cdt.managedbuilder.internal.dataprovider.ConfigurationDataProvider.loadConfiguration(ConfigurationDataProvider.java:557)
+	at org.eclipse.cdt.internal.core.settings.model.CConfigurationDescriptionCache.loadData(CConfigurationDescriptionCache.java:136)
+	at org.eclipse.cdt.internal.core.settings.model.CProjectDescription.loadDatas(CProjectDescription.java:196)
+	at org.eclipse.cdt.internal.core.settings.model.xml.XmlProjectDescriptionStorage.loadProjectDescription(XmlProjectDescriptionStorage.java:500)
+	at org.eclipse.cdt.internal.core.settings.model.xml.XmlProjectDescriptionStorage.getProjectDescription(XmlProjectDescriptionStorage.java:237)
+	at org.eclipse.cdt.internal.core.settings.model.CProjectDescriptionManager.getProjectDescriptionInternal(CProjectDescriptionManager.java:426)
+	at org.eclipse.cdt.internal.core.settings.model.CProjectDescriptionManager.getProjectDescription(CProjectDescriptionManager.java:408)
+	at org.eclipse.cdt.managedbuilder.core.ManagedBuildManager.findBuildInfo(ManagedBuildManager.java:2730)
+	at org.eclipse.cdt.managedbuilder.core.ManagedBuildManager.getBuildInfo(ManagedBuildManager.java:2991)
+	at org.eclipse.cdt.managedbuilder.core.ManagedBuildManager.getBuildInfo(ManagedBuildManager.java:2946)
+	at org.eclipse.cdt.managedbuilder.core.ResourceChangeHandler2$Visitor.visit(ResourceChangeHandler2.java:123)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:64)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:75)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:48)
+	at org.eclipse.cdt.managedbuilder.core.ResourceChangeHandler2.resourceChanged(ResourceChangeHandler2.java:180)
+	at org.eclipse.core.internal.events.NotificationManager$1.run(NotificationManager.java:299)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.NotificationManager.notify(NotificationManager.java:289)
+	at org.eclipse.core.internal.events.NotificationManager.broadcastChanges(NotificationManager.java:152)
+	at org.eclipse.core.internal.resources.Workspace.broadcastPostChange(Workspace.java:374)
+	at org.eclipse.core.internal.resources.Workspace.endOperation(Workspace.java:1469)
+	at org.eclipse.core.internal.resources.Project.touch(Project.java:1311)
+	at org.eclipse.team.core.RepositoryProvider.map(RepositoryProvider.java:132)
+	at org.eclipse.egit.core.op.ConnectProviderOperation.connectProject(ConnectProviderOperation.java:156)
+	at org.eclipse.egit.core.op.ConnectProviderOperation.execute(ConnectProviderOperation.java:102)
+	at org.eclipse.egit.core.internal.job.JobUtil$1.run(JobUtil.java:53)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.cdt.managedbuilder.core 4 0 2022-03-01 19:47:05.855
+!MESSAGE Orphaned CDT build configuration [com.atollic.truestudio.exe.debug.1518366166]: parent extension cfg [com.atollic.truestudio.exe.debug] not found
+!STACK 0
+java.lang.Exception
+	at org.eclipse.cdt.managedbuilder.core.ManagedBuilderCorePlugin.error(ManagedBuilderCorePlugin.java:226)
+	at org.eclipse.cdt.managedbuilder.internal.core.Configuration.loadFromProject(Configuration.java:844)
+	at org.eclipse.cdt.managedbuilder.internal.core.Configuration.<init>(Configuration.java:402)
+	at org.eclipse.cdt.managedbuilder.internal.dataprovider.ConfigurationDataProvider.load(ConfigurationDataProvider.java:391)
+	at org.eclipse.cdt.managedbuilder.internal.dataprovider.ConfigurationDataProvider.loadConfiguration(ConfigurationDataProvider.java:557)
+	at org.eclipse.cdt.internal.core.settings.model.CConfigurationDescriptionCache.loadData(CConfigurationDescriptionCache.java:136)
+	at org.eclipse.cdt.internal.core.settings.model.CProjectDescription.loadDatas(CProjectDescription.java:196)
+	at org.eclipse.cdt.internal.core.settings.model.xml.XmlProjectDescriptionStorage.loadProjectDescription(XmlProjectDescriptionStorage.java:500)
+	at org.eclipse.cdt.internal.core.settings.model.xml.XmlProjectDescriptionStorage.getProjectDescription(XmlProjectDescriptionStorage.java:237)
+	at org.eclipse.cdt.internal.core.settings.model.CProjectDescriptionManager.getProjectDescriptionInternal(CProjectDescriptionManager.java:426)
+	at org.eclipse.cdt.internal.core.settings.model.CProjectDescriptionManager.getProjectDescription(CProjectDescriptionManager.java:408)
+	at org.eclipse.cdt.managedbuilder.core.ManagedBuildManager.findBuildInfo(ManagedBuildManager.java:2730)
+	at org.eclipse.cdt.managedbuilder.core.ManagedBuildManager.getBuildInfo(ManagedBuildManager.java:2991)
+	at org.eclipse.cdt.managedbuilder.core.ManagedBuildManager.getBuildInfo(ManagedBuildManager.java:2946)
+	at org.eclipse.cdt.managedbuilder.core.ResourceChangeHandler2$Visitor.visit(ResourceChangeHandler2.java:123)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:64)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:75)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:48)
+	at org.eclipse.cdt.managedbuilder.core.ResourceChangeHandler2.resourceChanged(ResourceChangeHandler2.java:180)
+	at org.eclipse.core.internal.events.NotificationManager$1.run(NotificationManager.java:299)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.NotificationManager.notify(NotificationManager.java:289)
+	at org.eclipse.core.internal.events.NotificationManager.broadcastChanges(NotificationManager.java:152)
+	at org.eclipse.core.internal.resources.Workspace.broadcastPostChange(Workspace.java:374)
+	at org.eclipse.core.internal.resources.Workspace.endOperation(Workspace.java:1469)
+	at org.eclipse.core.internal.resources.Project.touch(Project.java:1311)
+	at org.eclipse.team.core.RepositoryProvider.map(RepositoryProvider.java:132)
+	at org.eclipse.egit.core.op.ConnectProviderOperation.connectProject(ConnectProviderOperation.java:156)
+	at org.eclipse.egit.core.op.ConnectProviderOperation.execute(ConnectProviderOperation.java:102)
+	at org.eclipse.egit.core.internal.job.JobUtil$1.run(JobUtil.java:53)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.cdt.managedbuilder.core 4 0 2022-03-01 19:47:05.917
+!MESSAGE Orphaned CDT build configuration [com.atollic.truestudio.exe.debug.1518366166]: parent extension cfg [com.atollic.truestudio.exe.debug] not found
+!STACK 0
+java.lang.Exception
+	at org.eclipse.cdt.managedbuilder.core.ManagedBuilderCorePlugin.error(ManagedBuilderCorePlugin.java:226)
+	at org.eclipse.cdt.managedbuilder.internal.core.Configuration.loadFromProject(Configuration.java:844)
+	at org.eclipse.cdt.managedbuilder.internal.core.Configuration.<init>(Configuration.java:402)
+	at org.eclipse.cdt.managedbuilder.internal.dataprovider.ConfigurationDataProvider.load(ConfigurationDataProvider.java:391)
+	at org.eclipse.cdt.managedbuilder.internal.dataprovider.ConfigurationDataProvider.loadConfiguration(ConfigurationDataProvider.java:557)
+	at org.eclipse.cdt.internal.core.settings.model.CConfigurationDescriptionCache.loadData(CConfigurationDescriptionCache.java:136)
+	at org.eclipse.cdt.internal.core.settings.model.CProjectDescription.loadDatas(CProjectDescription.java:196)
+	at org.eclipse.cdt.internal.core.settings.model.xml.XmlProjectDescriptionStorage.loadProjectDescription(XmlProjectDescriptionStorage.java:500)
+	at org.eclipse.cdt.internal.core.settings.model.xml.XmlProjectDescriptionStorage.getProjectDescription(XmlProjectDescriptionStorage.java:237)
+	at org.eclipse.cdt.internal.core.settings.model.CProjectDescriptionManager.getProjectDescriptionInternal(CProjectDescriptionManager.java:426)
+	at org.eclipse.cdt.internal.core.settings.model.CProjectDescriptionManager.getProjectDescription(CProjectDescriptionManager.java:408)
+	at org.eclipse.cdt.managedbuilder.core.ManagedBuildManager.findBuildInfo(ManagedBuildManager.java:2730)
+	at org.eclipse.cdt.managedbuilder.core.ManagedBuildManager.getBuildInfo(ManagedBuildManager.java:2991)
+	at org.eclipse.cdt.managedbuilder.core.ManagedBuildManager.getBuildInfo(ManagedBuildManager.java:2946)
+	at org.eclipse.cdt.managedbuilder.core.ResourceChangeHandler2$Visitor.visit(ResourceChangeHandler2.java:123)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:64)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:75)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:48)
+	at org.eclipse.cdt.managedbuilder.core.ResourceChangeHandler2.resourceChanged(ResourceChangeHandler2.java:180)
+	at org.eclipse.core.internal.events.NotificationManager$1.run(NotificationManager.java:299)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.NotificationManager.notify(NotificationManager.java:289)
+	at org.eclipse.core.internal.events.NotificationManager.broadcastChanges(NotificationManager.java:152)
+	at org.eclipse.core.internal.resources.Workspace.broadcastPostChange(Workspace.java:374)
+	at org.eclipse.core.internal.resources.Workspace.endOperation(Workspace.java:1469)
+	at org.eclipse.core.internal.resources.Project.touch(Project.java:1311)
+	at org.eclipse.team.core.RepositoryProvider.map(RepositoryProvider.java:132)
+	at org.eclipse.egit.core.op.ConnectProviderOperation.connectProject(ConnectProviderOperation.java:156)
+	at org.eclipse.egit.core.op.ConnectProviderOperation.execute(ConnectProviderOperation.java:102)
+	at org.eclipse.egit.core.internal.job.JobUtil$1.run(JobUtil.java:53)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.cdt.core 1 0 2022-03-01 19:47:07.523
+!MESSAGE Indexed 'homework4' (26 sources, 87 headers) in 1.96 sec: 6,362 declarations; 21,117 references; 0 unresolved inclusions; 1 syntax errors; 0 unresolved names (0%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2022-03-01 19:47:08.031
+!MESSAGE Indexed 'STM32F070x6' (26 sources, 2 headers) in 0.465 sec: 1,783 declarations; 5,988 references; 36 unresolved inclusions; 45 syntax errors; 6,826 unresolved names (47%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2022-03-01 19:47:08.908
+!MESSAGE Indexed 'STM32F070xB' (26 sources, 2 headers) in 0.191 sec: 1,783 declarations; 5,988 references; 36 unresolved inclusions; 45 syntax errors; 6,826 unresolved names (47%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2022-03-01 19:47:09.919
+!MESSAGE Indexed 'hw5' (26 sources, 82 headers) in 0.626 sec: 5,931 declarations; 21,337 references; 0 unresolved inclusions; 1 syntax errors; 0 unresolved names (0%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2022-03-01 19:47:10.563
+!MESSAGE Indexed 'lab0' (25 sources, 82 headers) in 0.566 sec: 5,895 declarations; 20,451 references; 0 unresolved inclusions; 1 syntax errors; 0 unresolved names (0%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2022-03-01 19:47:11.272
+!MESSAGE Indexed 'lab2' (25 sources, 82 headers) in 0.616 sec: 5,895 declarations; 20,452 references; 0 unresolved inclusions; 1 syntax errors; 0 unresolved names (0%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2022-03-01 19:47:12.029
+!MESSAGE Indexed 'lab4' (25 sources, 82 headers) in 0.638 sec: 5,895 declarations; 20,451 references; 0 unresolved inclusions; 1 syntax errors; 0 unresolved names (0%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2022-03-01 19:47:12.624
+!MESSAGE Indexed 'lab6' (27 sources, 86 headers) in 0.591 sec: 6,727 declarations; 21,056 references; 0 unresolved inclusions; 2 syntax errors; 0 unresolved names (0%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2022-03-01 19:47:12.745
+!MESSAGE Indexed 'STM32F031' (21 sources, 2 headers) in 0.116 sec: 1,537 declarations; 5,025 references; 28 unresolved inclusions; 38 syntax errors; 5,620 unresolved names (46%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2022-03-01 19:47:12.877
+!MESSAGE Indexed 'STM32F042' (26 sources, 2 headers) in 0.126 sec: 1,783 declarations; 5,988 references; 36 unresolved inclusions; 45 syntax errors; 6,826 unresolved names (47%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2022-03-01 19:47:13.002
+!MESSAGE Indexed 'STM32F051' (24 sources, 2 headers) in 0.119 sec: 1,655 declarations; 5,356 references; 32 unresolved inclusions; 45 syntax errors; 5,963 unresolved names (46%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2022-03-01 19:47:13.129
+!MESSAGE Indexed 'STM32F091' (26 sources, 2 headers) in 0.121 sec: 1,783 declarations; 5,988 references; 36 unresolved inclusions; 45 syntax errors; 6,826 unresolved names (47%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2022-03-01 19:47:13.263
+!MESSAGE Indexed 'STM32F030xC' (26 sources, 2 headers) in 0.129 sec: 1,783 declarations; 5,988 references; 36 unresolved inclusions; 45 syntax errors; 6,826 unresolved names (47%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2022-03-01 19:47:13.952
+!MESSAGE Indexed 'lab1' (25 sources, 85 headers) in 0.595 sec: 5,917 declarations; 20,416 references; 0 unresolved inclusions; 2 syntax errors; 0 unresolved names (0%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2022-03-01 19:47:14.652
+!MESSAGE Indexed 'lab3' (25 sources, 82 headers) in 0.601 sec: 5,895 declarations; 20,451 references; 0 unresolved inclusions; 1 syntax errors; 0 unresolved names (0%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2022-03-01 19:47:15.341
+!MESSAGE Indexed 'lab5' (25 sources, 82 headers) in 0.569 sec: 5,895 declarations; 20,451 references; 0 unresolved inclusions; 1 syntax errors; 0 unresolved names (0%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2022-03-01 19:47:15.960
+!MESSAGE Indexed 'check_wiring' (26 sources, 82 headers) in 0.615 sec: 5,897 declarations; 20,451 references; 0 unresolved inclusions; 1 syntax errors; 0 unresolved names (0%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2022-03-01 19:47:16.087
+!MESSAGE Indexed 'STM32F030' (21 sources, 2 headers) in 0.12 sec: 1,537 declarations; 5,025 references; 28 unresolved inclusions; 38 syntax errors; 5,620 unresolved names (46%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2022-03-01 19:47:16.212
+!MESSAGE Indexed 'STM32F072' (26 sources, 2 headers) in 0.119 sec: 1,783 declarations; 5,988 references; 36 unresolved inclusions; 45 syntax errors; 6,826 unresolved names (47%)
+
+!ENTRY org.eclipse.equinox.p2.engine 4 0 2022-03-01 20:13:46.833
+!MESSAGE Error parsing profile /home/shay/a/ece362/Ac6/SystemWorkbench/p2/org.eclipse.equinox.p2.engine/profileRegistry/epp.package.cpp.profile/1577997803437.profile.gz.
+!STACK 0
+java.io.FileNotFoundException: /home/shay/a/ece362/Ac6/SystemWorkbench/p2/org.eclipse.equinox.p2.engine/profileRegistry/epp.package.cpp.profile/1577997803437.profile.gz (Permission denied)
+	at java.io.FileInputStream.open0(Native Method)
+	at java.io.FileInputStream.open(FileInputStream.java:195)
+	at java.io.FileInputStream.<init>(FileInputStream.java:138)
+	at org.eclipse.equinox.internal.p2.engine.SimpleProfileRegistry$Parser.parse(SimpleProfileRegistry.java:716)
+	at org.eclipse.equinox.internal.p2.engine.SimpleProfileRegistry.getProfile(SimpleProfileRegistry.java:208)
+	at org.eclipse.equinox.internal.p2.engine.SurrogateProfileHandler.getSharedProfile(SurrogateProfileHandler.java:164)
+	at org.eclipse.equinox.internal.p2.engine.SurrogateProfileHandler.createProfile(SurrogateProfileHandler.java:210)
+	at org.eclipse.oomph.p2.internal.core.LazyProfileRegistry$AdjustingSurrogateProfileHandler.createProfile(LazyProfileRegistry.java:394)
+	at org.eclipse.equinox.internal.p2.engine.SimpleProfileRegistry.createSurrogateProfile(SimpleProfileRegistry.java:337)
+	at org.eclipse.equinox.internal.p2.engine.SimpleProfileRegistry.internalGetProfile(SimpleProfileRegistry.java:258)
+	at org.eclipse.equinox.internal.p2.engine.SimpleProfileRegistry.getProfile(SimpleProfileRegistry.java:179)
+	at org.eclipse.equinox.internal.p2.updatechecker.UpdateChecker.checkForUpdates(UpdateChecker.java:125)
+	at org.eclipse.equinox.internal.p2.updatechecker.UpdateChecker$UpdateCheckThread.run(UpdateChecker.java:74)
+
+!ENTRY org.eclipse.launchbar.core 2 0 2022-03-01 20:16:06.500
+!MESSAGE Enablement expression is missing for descriptor type org.eclipse.cdt.debug.core.coreBuildDescriptorType
+
+!ENTRY org.eclipse.launchbar.core 2 0 2022-03-01 20:16:06.502
+!MESSAGE Enablement expression is missing for config provider for org.eclipse.cdt.debug.core.coreBuildDescriptorType
+
+!ENTRY fr.ac6.mcu.debug 4 5012 2022-03-01 20:16:45.778
+!MESSAGE Error in final launch sequence
+!STACK 1
+org.eclipse.core.runtime.CoreException: Failed to execute MI command:
+load /home/shay/a/will2253/workspace/lab6/Debug/lab6.elf 
+
+Error message from debugger back end:
+Error erasing flash with vFlashErase packet
+	at org.eclipse.cdt.dsf.concurrent.Query.get(Query.java:111)
+	at fr.ac6.mcu.debug.launching.MCUGDBJtagDSFLaunchConfigurationDelegate.launchDebugSession(MCUGDBJtagDSFLaunchConfigurationDelegate.java:281)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launchDebugger(GdbLaunchDelegate.java:101)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launch(GdbLaunchDelegate.java:90)
+	at fr.ac6.mcu.debug.launching.MCUGDBJtagDSFLaunchConfigurationDelegate.launch(MCUGDBJtagDSFLaunchConfigurationDelegate.java:319)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:885)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:739)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1039)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1256)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+Caused by: java.lang.Exception: Error erasing flash with vFlashErase packet
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.processMIOutput(AbstractMIControl.java:941)
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.run(AbstractMIControl.java:770)
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10004 2022-03-01 20:16:45.778
+!MESSAGE Failed to execute MI command:
+load /home/shay/a/will2253/workspace/lab6/Debug/lab6.elf 
+
+Error message from debugger back end:
+Error erasing flash with vFlashErase packet
+!STACK 0
+java.lang.Exception: Error erasing flash with vFlashErase packet
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.processMIOutput(AbstractMIControl.java:941)
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.run(AbstractMIControl.java:770)

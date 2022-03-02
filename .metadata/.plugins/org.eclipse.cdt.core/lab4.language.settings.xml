@@ -4,13 +4,13 @@
 		<extension point="org.eclipse.cdt.core.LanguageSettingsProvider">
 			<provider id="fr.ac6.mcu.ide.build.CrossBuiltinSpecsDetector">
 				<language id="org.eclipse.cdt.core.gcc">
-					<entry kind="includePath" name="/Applications/Ac6/SystemWorkbench.app/Contents/Eclipse/plugins/fr.ac6.mcu.externaltools.arm-none.macos64_1.17.0.201812190825/tools/compiler/lib/gcc/arm-none-eabi/7.3.1/include">
+					<entry kind="includePath" name="/home/shay/a/ece362/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.17.0.201812190825/tools/compiler/lib/gcc/arm-none-eabi/7.3.1/include">
 						<flag value="BUILTIN|READONLY"/>
 					</entry>
-					<entry kind="includePath" name="/Applications/Ac6/SystemWorkbench.app/Contents/Eclipse/plugins/fr.ac6.mcu.externaltools.arm-none.macos64_1.17.0.201812190825/tools/compiler/lib/gcc/arm-none-eabi/7.3.1/include-fixed">
+					<entry kind="includePath" name="/home/shay/a/ece362/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.17.0.201812190825/tools/compiler/lib/gcc/arm-none-eabi/7.3.1/include-fixed">
 						<flag value="BUILTIN|READONLY"/>
 					</entry>
-					<entry kind="includePath" name="/Applications/Ac6/SystemWorkbench.app/Contents/Eclipse/plugins/fr.ac6.mcu.externaltools.arm-none.macos64_1.17.0.201812190825/tools/compiler/arm-none-eabi/include">
+					<entry kind="includePath" name="/home/shay/a/ece362/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.17.0.201812190825/tools/compiler/arm-none-eabi/include">
 						<flag value="BUILTIN|READONLY"/>
 					</entry>
 					<entry kind="macro" name="__ACCUM_EPSILON__" value="0x1P-15K">
@@ -44,9 +44,6 @@
 						<flag value="BUILTIN|READONLY"/>
 					</entry>
 					<entry kind="macro" name="__ARM_ARCH_ISA_ARM" value="1">
-						<flag value="BUILTIN|READONLY"/>
-					</entry>
-					<entry kind="macro" name="__ARM_ARCH_ISA_THUMB" value="1">
 						<flag value="BUILTIN|READONLY"/>
 					</entry>
 					<entry kind="macro" name="__ARM_EABI__" value="1">
@@ -83,9 +80,6 @@
 						<flag value="BUILTIN|READONLY"/>
 					</entry>
 					<entry kind="macro" name="__BIGGEST_ALIGNMENT__" value="8">
-						<flag value="BUILTIN|READONLY"/>
-					</entry>
-					<entry kind="macro" name="__BYTE_ORDER__" value="__ORDER_LITTLE_ENDIAN__">
 						<flag value="BUILTIN|READONLY"/>
 					</entry>
 					<entry kind="macro" name="__CHAR16_TYPE__" value="short unsigned int">
@@ -199,9 +193,6 @@
 					<entry kind="macro" name="__DEC64_MAX_EXP__" value="385">
 						<flag value="BUILTIN|READONLY"/>
 					</entry>
-					<entry kind="macro" name="__DEC64_MAX__" value="9.999999999999999E384DD">
-						<flag value="BUILTIN|READONLY"/>
-					</entry>
 					<entry kind="macro" name="__DEC64_MIN_EXP__" value="(-382)">
 						<flag value="BUILTIN|READONLY"/>
 					</entry>
@@ -221,9 +212,6 @@
 						<flag value="BUILTIN|READONLY"/>
 					</entry>
 					<entry kind="macro" name="__DQ_IBIT__" value="0">
-						<flag value="BUILTIN|READONLY"/>
-					</entry>
-					<entry kind="macro" name="__ELF__" value="1">
 						<flag value="BUILTIN|READONLY"/>
 					</entry>
 					<entry kind="macro" name="__FINITE_MATH_ONLY__" value="0">
@@ -466,6 +454,9 @@
 					<entry kind="macro" name="__GNUC_MINOR__" value="3">
 						<flag value="BUILTIN|READONLY"/>
 					</entry>
+					<entry kind="macro" name="__GNUC_MINOR__" value="1">
+						<flag value="BUILTIN|READONLY"/>
+					</entry>
 					<entry kind="macro" name="__GNUC_PATCHLEVEL__" value="1">
 						<flag value="BUILTIN|READONLY"/>
 					</entry>
@@ -497,6 +488,9 @@
 						<flag value="BUILTIN|READONLY"/>
 					</entry>
 					<entry kind="macro" name="__INT16_MAX__" value="0x7fff">
+						<flag value="BUILTIN|READONLY"/>
+					</entry>
+					<entry kind="macro" name="__INT16_MAX__" value="">
 						<flag value="BUILTIN|READONLY"/>
 					</entry>
 					<entry kind="macro" name="__INT16_TYPE__" value="short int">
@@ -712,6 +706,9 @@
 					<entry kind="macro" name="__LLACCUM_MAX__" value="0X7FFFFFFFFFFFFFFFP-31LLK">
 						<flag value="BUILTIN|READONLY"/>
 					</entry>
+					<entry kind="macro" name="__LLACCUM_MIN__" value="__ORDER_LITTLE_ENDIAN__">
+						<flag value="BUILTIN|READONLY"/>
+					</entry>
 					<entry kind="macro" name="__LLACCUM_MIN__" value="(-0X1P31LLK-0X1P31LLK)">
 						<flag value="BUILTIN|READONLY"/>
 					</entry>
@@ -737,9 +734,6 @@
 						<flag value="BUILTIN|READONLY"/>
 					</entry>
 					<entry kind="macro" name="__LONG_MAX__" value="0x7fffffffL">
-						<flag value="BUILTIN|READONLY"/>
-					</entry>
-					<entry kind="macro" name="__LONG_WIDTH__" value="32">
 						<flag value="BUILTIN|READONLY"/>
 					</entry>
 					<entry kind="macro" name="__NO_INLINE__" value="1">
@@ -772,7 +766,7 @@
 					<entry kind="macro" name="__QQ_IBIT__" value="0">
 						<flag value="BUILTIN|READONLY"/>
 					</entry>
-					<entry kind="macro" name="__REGISTER_PREFIX__" value="">
+					<entry kind="macro" name="__REGISTER_PREFIX__" value="32">
 						<flag value="BUILTIN|READONLY"/>
 					</entry>
 					<entry kind="macro" name="__SACCUM_EPSILON__" value="0x1P-7HK">
@@ -844,9 +838,6 @@
 					<entry kind="macro" name="__SIZEOF_INT__" value="4">
 						<flag value="BUILTIN|READONLY"/>
 					</entry>
-					<entry kind="macro" name="__SIZEOF_LONG_DOUBLE__" value="8">
-						<flag value="BUILTIN|READONLY"/>
-					</entry>
 					<entry kind="macro" name="__SIZEOF_LONG_LONG__" value="8">
 						<flag value="BUILTIN|READONLY"/>
 					</entry>
@@ -896,6 +887,9 @@
 						<flag value="BUILTIN|READONLY"/>
 					</entry>
 					<entry kind="macro" name="__STDC_UTF_32__" value="1">
+						<flag value="BUILTIN|READONLY"/>
+					</entry>
+					<entry kind="macro" name="__STDC_UTF_32__" value="9.999999999999999E384DD">
 						<flag value="BUILTIN|READONLY"/>
 					</entry>
 					<entry kind="macro" name="__STDC_VERSION__" value="201112L">
@@ -1039,6 +1033,9 @@
 					<entry kind="macro" name="__UINT_FAST64_MAX__" value="0xffffffffffffffffULL">
 						<flag value="BUILTIN|READONLY"/>
 					</entry>
+					<entry kind="macro" name="__UINT_FAST64_MAX__" value="1">
+						<flag value="BUILTIN|READONLY"/>
+					</entry>
 					<entry kind="macro" name="__UINT_FAST64_TYPE__" value="long long unsigned int">
 						<flag value="BUILTIN|READONLY"/>
 					</entry>
@@ -1082,6 +1079,9 @@
 						<flag value="BUILTIN|READONLY"/>
 					</entry>
 					<entry kind="macro" name="__ULACCUM_MAX__" value="0XFFFFFFFFFFFFFFFFP-32ULK">
+						<flag value="BUILTIN|READONLY"/>
+					</entry>
+					<entry kind="macro" name="__ULACCUM_MIN__" value="8">
 						<flag value="BUILTIN|READONLY"/>
 					</entry>
 					<entry kind="macro" name="__ULACCUM_MIN__" value="0.0ULK">
@@ -1239,22 +1239,22 @@
 					</entry>
 				</language>
 				<language id="org.eclipse.cdt.core.g++">
-					<entry kind="includePath" name="/Applications/Ac6/SystemWorkbench.app/Contents/Eclipse/plugins/fr.ac6.mcu.externaltools.arm-none.macos64_1.17.0.201812190825/tools/compiler/arm-none-eabi/include/c++/7.3.1">
+					<entry kind="includePath" name="/home/shay/a/ece362/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.17.0.201812190825/tools/compiler/arm-none-eabi/include/c++/7.3.1">
 						<flag value="BUILTIN|READONLY"/>
 					</entry>
-					<entry kind="includePath" name="/Applications/Ac6/SystemWorkbench.app/Contents/Eclipse/plugins/fr.ac6.mcu.externaltools.arm-none.macos64_1.17.0.201812190825/tools/compiler/arm-none-eabi/include/c++/7.3.1/arm-none-eabi">
+					<entry kind="includePath" name="/home/shay/a/ece362/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.17.0.201812190825/tools/compiler/arm-none-eabi/include/c++/7.3.1/arm-none-eabi">
 						<flag value="BUILTIN|READONLY"/>
 					</entry>
-					<entry kind="includePath" name="/Applications/Ac6/SystemWorkbench.app/Contents/Eclipse/plugins/fr.ac6.mcu.externaltools.arm-none.macos64_1.17.0.201812190825/tools/compiler/arm-none-eabi/include/c++/7.3.1/backward">
+					<entry kind="includePath" name="/home/shay/a/ece362/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.17.0.201812190825/tools/compiler/arm-none-eabi/include/c++/7.3.1/backward">
 						<flag value="BUILTIN|READONLY"/>
 					</entry>
-					<entry kind="includePath" name="/Applications/Ac6/SystemWorkbench.app/Contents/Eclipse/plugins/fr.ac6.mcu.externaltools.arm-none.macos64_1.17.0.201812190825/tools/compiler/lib/gcc/arm-none-eabi/7.3.1/include">
+					<entry kind="includePath" name="/home/shay/a/ece362/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.17.0.201812190825/tools/compiler/lib/gcc/arm-none-eabi/7.3.1/include">
 						<flag value="BUILTIN|READONLY"/>
 					</entry>
-					<entry kind="includePath" name="/Applications/Ac6/SystemWorkbench.app/Contents/Eclipse/plugins/fr.ac6.mcu.externaltools.arm-none.macos64_1.17.0.201812190825/tools/compiler/lib/gcc/arm-none-eabi/7.3.1/include-fixed">
+					<entry kind="includePath" name="/home/shay/a/ece362/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.17.0.201812190825/tools/compiler/lib/gcc/arm-none-eabi/7.3.1/include-fixed">
 						<flag value="BUILTIN|READONLY"/>
 					</entry>
-					<entry kind="includePath" name="/Applications/Ac6/SystemWorkbench.app/Contents/Eclipse/plugins/fr.ac6.mcu.externaltools.arm-none.macos64_1.17.0.201812190825/tools/compiler/arm-none-eabi/include">
+					<entry kind="includePath" name="/home/shay/a/ece362/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.17.0.201812190825/tools/compiler/arm-none-eabi/include">
 						<flag value="BUILTIN|READONLY"/>
 					</entry>
 					<entry kind="macro" name="__ACCUM_EPSILON__" value="0x1P-15K">
@@ -2609,13 +2609,13 @@
 		<extension point="org.eclipse.cdt.core.LanguageSettingsProvider">
 			<provider id="fr.ac6.mcu.ide.build.CrossBuiltinSpecsDetector">
 				<language id="org.eclipse.cdt.core.gcc">
-					<entry kind="includePath" name="/Applications/Ac6/SystemWorkbench.app/Contents/Eclipse/plugins/fr.ac6.mcu.externaltools.arm-none.macos64_1.17.0.201812190825/tools/compiler/lib/gcc/arm-none-eabi/7.3.1/include">
+					<entry kind="includePath" name="/home/shay/a/ece362/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.17.0.201812190825/tools/compiler/lib/gcc/arm-none-eabi/7.3.1/include">
 						<flag value="BUILTIN|READONLY"/>
 					</entry>
-					<entry kind="includePath" name="/Applications/Ac6/SystemWorkbench.app/Contents/Eclipse/plugins/fr.ac6.mcu.externaltools.arm-none.macos64_1.17.0.201812190825/tools/compiler/lib/gcc/arm-none-eabi/7.3.1/include-fixed">
+					<entry kind="includePath" name="/home/shay/a/ece362/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.17.0.201812190825/tools/compiler/lib/gcc/arm-none-eabi/7.3.1/include-fixed">
 						<flag value="BUILTIN|READONLY"/>
 					</entry>
-					<entry kind="includePath" name="/Applications/Ac6/SystemWorkbench.app/Contents/Eclipse/plugins/fr.ac6.mcu.externaltools.arm-none.macos64_1.17.0.201812190825/tools/compiler/arm-none-eabi/include">
+					<entry kind="includePath" name="/home/shay/a/ece362/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.17.0.201812190825/tools/compiler/arm-none-eabi/include">
 						<flag value="BUILTIN|READONLY"/>
 					</entry>
 					<entry kind="macro" name="__ACCUM_EPSILON__" value="0x1P-15K">
@@ -2672,7 +2672,7 @@
 					<entry kind="macro" name="__ATOMIC_ACQUIRE" value="2">
 						<flag value="BUILTIN|READONLY"/>
 					</entry>
-					<entry kind="macro" name="__ATOMIC_ACQ_REL" value="4">
+					<entry kind="macro" name="__ATOMIC_ACQ_REL" value="0x1P-31LK">
 						<flag value="BUILTIN|READONLY"/>
 					</entry>
 					<entry kind="macro" name="__ATOMIC_CONSUME" value="1">
@@ -2682,12 +2682,6 @@
 						<flag value="BUILTIN|READONLY"/>
 					</entry>
 					<entry kind="macro" name="__ATOMIC_RELEASE" value="3">
-						<flag value="BUILTIN|READONLY"/>
-					</entry>
-					<entry kind="macro" name="__ATOMIC_SEQ_CST" value="5">
-						<flag value="BUILTIN|READONLY"/>
-					</entry>
-					<entry kind="macro" name="__BIGGEST_ALIGNMENT__" value="8">
 						<flag value="BUILTIN|READONLY"/>
 					</entry>
 					<entry kind="macro" name="__BYTE_ORDER__" value="__ORDER_LITTLE_ENDIAN__">
@@ -2823,6 +2817,9 @@
 						<flag value="BUILTIN|READONLY"/>
 					</entry>
 					<entry kind="macro" name="__DQ_FBIT__" value="63">
+						<flag value="BUILTIN|READONLY"/>
+					</entry>
+					<entry kind="macro" name="__DQ_IBIT__" value="8">
 						<flag value="BUILTIN|READONLY"/>
 					</entry>
 					<entry kind="macro" name="__DQ_IBIT__" value="0">
@@ -3233,9 +3230,6 @@
 					<entry kind="macro" name="__INT_WIDTH__" value="32">
 						<flag value="BUILTIN|READONLY"/>
 					</entry>
-					<entry kind="macro" name="__LACCUM_EPSILON__" value="0x1P-31LK">
-						<flag value="BUILTIN|READONLY"/>
-					</entry>
 					<entry kind="macro" name="__LACCUM_FBIT__" value="31">
 						<flag value="BUILTIN|READONLY"/>
 					</entry>
@@ -3338,9 +3332,6 @@
 					<entry kind="macro" name="__LONG_LONG_MAX__" value="0x7fffffffffffffffLL">
 						<flag value="BUILTIN|READONLY"/>
 					</entry>
-					<entry kind="macro" name="__LONG_LONG_WIDTH__" value="64">
-						<flag value="BUILTIN|READONLY"/>
-					</entry>
 					<entry kind="macro" name="__LONG_MAX__" value="0x7fffffffL">
 						<flag value="BUILTIN|READONLY"/>
 					</entry>
@@ -3372,9 +3363,6 @@
 						<flag value="BUILTIN|READONLY"/>
 					</entry>
 					<entry kind="macro" name="__QQ_FBIT__" value="7">
-						<flag value="BUILTIN|READONLY"/>
-					</entry>
-					<entry kind="macro" name="__QQ_IBIT__" value="0">
 						<flag value="BUILTIN|READONLY"/>
 					</entry>
 					<entry kind="macro" name="__REGISTER_PREFIX__" value="">
@@ -3455,6 +3443,9 @@
 					<entry kind="macro" name="__SIZEOF_LONG_LONG__" value="8">
 						<flag value="BUILTIN|READONLY"/>
 					</entry>
+					<entry kind="macro" name="__SIZEOF_LONG_LONG__" value="0XFFFFFFFFFFFFFFFFP-32ULK">
+						<flag value="BUILTIN|READONLY"/>
+					</entry>
 					<entry kind="macro" name="__SIZEOF_LONG__" value="4">
 						<flag value="BUILTIN|READONLY"/>
 					</entry>
@@ -3480,6 +3471,9 @@
 						<flag value="BUILTIN|READONLY"/>
 					</entry>
 					<entry kind="macro" name="__SIZE_TYPE__" value="unsigned int">
+						<flag value="BUILTIN|READONLY"/>
+					</entry>
+					<entry kind="macro" name="__SIZE_TYPE__" value="0">
 						<flag value="BUILTIN|READONLY"/>
 					</entry>
 					<entry kind="macro" name="__SIZE_WIDTH__" value="32">
@@ -3513,6 +3507,9 @@
 						<flag value="BUILTIN|READONLY"/>
 					</entry>
 					<entry kind="macro" name="__TA_IBIT__" value="64">
+						<flag value="BUILTIN|READONLY"/>
+					</entry>
+					<entry kind="macro" name="__THUMB_INTERWORK__" value="64">
 						<flag value="BUILTIN|READONLY"/>
 					</entry>
 					<entry kind="macro" name="__THUMB_INTERWORK__" value="1">
@@ -3686,9 +3683,6 @@
 					<entry kind="macro" name="__ULACCUM_IBIT__" value="32">
 						<flag value="BUILTIN|READONLY"/>
 					</entry>
-					<entry kind="macro" name="__ULACCUM_MAX__" value="0XFFFFFFFFFFFFFFFFP-32ULK">
-						<flag value="BUILTIN|READONLY"/>
-					</entry>
 					<entry kind="macro" name="__ULACCUM_MIN__" value="0.0ULK">
 						<flag value="BUILTIN|READONLY"/>
 					</entry>
@@ -3713,7 +3707,13 @@
 					<entry kind="macro" name="__ULLACCUM_FBIT__" value="32">
 						<flag value="BUILTIN|READONLY"/>
 					</entry>
+					<entry kind="macro" name="__ULLACCUM_IBIT__" value="5">
+						<flag value="BUILTIN|READONLY"/>
+					</entry>
 					<entry kind="macro" name="__ULLACCUM_IBIT__" value="32">
+						<flag value="BUILTIN|READONLY"/>
+					</entry>
+					<entry kind="macro" name="__ULLACCUM_MAX__" value="4">
 						<flag value="BUILTIN|READONLY"/>
 					</entry>
 					<entry kind="macro" name="__ULLACCUM_MAX__" value="0XFFFFFFFFFFFFFFFFP-32ULLK">
@@ -3844,22 +3844,22 @@
 					</entry>
 				</language>
 				<language id="org.eclipse.cdt.core.g++">
-					<entry kind="includePath" name="/Applications/Ac6/SystemWorkbench.app/Contents/Eclipse/plugins/fr.ac6.mcu.externaltools.arm-none.macos64_1.17.0.201812190825/tools/compiler/arm-none-eabi/include/c++/7.3.1">
+					<entry kind="includePath" name="/home/shay/a/ece362/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.17.0.201812190825/tools/compiler/arm-none-eabi/include/c++/7.3.1">
 						<flag value="BUILTIN|READONLY"/>
 					</entry>
-					<entry kind="includePath" name="/Applications/Ac6/SystemWorkbench.app/Contents/Eclipse/plugins/fr.ac6.mcu.externaltools.arm-none.macos64_1.17.0.201812190825/tools/compiler/arm-none-eabi/include/c++/7.3.1/arm-none-eabi">
+					<entry kind="includePath" name="/home/shay/a/ece362/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.17.0.201812190825/tools/compiler/arm-none-eabi/include/c++/7.3.1/arm-none-eabi">
 						<flag value="BUILTIN|READONLY"/>
 					</entry>
-					<entry kind="includePath" name="/Applications/Ac6/SystemWorkbench.app/Contents/Eclipse/plugins/fr.ac6.mcu.externaltools.arm-none.macos64_1.17.0.201812190825/tools/compiler/arm-none-eabi/include/c++/7.3.1/backward">
+					<entry kind="includePath" name="/home/shay/a/ece362/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.17.0.201812190825/tools/compiler/arm-none-eabi/include/c++/7.3.1/backward">
 						<flag value="BUILTIN|READONLY"/>
 					</entry>
-					<entry kind="includePath" name="/Applications/Ac6/SystemWorkbench.app/Contents/Eclipse/plugins/fr.ac6.mcu.externaltools.arm-none.macos64_1.17.0.201812190825/tools/compiler/lib/gcc/arm-none-eabi/7.3.1/include">
+					<entry kind="includePath" name="/home/shay/a/ece362/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.17.0.201812190825/tools/compiler/lib/gcc/arm-none-eabi/7.3.1/include">
 						<flag value="BUILTIN|READONLY"/>
 					</entry>
-					<entry kind="includePath" name="/Applications/Ac6/SystemWorkbench.app/Contents/Eclipse/plugins/fr.ac6.mcu.externaltools.arm-none.macos64_1.17.0.201812190825/tools/compiler/lib/gcc/arm-none-eabi/7.3.1/include-fixed">
+					<entry kind="includePath" name="/home/shay/a/ece362/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.17.0.201812190825/tools/compiler/lib/gcc/arm-none-eabi/7.3.1/include-fixed">
 						<flag value="BUILTIN|READONLY"/>
 					</entry>
-					<entry kind="includePath" name="/Applications/Ac6/SystemWorkbench.app/Contents/Eclipse/plugins/fr.ac6.mcu.externaltools.arm-none.macos64_1.17.0.201812190825/tools/compiler/arm-none-eabi/include">
+					<entry kind="includePath" name="/home/shay/a/ece362/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.17.0.201812190825/tools/compiler/arm-none-eabi/include">
 						<flag value="BUILTIN|READONLY"/>
 					</entry>
 					<entry kind="macro" name="__ACCUM_EPSILON__" value="0x1P-15K">

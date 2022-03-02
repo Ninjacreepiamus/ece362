@@ -1971,9 +1971,6 @@
 					<entry kind="macro" name="__LLACCUM_IBIT__" value="32">
 						<flag value="BUILTIN|READONLY"/>
 					</entry>
-					<entry kind="macro" name="__LLACCUM_MAX__" value="0X7FFFFFFFFFFFFFFFP-31LLK">
-						<flag value="BUILTIN|READONLY"/>
-					</entry>
 					<entry kind="macro" name="__LLACCUM_MIN__" value="(-0X1P31LLK-0X1P31LLK)">
 						<flag value="BUILTIN|READONLY"/>
 					</entry>
@@ -2023,6 +2020,9 @@
 						<flag value="BUILTIN|READONLY"/>
 					</entry>
 					<entry kind="macro" name="__PTRDIFF_TYPE__" value="int">
+						<flag value="BUILTIN|READONLY"/>
+					</entry>
+					<entry kind="macro" name="__PTRDIFF_TYPE__" value="0X7FFFFFFFFFFFFFFFP-31LLK">
 						<flag value="BUILTIN|READONLY"/>
 					</entry>
 					<entry kind="macro" name="__PTRDIFF_WIDTH__" value="32">
