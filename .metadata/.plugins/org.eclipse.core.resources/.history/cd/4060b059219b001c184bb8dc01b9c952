@@ -34,7 +34,7 @@ const char font[] = {
         ['u'] = 0x1c,
 };
 
-uint16_t digit[8*4];
+uint16_t digit[8];
 
 void set_digit(int n, char c)
 {
@@ -64,14 +64,14 @@ int main(void)
     RCC->AHBENR |= RCC_AHBENR_DMA1EN;
     DMA1_Channel2->CMAR = (uint32_t) digit;
     DMA1_Channel2->CPAR = (uint32_t) 0x48000414;
-    DMA1_Channel2->CNDTR = 8*4;
+    DMA1_Channel2->CNDTR = 8;
     DMA1_Channel2->CCR &= ~(DMA_CCR_MSIZE | DMA_CCR_PSIZE);
     DMA1_Channel2->CCR |= (DMA_CCR_DIR | DMA_CCR_MSIZE_0 | DMA_CCR_PSIZE_0
                          | DMA_CCR_MINC | DMA_CCR_CIRC);
     DMA1_Channel2->CCR |= DMA_CCR_EN;
 
     RCC->APB1ENR |= RCC_APB1ENR_TIM2EN;
-    TIM2->PSC = 3000-1;
+    TIM2->PSC = 24000-1;
     TIM2->ARR = 2-1;
     TIM2->DIER |= TIM_DIER_UDE;
     TIM2->CR1 |= TIM_CR1_CEN;
@@ -95,7 +95,4 @@ void TIM7_IRQHandler() {
     char time[8];
     sprintf(time, "%02d%02d%02d  ", hrs, min, sec);
     set_string(time);
-    if (eighth > 0 && eighth < 4) {
-        memcpy(&digit[8*eighth], digit, 2*8);
-    }
 }

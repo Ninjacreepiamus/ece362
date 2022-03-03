@@ -2,20 +2,20 @@
 <section name="Workbench">
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
 		<item value="false" key="isRegEx"/>
-		<item value="MMS" key="selection"/>
+		<item value="volume" key="selection"/>
 		<item value="false" key="casesensitive"/>
 		<item value="false" key="incremental"/>
 		<item value="true" key="wrap"/>
 		<item value="false" key="wholeword"/>
 		<list key="findhistory">
+			<item value="volume"/>
+			<item value="tsel"/>
 			<item value="mms"/>
 			<item value="rate"/>
 			<item value="tsel1"/>
 			<item value="dac-&gt;cr"/>
 			<item value="RCC_APB1ENR_TIM2EN"/>
 			<item value="rcc_cr2"/>
-			<item value="hsi"/>
-			<item value="sr"/>
 		</list>
 		<list key="replacehistory">
 		</list>
@@ -24,7 +24,7 @@
 		<item value="290" key="DIALOG_WIDTH"/>
 		<item value="1|Noto Sans|9.0|0|GTK|1|" key="DIALOG_FONT_NAME"/>
 		<item value="428" key="DIALOG_HEIGHT"/>
-		<item value="821" key="DIALOG_X_ORIGIN"/>
+		<item value="806" key="DIALOG_X_ORIGIN"/>
 		<item value="246" key="DIALOG_Y_ORIGIN"/>
 	</section>
 </section>

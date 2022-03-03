@@ -1,374 +1,543 @@
-11:43:29 **** Incremental Build of configuration Debug for project lab6 ****
+13:00:55 **** Build of configuration Debug for project hw6 ****
 make -j16 all 
-make: Nothing to be done for 'all'.
-11:43:32 **** Incremental Build of configuration Debug for project lab6 ****
-make -j16 all 
-make: Nothing to be done for 'all'.
-11:47:20 **** Incremental Build of configuration Debug for project lab6 ****
-make -j16 all 
+Building file: ../startup/startup_stm32.s
 Building file: ../src/main.c
+Invoking: MCU GCC Assembler
 Invoking: MCU GCC Compiler
-/home/shay/a/will2253/workspace/lab6/Debug
-arm-none-eabi-gcc -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -DSTM32 -DSTM32F0 -DSTM32F091RCTx -DDEBUG -DSTM32F091 -DUSE_STDPERIPH_DRIVER -I"/home/shay/a/will2253/workspace/lab6/StdPeriph_Driver/inc" -I"/home/shay/a/will2253/workspace/lab6/inc" -I"/home/shay/a/will2253/workspace/lab6/CMSIS/device" -I"/home/shay/a/will2253/workspace/lab6/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
-Finished building: ../src/main.c
+Building file: ../src/syscalls.c
+/home/shay/a/will2253/workspace/hw6/Debug
+/home/shay/a/will2253/workspace/hw6/Debug
+Invoking: MCU GCC Compiler
+Building file: ../src/system_stm32f0xx.c
+arm-none-eabi-as -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -I"/home/shay/a/will2253/workspace/hw6/StdPeriph_Driver/inc" -I"/home/shay/a/will2253/workspace/hw6/inc" -I"/home/shay/a/will2253/workspace/hw6/CMSIS/device" -I"/home/shay/a/will2253/workspace/hw6/CMSIS/core" -g -o "startup/startup_stm32.o" "../startup/startup_stm32.s"
+arm-none-eabi-gcc -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -DSTM32 -DSTM32F0 -DSTM32F091RCTx -DDEBUG -DSTM32F091 -DUSE_STDPERIPH_DRIVER -I"/home/shay/a/will2253/workspace/hw6/StdPeriph_Driver/inc" -I"/home/shay/a/will2253/workspace/hw6/inc" -I"/home/shay/a/will2253/workspace/hw6/CMSIS/device" -I"/home/shay/a/will2253/workspace/hw6/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+/home/shay/a/will2253/workspace/hw6/Debug
+Invoking: MCU GCC Compiler
+Building file: ../StdPeriph_Driver/src/stm32f0xx_adc.c
+arm-none-eabi-gcc -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -DSTM32 -DSTM32F0 -DSTM32F091RCTx -DDEBUG -DSTM32F091 -DUSE_STDPERIPH_DRIVER -I"/home/shay/a/will2253/workspace/hw6/StdPeriph_Driver/inc" -I"/home/shay/a/will2253/workspace/hw6/inc" -I"/home/shay/a/will2253/workspace/hw6/CMSIS/device" -I"/home/shay/a/will2253/workspace/hw6/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/syscalls.d" -MT"src/syscalls.o" -o "src/syscalls.o" "../src/syscalls.c"
+/home/shay/a/will2253/workspace/hw6/Debug
+Invoking: MCU GCC Compiler
+Building file: ../StdPeriph_Driver/src/stm32f0xx_can.c
+arm-none-eabi-gcc -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -DSTM32 -DSTM32F0 -DSTM32F091RCTx -DDEBUG -DSTM32F091 -DUSE_STDPERIPH_DRIVER -I"/home/shay/a/will2253/workspace/hw6/StdPeriph_Driver/inc" -I"/home/shay/a/will2253/workspace/hw6/inc" -I"/home/shay/a/will2253/workspace/hw6/CMSIS/device" -I"/home/shay/a/will2253/workspace/hw6/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/system_stm32f0xx.d" -MT"src/system_stm32f0xx.o" -o "src/system_stm32f0xx.o" "../src/system_stm32f0xx.c"
+Building file: ../StdPeriph_Driver/src/stm32f0xx_cec.c
+/home/shay/a/will2253/workspace/hw6/Debug
+arm-none-eabi-gcc -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -DSTM32 -DSTM32F0 -DSTM32F091RCTx -DDEBUG -DSTM32F091 -DUSE_STDPERIPH_DRIVER -I"/home/shay/a/will2253/workspace/hw6/StdPeriph_Driver/inc" -I"/home/shay/a/will2253/workspace/hw6/inc" -I"/home/shay/a/will2253/workspace/hw6/CMSIS/device" -I"/home/shay/a/will2253/workspace/hw6/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"StdPeriph_Driver/src/stm32f0xx_adc.d" -MT"StdPeriph_Driver/src/stm32f0xx_adc.o" -o "StdPeriph_Driver/src/stm32f0xx_adc.o" "../StdPeriph_Driver/src/stm32f0xx_adc.c"
+Invoking: MCU GCC Compiler
+Invoking: MCU GCC Compiler
+Building file: ../StdPeriph_Driver/src/stm32f0xx_comp.c
+Invoking: MCU GCC Compiler
+/home/shay/a/will2253/workspace/hw6/Debug
+/home/shay/a/will2253/workspace/hw6/Debug
+Building file: ../StdPeriph_Driver/src/stm32f0xx_crc.c
+arm-none-eabi-gcc -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -DSTM32 -DSTM32F0 -DSTM32F091RCTx -DDEBUG -DSTM32F091 -DUSE_STDPERIPH_DRIVER -I"/home/shay/a/will2253/workspace/hw6/StdPeriph_Driver/inc" -I"/home/shay/a/will2253/workspace/hw6/inc" -I"/home/shay/a/will2253/workspace/hw6/CMSIS/device" -I"/home/shay/a/will2253/workspace/hw6/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"StdPeriph_Driver/src/stm32f0xx_can.d" -MT"StdPeriph_Driver/src/stm32f0xx_can.o" -o "StdPeriph_Driver/src/stm32f0xx_can.o" "../StdPeriph_Driver/src/stm32f0xx_can.c"
+arm-none-eabi-gcc -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -DSTM32 -DSTM32F0 -DSTM32F091RCTx -DDEBUG -DSTM32F091 -DUSE_STDPERIPH_DRIVER -I"/home/shay/a/will2253/workspace/hw6/StdPeriph_Driver/inc" -I"/home/shay/a/will2253/workspace/hw6/inc" -I"/home/shay/a/will2253/workspace/hw6/CMSIS/device" -I"/home/shay/a/will2253/workspace/hw6/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"StdPeriph_Driver/src/stm32f0xx_cec.d" -MT"StdPeriph_Driver/src/stm32f0xx_cec.o" -o "StdPeriph_Driver/src/stm32f0xx_cec.o" "../StdPeriph_Driver/src/stm32f0xx_cec.c"
+Invoking: MCU GCC Compiler
+/home/shay/a/will2253/workspace/hw6/Debug
+Building file: ../StdPeriph_Driver/src/stm32f0xx_crs.c
+/home/shay/a/will2253/workspace/hw6/Debug
+Building file: ../StdPeriph_Driver/src/stm32f0xx_dac.c
+arm-none-eabi-gcc -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -DSTM32 -DSTM32F0 -DSTM32F091RCTx -DDEBUG -DSTM32F091 -DUSE_STDPERIPH_DRIVER -I"/home/shay/a/will2253/workspace/hw6/StdPeriph_Driver/inc" -I"/home/shay/a/will2253/workspace/hw6/inc" -I"/home/shay/a/will2253/workspace/hw6/CMSIS/device" -I"/home/shay/a/will2253/workspace/hw6/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"StdPeriph_Driver/src/stm32f0xx_comp.d" -MT"StdPeriph_Driver/src/stm32f0xx_comp.o" -o "StdPeriph_Driver/src/stm32f0xx_comp.o" "../StdPeriph_Driver/src/stm32f0xx_comp.c"
+arm-none-eabi-gcc -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -DSTM32 -DSTM32F0 -DSTM32F091RCTx -DDEBUG -DSTM32F091 -DUSE_STDPERIPH_DRIVER -I"/home/shay/a/will2253/workspace/hw6/StdPeriph_Driver/inc" -I"/home/shay/a/will2253/workspace/hw6/inc" -I"/home/shay/a/will2253/workspace/hw6/CMSIS/device" -I"/home/shay/a/will2253/workspace/hw6/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"StdPeriph_Driver/src/stm32f0xx_crc.d" -MT"StdPeriph_Driver/src/stm32f0xx_crc.o" -o "StdPeriph_Driver/src/stm32f0xx_crc.o" "../StdPeriph_Driver/src/stm32f0xx_crc.c"
+Invoking: MCU GCC Compiler
+Invoking: MCU GCC Compiler
+Building file: ../StdPeriph_Driver/src/stm32f0xx_dbgmcu.c
+/home/shay/a/will2253/workspace/hw6/Debug
+/home/shay/a/will2253/workspace/hw6/Debug
+Invoking: MCU GCC Compiler
+arm-none-eabi-gcc -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -DSTM32 -DSTM32F0 -DSTM32F091RCTx -DDEBUG -DSTM32F091 -DUSE_STDPERIPH_DRIVER -I"/home/shay/a/will2253/workspace/hw6/StdPeriph_Driver/inc" -I"/home/shay/a/will2253/workspace/hw6/inc" -I"/home/shay/a/will2253/workspace/hw6/CMSIS/device" -I"/home/shay/a/will2253/workspace/hw6/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"StdPeriph_Driver/src/stm32f0xx_crs.d" -MT"StdPeriph_Driver/src/stm32f0xx_crs.o" -o "StdPeriph_Driver/src/stm32f0xx_crs.o" "../StdPeriph_Driver/src/stm32f0xx_crs.c"
+arm-none-eabi-gcc -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -DSTM32 -DSTM32F0 -DSTM32F091RCTx -DDEBUG -DSTM32F091 -DUSE_STDPERIPH_DRIVER -I"/home/shay/a/will2253/workspace/hw6/StdPeriph_Driver/inc" -I"/home/shay/a/will2253/workspace/hw6/inc" -I"/home/shay/a/will2253/workspace/hw6/CMSIS/device" -I"/home/shay/a/will2253/workspace/hw6/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"StdPeriph_Driver/src/stm32f0xx_dac.d" -MT"StdPeriph_Driver/src/stm32f0xx_dac.o" -o "StdPeriph_Driver/src/stm32f0xx_dac.o" "../StdPeriph_Driver/src/stm32f0xx_dac.c"
+Building file: ../StdPeriph_Driver/src/stm32f0xx_dma.c
+Building file: ../StdPeriph_Driver/src/stm32f0xx_exti.c
+/home/shay/a/will2253/workspace/hw6/Debug
+arm-none-eabi-gcc -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -DSTM32 -DSTM32F0 -DSTM32F091RCTx -DDEBUG -DSTM32F091 -DUSE_STDPERIPH_DRIVER -I"/home/shay/a/will2253/workspace/hw6/StdPeriph_Driver/inc" -I"/home/shay/a/will2253/workspace/hw6/inc" -I"/home/shay/a/will2253/workspace/hw6/CMSIS/device" -I"/home/shay/a/will2253/workspace/hw6/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"StdPeriph_Driver/src/stm32f0xx_dbgmcu.d" -MT"StdPeriph_Driver/src/stm32f0xx_dbgmcu.o" -o "StdPeriph_Driver/src/stm32f0xx_dbgmcu.o" "../StdPeriph_Driver/src/stm32f0xx_dbgmcu.c"
+Invoking: MCU GCC Compiler
+/home/shay/a/will2253/workspace/hw6/Debug
+Building file: ../StdPeriph_Driver/src/stm32f0xx_gpio.c
+arm-none-eabi-gcc -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -DSTM32 -DSTM32F0 -DSTM32F091RCTx -DDEBUG -DSTM32F091 -DUSE_STDPERIPH_DRIVER -I"/home/shay/a/will2253/workspace/hw6/StdPeriph_Driver/inc" -I"/home/shay/a/will2253/workspace/hw6/inc" -I"/home/shay/a/will2253/workspace/hw6/CMSIS/device" -I"/home/shay/a/will2253/workspace/hw6/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"StdPeriph_Driver/src/stm32f0xx_dma.d" -MT"StdPeriph_Driver/src/stm32f0xx_dma.o" -o "StdPeriph_Driver/src/stm32f0xx_dma.o" "../StdPeriph_Driver/src/stm32f0xx_dma.c"
+Building file: ../StdPeriph_Driver/src/stm32f0xx_flash.c
+Invoking: MCU GCC Compiler
+Invoking: MCU GCC Compiler
+/home/shay/a/will2253/workspace/hw6/Debug
+arm-none-eabi-gcc -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -DSTM32 -DSTM32F0 -DSTM32F091RCTx -DDEBUG -DSTM32F091 -DUSE_STDPERIPH_DRIVER -I"/home/shay/a/will2253/workspace/hw6/StdPeriph_Driver/inc" -I"/home/shay/a/will2253/workspace/hw6/inc" -I"/home/shay/a/will2253/workspace/hw6/CMSIS/device" -I"/home/shay/a/will2253/workspace/hw6/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"StdPeriph_Driver/src/stm32f0xx_flash.d" -MT"StdPeriph_Driver/src/stm32f0xx_flash.o" -o "StdPeriph_Driver/src/stm32f0xx_flash.o" "../StdPeriph_Driver/src/stm32f0xx_flash.c"
+/home/shay/a/will2253/workspace/hw6/Debug
+arm-none-eabi-gcc -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -DSTM32 -DSTM32F0 -DSTM32F091RCTx -DDEBUG -DSTM32F091 -DUSE_STDPERIPH_DRIVER -I"/home/shay/a/will2253/workspace/hw6/StdPeriph_Driver/inc" -I"/home/shay/a/will2253/workspace/hw6/inc" -I"/home/shay/a/will2253/workspace/hw6/CMSIS/device" -I"/home/shay/a/will2253/workspace/hw6/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"StdPeriph_Driver/src/stm32f0xx_gpio.d" -MT"StdPeriph_Driver/src/stm32f0xx_gpio.o" -o "StdPeriph_Driver/src/stm32f0xx_gpio.o" "../StdPeriph_Driver/src/stm32f0xx_gpio.c"
+Invoking: MCU GCC Compiler
+/home/shay/a/will2253/workspace/hw6/Debug
+arm-none-eabi-gcc -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -DSTM32 -DSTM32F0 -DSTM32F091RCTx -DDEBUG -DSTM32F091 -DUSE_STDPERIPH_DRIVER -I"/home/shay/a/will2253/workspace/hw6/StdPeriph_Driver/inc" -I"/home/shay/a/will2253/workspace/hw6/inc" -I"/home/shay/a/will2253/workspace/hw6/CMSIS/device" -I"/home/shay/a/will2253/workspace/hw6/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"StdPeriph_Driver/src/stm32f0xx_exti.d" -MT"StdPeriph_Driver/src/stm32f0xx_exti.o" -o "StdPeriph_Driver/src/stm32f0xx_exti.o" "../StdPeriph_Driver/src/stm32f0xx_exti.c"
+Finished building: ../startup/startup_stm32.s
  
-Building target: lab6.elf
+Building file: ../StdPeriph_Driver/src/stm32f0xx_i2c.c
+Invoking: MCU GCC Compiler
+/home/shay/a/will2253/workspace/hw6/Debug
+arm-none-eabi-gcc -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -DSTM32 -DSTM32F0 -DSTM32F091RCTx -DDEBUG -DSTM32F091 -DUSE_STDPERIPH_DRIVER -I"/home/shay/a/will2253/workspace/hw6/StdPeriph_Driver/inc" -I"/home/shay/a/will2253/workspace/hw6/inc" -I"/home/shay/a/will2253/workspace/hw6/CMSIS/device" -I"/home/shay/a/will2253/workspace/hw6/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"StdPeriph_Driver/src/stm32f0xx_i2c.d" -MT"StdPeriph_Driver/src/stm32f0xx_i2c.o" -o "StdPeriph_Driver/src/stm32f0xx_i2c.o" "../StdPeriph_Driver/src/stm32f0xx_i2c.c"
+../src/main.c: In function 'set_digit':
+../src/main.c:36:29: warning: array subscript has type 'char' [-Wchar-subscripts]
+     digit[n] = (n<<8) | font[c];
+                             ^
+Finished building: ../src/syscalls.c
+ 
+Finished building: ../src/system_stm32f0xx.c
+ 
+Building file: ../StdPeriph_Driver/src/stm32f0xx_iwdg.c
+Building file: ../StdPeriph_Driver/src/stm32f0xx_misc.c
+Invoking: MCU GCC Compiler
+Invoking: MCU GCC Compiler
+Finished building: ../StdPeriph_Driver/src/stm32f0xx_dma.c
+/home/shay/a/will2253/workspace/hw6/Debug
+/home/shay/a/will2253/workspace/hw6/Debug
+arm-none-eabi-gcc -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -DSTM32 -DSTM32F0 -DSTM32F091RCTx -DDEBUG -DSTM32F091 -DUSE_STDPERIPH_DRIVER -I"/home/shay/a/will2253/workspace/hw6/StdPeriph_Driver/inc" -I"/home/shay/a/will2253/workspace/hw6/inc" -I"/home/shay/a/will2253/workspace/hw6/CMSIS/device" -I"/home/shay/a/will2253/workspace/hw6/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"StdPeriph_Driver/src/stm32f0xx_iwdg.d" -MT"StdPeriph_Driver/src/stm32f0xx_iwdg.o" -o "StdPeriph_Driver/src/stm32f0xx_iwdg.o" "../StdPeriph_Driver/src/stm32f0xx_iwdg.c"
+arm-none-eabi-gcc -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -DSTM32 -DSTM32F0 -DSTM32F091RCTx -DDEBUG -DSTM32F091 -DUSE_STDPERIPH_DRIVER -I"/home/shay/a/will2253/workspace/hw6/StdPeriph_Driver/inc" -I"/home/shay/a/will2253/workspace/hw6/inc" -I"/home/shay/a/will2253/workspace/hw6/CMSIS/device" -I"/home/shay/a/will2253/workspace/hw6/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"StdPeriph_Driver/src/stm32f0xx_misc.d" -MT"StdPeriph_Driver/src/stm32f0xx_misc.o" -o "StdPeriph_Driver/src/stm32f0xx_misc.o" "../StdPeriph_Driver/src/stm32f0xx_misc.c"
+ 
+Building file: ../StdPeriph_Driver/src/stm32f0xx_pwr.c
+Finished building: ../StdPeriph_Driver/src/stm32f0xx_crs.c
+Invoking: MCU GCC Compiler
+/home/shay/a/will2253/workspace/hw6/Debug
+ 
+arm-none-eabi-gcc -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -DSTM32 -DSTM32F0 -DSTM32F091RCTx -DDEBUG -DSTM32F091 -DUSE_STDPERIPH_DRIVER -I"/home/shay/a/will2253/workspace/hw6/StdPeriph_Driver/inc" -I"/home/shay/a/will2253/workspace/hw6/inc" -I"/home/shay/a/will2253/workspace/hw6/CMSIS/device" -I"/home/shay/a/will2253/workspace/hw6/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"StdPeriph_Driver/src/stm32f0xx_pwr.d" -MT"StdPeriph_Driver/src/stm32f0xx_pwr.o" -o "StdPeriph_Driver/src/stm32f0xx_pwr.o" "../StdPeriph_Driver/src/stm32f0xx_pwr.c"
+Building file: ../StdPeriph_Driver/src/stm32f0xx_rcc.c
+Finished building: ../StdPeriph_Driver/src/stm32f0xx_cec.c
+Finished building: ../StdPeriph_Driver/src/stm32f0xx_comp.c
+Finished building: ../StdPeriph_Driver/src/stm32f0xx_crc.c
+ 
+Invoking: MCU GCC Compiler
+ 
+ 
+/home/shay/a/will2253/workspace/hw6/Debug
+Building file: ../StdPeriph_Driver/src/stm32f0xx_rtc.c
+Finished building: ../src/main.c
+arm-none-eabi-gcc -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -DSTM32 -DSTM32F0 -DSTM32F091RCTx -DDEBUG -DSTM32F091 -DUSE_STDPERIPH_DRIVER -I"/home/shay/a/will2253/workspace/hw6/StdPeriph_Driver/inc" -I"/home/shay/a/will2253/workspace/hw6/inc" -I"/home/shay/a/will2253/workspace/hw6/CMSIS/device" -I"/home/shay/a/will2253/workspace/hw6/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"StdPeriph_Driver/src/stm32f0xx_rcc.d" -MT"StdPeriph_Driver/src/stm32f0xx_rcc.o" -o "StdPeriph_Driver/src/stm32f0xx_rcc.o" "../StdPeriph_Driver/src/stm32f0xx_rcc.c"
+Finished building: ../StdPeriph_Driver/src/stm32f0xx_dbgmcu.c
+Finished building: ../StdPeriph_Driver/src/stm32f0xx_can.c
+Finished building: ../StdPeriph_Driver/src/stm32f0xx_flash.c
+Finished building: ../StdPeriph_Driver/src/stm32f0xx_exti.c
+Finished building: ../StdPeriph_Driver/src/stm32f0xx_gpio.c
+Finished building: ../StdPeriph_Driver/src/stm32f0xx_dac.c
+ 
+ 
+ 
+Invoking: MCU GCC Compiler
+Building file: ../StdPeriph_Driver/src/stm32f0xx_spi.c
+Finished building: ../StdPeriph_Driver/src/stm32f0xx_adc.c
+ 
+ 
+ 
+Invoking: MCU GCC Compiler
+/home/shay/a/will2253/workspace/hw6/Debug
+ 
+arm-none-eabi-gcc -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -DSTM32 -DSTM32F0 -DSTM32F091RCTx -DDEBUG -DSTM32F091 -DUSE_STDPERIPH_DRIVER -I"/home/shay/a/will2253/workspace/hw6/StdPeriph_Driver/inc" -I"/home/shay/a/will2253/workspace/hw6/inc" -I"/home/shay/a/will2253/workspace/hw6/CMSIS/device" -I"/home/shay/a/will2253/workspace/hw6/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"StdPeriph_Driver/src/stm32f0xx_rtc.d" -MT"StdPeriph_Driver/src/stm32f0xx_rtc.o" -o "StdPeriph_Driver/src/stm32f0xx_rtc.o" "../StdPeriph_Driver/src/stm32f0xx_rtc.c"
+ 
+/home/shay/a/will2253/workspace/hw6/Debug
+Building file: ../StdPeriph_Driver/src/stm32f0xx_tim.c
+arm-none-eabi-gcc -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -DSTM32 -DSTM32F0 -DSTM32F091RCTx -DDEBUG -DSTM32F091 -DUSE_STDPERIPH_DRIVER -I"/home/shay/a/will2253/workspace/hw6/StdPeriph_Driver/inc" -I"/home/shay/a/will2253/workspace/hw6/inc" -I"/home/shay/a/will2253/workspace/hw6/CMSIS/device" -I"/home/shay/a/will2253/workspace/hw6/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"StdPeriph_Driver/src/stm32f0xx_spi.d" -MT"StdPeriph_Driver/src/stm32f0xx_spi.o" -o "StdPeriph_Driver/src/stm32f0xx_spi.o" "../StdPeriph_Driver/src/stm32f0xx_spi.c"
+Invoking: MCU GCC Compiler
+Building file: ../StdPeriph_Driver/src/stm32f0xx_usart.c
+Building file: ../StdPeriph_Driver/src/stm32f0xx_syscfg.c
+/home/shay/a/will2253/workspace/hw6/Debug
+Invoking: MCU GCC Compiler
+Building file: ../StdPeriph_Driver/src/stm32f0xx_wwdg.c
+arm-none-eabi-gcc -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -DSTM32 -DSTM32F0 -DSTM32F091RCTx -DDEBUG -DSTM32F091 -DUSE_STDPERIPH_DRIVER -I"/home/shay/a/will2253/workspace/hw6/StdPeriph_Driver/inc" -I"/home/shay/a/will2253/workspace/hw6/inc" -I"/home/shay/a/will2253/workspace/hw6/CMSIS/device" -I"/home/shay/a/will2253/workspace/hw6/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"StdPeriph_Driver/src/stm32f0xx_tim.d" -MT"StdPeriph_Driver/src/stm32f0xx_tim.o" -o "StdPeriph_Driver/src/stm32f0xx_tim.o" "../StdPeriph_Driver/src/stm32f0xx_tim.c"
+Invoking: MCU GCC Compiler
+/home/shay/a/will2253/workspace/hw6/Debug
+Invoking: MCU GCC Compiler
+arm-none-eabi-gcc -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -DSTM32 -DSTM32F0 -DSTM32F091RCTx -DDEBUG -DSTM32F091 -DUSE_STDPERIPH_DRIVER -I"/home/shay/a/will2253/workspace/hw6/StdPeriph_Driver/inc" -I"/home/shay/a/will2253/workspace/hw6/inc" -I"/home/shay/a/will2253/workspace/hw6/CMSIS/device" -I"/home/shay/a/will2253/workspace/hw6/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"StdPeriph_Driver/src/stm32f0xx_usart.d" -MT"StdPeriph_Driver/src/stm32f0xx_usart.o" -o "StdPeriph_Driver/src/stm32f0xx_usart.o" "../StdPeriph_Driver/src/stm32f0xx_usart.c"
+/home/shay/a/will2253/workspace/hw6/Debug
+arm-none-eabi-gcc -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -DSTM32 -DSTM32F0 -DSTM32F091RCTx -DDEBUG -DSTM32F091 -DUSE_STDPERIPH_DRIVER -I"/home/shay/a/will2253/workspace/hw6/StdPeriph_Driver/inc" -I"/home/shay/a/will2253/workspace/hw6/inc" -I"/home/shay/a/will2253/workspace/hw6/CMSIS/device" -I"/home/shay/a/will2253/workspace/hw6/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"StdPeriph_Driver/src/stm32f0xx_syscfg.d" -MT"StdPeriph_Driver/src/stm32f0xx_syscfg.o" -o "StdPeriph_Driver/src/stm32f0xx_syscfg.o" "../StdPeriph_Driver/src/stm32f0xx_syscfg.c"
+/home/shay/a/will2253/workspace/hw6/Debug
+arm-none-eabi-gcc -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -DSTM32 -DSTM32F0 -DSTM32F091RCTx -DDEBUG -DSTM32F091 -DUSE_STDPERIPH_DRIVER -I"/home/shay/a/will2253/workspace/hw6/StdPeriph_Driver/inc" -I"/home/shay/a/will2253/workspace/hw6/inc" -I"/home/shay/a/will2253/workspace/hw6/CMSIS/device" -I"/home/shay/a/will2253/workspace/hw6/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"StdPeriph_Driver/src/stm32f0xx_wwdg.d" -MT"StdPeriph_Driver/src/stm32f0xx_wwdg.o" -o "StdPeriph_Driver/src/stm32f0xx_wwdg.o" "../StdPeriph_Driver/src/stm32f0xx_wwdg.c"
+Finished building: ../StdPeriph_Driver/src/stm32f0xx_i2c.c
+ 
+Finished building: ../StdPeriph_Driver/src/stm32f0xx_iwdg.c
+ 
+Finished building: ../StdPeriph_Driver/src/stm32f0xx_syscfg.c
+ 
+Finished building: ../StdPeriph_Driver/src/stm32f0xx_wwdg.c
+ 
+Finished building: ../StdPeriph_Driver/src/stm32f0xx_pwr.c
+ 
+Finished building: ../StdPeriph_Driver/src/stm32f0xx_misc.c
+ 
+Finished building: ../StdPeriph_Driver/src/stm32f0xx_rcc.c
+ 
+Finished building: ../StdPeriph_Driver/src/stm32f0xx_spi.c
+ 
+Finished building: ../StdPeriph_Driver/src/stm32f0xx_usart.c
+ 
+Finished building: ../StdPeriph_Driver/src/stm32f0xx_rtc.c
+ 
+Finished building: ../StdPeriph_Driver/src/stm32f0xx_tim.c
+ 
+Building target: hw6.elf
 Invoking: MCU GCC Linker
-arm-none-eabi-gcc -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -T"/home/shay/a/will2253/workspace/lab6/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "lab6.elf" @"objects.list"   -lm
-Finished building target: lab6.elf
+arm-none-eabi-gcc -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -T"/home/shay/a/will2253/workspace/hw6/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "hw6.elf" @"objects.list"   -lm
+Finished building target: hw6.elf
  
 make --no-print-directory post-build
 Generating binary and Printing size information:
-arm-none-eabi-objcopy -O binary "lab6.elf" "lab6.bin"
-arm-none-eabi-size "lab6.elf"
+arm-none-eabi-objcopy -O binary "hw6.elf" "hw6.bin"
+arm-none-eabi-size "hw6.elf"
    text	   data	    bss	    dec	    hex	filename
-   6572	   1104	   3276	  10952	   2ac8	lab6.elf
+   1520	   1080	   1108	   3708	    e7c	hw6.elf
  
-11:47:31 **** Incremental Build of configuration Debug for project lab6 ****
+13:00:57 **** Incremental Build of configuration Debug for project hw6 ****
+make -j16 all 
+make: Nothing to be done for 'all'.
+13:01:01 **** Incremental Build of configuration Debug for project hw6 ****
+make -j16 all 
+make: Nothing to be done for 'all'.
+13:02:01 **** Incremental Build of configuration Debug for project hw6 ****
+make -j16 all 
+make: Nothing to be done for 'all'.
+13:02:08 **** Incremental Build of configuration Debug for project hw6 ****
+make -j16 all 
+make: Nothing to be done for 'all'.
+13:04:22 **** Incremental Build of configuration Debug for project hw6 ****
 make -j16 all 
 Building file: ../src/main.c
 Invoking: MCU GCC Compiler
-/home/shay/a/will2253/workspace/lab6/Debug
-arm-none-eabi-gcc -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -DSTM32 -DSTM32F0 -DSTM32F091RCTx -DDEBUG -DSTM32F091 -DUSE_STDPERIPH_DRIVER -I"/home/shay/a/will2253/workspace/lab6/StdPeriph_Driver/inc" -I"/home/shay/a/will2253/workspace/lab6/inc" -I"/home/shay/a/will2253/workspace/lab6/CMSIS/device" -I"/home/shay/a/will2253/workspace/lab6/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+/home/shay/a/will2253/workspace/hw6/Debug
+arm-none-eabi-gcc -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -DSTM32 -DSTM32F0 -DSTM32F091RCTx -DDEBUG -DSTM32F091 -DUSE_STDPERIPH_DRIVER -I"/home/shay/a/will2253/workspace/hw6/StdPeriph_Driver/inc" -I"/home/shay/a/will2253/workspace/hw6/inc" -I"/home/shay/a/will2253/workspace/hw6/CMSIS/device" -I"/home/shay/a/will2253/workspace/hw6/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'set_digit':
+../src/main.c:36:29: warning: array subscript has type 'char' [-Wchar-subscripts]
+     digit[n] = (n<<8) | font[c];
+                             ^
 Finished building: ../src/main.c
  
-Building target: lab6.elf
+Building target: hw6.elf
 Invoking: MCU GCC Linker
-arm-none-eabi-gcc -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -T"/home/shay/a/will2253/workspace/lab6/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "lab6.elf" @"objects.list"   -lm
-Finished building target: lab6.elf
+arm-none-eabi-gcc -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -T"/home/shay/a/will2253/workspace/hw6/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "hw6.elf" @"objects.list"   -lm
+Finished building target: hw6.elf
  
 make --no-print-directory post-build
 Generating binary and Printing size information:
-arm-none-eabi-objcopy -O binary "lab6.elf" "lab6.bin"
-arm-none-eabi-size "lab6.elf"
+arm-none-eabi-objcopy -O binary "hw6.elf" "hw6.bin"
+arm-none-eabi-size "hw6.elf"
    text	   data	    bss	    dec	    hex	filename
-  20588	   1104	   3276	  24968	   6188	lab6.elf
+   1500	   1080	   1108	   3688	    e68	hw6.elf
  
-11:47:49 **** Incremental Build of configuration Debug for project lab6 ****
+13:04:33 **** Incremental Build of configuration Debug for project hw6 ****
 make -j16 all 
 Building file: ../src/main.c
 Invoking: MCU GCC Compiler
-/home/shay/a/will2253/workspace/lab6/Debug
-arm-none-eabi-gcc -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -DSTM32 -DSTM32F0 -DSTM32F091RCTx -DDEBUG -DSTM32F091 -DUSE_STDPERIPH_DRIVER -I"/home/shay/a/will2253/workspace/lab6/StdPeriph_Driver/inc" -I"/home/shay/a/will2253/workspace/lab6/inc" -I"/home/shay/a/will2253/workspace/lab6/CMSIS/device" -I"/home/shay/a/will2253/workspace/lab6/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+/home/shay/a/will2253/workspace/hw6/Debug
+arm-none-eabi-gcc -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -DSTM32 -DSTM32F0 -DSTM32F091RCTx -DDEBUG -DSTM32F091 -DUSE_STDPERIPH_DRIVER -I"/home/shay/a/will2253/workspace/hw6/StdPeriph_Driver/inc" -I"/home/shay/a/will2253/workspace/hw6/inc" -I"/home/shay/a/will2253/workspace/hw6/CMSIS/device" -I"/home/shay/a/will2253/workspace/hw6/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'set_digit':
+../src/main.c:36:29: warning: array subscript has type 'char' [-Wchar-subscripts]
+     digit[n] = (n<<8) | font[c];
+                             ^
 Finished building: ../src/main.c
  
-Building target: lab6.elf
+Building target: hw6.elf
 Invoking: MCU GCC Linker
-arm-none-eabi-gcc -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -T"/home/shay/a/will2253/workspace/lab6/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "lab6.elf" @"objects.list"   -lm
-Finished building target: lab6.elf
+arm-none-eabi-gcc -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -T"/home/shay/a/will2253/workspace/hw6/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "hw6.elf" @"objects.list"   -lm
+Finished building target: hw6.elf
  
 make --no-print-directory post-build
 Generating binary and Printing size information:
-arm-none-eabi-objcopy -O binary "lab6.elf" "lab6.bin"
-arm-none-eabi-size "lab6.elf"
+arm-none-eabi-objcopy -O binary "hw6.elf" "hw6.bin"
+arm-none-eabi-size "hw6.elf"
    text	   data	    bss	    dec	    hex	filename
-  34384	   2508	   3336	  40228	   9d24	lab6.elf
+   1520	   1080	   1108	   3708	    e7c	hw6.elf
  
-11:52:00 **** Incremental Build of configuration Debug for project lab6 ****
+13:21:21 **** Incremental Build of configuration Debug for project hw6 ****
 make -j16 all 
 Building file: ../src/main.c
 Invoking: MCU GCC Compiler
-/home/shay/a/will2253/workspace/lab6/Debug
-arm-none-eabi-gcc -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -DSTM32 -DSTM32F0 -DSTM32F091RCTx -DDEBUG -DSTM32F091 -DUSE_STDPERIPH_DRIVER -I"/home/shay/a/will2253/workspace/lab6/StdPeriph_Driver/inc" -I"/home/shay/a/will2253/workspace/lab6/inc" -I"/home/shay/a/will2253/workspace/lab6/CMSIS/device" -I"/home/shay/a/will2253/workspace/lab6/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+/home/shay/a/will2253/workspace/hw6/Debug
+arm-none-eabi-gcc -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -DSTM32 -DSTM32F0 -DSTM32F091RCTx -DDEBUG -DSTM32F091 -DUSE_STDPERIPH_DRIVER -I"/home/shay/a/will2253/workspace/hw6/StdPeriph_Driver/inc" -I"/home/shay/a/will2253/workspace/hw6/inc" -I"/home/shay/a/will2253/workspace/hw6/CMSIS/device" -I"/home/shay/a/will2253/workspace/hw6/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'set_digit':
+../src/main.c:36:29: warning: array subscript has type 'char' [-Wchar-subscripts]
+     digit[n] = (n<<8) | font[c];
+                             ^
 Finished building: ../src/main.c
  
-Building target: lab6.elf
+Building target: hw6.elf
 Invoking: MCU GCC Linker
-arm-none-eabi-gcc -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -T"/home/shay/a/will2253/workspace/lab6/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "lab6.elf" @"objects.list"   -lm
-Finished building target: lab6.elf
+arm-none-eabi-gcc -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -T"/home/shay/a/will2253/workspace/hw6/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "hw6.elf" @"objects.list"   -lm
+Finished building target: hw6.elf
  
 make --no-print-directory post-build
 Generating binary and Printing size information:
-arm-none-eabi-objcopy -O binary "lab6.elf" "lab6.bin"
-arm-none-eabi-size "lab6.elf"
+arm-none-eabi-objcopy -O binary "hw6.elf" "hw6.bin"
+arm-none-eabi-size "hw6.elf"
    text	   data	    bss	    dec	    hex	filename
-  20240	   1104	   3276	  24620	   602c	lab6.elf
+   1556	   1080	   1108	   3744	    ea0	hw6.elf
  
-11:57:45 **** Incremental Build of configuration Debug for project lab6 ****
+13:26:21 **** Incremental Build of configuration Debug for project hw6 ****
 make -j16 all 
 Building file: ../src/main.c
 Invoking: MCU GCC Compiler
-/home/shay/a/will2253/workspace/lab6/Debug
-arm-none-eabi-gcc -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -DSTM32 -DSTM32F0 -DSTM32F091RCTx -DDEBUG -DSTM32F091 -DUSE_STDPERIPH_DRIVER -I"/home/shay/a/will2253/workspace/lab6/StdPeriph_Driver/inc" -I"/home/shay/a/will2253/workspace/lab6/inc" -I"/home/shay/a/will2253/workspace/lab6/CMSIS/device" -I"/home/shay/a/will2253/workspace/lab6/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+/home/shay/a/will2253/workspace/hw6/Debug
+arm-none-eabi-gcc -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -DSTM32 -DSTM32F0 -DSTM32F091RCTx -DDEBUG -DSTM32F091 -DUSE_STDPERIPH_DRIVER -I"/home/shay/a/will2253/workspace/hw6/StdPeriph_Driver/inc" -I"/home/shay/a/will2253/workspace/hw6/inc" -I"/home/shay/a/will2253/workspace/hw6/CMSIS/device" -I"/home/shay/a/will2253/workspace/hw6/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'set_digit':
+../src/main.c:36:29: warning: array subscript has type 'char' [-Wchar-subscripts]
+     digit[n] = (n<<8) | font[c];
+                             ^
 Finished building: ../src/main.c
  
-Building target: lab6.elf
+Building target: hw6.elf
 Invoking: MCU GCC Linker
-arm-none-eabi-gcc -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -T"/home/shay/a/will2253/workspace/lab6/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "lab6.elf" @"objects.list"   -lm
-Finished building target: lab6.elf
+arm-none-eabi-gcc -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -T"/home/shay/a/will2253/workspace/hw6/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "hw6.elf" @"objects.list"   -lm
+Finished building target: hw6.elf
  
 make --no-print-directory post-build
 Generating binary and Printing size information:
-arm-none-eabi-objcopy -O binary "lab6.elf" "lab6.bin"
-arm-none-eabi-size "lab6.elf"
+arm-none-eabi-objcopy -O binary "hw6.elf" "hw6.bin"
+arm-none-eabi-size "hw6.elf"
    text	   data	    bss	    dec	    hex	filename
-  20596	   1104	   3276	  24976	   6190	lab6.elf
+   1628	   1080	   1108	   3816	    ee8	hw6.elf
  
-12:00:24 **** Incremental Build of configuration Debug for project lab6 ****
+13:33:02 **** Incremental Build of configuration Debug for project hw6 ****
 make -j16 all 
 Building file: ../src/main.c
 Invoking: MCU GCC Compiler
-/home/shay/a/will2253/workspace/lab6/Debug
-arm-none-eabi-gcc -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -DSTM32 -DSTM32F0 -DSTM32F091RCTx -DDEBUG -DSTM32F091 -DUSE_STDPERIPH_DRIVER -I"/home/shay/a/will2253/workspace/lab6/StdPeriph_Driver/inc" -I"/home/shay/a/will2253/workspace/lab6/inc" -I"/home/shay/a/will2253/workspace/lab6/CMSIS/device" -I"/home/shay/a/will2253/workspace/lab6/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+/home/shay/a/will2253/workspace/hw6/Debug
+arm-none-eabi-gcc -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -DSTM32 -DSTM32F0 -DSTM32F091RCTx -DDEBUG -DSTM32F091 -DUSE_STDPERIPH_DRIVER -I"/home/shay/a/will2253/workspace/hw6/StdPeriph_Driver/inc" -I"/home/shay/a/will2253/workspace/hw6/inc" -I"/home/shay/a/will2253/workspace/hw6/CMSIS/device" -I"/home/shay/a/will2253/workspace/hw6/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'set_digit':
+../src/main.c:40:29: warning: array subscript has type 'char' [-Wchar-subscripts]
+     digit[n] = (n<<8) | font[c];
+                             ^
+../src/main.c: In function 'TIM7_IRQHandler':
+../src/main.c:93:5: warning: implicit declaration of function 'sprintf' [-Wimplicit-function-declaration]
+     sprintf(time, "%02d%02d%02d  ", hrs, min, sec);
+     ^~~~~~~
+../src/main.c:93:5: warning: incompatible implicit declaration of built-in function 'sprintf'
+../src/main.c:93:5: note: include '<stdio.h>' or provide a declaration of 'sprintf'
+../src/main.c:93:34: warning: 'sprintf' writing a terminating nul past the end of the destination [-Wformat-overflow=]
+     sprintf(time, "%02d%02d%02d  ", hrs, min, sec);
+                                  ^
+../src/main.c:93:5: note: 'sprintf' output between 9 and 36 bytes into a destination of size 8
+     sprintf(time, "%02d%02d%02d  ", hrs, min, sec);
+     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 Finished building: ../src/main.c
  
-Building target: lab6.elf
+Building target: hw6.elf
 Invoking: MCU GCC Linker
-arm-none-eabi-gcc -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -T"/home/shay/a/will2253/workspace/lab6/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "lab6.elf" @"objects.list"   -lm
-Finished building target: lab6.elf
+arm-none-eabi-gcc -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -T"/home/shay/a/will2253/workspace/hw6/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "hw6.elf" @"objects.list"   -lm
+Finished building target: hw6.elf
  
 make --no-print-directory post-build
 Generating binary and Printing size information:
-arm-none-eabi-objcopy -O binary "lab6.elf" "lab6.bin"
-arm-none-eabi-size "lab6.elf"
+arm-none-eabi-objcopy -O binary "hw6.elf" "hw6.bin"
+arm-none-eabi-size "hw6.elf"
    text	   data	    bss	    dec	    hex	filename
-  34392	   2508	   3336	  40236	   9d2c	lab6.elf
+  28972	   2500	   1176	  32648	   7f88	hw6.elf
  
-12:02:09 **** Incremental Build of configuration Debug for project lab6 ****
-make -j16 all 
-make: Nothing to be done for 'all'.
-12:02:27 **** Incremental Build of configuration Debug for project lab6 ****
+13:33:40 **** Incremental Build of configuration Debug for project hw6 ****
 make -j16 all 
 Building file: ../src/main.c
 Invoking: MCU GCC Compiler
-/home/shay/a/will2253/workspace/lab6/Debug
-arm-none-eabi-gcc -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -DSTM32 -DSTM32F0 -DSTM32F091RCTx -DDEBUG -DSTM32F091 -DUSE_STDPERIPH_DRIVER -I"/home/shay/a/will2253/workspace/lab6/StdPeriph_Driver/inc" -I"/home/shay/a/will2253/workspace/lab6/inc" -I"/home/shay/a/will2253/workspace/lab6/CMSIS/device" -I"/home/shay/a/will2253/workspace/lab6/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+/home/shay/a/will2253/workspace/hw6/Debug
+arm-none-eabi-gcc -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -DSTM32 -DSTM32F0 -DSTM32F091RCTx -DDEBUG -DSTM32F091 -DUSE_STDPERIPH_DRIVER -I"/home/shay/a/will2253/workspace/hw6/StdPeriph_Driver/inc" -I"/home/shay/a/will2253/workspace/hw6/inc" -I"/home/shay/a/will2253/workspace/hw6/CMSIS/device" -I"/home/shay/a/will2253/workspace/hw6/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'set_digit':
+../src/main.c:40:29: warning: array subscript has type 'char' [-Wchar-subscripts]
+     digit[n] = (n<<8) | font[c];
+                             ^
+../src/main.c: In function 'TIM7_IRQHandler':
+../src/main.c:94:5: warning: implicit declaration of function 'sprintf' [-Wimplicit-function-declaration]
+     sprintf(time, "%02d%02d%02d  ", hrs, min, sec);
+     ^~~~~~~
+../src/main.c:94:5: warning: incompatible implicit declaration of built-in function 'sprintf'
+../src/main.c:94:5: note: include '<stdio.h>' or provide a declaration of 'sprintf'
+../src/main.c:94:34: warning: 'sprintf' writing a terminating nul past the end of the destination [-Wformat-overflow=]
+     sprintf(time, "%02d%02d%02d  ", hrs, min, sec);
+                                  ^
+../src/main.c:94:5: note: 'sprintf' output between 9 and 36 bytes into a destination of size 8
+     sprintf(time, "%02d%02d%02d  ", hrs, min, sec);
+     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 Finished building: ../src/main.c
  
-Building target: lab6.elf
+Building target: hw6.elf
 Invoking: MCU GCC Linker
-arm-none-eabi-gcc -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -T"/home/shay/a/will2253/workspace/lab6/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "lab6.elf" @"objects.list"   -lm
-Finished building target: lab6.elf
+arm-none-eabi-gcc -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -T"/home/shay/a/will2253/workspace/hw6/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "hw6.elf" @"objects.list"   -lm
+Finished building target: hw6.elf
  
 make --no-print-directory post-build
 Generating binary and Printing size information:
-arm-none-eabi-objcopy -O binary "lab6.elf" "lab6.bin"
-arm-none-eabi-size "lab6.elf"
+arm-none-eabi-objcopy -O binary "hw6.elf" "hw6.bin"
+arm-none-eabi-size "hw6.elf"
    text	   data	    bss	    dec	    hex	filename
-  20248	   1104	   3276	  24628	   6034	lab6.elf
+  28976	   2500	   1176	  32652	   7f8c	hw6.elf
  
-12:06:42 **** Incremental Build of configuration Debug for project lab6 ****
-make -j16 all 
-make: Nothing to be done for 'all'.
-12:08:38 **** Incremental Build of configuration Debug for project lab6 ****
-make -j16 all 
-make: Nothing to be done for 'all'.
-12:15:21 **** Incremental Build of configuration Debug for project lab6 ****
+13:35:42 **** Incremental Build of configuration Debug for project hw6 ****
 make -j16 all 
 Building file: ../src/main.c
 Invoking: MCU GCC Compiler
-/home/shay/a/will2253/workspace/lab6/Debug
-arm-none-eabi-gcc -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -DSTM32 -DSTM32F0 -DSTM32F091RCTx -DDEBUG -DSTM32F091 -DUSE_STDPERIPH_DRIVER -I"/home/shay/a/will2253/workspace/lab6/StdPeriph_Driver/inc" -I"/home/shay/a/will2253/workspace/lab6/inc" -I"/home/shay/a/will2253/workspace/lab6/CMSIS/device" -I"/home/shay/a/will2253/workspace/lab6/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+/home/shay/a/will2253/workspace/hw6/Debug
+arm-none-eabi-gcc -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -DSTM32 -DSTM32F0 -DSTM32F091RCTx -DDEBUG -DSTM32F091 -DUSE_STDPERIPH_DRIVER -I"/home/shay/a/will2253/workspace/hw6/StdPeriph_Driver/inc" -I"/home/shay/a/will2253/workspace/hw6/inc" -I"/home/shay/a/will2253/workspace/hw6/CMSIS/device" -I"/home/shay/a/will2253/workspace/hw6/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'set_digit':
+../src/main.c:41:29: warning: array subscript has type 'char' [-Wchar-subscripts]
+     digit[n] = (n<<8) | font[c];
+                             ^
+../src/main.c: In function 'TIM7_IRQHandler':
+../src/main.c:95:5: warning: implicit declaration of function 'sprintf' [-Wimplicit-function-declaration]
+     sprintf(time, "%02d%02d%02d  ", hrs, min, sec);
+     ^~~~~~~
+../src/main.c:95:5: warning: incompatible implicit declaration of built-in function 'sprintf'
+../src/main.c:95:5: note: include '<stdio.h>' or provide a declaration of 'sprintf'
+../src/main.c:95:34: warning: 'sprintf' writing a terminating nul past the end of the destination [-Wformat-overflow=]
+     sprintf(time, "%02d%02d%02d  ", hrs, min, sec);
+                                  ^
+../src/main.c:95:5: note: 'sprintf' output between 9 and 36 bytes into a destination of size 8
+     sprintf(time, "%02d%02d%02d  ", hrs, min, sec);
+     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 Finished building: ../src/main.c
  
-Building target: lab6.elf
+Building target: hw6.elf
 Invoking: MCU GCC Linker
-arm-none-eabi-gcc -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -T"/home/shay/a/will2253/workspace/lab6/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "lab6.elf" @"objects.list"   -lm
-Finished building target: lab6.elf
+arm-none-eabi-gcc -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -T"/home/shay/a/will2253/workspace/hw6/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "hw6.elf" @"objects.list"   -lm
+Finished building target: hw6.elf
  
 make --no-print-directory post-build
 Generating binary and Printing size information:
-arm-none-eabi-objcopy -O binary "lab6.elf" "lab6.bin"
-arm-none-eabi-size "lab6.elf"
+arm-none-eabi-objcopy -O binary "hw6.elf" "hw6.bin"
+arm-none-eabi-size "hw6.elf"
    text	   data	    bss	    dec	    hex	filename
-  20248	   1104	   3276	  24628	   6034	lab6.elf
+  28972	   2500	   1176	  32648	   7f88	hw6.elf
  
-12:26:33 **** Incremental Build of configuration Debug for project lab6 ****
+13:37:51 **** Incremental Build of configuration Debug for project hw6 ****
+make -j16 all 
+make: Nothing to be done for 'all'.
+13:38:26 **** Incremental Build of configuration Debug for project hw6 ****
 make -j16 all 
 Building file: ../src/main.c
 Invoking: MCU GCC Compiler
-/home/shay/a/will2253/workspace/lab6/Debug
-arm-none-eabi-gcc -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -DSTM32 -DSTM32F0 -DSTM32F091RCTx -DDEBUG -DSTM32F091 -DUSE_STDPERIPH_DRIVER -I"/home/shay/a/will2253/workspace/lab6/StdPeriph_Driver/inc" -I"/home/shay/a/will2253/workspace/lab6/inc" -I"/home/shay/a/will2253/workspace/lab6/CMSIS/device" -I"/home/shay/a/will2253/workspace/lab6/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+/home/shay/a/will2253/workspace/hw6/Debug
+arm-none-eabi-gcc -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -DSTM32 -DSTM32F0 -DSTM32F091RCTx -DDEBUG -DSTM32F091 -DUSE_STDPERIPH_DRIVER -I"/home/shay/a/will2253/workspace/hw6/StdPeriph_Driver/inc" -I"/home/shay/a/will2253/workspace/hw6/inc" -I"/home/shay/a/will2253/workspace/hw6/CMSIS/device" -I"/home/shay/a/will2253/workspace/hw6/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'set_digit':
+../src/main.c:41:29: warning: array subscript has type 'char' [-Wchar-subscripts]
+     digit[n] = (n<<8) | font[c];
+                             ^
+../src/main.c: In function 'TIM7_IRQHandler':
+../src/main.c:96:5: warning: implicit declaration of function 'sprintf' [-Wimplicit-function-declaration]
+     sprintf(time, "%02d%02d%02d  ", hrs, min, sec);
+     ^~~~~~~
+../src/main.c:96:5: warning: incompatible implicit declaration of built-in function 'sprintf'
+../src/main.c:96:5: note: include '<stdio.h>' or provide a declaration of 'sprintf'
+../src/main.c:96:34: warning: 'sprintf' writing a terminating nul past the end of the destination [-Wformat-overflow=]
+     sprintf(time, "%02d%02d%02d  ", hrs, min, sec);
+                                  ^
+../src/main.c:96:5: note: 'sprintf' output between 9 and 36 bytes into a destination of size 8
+     sprintf(time, "%02d%02d%02d  ", hrs, min, sec);
+     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 Finished building: ../src/main.c
  
-Building target: lab6.elf
+Building target: hw6.elf
 Invoking: MCU GCC Linker
-arm-none-eabi-gcc -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -T"/home/shay/a/will2253/workspace/lab6/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "lab6.elf" @"objects.list"   -lm
-Finished building target: lab6.elf
+arm-none-eabi-gcc -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -T"/home/shay/a/will2253/workspace/hw6/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "hw6.elf" @"objects.list"   -lm
+Finished building target: hw6.elf
  
 make --no-print-directory post-build
 Generating binary and Printing size information:
-arm-none-eabi-objcopy -O binary "lab6.elf" "lab6.bin"
-arm-none-eabi-size "lab6.elf"
+arm-none-eabi-objcopy -O binary "hw6.elf" "hw6.bin"
+arm-none-eabi-size "hw6.elf"
    text	   data	    bss	    dec	    hex	filename
-  20248	   1104	   3276	  24628	   6034	lab6.elf
+  28984	   2500	   1176	  32660	   7f94	hw6.elf
  
-12:26:42 **** Incremental Build of configuration Debug for project lab6 ****
-make -j16 all 
-make: Nothing to be done for 'all'.
-12:28:42 **** Incremental Build of configuration Debug for project lab6 ****
+13:40:08 **** Incremental Build of configuration Debug for project hw6 ****
 make -j16 all 
 Building file: ../src/main.c
 Invoking: MCU GCC Compiler
-/home/shay/a/will2253/workspace/lab6/Debug
-arm-none-eabi-gcc -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -DSTM32 -DSTM32F0 -DSTM32F091RCTx -DDEBUG -DSTM32F091 -DUSE_STDPERIPH_DRIVER -I"/home/shay/a/will2253/workspace/lab6/StdPeriph_Driver/inc" -I"/home/shay/a/will2253/workspace/lab6/inc" -I"/home/shay/a/will2253/workspace/lab6/CMSIS/device" -I"/home/shay/a/will2253/workspace/lab6/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+/home/shay/a/will2253/workspace/hw6/Debug
+arm-none-eabi-gcc -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -DSTM32 -DSTM32F0 -DSTM32F091RCTx -DDEBUG -DSTM32F091 -DUSE_STDPERIPH_DRIVER -I"/home/shay/a/will2253/workspace/hw6/StdPeriph_Driver/inc" -I"/home/shay/a/will2253/workspace/hw6/inc" -I"/home/shay/a/will2253/workspace/hw6/CMSIS/device" -I"/home/shay/a/will2253/workspace/hw6/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'set_digit':
+../src/main.c:41:29: warning: array subscript has type 'char' [-Wchar-subscripts]
+     digit[n] = (n<<8) | font[c];
+                             ^
+../src/main.c: In function 'TIM7_IRQHandler':
+../src/main.c:96:5: warning: implicit declaration of function 'sprintf' [-Wimplicit-function-declaration]
+     sprintf(time, "%02d%02d%02d  ", hrs, min, sec);
+     ^~~~~~~
+../src/main.c:96:5: warning: incompatible implicit declaration of built-in function 'sprintf'
+../src/main.c:96:5: note: include '<stdio.h>' or provide a declaration of 'sprintf'
+../src/main.c:96:34: warning: 'sprintf' writing a terminating nul past the end of the destination [-Wformat-overflow=]
+     sprintf(time, "%02d%02d%02d  ", hrs, min, sec);
+                                  ^
+../src/main.c:96:5: note: 'sprintf' output between 9 and 36 bytes into a destination of size 8
+     sprintf(time, "%02d%02d%02d  ", hrs, min, sec);
+     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 Finished building: ../src/main.c
  
-Building target: lab6.elf
+Building target: hw6.elf
 Invoking: MCU GCC Linker
-arm-none-eabi-gcc -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -T"/home/shay/a/will2253/workspace/lab6/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "lab6.elf" @"objects.list"   -lm
-Finished building target: lab6.elf
+arm-none-eabi-gcc -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -T"/home/shay/a/will2253/workspace/hw6/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "hw6.elf" @"objects.list"   -lm
+Finished building target: hw6.elf
  
 make --no-print-directory post-build
 Generating binary and Printing size information:
-arm-none-eabi-objcopy -O binary "lab6.elf" "lab6.bin"
-arm-none-eabi-size "lab6.elf"
+arm-none-eabi-objcopy -O binary "hw6.elf" "hw6.bin"
+arm-none-eabi-size "hw6.elf"
    text	   data	    bss	    dec	    hex	filename
-  20260	   1104	   3276	  24640	   6040	lab6.elf
+  28984	   2500	   1224	  32708	   7fc4	hw6.elf
  
-12:28:58 **** Incremental Build of configuration Debug for project lab6 ****
-make -j16 all 
-make: Nothing to be done for 'all'.
-12:29:33 **** Incremental Build of configuration Debug for project lab6 ****
+13:41:03 **** Incremental Build of configuration Debug for project hw6 ****
 make -j16 all 
 Building file: ../src/main.c
 Invoking: MCU GCC Compiler
-/home/shay/a/will2253/workspace/lab6/Debug
-arm-none-eabi-gcc -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -DSTM32 -DSTM32F0 -DSTM32F091RCTx -DDEBUG -DSTM32F091 -DUSE_STDPERIPH_DRIVER -I"/home/shay/a/will2253/workspace/lab6/StdPeriph_Driver/inc" -I"/home/shay/a/will2253/workspace/lab6/inc" -I"/home/shay/a/will2253/workspace/lab6/CMSIS/device" -I"/home/shay/a/will2253/workspace/lab6/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+/home/shay/a/will2253/workspace/hw6/Debug
+arm-none-eabi-gcc -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -DSTM32 -DSTM32F0 -DSTM32F091RCTx -DDEBUG -DSTM32F091 -DUSE_STDPERIPH_DRIVER -I"/home/shay/a/will2253/workspace/hw6/StdPeriph_Driver/inc" -I"/home/shay/a/will2253/workspace/hw6/inc" -I"/home/shay/a/will2253/workspace/hw6/CMSIS/device" -I"/home/shay/a/will2253/workspace/hw6/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'set_digit':
+../src/main.c:41:29: warning: array subscript has type 'char' [-Wchar-subscripts]
+     digit[n] = (n<<8) | font[c];
+                             ^
+../src/main.c: In function 'TIM7_IRQHandler':
+../src/main.c:96:5: warning: implicit declaration of function 'sprintf' [-Wimplicit-function-declaration]
+     sprintf(time, "%02d%02d%02d  ", hrs, min, sec);
+     ^~~~~~~
+../src/main.c:96:5: warning: incompatible implicit declaration of built-in function 'sprintf'
+../src/main.c:96:5: note: include '<stdio.h>' or provide a declaration of 'sprintf'
+../src/main.c:96:34: warning: 'sprintf' writing a terminating nul past the end of the destination [-Wformat-overflow=]
+     sprintf(time, "%02d%02d%02d  ", hrs, min, sec);
+                                  ^
+../src/main.c:96:5: note: 'sprintf' output between 9 and 36 bytes into a destination of size 8
+     sprintf(time, "%02d%02d%02d  ", hrs, min, sec);
+     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 Finished building: ../src/main.c
  
-Building target: lab6.elf
+Building target: hw6.elf
 Invoking: MCU GCC Linker
-arm-none-eabi-gcc -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -T"/home/shay/a/will2253/workspace/lab6/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "lab6.elf" @"objects.list"   -lm
-Finished building target: lab6.elf
+arm-none-eabi-gcc -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -T"/home/shay/a/will2253/workspace/hw6/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "hw6.elf" @"objects.list"   -lm
+Finished building target: hw6.elf
  
 make --no-print-directory post-build
 Generating binary and Printing size information:
-arm-none-eabi-objcopy -O binary "lab6.elf" "lab6.bin"
-arm-none-eabi-size "lab6.elf"
+arm-none-eabi-objcopy -O binary "hw6.elf" "hw6.bin"
+arm-none-eabi-size "hw6.elf"
    text	   data	    bss	    dec	    hex	filename
-  20260	   1104	   3276	  24640	   6040	lab6.elf
+  29024	   2500	   1224	  32748	   7fec	hw6.elf
  
-12:30:03 **** Incremental Build of configuration Debug for project lab6 ****
-make -j16 all 
-make: Nothing to be done for 'all'.
-12:30:06 **** Incremental Build of configuration Debug for project lab6 ****
-make -j16 all 
-make: Nothing to be done for 'all'.
-12:30:45 **** Incremental Build of configuration Debug for project lab6 ****
+13:41:48 **** Incremental Build of configuration Debug for project hw6 ****
 make -j16 all 
 Building file: ../src/main.c
 Invoking: MCU GCC Compiler
-/home/shay/a/will2253/workspace/lab6/Debug
-arm-none-eabi-gcc -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -DSTM32 -DSTM32F0 -DSTM32F091RCTx -DDEBUG -DSTM32F091 -DUSE_STDPERIPH_DRIVER -I"/home/shay/a/will2253/workspace/lab6/StdPeriph_Driver/inc" -I"/home/shay/a/will2253/workspace/lab6/inc" -I"/home/shay/a/will2253/workspace/lab6/CMSIS/device" -I"/home/shay/a/will2253/workspace/lab6/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+/home/shay/a/will2253/workspace/hw6/Debug
+arm-none-eabi-gcc -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -DSTM32 -DSTM32F0 -DSTM32F091RCTx -DDEBUG -DSTM32F091 -DUSE_STDPERIPH_DRIVER -I"/home/shay/a/will2253/workspace/hw6/StdPeriph_Driver/inc" -I"/home/shay/a/will2253/workspace/hw6/inc" -I"/home/shay/a/will2253/workspace/hw6/CMSIS/device" -I"/home/shay/a/will2253/workspace/hw6/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'set_digit':
+../src/main.c:41:29: warning: array subscript has type 'char' [-Wchar-subscripts]
+     digit[n] = (n<<8) | font[c];
+                             ^
+../src/main.c: In function 'TIM7_IRQHandler':
+../src/main.c:96:5: warning: implicit declaration of function 'sprintf' [-Wimplicit-function-declaration]
+     sprintf(time, "%02d%02d%02d  ", hrs, min, sec);
+     ^~~~~~~
+../src/main.c:96:5: warning: incompatible implicit declaration of built-in function 'sprintf'
+../src/main.c:96:5: note: include '<stdio.h>' or provide a declaration of 'sprintf'
+../src/main.c:96:34: warning: 'sprintf' writing a terminating nul past the end of the destination [-Wformat-overflow=]
+     sprintf(time, "%02d%02d%02d  ", hrs, min, sec);
+                                  ^
+../src/main.c:96:5: note: 'sprintf' output between 9 and 36 bytes into a destination of size 8
+     sprintf(time, "%02d%02d%02d  ", hrs, min, sec);
+     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 Finished building: ../src/main.c
  
-Building target: lab6.elf
+Building target: hw6.elf
 Invoking: MCU GCC Linker
-arm-none-eabi-gcc -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -T"/home/shay/a/will2253/workspace/lab6/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "lab6.elf" @"objects.list"   -lm
-Finished building target: lab6.elf
+arm-none-eabi-gcc -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -T"/home/shay/a/will2253/workspace/hw6/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "hw6.elf" @"objects.list"   -lm
+Finished building target: hw6.elf
  
 make --no-print-directory post-build
 Generating binary and Printing size information:
-arm-none-eabi-objcopy -O binary "lab6.elf" "lab6.bin"
-arm-none-eabi-size "lab6.elf"
+arm-none-eabi-objcopy -O binary "hw6.elf" "hw6.bin"
+arm-none-eabi-size "hw6.elf"
    text	   data	    bss	    dec	    hex	filename
-  20468	   1104	   3276	  24848	   6110	lab6.elf
- 
-12:34:21 **** Incremental Build of configuration Debug for project lab6 ****
-make -j16 all 
-make: Nothing to be done for 'all'.
-12:40:11 **** Incremental Build of configuration Debug for project lab6 ****
-make -j16 all 
-Building file: ../src/main.c
-Invoking: MCU GCC Compiler
-/home/shay/a/will2253/workspace/lab6/Debug
-arm-none-eabi-gcc -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -DSTM32 -DSTM32F0 -DSTM32F091RCTx -DDEBUG -DSTM32F091 -DUSE_STDPERIPH_DRIVER -I"/home/shay/a/will2253/workspace/lab6/StdPeriph_Driver/inc" -I"/home/shay/a/will2253/workspace/lab6/inc" -I"/home/shay/a/will2253/workspace/lab6/CMSIS/device" -I"/home/shay/a/will2253/workspace/lab6/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
-Finished building: ../src/main.c
- 
-Building target: lab6.elf
-Invoking: MCU GCC Linker
-arm-none-eabi-gcc -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -T"/home/shay/a/will2253/workspace/lab6/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "lab6.elf" @"objects.list"   -lm
-Finished building target: lab6.elf
- 
-make --no-print-directory post-build
-Generating binary and Printing size information:
-arm-none-eabi-objcopy -O binary "lab6.elf" "lab6.bin"
-arm-none-eabi-size "lab6.elf"
-   text	   data	    bss	    dec	    hex	filename
-  20468	   1104	   3276	  24848	   6110	lab6.elf
- 
-12:40:21 **** Incremental Build of configuration Debug for project lab6 ****
-make -j16 all 
-make: Nothing to be done for 'all'.
-12:41:37 **** Incremental Build of configuration Debug for project lab6 ****
-make -j16 all 
-Building file: ../src/main.c
-Invoking: MCU GCC Compiler
-/home/shay/a/will2253/workspace/lab6/Debug
-arm-none-eabi-gcc -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -DSTM32 -DSTM32F0 -DSTM32F091RCTx -DDEBUG -DSTM32F091 -DUSE_STDPERIPH_DRIVER -I"/home/shay/a/will2253/workspace/lab6/StdPeriph_Driver/inc" -I"/home/shay/a/will2253/workspace/lab6/inc" -I"/home/shay/a/will2253/workspace/lab6/CMSIS/device" -I"/home/shay/a/will2253/workspace/lab6/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
-Finished building: ../src/main.c
- 
-Building target: lab6.elf
-Invoking: MCU GCC Linker
-arm-none-eabi-gcc -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -T"/home/shay/a/will2253/workspace/lab6/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "lab6.elf" @"objects.list"   -lm
-Finished building target: lab6.elf
- 
-make --no-print-directory post-build
-Generating binary and Printing size information:
-arm-none-eabi-objcopy -O binary "lab6.elf" "lab6.bin"
-arm-none-eabi-size "lab6.elf"
-   text	   data	    bss	    dec	    hex	filename
-  34600	   2508	   3336	  40444	   9dfc	lab6.elf
- 
-12:41:48 **** Incremental Build of configuration Debug for project lab6 ****
-make -j16 all 
-make: Nothing to be done for 'all'.
-12:42:05 **** Incremental Build of configuration Debug for project lab6 ****
-make -j16 all 
-make: Nothing to be done for 'all'.
-12:43:05 **** Incremental Build of configuration Debug for project lab6 ****
-make -j16 all 
-make: Nothing to be done for 'all'.
-12:43:42 **** Incremental Build of configuration Debug for project lab6 ****
-make -j16 all 
-make: Nothing to be done for 'all'.
-12:44:25 **** Incremental Build of configuration Debug for project lab6 ****
-make -j16 all 
-Building file: ../src/main.c
-Invoking: MCU GCC Compiler
-/home/shay/a/will2253/workspace/lab6/Debug
-arm-none-eabi-gcc -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -DSTM32 -DSTM32F0 -DSTM32F091RCTx -DDEBUG -DSTM32F091 -DUSE_STDPERIPH_DRIVER -I"/home/shay/a/will2253/workspace/lab6/StdPeriph_Driver/inc" -I"/home/shay/a/will2253/workspace/lab6/inc" -I"/home/shay/a/will2253/workspace/lab6/CMSIS/device" -I"/home/shay/a/will2253/workspace/lab6/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
-Finished building: ../src/main.c
- 
-Building target: lab6.elf
-Invoking: MCU GCC Linker
-arm-none-eabi-gcc -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -T"/home/shay/a/will2253/workspace/lab6/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "lab6.elf" @"objects.list"   -lm
-Finished building target: lab6.elf
- 
-make --no-print-directory post-build
-Generating binary and Printing size information:
-arm-none-eabi-objcopy -O binary "lab6.elf" "lab6.bin"
-arm-none-eabi-size "lab6.elf"
-   text	   data	    bss	    dec	    hex	filename
-  20468	   1104	   3276	  24848	   6110	lab6.elf
- 
-12:47:49 **** Incremental Build of configuration Debug for project lab6 ****
-make -j16 all 
-make: Nothing to be done for 'all'.
-12:48:07 **** Incremental Build of configuration Debug for project lab6 ****
-make -j16 all 
-make: Nothing to be done for 'all'.
-12:48:15 **** Incremental Build of configuration Debug for project lab6 ****
-make -j16 all 
-make: Nothing to be done for 'all'.
-12:48:42 **** Incremental Build of configuration Debug for project lab6 ****
-make -j16 all 
-Building file: ../src/main.c
-Invoking: MCU GCC Compiler
-/home/shay/a/will2253/workspace/lab6/Debug
-arm-none-eabi-gcc -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -DSTM32 -DSTM32F0 -DSTM32F091RCTx -DDEBUG -DSTM32F091 -DUSE_STDPERIPH_DRIVER -I"/home/shay/a/will2253/workspace/lab6/StdPeriph_Driver/inc" -I"/home/shay/a/will2253/workspace/lab6/inc" -I"/home/shay/a/will2253/workspace/lab6/CMSIS/device" -I"/home/shay/a/will2253/workspace/lab6/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
-Finished building: ../src/main.c
- 
-Building target: lab6.elf
-Invoking: MCU GCC Linker
-arm-none-eabi-gcc -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -T"/home/shay/a/will2253/workspace/lab6/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "lab6.elf" @"objects.list"   -lm
-Finished building target: lab6.elf
- 
-make --no-print-directory post-build
-Generating binary and Printing size information:
-arm-none-eabi-objcopy -O binary "lab6.elf" "lab6.bin"
-arm-none-eabi-size "lab6.elf"
-   text	   data	    bss	    dec	    hex	filename
-  20456	   1104	   3276	  24836	   6104	lab6.elf
+  29024	   2500	   1224	  32748	   7fec	hw6.elf
  

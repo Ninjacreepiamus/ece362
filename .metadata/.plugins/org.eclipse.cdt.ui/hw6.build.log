@@ -1,0 +1,39 @@
+13:41:48 **** Incremental Build of configuration Debug for project hw6 ****
+make -j16 all 
+Building file: ../src/main.c
+Invoking: MCU GCC Compiler
+/home/shay/a/will2253/workspace/hw6/Debug
+arm-none-eabi-gcc -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -DSTM32 -DSTM32F0 -DSTM32F091RCTx -DDEBUG -DSTM32F091 -DUSE_STDPERIPH_DRIVER -I"/home/shay/a/will2253/workspace/hw6/StdPeriph_Driver/inc" -I"/home/shay/a/will2253/workspace/hw6/inc" -I"/home/shay/a/will2253/workspace/hw6/CMSIS/device" -I"/home/shay/a/will2253/workspace/hw6/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'set_digit':
+../src/main.c:41:29: warning: array subscript has type 'char' [-Wchar-subscripts]
+     digit[n] = (n<<8) | font[c];
+                             ^
+../src/main.c: In function 'TIM7_IRQHandler':
+../src/main.c:96:5: warning: implicit declaration of function 'sprintf' [-Wimplicit-function-declaration]
+     sprintf(time, "%02d%02d%02d  ", hrs, min, sec);
+     ^~~~~~~
+../src/main.c:96:5: warning: incompatible implicit declaration of built-in function 'sprintf'
+../src/main.c:96:5: note: include '<stdio.h>' or provide a declaration of 'sprintf'
+../src/main.c:96:34: warning: 'sprintf' writing a terminating nul past the end of the destination [-Wformat-overflow=]
+     sprintf(time, "%02d%02d%02d  ", hrs, min, sec);
+                                  ^
+../src/main.c:96:5: note: 'sprintf' output between 9 and 36 bytes into a destination of size 8
+     sprintf(time, "%02d%02d%02d  ", hrs, min, sec);
+     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Finished building: ../src/main.c
+ 
+Building target: hw6.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -T"/home/shay/a/will2253/workspace/hw6/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "hw6.elf" @"objects.list"   -lm
+Finished building target: hw6.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "hw6.elf" "hw6.bin"
+arm-none-eabi-size "hw6.elf"
+   text	   data	    bss	    dec	    hex	filename
+  29024	   2500	   1224	  32748	   7fec	hw6.elf
+ 
+
+13:41:49 Build Finished (took 463ms)
+
