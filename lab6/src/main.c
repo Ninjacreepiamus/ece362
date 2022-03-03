@@ -130,7 +130,7 @@ void init_tim7(void)
     TIM7->ARR = 2-1;
     TIM7->CR1 |= TIM_CR1_CEN;
     TIM7->DIER |= TIM_DIER_UIE;
-    //Set NVIC
+    NVIC->ISER[0] = (1<<TIM7_IRQn);
 }
 
 //=============================================================================
@@ -143,11 +143,29 @@ uint32_t volume = 2048;
 //============================================================================
 void setup_adc(void)
 {
-
+    //Enable the clock to GPIO Port A
+    RCC->AHBENR |= RCC_AHBENR_GPIOAEN;
+    //Set the configuration for analog operation only for the appropriate pins
+    GPIOA->MODER |= GPIO_MODER_MODER1;
+    //Enable the clock to the ADC peripheral
+    RCC->APB2ENR |= RCC_APB2ENR_ADC1EN;
+    //Turn on the "high-speed internal" 14 MHz clock (HSI14)
+    RCC->CR2 |= RCC_CR2_HSI14ON;
+    //Wait for the 14 MHz clock to be ready
+    while(!(RCC->CR2 & RCC_CR2_HSI14RDY));
+    //Enable the ADC by setting the ADEN bit in the CR register
+    ADC1->CR |= ADC_CR_ADEN;
+    //Wait for the ADC to be ready
+    while(!(ADC1->ISR & ADC_ISR_ADRDY));
+    //Select the corresponding channel for ADC_IN1 in the CHSELR
+    ADC1->CHSELR = 0;
+    ADC1->CHSELR = 1 << 1;
+    //Wait for the ADC to be ready AGAIN
+    while(!(ADC1->ISR & ADC_ISR_ADRDY));
 }
 
 //============================================================================
-// Varables for boxcar averaging.
+// Variables for boxcar averaging.
 //============================================================================
 #define BCSIZE 32
 int bcsum = 0;
@@ -158,13 +176,32 @@ int bcn = 0;
 //============================================================================
 
 // Write the Timer 2 ISR here.  Be sure to give it the right name.
-
+void TIM2_IRQHandler() {
+    //Acknowledge the interrupt.
+    TIM2->SR &= ~TIM_SR_UIF;
+    //Start the ADC by turning on the ADSTART bit in the CR.
+    ADC1->CR |= ADC_CR_ADSTART;
+    //Wait until the EOC bit is set in the ISR.
+    while(!(ADC1->ISR & ADC_ISR_EOC));
+    //Implement boxcar averaging using the following code:
+    bcsum -= boxcar[bcn];
+    bcsum += boxcar[bcn] = ADC1->DR;
+    bcn += 1;
+    if (bcn >= BCSIZE)
+        bcn = 0;
+    volume = bcsum / BCSIZE;
+}
 //============================================================================
 // init_tim2()
 //============================================================================
 void init_tim2(void)
 {
-
+    RCC->APB1ENR |= RCC_APB1ENR_TIM2EN;
+    TIM2->PSC = 48000-1;
+    TIM2->ARR = 100-1;
+    TIM2->DIER |= TIM_DIER_UIE;
+    NVIC->ISER[0] = (1<<TIM2_IRQn);
+    TIM2->CR1 |= TIM_CR1_CEN;
 }
 
 
@@ -218,7 +255,14 @@ void set_freq(int chan, float f) {
 //============================================================================
 void setup_dac(void)
 {
-
+    //Enable the RCC clock for the DAC
+    RCC->APB1ENR |= RCC_APB1ENR_DACEN;
+    //Select a TIM6 TRGO trigger for the DAC with the TSEL field of the CR register
+    DAC->CR &= ~DAC_CR_TSEL1;
+    //Enable the trigger for the DAC
+    DAC->CR |= DAC_CR_TSEL1_1;
+    //Enable the DAC
+    DAC->CR |= DAC_CR_EN1;
 }
 
 //============================================================================
@@ -226,14 +270,36 @@ void setup_dac(void)
 //============================================================================
 
 // Write the Timer 6 ISR here.  Be sure to give it the right name.
-
+void TIM6_DAC_IRQHandler() {
+    //Acknowledge the interrupt.
+    TIM6->SR &= ~TIM_SR_UIF;
+    //Other stuff
+    offset0 += step0;
+    offset1 += step1;
+    if (offset0 >= (N << 16))
+        offset0 -= (N << 16);
+    if (offset1 >= (N << 16))
+        offset1 -= (N << 16);
+    int samp = wavetable[offset0>>16] + wavetable[offset1>>16];
+    samp = samp * volume;
+    samp = samp >> 17;
+    samp += 2048;
+    DAC->DHR12R1 = samp;
+}
 
 //============================================================================
 // init_tim6()
 //============================================================================
 void init_tim6(void)
 {
-
+    RCC->APB1ENR |= RCC_APB1ENR_TIM6EN;
+    TIM6->PSC = 2-1;
+    TIM6->ARR = (48000000) / (2 * RATE);
+    TIM6->DIER |= TIM_DIER_UIE;
+    TIM6->CR2 &= ~TIM_CR2_MMS;
+    TIM6->CR2 |= TIM_CR2_MMS_1;
+    NVIC->ISER[0] = (1<<TIM6_DAC_IRQn);
+    TIM6->CR1 |= TIM_CR1_CEN;
 }
 
 //============================================================================
@@ -269,7 +335,7 @@ int main(void)
     init_tim7();
 
     // Demonstrate part 2
-#define SHOW_KEY_EVENTS
+//#define SHOW_KEY_EVENTS
 #ifdef SHOW_KEY_EVENTS
     show_keys();
 #endif
