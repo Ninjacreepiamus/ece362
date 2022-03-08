@@ -2,20 +2,20 @@
 <section name="Workbench">
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
 		<item value="false" key="isRegEx"/>
-		<item value="volume" key="selection"/>
+		<item value="Cen" key="selection"/>
 		<item value="false" key="casesensitive"/>
 		<item value="false" key="incremental"/>
 		<item value="true" key="wrap"/>
 		<item value="false" key="wholeword"/>
 		<list key="findhistory">
+			<item value="cen"/>
+			<item value="tim_cen"/>
+			<item value="tim_en"/>
+			<item value="ccmr"/>
+			<item value="ocm"/>
+			<item value="tim3"/>
 			<item value="volume"/>
 			<item value="tsel"/>
-			<item value="mms"/>
-			<item value="rate"/>
-			<item value="tsel1"/>
-			<item value="dac-&gt;cr"/>
-			<item value="RCC_APB1ENR_TIM2EN"/>
-			<item value="rcc_cr2"/>
 		</list>
 		<list key="replacehistory">
 		</list>
