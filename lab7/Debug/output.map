@@ -28,8 +28,6 @@ Archive member included to satisfy reference by file (symbol)
                               /home/shay/a/ece362/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.17.0.201812190825/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/libm.a(lib_a-e_rem_pio2.o) (__aeabi_dcmpeq)
 /home/shay/a/ece362/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.17.0.201812190825/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.3.1/thumb/v6-m/libgcc.a(_arm_cmpsf2.o)
                               src/main.o (__aeabi_fcmpeq)
-/home/shay/a/ece362/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.17.0.201812190825/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.3.1/thumb/v6-m/libgcc.a(_fixunssfsi.o)
-                              src/main.o (__aeabi_f2uiz)
 /home/shay/a/ece362/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.17.0.201812190825/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.3.1/thumb/v6-m/libgcc.a(divsf3.o)
                               src/main.o (__aeabi_fdiv)
 /home/shay/a/ece362/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.17.0.201812190825/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.3.1/thumb/v6-m/libgcc.a(eqsf2.o)
@@ -40,8 +38,6 @@ Archive member included to satisfy reference by file (symbol)
                               /home/shay/a/ece362/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.17.0.201812190825/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.3.1/thumb/v6-m/libgcc.a(_arm_cmpsf2.o) (__lesf2)
 /home/shay/a/ece362/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.17.0.201812190825/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.3.1/thumb/v6-m/libgcc.a(mulsf3.o)
                               src/main.o (__aeabi_fmul)
-/home/shay/a/ece362/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.17.0.201812190825/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.3.1/thumb/v6-m/libgcc.a(subsf3.o)
-                              src/main.o (__aeabi_fsub)
 /home/shay/a/ece362/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.17.0.201812190825/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.3.1/thumb/v6-m/libgcc.a(fixsfsi.o)
                               src/main.o (__aeabi_f2iz)
 /home/shay/a/ece362/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.17.0.201812190825/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.3.1/thumb/v6-m/libgcc.a(floatsisf.o)
@@ -65,9 +61,7 @@ Archive member included to satisfy reference by file (symbol)
 /home/shay/a/ece362/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.17.0.201812190825/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.3.1/thumb/v6-m/libgcc.a(floatsidf.o)
                               src/main.o (__aeabi_i2d)
 /home/shay/a/ece362/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.17.0.201812190825/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.3.1/thumb/v6-m/libgcc.a(extendsfdf2.o)
-                              src/main.o (__aeabi_f2d)
-/home/shay/a/ece362/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.17.0.201812190825/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.3.1/thumb/v6-m/libgcc.a(truncdfsf2.o)
-                              src/main.o (__aeabi_d2f)
+                              src/support.o (__aeabi_f2d)
 /home/shay/a/ece362/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.17.0.201812190825/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.3.1/thumb/v6-m/libgcc.a(_clzsi2.o)
                               /home/shay/a/ece362/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.17.0.201812190825/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.3.1/thumb/v6-m/libgcc.a(divsf3.o) (__clzsi2)
 /home/shay/a/ece362/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.17.0.201812190825/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc.a(lib_a-errno.o)
@@ -3278,7 +3272,6 @@ Discarded input sections
  .text          0x0000000000000000        0x0 src/main.o
  .text.setup_tim3
                 0x0000000000000000       0xec src/main.o
- .text.setrgb   0x0000000000000000       0x10 src/main.o
  .debug_macro   0x0000000000000000      0xa5a src/main.o
  .debug_macro   0x0000000000000000       0x81 src/main.o
  .debug_macro   0x0000000000000000       0x3a src/main.o
@@ -3370,7 +3363,6 @@ Discarded input sections
                 0x0000000000000000       0x90 src/support.o
  .text.show_keys
                 0x0000000000000000       0x44 src/support.o
- .text.getrgb   0x0000000000000000       0x78 src/support.o
  .debug_macro   0x0000000000000000      0xa5a src/support.o
  .debug_macro   0x0000000000000000       0x81 src/support.o
  .debug_macro   0x0000000000000000       0x3a src/support.o
@@ -3655,8 +3647,6 @@ Discarded input sections
  .bss           0x0000000000000000        0x0 /home/shay/a/ece362/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.17.0.201812190825/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.3.1/thumb/v6-m/libgcc.a(_arm_cmpdf2.o)
  .data          0x0000000000000000        0x0 /home/shay/a/ece362/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.17.0.201812190825/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.3.1/thumb/v6-m/libgcc.a(_arm_cmpsf2.o)
  .bss           0x0000000000000000        0x0 /home/shay/a/ece362/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.17.0.201812190825/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.3.1/thumb/v6-m/libgcc.a(_arm_cmpsf2.o)
- .data          0x0000000000000000        0x0 /home/shay/a/ece362/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.17.0.201812190825/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.3.1/thumb/v6-m/libgcc.a(_fixunssfsi.o)
- .bss           0x0000000000000000        0x0 /home/shay/a/ece362/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.17.0.201812190825/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.3.1/thumb/v6-m/libgcc.a(_fixunssfsi.o)
  .data          0x0000000000000000        0x0 /home/shay/a/ece362/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.17.0.201812190825/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.3.1/thumb/v6-m/libgcc.a(divsf3.o)
  .bss           0x0000000000000000        0x0 /home/shay/a/ece362/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.17.0.201812190825/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.3.1/thumb/v6-m/libgcc.a(divsf3.o)
  .data          0x0000000000000000        0x0 /home/shay/a/ece362/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.17.0.201812190825/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.3.1/thumb/v6-m/libgcc.a(eqsf2.o)
@@ -3667,8 +3657,6 @@ Discarded input sections
  .bss           0x0000000000000000        0x0 /home/shay/a/ece362/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.17.0.201812190825/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.3.1/thumb/v6-m/libgcc.a(lesf2.o)
  .data          0x0000000000000000        0x0 /home/shay/a/ece362/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.17.0.201812190825/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.3.1/thumb/v6-m/libgcc.a(mulsf3.o)
  .bss           0x0000000000000000        0x0 /home/shay/a/ece362/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.17.0.201812190825/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.3.1/thumb/v6-m/libgcc.a(mulsf3.o)
- .data          0x0000000000000000        0x0 /home/shay/a/ece362/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.17.0.201812190825/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.3.1/thumb/v6-m/libgcc.a(subsf3.o)
- .bss           0x0000000000000000        0x0 /home/shay/a/ece362/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.17.0.201812190825/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.3.1/thumb/v6-m/libgcc.a(subsf3.o)
  .data          0x0000000000000000        0x0 /home/shay/a/ece362/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.17.0.201812190825/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.3.1/thumb/v6-m/libgcc.a(fixsfsi.o)
  .bss           0x0000000000000000        0x0 /home/shay/a/ece362/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.17.0.201812190825/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.3.1/thumb/v6-m/libgcc.a(fixsfsi.o)
  .data          0x0000000000000000        0x0 /home/shay/a/ece362/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.17.0.201812190825/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.3.1/thumb/v6-m/libgcc.a(floatsisf.o)
@@ -3691,10 +3679,12 @@ Discarded input sections
  .bss           0x0000000000000000        0x0 /home/shay/a/ece362/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.17.0.201812190825/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.3.1/thumb/v6-m/libgcc.a(fixdfsi.o)
  .data          0x0000000000000000        0x0 /home/shay/a/ece362/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.17.0.201812190825/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.3.1/thumb/v6-m/libgcc.a(floatsidf.o)
  .bss           0x0000000000000000        0x0 /home/shay/a/ece362/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.17.0.201812190825/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.3.1/thumb/v6-m/libgcc.a(floatsidf.o)
+ .text          0x0000000000000000       0xa4 /home/shay/a/ece362/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.17.0.201812190825/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.3.1/thumb/v6-m/libgcc.a(extendsfdf2.o)
  .data          0x0000000000000000        0x0 /home/shay/a/ece362/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.17.0.201812190825/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.3.1/thumb/v6-m/libgcc.a(extendsfdf2.o)
  .bss           0x0000000000000000        0x0 /home/shay/a/ece362/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.17.0.201812190825/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.3.1/thumb/v6-m/libgcc.a(extendsfdf2.o)
- .data          0x0000000000000000        0x0 /home/shay/a/ece362/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.17.0.201812190825/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.3.1/thumb/v6-m/libgcc.a(truncdfsf2.o)
- .bss           0x0000000000000000        0x0 /home/shay/a/ece362/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.17.0.201812190825/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.3.1/thumb/v6-m/libgcc.a(truncdfsf2.o)
+ .debug_frame   0x0000000000000000       0x2c /home/shay/a/ece362/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.17.0.201812190825/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.3.1/thumb/v6-m/libgcc.a(extendsfdf2.o)
+ .ARM.attributes
+                0x0000000000000000       0x2c /home/shay/a/ece362/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.17.0.201812190825/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.3.1/thumb/v6-m/libgcc.a(extendsfdf2.o)
  .data          0x0000000000000000        0x0 /home/shay/a/ece362/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.17.0.201812190825/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.3.1/thumb/v6-m/libgcc.a(_clzsi2.o)
  .bss           0x0000000000000000        0x0 /home/shay/a/ece362/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.17.0.201812190825/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.3.1/thumb/v6-m/libgcc.a(_clzsi2.o)
  .text          0x0000000000000000        0x0 /home/shay/a/ece362/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.17.0.201812190825/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc.a(lib_a-errno.o)
@@ -4135,7 +4125,7 @@ LOAD /home/shay/a/ece362/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.ar
                 0x0000000008000000                g_pfnVectors
                 0x00000000080000c0                . = ALIGN (0x4)
 
-.text           0x00000000080000c0     0x5084
+.text           0x00000000080000c0     0x4c08
                 0x00000000080000c0                . = ALIGN (0x4)
  *(.text)
  .text          0x00000000080000c0       0x48 /home/shay/a/ece362/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.17.0.201812190825/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.3.1/thumb/v6-m/crtbegin.o
@@ -4168,324 +4158,319 @@ LOAD /home/shay/a/ece362/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.ar
                 0x00000000080004a8                __aeabi_fcmple
                 0x00000000080004bc                __aeabi_fcmpgt
                 0x00000000080004d0                __aeabi_fcmpge
- .text          0x00000000080004e4       0x30 /home/shay/a/ece362/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.17.0.201812190825/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.3.1/thumb/v6-m/libgcc.a(_fixunssfsi.o)
-                0x00000000080004e4                __aeabi_f2uiz
-                0x00000000080004e4                __fixunssfsi
- .text          0x0000000008000514      0x224 /home/shay/a/ece362/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.17.0.201812190825/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.3.1/thumb/v6-m/libgcc.a(divsf3.o)
-                0x0000000008000514                __aeabi_fdiv
- .text          0x0000000008000738       0x50 /home/shay/a/ece362/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.17.0.201812190825/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.3.1/thumb/v6-m/libgcc.a(eqsf2.o)
-                0x0000000008000738                __nesf2
-                0x0000000008000738                __eqsf2
- .text          0x0000000008000788       0x9c /home/shay/a/ece362/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.17.0.201812190825/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.3.1/thumb/v6-m/libgcc.a(gesf2.o)
-                0x0000000008000788                __gtsf2
-                0x0000000008000788                __gesf2
- .text          0x0000000008000824       0xa0 /home/shay/a/ece362/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.17.0.201812190825/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.3.1/thumb/v6-m/libgcc.a(lesf2.o)
-                0x0000000008000824                __lesf2
-                0x0000000008000824                __ltsf2
- .text          0x00000000080008c4      0x264 /home/shay/a/ece362/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.17.0.201812190825/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.3.1/thumb/v6-m/libgcc.a(mulsf3.o)
-                0x00000000080008c4                __aeabi_fmul
- .text          0x0000000008000b28      0x388 /home/shay/a/ece362/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.17.0.201812190825/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.3.1/thumb/v6-m/libgcc.a(subsf3.o)
-                0x0000000008000b28                __aeabi_fsub
- .text          0x0000000008000eb0       0x40 /home/shay/a/ece362/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.17.0.201812190825/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.3.1/thumb/v6-m/libgcc.a(fixsfsi.o)
-                0x0000000008000eb0                __aeabi_f2iz
- .text          0x0000000008000ef0       0x94 /home/shay/a/ece362/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.17.0.201812190825/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.3.1/thumb/v6-m/libgcc.a(floatsisf.o)
-                0x0000000008000ef0                __aeabi_i2f
- .text          0x0000000008000f84      0x638 /home/shay/a/ece362/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.17.0.201812190825/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.3.1/thumb/v6-m/libgcc.a(adddf3.o)
-                0x0000000008000f84                __aeabi_dadd
- .text          0x00000000080015bc      0x604 /home/shay/a/ece362/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.17.0.201812190825/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.3.1/thumb/v6-m/libgcc.a(divdf3.o)
-                0x00000000080015bc                __aeabi_ddiv
- .text          0x0000000008001bc0       0x78 /home/shay/a/ece362/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.17.0.201812190825/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.3.1/thumb/v6-m/libgcc.a(eqdf2.o)
-                0x0000000008001bc0                __eqdf2
-                0x0000000008001bc0                __nedf2
- .text          0x0000000008001c38       0xc8 /home/shay/a/ece362/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.17.0.201812190825/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.3.1/thumb/v6-m/libgcc.a(gedf2.o)
-                0x0000000008001c38                __gtdf2
-                0x0000000008001c38                __gedf2
- .text          0x0000000008001d00       0xd0 /home/shay/a/ece362/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.17.0.201812190825/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.3.1/thumb/v6-m/libgcc.a(ledf2.o)
-                0x0000000008001d00                __ltdf2
-                0x0000000008001d00                __ledf2
- .text          0x0000000008001dd0      0x4e4 /home/shay/a/ece362/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.17.0.201812190825/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.3.1/thumb/v6-m/libgcc.a(muldf3.o)
-                0x0000000008001dd0                __aeabi_dmul
- .text          0x00000000080022b4      0x690 /home/shay/a/ece362/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.17.0.201812190825/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.3.1/thumb/v6-m/libgcc.a(subdf3.o)
-                0x00000000080022b4                __aeabi_dsub
- .text          0x0000000008002944       0x6c /home/shay/a/ece362/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.17.0.201812190825/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.3.1/thumb/v6-m/libgcc.a(fixdfsi.o)
-                0x0000000008002944                __aeabi_d2iz
- .text          0x00000000080029b0       0x74 /home/shay/a/ece362/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.17.0.201812190825/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.3.1/thumb/v6-m/libgcc.a(floatsidf.o)
-                0x00000000080029b0                __aeabi_i2d
- .text          0x0000000008002a24       0xa4 /home/shay/a/ece362/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.17.0.201812190825/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.3.1/thumb/v6-m/libgcc.a(extendsfdf2.o)
-                0x0000000008002a24                __aeabi_f2d
- .text          0x0000000008002ac8      0x108 /home/shay/a/ece362/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.17.0.201812190825/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.3.1/thumb/v6-m/libgcc.a(truncdfsf2.o)
-                0x0000000008002ac8                __aeabi_d2f
- .text          0x0000000008002bd0       0x3c /home/shay/a/ece362/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.17.0.201812190825/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.3.1/thumb/v6-m/libgcc.a(_clzsi2.o)
-                0x0000000008002bd0                __clzsi2
+ .text          0x00000000080004e4      0x224 /home/shay/a/ece362/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.17.0.201812190825/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.3.1/thumb/v6-m/libgcc.a(divsf3.o)
+                0x00000000080004e4                __aeabi_fdiv
+ .text          0x0000000008000708       0x50 /home/shay/a/ece362/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.17.0.201812190825/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.3.1/thumb/v6-m/libgcc.a(eqsf2.o)
+                0x0000000008000708                __nesf2
+                0x0000000008000708                __eqsf2
+ .text          0x0000000008000758       0x9c /home/shay/a/ece362/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.17.0.201812190825/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.3.1/thumb/v6-m/libgcc.a(gesf2.o)
+                0x0000000008000758                __gtsf2
+                0x0000000008000758                __gesf2
+ .text          0x00000000080007f4       0xa0 /home/shay/a/ece362/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.17.0.201812190825/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.3.1/thumb/v6-m/libgcc.a(lesf2.o)
+                0x00000000080007f4                __lesf2
+                0x00000000080007f4                __ltsf2
+ .text          0x0000000008000894      0x264 /home/shay/a/ece362/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.17.0.201812190825/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.3.1/thumb/v6-m/libgcc.a(mulsf3.o)
+                0x0000000008000894                __aeabi_fmul
+ .text          0x0000000008000af8       0x40 /home/shay/a/ece362/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.17.0.201812190825/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.3.1/thumb/v6-m/libgcc.a(fixsfsi.o)
+                0x0000000008000af8                __aeabi_f2iz
+ .text          0x0000000008000b38       0x94 /home/shay/a/ece362/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.17.0.201812190825/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.3.1/thumb/v6-m/libgcc.a(floatsisf.o)
+                0x0000000008000b38                __aeabi_i2f
+ .text          0x0000000008000bcc      0x638 /home/shay/a/ece362/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.17.0.201812190825/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.3.1/thumb/v6-m/libgcc.a(adddf3.o)
+                0x0000000008000bcc                __aeabi_dadd
+ .text          0x0000000008001204      0x604 /home/shay/a/ece362/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.17.0.201812190825/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.3.1/thumb/v6-m/libgcc.a(divdf3.o)
+                0x0000000008001204                __aeabi_ddiv
+ .text          0x0000000008001808       0x78 /home/shay/a/ece362/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.17.0.201812190825/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.3.1/thumb/v6-m/libgcc.a(eqdf2.o)
+                0x0000000008001808                __eqdf2
+                0x0000000008001808                __nedf2
+ .text          0x0000000008001880       0xc8 /home/shay/a/ece362/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.17.0.201812190825/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.3.1/thumb/v6-m/libgcc.a(gedf2.o)
+                0x0000000008001880                __gtdf2
+                0x0000000008001880                __gedf2
+ .text          0x0000000008001948       0xd0 /home/shay/a/ece362/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.17.0.201812190825/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.3.1/thumb/v6-m/libgcc.a(ledf2.o)
+                0x0000000008001948                __ltdf2
+                0x0000000008001948                __ledf2
+ .text          0x0000000008001a18      0x4e4 /home/shay/a/ece362/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.17.0.201812190825/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.3.1/thumb/v6-m/libgcc.a(muldf3.o)
+                0x0000000008001a18                __aeabi_dmul
+ .text          0x0000000008001efc      0x690 /home/shay/a/ece362/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.17.0.201812190825/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.3.1/thumb/v6-m/libgcc.a(subdf3.o)
+                0x0000000008001efc                __aeabi_dsub
+ .text          0x000000000800258c       0x6c /home/shay/a/ece362/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.17.0.201812190825/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.3.1/thumb/v6-m/libgcc.a(fixdfsi.o)
+                0x000000000800258c                __aeabi_d2iz
+ .text          0x00000000080025f8       0x74 /home/shay/a/ece362/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.17.0.201812190825/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.3.1/thumb/v6-m/libgcc.a(floatsidf.o)
+                0x00000000080025f8                __aeabi_i2d
+ .text          0x000000000800266c       0x3c /home/shay/a/ece362/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.17.0.201812190825/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.3.1/thumb/v6-m/libgcc.a(_clzsi2.o)
+                0x000000000800266c                __clzsi2
  *(.text*)
  .text.enable_ports
-                0x0000000008002c0c       0x84 src/main.o
-                0x0000000008002c0c                enable_ports
+                0x00000000080026a8       0x84 src/main.o
+                0x00000000080026a8                enable_ports
  .text.setup_dma
-                0x0000000008002c90       0x6c src/main.o
-                0x0000000008002c90                setup_dma
+                0x000000000800272c       0x6c src/main.o
+                0x000000000800272c                setup_dma
  .text.enable_dma
-                0x0000000008002cfc       0x1c src/main.o
-                0x0000000008002cfc                enable_dma
+                0x0000000008002798       0x1c src/main.o
+                0x0000000008002798                enable_dma
  .text.init_tim15
-                0x0000000008002d18       0x54 src/main.o
-                0x0000000008002d18                init_tim15
+                0x00000000080027b4       0x54 src/main.o
+                0x00000000080027b4                init_tim15
  .text.TIM7_IRQHandler
-                0x0000000008002d6c       0x5c src/main.o
-                0x0000000008002d6c                TIM7_IRQHandler
+                0x0000000008002808       0x5c src/main.o
+                0x0000000008002808                TIM7_IRQHandler
  .text.init_tim7
-                0x0000000008002dc8       0x5c src/main.o
-                0x0000000008002dc8                init_tim7
+                0x0000000008002864       0x5c src/main.o
+                0x0000000008002864                init_tim7
  .text.setup_adc
-                0x0000000008002e24       0x88 src/main.o
-                0x0000000008002e24                setup_adc
+                0x00000000080028c0       0x88 src/main.o
+                0x00000000080028c0                setup_adc
  .text.TIM2_IRQHandler
-                0x0000000008002eac       0xa8 src/main.o
-                0x0000000008002eac                TIM2_IRQHandler
+                0x0000000008002948       0xa8 src/main.o
+                0x0000000008002948                TIM2_IRQHandler
  .text.init_tim2
-                0x0000000008002f54       0x64 src/main.o
-                0x0000000008002f54                init_tim2
+                0x00000000080029f0       0x64 src/main.o
+                0x00000000080029f0                init_tim2
  .text.init_wavetable
-                0x0000000008002fb8       0x84 src/main.o
-                0x0000000008002fb8                init_wavetable
+                0x0000000008002a54       0x84 src/main.o
+                0x0000000008002a54                init_wavetable
  .text.set_freq
-                0x000000000800303c       0xc4 src/main.o
-                0x000000000800303c                set_freq
+                0x0000000008002ad8       0xc4 src/main.o
+                0x0000000008002ad8                set_freq
  .text.TIM6_DAC_IRQHandler
-                0x0000000008003100       0xc8 src/main.o
-                0x0000000008003100                TIM6_DAC_IRQHandler
+                0x0000000008002b9c       0xc8 src/main.o
+                0x0000000008002b9c                TIM6_DAC_IRQHandler
  .text.init_tim6
-                0x00000000080031c8       0x58 src/main.o
-                0x00000000080031c8                init_tim6
+                0x0000000008002c64       0x58 src/main.o
+                0x0000000008002c64                init_tim6
  .text.setup_tim1
-                0x0000000008003220      0x128 src/main.o
-                0x0000000008003220                setup_tim1
- .text.main     0x0000000008003348      0x148 src/main.o
-                0x0000000008003348                main
+                0x0000000008002cbc      0x120 src/main.o
+                0x0000000008002cbc                setup_tim1
+ .text.setrgb   0x0000000008002ddc       0x9c src/main.o
+                0x0000000008002ddc                setrgb
+ .text.main     0x0000000008002e78      0x124 src/main.o
+                0x0000000008002e78                main
  .text.nano_wait
-                0x0000000008003490       0x18 src/support.o
-                0x0000000008003490                nano_wait
+                0x0000000008002f9c       0x18 src/support.o
+                0x0000000008002f9c                nano_wait
  .text.set_digit_segments
-                0x00000000080034a8       0x34 src/support.o
-                0x00000000080034a8                set_digit_segments
+                0x0000000008002fb4       0x34 src/support.o
+                0x0000000008002fb4                set_digit_segments
  .text.append_segments
-                0x00000000080034dc       0x4c src/support.o
-                0x00000000080034dc                append_segments
+                0x0000000008002fe8       0x4c src/support.o
+                0x0000000008002fe8                append_segments
  .text.clear_display
-                0x0000000008003528       0x3c src/support.o
-                0x0000000008003528                clear_display
+                0x0000000008003034       0x3c src/support.o
+                0x0000000008003034                clear_display
  .text.push_queue
-                0x0000000008003564       0x30 src/support.o
-                0x0000000008003564                push_queue
+                0x0000000008003070       0x30 src/support.o
+                0x0000000008003070                push_queue
  .text.pop_queue
-                0x0000000008003594       0x3c src/support.o
-                0x0000000008003594                pop_queue
+                0x00000000080030a0       0x3c src/support.o
+                0x00000000080030a0                pop_queue
  .text.update_history
-                0x00000000080035d0       0xa8 src/support.o
-                0x00000000080035d0                update_history
+                0x00000000080030dc       0xa8 src/support.o
+                0x00000000080030dc                update_history
  .text.drive_column
-                0x0000000008003678       0x2c src/support.o
-                0x0000000008003678                drive_column
+                0x0000000008003184       0x2c src/support.o
+                0x0000000008003184                drive_column
  .text.read_rows
-                0x00000000080036a4       0x1c src/support.o
-                0x00000000080036a4                read_rows
+                0x00000000080031b0       0x1c src/support.o
+                0x00000000080031b0                read_rows
  .text.get_key_event
-                0x00000000080036c0       0x2c src/support.o
-                0x00000000080036c0                get_key_event
+                0x00000000080031cc       0x2c src/support.o
+                0x00000000080031cc                get_key_event
  .text.get_keypress
-                0x00000000080036ec       0x30 src/support.o
-                0x00000000080036ec                get_keypress
- .text.dot      0x000000000800371c       0x1c src/support.o
-                0x000000000800371c                dot
+                0x00000000080031f8       0x30 src/support.o
+                0x00000000080031f8                get_keypress
+ .text.dot      0x0000000008003228       0x1c src/support.o
+                0x0000000008003228                dot
  .text.getfloat
-                0x0000000008003738       0xfc src/support.o
-                0x0000000008003738                getfloat
- .text.dialer   0x0000000008003834      0x1d4 src/support.o
-                0x0000000008003834                dialer
+                0x0000000008003244       0xfc src/support.o
+                0x0000000008003244                getfloat
+ .text.getrgb   0x0000000008003340       0x78 src/support.o
+                0x0000000008003340                getrgb
+ .text.dialer   0x00000000080033b8      0x1d4 src/support.o
+                0x00000000080033b8                dialer
  .text.SystemInit
-                0x0000000008003a08       0x8c src/system_stm32f0xx.o
-                0x0000000008003a08                SystemInit
+                0x000000000800358c       0x8c src/system_stm32f0xx.o
+                0x000000000800358c                SystemInit
  .text.SetSysClock
-                0x0000000008003a94       0xe0 src/system_stm32f0xx.o
+                0x0000000008003618       0xe0 src/system_stm32f0xx.o
  .text.Reset_Handler
-                0x0000000008003b74       0x50 startup/startup_stm32.o
-                0x0000000008003b74                Reset_Handler
+                0x00000000080036f8       0x50 startup/startup_stm32.o
+                0x00000000080036f8                Reset_Handler
  .text.Default_Handler
-                0x0000000008003bc4        0x2 startup/startup_stm32.o
-                0x0000000008003bc4                DMA1_CH4_5_6_7_DMA2_CH3_4_5_IRQHandler
-                0x0000000008003bc4                TIM1_CC_IRQHandler
-                0x0000000008003bc4                TSC_IRQHandler
-                0x0000000008003bc4                HardFault_Handler
-                0x0000000008003bc4                SysTick_Handler
-                0x0000000008003bc4                PVD_IRQHandler
-                0x0000000008003bc4                PendSV_Handler
-                0x0000000008003bc4                NMI_Handler
-                0x0000000008003bc4                I2C1_IRQHandler
-                0x0000000008003bc4                RCC_CRS_IRQHandler
-                0x0000000008003bc4                SPI1_IRQHandler
-                0x0000000008003bc4                EXTI2_3_IRQHandler
-                0x0000000008003bc4                I2C2_IRQHandler
-                0x0000000008003bc4                TIM17_IRQHandler
-                0x0000000008003bc4                CEC_CAN_IRQHandler
-                0x0000000008003bc4                RTC_IRQHandler
-                0x0000000008003bc4                TIM16_IRQHandler
-                0x0000000008003bc4                TIM3_IRQHandler
-                0x0000000008003bc4                EXTI4_15_IRQHandler
-                0x0000000008003bc4                Default_Handler
-                0x0000000008003bc4                DMA1_CH2_3_DMA2_CH1_2_IRQHandler
-                0x0000000008003bc4                TIM14_IRQHandler
-                0x0000000008003bc4                TIM15_IRQHandler
-                0x0000000008003bc4                EXTI0_1_IRQHandler
-                0x0000000008003bc4                USB_IRQHandler
-                0x0000000008003bc4                SPI2_IRQHandler
-                0x0000000008003bc4                DMA1_CH1_IRQHandler
-                0x0000000008003bc4                SVC_Handler
-                0x0000000008003bc4                WWDG_IRQHandler
-                0x0000000008003bc4                ADC_COMP_IRQHandler
-                0x0000000008003bc4                USART2_IRQHandler
-                0x0000000008003bc4                USART3_4_5_6_7_8_IRQHandler
-                0x0000000008003bc4                FLASH_IRQHandler
-                0x0000000008003bc4                USART1_IRQHandler
-                0x0000000008003bc4                TIM1_BRK_UP_TRG_COM_IRQHandler
- *fill*         0x0000000008003bc6        0x2 
- .text.sin      0x0000000008003bc8       0x90 /home/shay/a/ece362/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.17.0.201812190825/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/libm.a(lib_a-s_sin.o)
-                0x0000000008003bc8                sin
+                0x0000000008003748        0x2 startup/startup_stm32.o
+                0x0000000008003748                DMA1_CH4_5_6_7_DMA2_CH3_4_5_IRQHandler
+                0x0000000008003748                TIM1_CC_IRQHandler
+                0x0000000008003748                TSC_IRQHandler
+                0x0000000008003748                HardFault_Handler
+                0x0000000008003748                SysTick_Handler
+                0x0000000008003748                PVD_IRQHandler
+                0x0000000008003748                PendSV_Handler
+                0x0000000008003748                NMI_Handler
+                0x0000000008003748                I2C1_IRQHandler
+                0x0000000008003748                RCC_CRS_IRQHandler
+                0x0000000008003748                SPI1_IRQHandler
+                0x0000000008003748                EXTI2_3_IRQHandler
+                0x0000000008003748                I2C2_IRQHandler
+                0x0000000008003748                TIM17_IRQHandler
+                0x0000000008003748                CEC_CAN_IRQHandler
+                0x0000000008003748                RTC_IRQHandler
+                0x0000000008003748                TIM16_IRQHandler
+                0x0000000008003748                TIM3_IRQHandler
+                0x0000000008003748                EXTI4_15_IRQHandler
+                0x0000000008003748                Default_Handler
+                0x0000000008003748                DMA1_CH2_3_DMA2_CH1_2_IRQHandler
+                0x0000000008003748                TIM14_IRQHandler
+                0x0000000008003748                TIM15_IRQHandler
+                0x0000000008003748                EXTI0_1_IRQHandler
+                0x0000000008003748                USB_IRQHandler
+                0x0000000008003748                SPI2_IRQHandler
+                0x0000000008003748                DMA1_CH1_IRQHandler
+                0x0000000008003748                SVC_Handler
+                0x0000000008003748                WWDG_IRQHandler
+                0x0000000008003748                ADC_COMP_IRQHandler
+                0x0000000008003748                USART2_IRQHandler
+                0x0000000008003748                USART3_4_5_6_7_8_IRQHandler
+                0x0000000008003748                FLASH_IRQHandler
+                0x0000000008003748                USART1_IRQHandler
+                0x0000000008003748                TIM1_BRK_UP_TRG_COM_IRQHandler
+ *fill*         0x000000000800374a        0x2 
+ .text.sin      0x000000000800374c       0x90 /home/shay/a/ece362/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.17.0.201812190825/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/libm.a(lib_a-s_sin.o)
+                0x000000000800374c                sin
  .text.__ieee754_rem_pio2
-                0x0000000008003c58      0x420 /home/shay/a/ece362/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.17.0.201812190825/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/libm.a(lib_a-e_rem_pio2.o)
-                0x0000000008003c58                __ieee754_rem_pio2
+                0x00000000080037dc      0x420 /home/shay/a/ece362/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.17.0.201812190825/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/libm.a(lib_a-e_rem_pio2.o)
+                0x00000000080037dc                __ieee754_rem_pio2
  .text.__kernel_cos
-                0x0000000008004078      0x234 /home/shay/a/ece362/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.17.0.201812190825/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/libm.a(lib_a-k_cos.o)
-                0x0000000008004078                __kernel_cos
+                0x0000000008003bfc      0x234 /home/shay/a/ece362/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.17.0.201812190825/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/libm.a(lib_a-k_cos.o)
+                0x0000000008003bfc                __kernel_cos
  .text.__kernel_rem_pio2
-                0x00000000080042ac      0x8c0 /home/shay/a/ece362/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.17.0.201812190825/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/libm.a(lib_a-k_rem_pio2.o)
-                0x00000000080042ac                __kernel_rem_pio2
+                0x0000000008003e30      0x8c0 /home/shay/a/ece362/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.17.0.201812190825/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/libm.a(lib_a-k_rem_pio2.o)
+                0x0000000008003e30                __kernel_rem_pio2
  .text.__kernel_sin
-                0x0000000008004b6c      0x164 /home/shay/a/ece362/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.17.0.201812190825/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/libm.a(lib_a-k_sin.o)
-                0x0000000008004b6c                __kernel_sin
- .text.fabs     0x0000000008004cd0        0x8 /home/shay/a/ece362/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.17.0.201812190825/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/libm.a(lib_a-s_fabs.o)
-                0x0000000008004cd0                fabs
- .text.floor    0x0000000008004cd8      0x138 /home/shay/a/ece362/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.17.0.201812190825/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/libm.a(lib_a-s_floor.o)
-                0x0000000008004cd8                floor
- .text.scalbn   0x0000000008004e10       0xd0 /home/shay/a/ece362/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.17.0.201812190825/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/libm.a(lib_a-s_scalbn.o)
-                0x0000000008004e10                scalbn
+                0x00000000080046f0      0x164 /home/shay/a/ece362/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.17.0.201812190825/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/libm.a(lib_a-k_sin.o)
+                0x00000000080046f0                __kernel_sin
+ .text.fabs     0x0000000008004854        0x8 /home/shay/a/ece362/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.17.0.201812190825/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/libm.a(lib_a-s_fabs.o)
+                0x0000000008004854                fabs
+ .text.floor    0x000000000800485c      0x138 /home/shay/a/ece362/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.17.0.201812190825/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/libm.a(lib_a-s_floor.o)
+                0x000000000800485c                floor
+ .text.scalbn   0x0000000008004994       0xd0 /home/shay/a/ece362/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.17.0.201812190825/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/libm.a(lib_a-s_scalbn.o)
+                0x0000000008004994                scalbn
  .text.copysign
-                0x0000000008004ee0       0x10 /home/shay/a/ece362/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.17.0.201812190825/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/libm.a(lib_a-s_copysign.o)
-                0x0000000008004ee0                copysign
+                0x0000000008004a64       0x10 /home/shay/a/ece362/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.17.0.201812190825/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/libm.a(lib_a-s_copysign.o)
+                0x0000000008004a64                copysign
  .text.__libc_init_array
-                0x0000000008004ef0       0x48 /home/shay/a/ece362/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.17.0.201812190825/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc.a(lib_a-init.o)
-                0x0000000008004ef0                __libc_init_array
- .text.memset   0x0000000008004f38       0x9c /home/shay/a/ece362/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.17.0.201812190825/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc.a(lib_a-memset.o)
-                0x0000000008004f38                memset
+                0x0000000008004a74       0x48 /home/shay/a/ece362/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.17.0.201812190825/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc.a(lib_a-init.o)
+                0x0000000008004a74                __libc_init_array
+ .text.memset   0x0000000008004abc       0x9c /home/shay/a/ece362/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.17.0.201812190825/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc.a(lib_a-memset.o)
+                0x0000000008004abc                memset
  .text.startup.register_fini
-                0x0000000008004fd4       0x18 /home/shay/a/ece362/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.17.0.201812190825/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc.a(lib_a-__call_atexit.o)
- .text.atexit   0x0000000008004fec       0x10 /home/shay/a/ece362/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.17.0.201812190825/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc.a(lib_a-atexit.o)
-                0x0000000008004fec                atexit
+                0x0000000008004b58       0x18 /home/shay/a/ece362/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.17.0.201812190825/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc.a(lib_a-__call_atexit.o)
+ .text.atexit   0x0000000008004b70       0x10 /home/shay/a/ece362/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.17.0.201812190825/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc.a(lib_a-atexit.o)
+                0x0000000008004b70                atexit
  .text.__libc_fini_array
-                0x0000000008004ffc       0x34 /home/shay/a/ece362/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.17.0.201812190825/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc.a(lib_a-fini.o)
-                0x0000000008004ffc                __libc_fini_array
+                0x0000000008004b80       0x34 /home/shay/a/ece362/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.17.0.201812190825/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc.a(lib_a-fini.o)
+                0x0000000008004b80                __libc_fini_array
  .text.__retarget_lock_acquire_recursive
-                0x0000000008005030        0x4 /home/shay/a/ece362/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.17.0.201812190825/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc.a(lib_a-lock.o)
-                0x0000000008005030                __retarget_lock_acquire_recursive
+                0x0000000008004bb4        0x4 /home/shay/a/ece362/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.17.0.201812190825/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc.a(lib_a-lock.o)
+                0x0000000008004bb4                __retarget_lock_acquire_recursive
  .text.__retarget_lock_release_recursive
-                0x0000000008005034        0x4 /home/shay/a/ece362/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.17.0.201812190825/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc.a(lib_a-lock.o)
-                0x0000000008005034                __retarget_lock_release_recursive
+                0x0000000008004bb8        0x4 /home/shay/a/ece362/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.17.0.201812190825/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc.a(lib_a-lock.o)
+                0x0000000008004bb8                __retarget_lock_release_recursive
  .text.__register_exitproc
-                0x0000000008005038       0xf4 /home/shay/a/ece362/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.17.0.201812190825/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc.a(lib_a-__atexit.o)
-                0x0000000008005038                __register_exitproc
+                0x0000000008004bbc       0xf4 /home/shay/a/ece362/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.17.0.201812190825/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc.a(lib_a-__atexit.o)
+                0x0000000008004bbc                __register_exitproc
  *(.glue_7)
- .glue_7        0x000000000800512c        0x0 linker stubs
+ .glue_7        0x0000000008004cb0        0x0 linker stubs
  *(.glue_7t)
- .glue_7t       0x000000000800512c        0x0 linker stubs
+ .glue_7t       0x0000000008004cb0        0x0 linker stubs
  *(.eh_frame)
- .eh_frame      0x000000000800512c        0x0 /home/shay/a/ece362/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.17.0.201812190825/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.3.1/thumb/v6-m/crtbegin.o
+ .eh_frame      0x0000000008004cb0        0x0 /home/shay/a/ece362/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.17.0.201812190825/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.3.1/thumb/v6-m/crtbegin.o
  *(.init)
- .init          0x000000000800512c        0x4 /home/shay/a/ece362/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.17.0.201812190825/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.3.1/thumb/v6-m/crti.o
-                0x000000000800512c                _init
- .init          0x0000000008005130        0x8 /home/shay/a/ece362/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.17.0.201812190825/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.3.1/thumb/v6-m/crtn.o
+ .init          0x0000000008004cb0        0x4 /home/shay/a/ece362/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.17.0.201812190825/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.3.1/thumb/v6-m/crti.o
+                0x0000000008004cb0                _init
+ .init          0x0000000008004cb4        0x8 /home/shay/a/ece362/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.17.0.201812190825/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.3.1/thumb/v6-m/crtn.o
  *(.fini)
- .fini          0x0000000008005138        0x4 /home/shay/a/ece362/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.17.0.201812190825/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.3.1/thumb/v6-m/crti.o
-                0x0000000008005138                _fini
- .fini          0x000000000800513c        0x8 /home/shay/a/ece362/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.17.0.201812190825/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.3.1/thumb/v6-m/crtn.o
-                0x0000000008005144                . = ALIGN (0x4)
-                0x0000000008005144                _etext = .
+ .fini          0x0000000008004cbc        0x4 /home/shay/a/ece362/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.17.0.201812190825/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.3.1/thumb/v6-m/crti.o
+                0x0000000008004cbc                _fini
+ .fini          0x0000000008004cc0        0x8 /home/shay/a/ece362/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.17.0.201812190825/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.3.1/thumb/v6-m/crtn.o
+                0x0000000008004cc8                . = ALIGN (0x4)
+                0x0000000008004cc8                _etext = .
 
-.vfp11_veneer   0x0000000008005144        0x0
- .vfp11_veneer  0x0000000008005144        0x0 linker stubs
+.vfp11_veneer   0x0000000008004cc8        0x0
+ .vfp11_veneer  0x0000000008004cc8        0x0 linker stubs
 
-.v4_bx          0x0000000008005144        0x0
- .v4_bx         0x0000000008005144        0x0 linker stubs
+.v4_bx          0x0000000008004cc8        0x0
+ .v4_bx         0x0000000008004cc8        0x0 linker stubs
 
-.iplt           0x0000000008005144        0x0
- .iplt          0x0000000008005144        0x0 /home/shay/a/ece362/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.17.0.201812190825/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.3.1/thumb/v6-m/crtbegin.o
+.iplt           0x0000000008004cc8        0x0
+ .iplt          0x0000000008004cc8        0x0 /home/shay/a/ece362/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.17.0.201812190825/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.3.1/thumb/v6-m/crtbegin.o
 
-.rodata         0x0000000008005148      0x52c
-                0x0000000008005148                . = ALIGN (0x4)
+.rodata         0x0000000008004cc8      0x52c
+                0x0000000008004cc8                . = ALIGN (0x4)
  *(.rodata)
- .rodata        0x0000000008005148      0x20c src/support.o
-                0x0000000008005148                font
-                0x00000000080051c8                keymap
- .rodata        0x0000000008005354       0x80 /home/shay/a/ece362/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.17.0.201812190825/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.3.1/thumb/v6-m/libgcc.a(divsf3.o)
- .rodata        0x00000000080053d4       0x40 /home/shay/a/ece362/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.17.0.201812190825/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.3.1/thumb/v6-m/libgcc.a(mulsf3.o)
- .rodata        0x0000000008005414       0x40 /home/shay/a/ece362/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.17.0.201812190825/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.3.1/thumb/v6-m/libgcc.a(divdf3.o)
- .rodata        0x0000000008005454       0x40 /home/shay/a/ece362/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.17.0.201812190825/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.3.1/thumb/v6-m/libgcc.a(muldf3.o)
+ .rodata        0x0000000008004cc8      0x20c src/support.o
+                0x0000000008004cc8                font
+                0x0000000008004d48                keymap
+ .rodata        0x0000000008004ed4       0x80 /home/shay/a/ece362/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.17.0.201812190825/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.3.1/thumb/v6-m/libgcc.a(divsf3.o)
+ .rodata        0x0000000008004f54       0x40 /home/shay/a/ece362/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.17.0.201812190825/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.3.1/thumb/v6-m/libgcc.a(mulsf3.o)
+ .rodata        0x0000000008004f94       0x40 /home/shay/a/ece362/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.17.0.201812190825/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.3.1/thumb/v6-m/libgcc.a(divdf3.o)
+ .rodata        0x0000000008004fd4       0x40 /home/shay/a/ece362/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.17.0.201812190825/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.3.1/thumb/v6-m/libgcc.a(muldf3.o)
  *(.rodata*)
  .rodata.npio2_hw
-                0x0000000008005494       0x80 /home/shay/a/ece362/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.17.0.201812190825/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/libm.a(lib_a-e_rem_pio2.o)
+                0x0000000008005014       0x80 /home/shay/a/ece362/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.17.0.201812190825/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/libm.a(lib_a-e_rem_pio2.o)
  .rodata.two_over_pi
-                0x0000000008005514      0x108 /home/shay/a/ece362/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.17.0.201812190825/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/libm.a(lib_a-e_rem_pio2.o)
- *fill*         0x000000000800561c        0x4 
- .rodata.PIo2   0x0000000008005620       0x40 /home/shay/a/ece362/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.17.0.201812190825/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/libm.a(lib_a-k_rem_pio2.o)
+                0x0000000008005094      0x108 /home/shay/a/ece362/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.17.0.201812190825/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/libm.a(lib_a-e_rem_pio2.o)
+ *fill*         0x000000000800519c        0x4 
+ .rodata.PIo2   0x00000000080051a0       0x40 /home/shay/a/ece362/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.17.0.201812190825/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/libm.a(lib_a-k_rem_pio2.o)
  .rodata.init_jk
-                0x0000000008005660       0x10 /home/shay/a/ece362/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.17.0.201812190825/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/libm.a(lib_a-k_rem_pio2.o)
+                0x00000000080051e0       0x10 /home/shay/a/ece362/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.17.0.201812190825/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/libm.a(lib_a-k_rem_pio2.o)
  .rodata._global_impure_ptr
-                0x0000000008005670        0x4 /home/shay/a/ece362/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.17.0.201812190825/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc.a(lib_a-impure.o)
-                0x0000000008005670                _global_impure_ptr
-                0x0000000008005674                . = ALIGN (0x4)
+                0x00000000080051f0        0x4 /home/shay/a/ece362/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.17.0.201812190825/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc.a(lib_a-impure.o)
+                0x00000000080051f0                _global_impure_ptr
+                0x00000000080051f4                . = ALIGN (0x4)
 
-.rel.dyn        0x0000000008005674        0x0
- .rel.iplt      0x0000000008005674        0x0 /home/shay/a/ece362/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.17.0.201812190825/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.3.1/thumb/v6-m/crtbegin.o
+.rel.dyn        0x00000000080051f4        0x0
+ .rel.iplt      0x00000000080051f4        0x0 /home/shay/a/ece362/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.17.0.201812190825/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.3.1/thumb/v6-m/crtbegin.o
 
-.ARM.extab      0x0000000008005674        0x0
-                0x0000000008005674                . = ALIGN (0x4)
+.ARM.extab      0x00000000080051f4        0x0
+                0x00000000080051f4                . = ALIGN (0x4)
  *(.ARM.extab* .gnu.linkonce.armextab.*)
-                0x0000000008005674                . = ALIGN (0x4)
+                0x00000000080051f4                . = ALIGN (0x4)
 
-.ARM            0x0000000008005674        0x0
-                0x0000000008005674                . = ALIGN (0x4)
-                0x0000000008005674                __exidx_start = .
+.ARM            0x00000000080051f4        0x0
+                0x00000000080051f4                . = ALIGN (0x4)
+                0x00000000080051f4                __exidx_start = .
  *(.ARM.exidx*)
-                0x0000000008005674                __exidx_end = .
-                0x0000000008005674                . = ALIGN (0x4)
+                0x00000000080051f4                __exidx_end = .
+                0x00000000080051f4                . = ALIGN (0x4)
 
-.preinit_array  0x0000000008005674        0x0
-                0x0000000008005674                . = ALIGN (0x4)
-                0x0000000008005674                PROVIDE (__preinit_array_start = .)
+.preinit_array  0x00000000080051f4        0x0
+                0x00000000080051f4                . = ALIGN (0x4)
+                0x00000000080051f4                PROVIDE (__preinit_array_start = .)
  *(.preinit_array*)
-                0x0000000008005674                PROVIDE (__preinit_array_end = .)
-                0x0000000008005674                . = ALIGN (0x4)
+                0x00000000080051f4                PROVIDE (__preinit_array_end = .)
+                0x00000000080051f4                . = ALIGN (0x4)
 
-.init_array     0x0000000008005674        0x8
-                0x0000000008005674                . = ALIGN (0x4)
-                0x0000000008005674                PROVIDE (__init_array_start = .)
+.init_array     0x00000000080051f4        0x8
+                0x00000000080051f4                . = ALIGN (0x4)
+                0x00000000080051f4                PROVIDE (__init_array_start = .)
  *(SORT_BY_NAME(.init_array.*))
  .init_array.00000
-                0x0000000008005674        0x4 /home/shay/a/ece362/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.17.0.201812190825/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc.a(lib_a-__call_atexit.o)
+                0x00000000080051f4        0x4 /home/shay/a/ece362/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.17.0.201812190825/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc.a(lib_a-__call_atexit.o)
  *(.init_array*)
- .init_array    0x0000000008005678        0x4 /home/shay/a/ece362/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.17.0.201812190825/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.3.1/thumb/v6-m/crtbegin.o
-                0x000000000800567c                PROVIDE (__init_array_end = .)
-                0x000000000800567c                . = ALIGN (0x4)
+ .init_array    0x00000000080051f8        0x4 /home/shay/a/ece362/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.17.0.201812190825/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.3.1/thumb/v6-m/crtbegin.o
+                0x00000000080051fc                PROVIDE (__init_array_end = .)
+                0x00000000080051fc                . = ALIGN (0x4)
 
-.fini_array     0x000000000800567c        0x4
-                0x000000000800567c                . = ALIGN (0x4)
-                0x000000000800567c                PROVIDE (__fini_array_start = .)
+.fini_array     0x00000000080051fc        0x4
+                0x00000000080051fc                . = ALIGN (0x4)
+                0x00000000080051fc                PROVIDE (__fini_array_start = .)
  *(SORT_BY_NAME(.fini_array.*))
  *(.fini_array*)
- .fini_array    0x000000000800567c        0x4 /home/shay/a/ece362/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.17.0.201812190825/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.3.1/thumb/v6-m/crtbegin.o
-                0x0000000008005680                PROVIDE (__fini_array_end = .)
-                0x0000000008005680                . = ALIGN (0x4)
-                0x0000000008005680                _sidata = LOADADDR (.data)
+ .fini_array    0x00000000080051fc        0x4 /home/shay/a/ece362/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.17.0.201812190825/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.3.1/thumb/v6-m/crtbegin.o
+                0x0000000008005200                PROVIDE (__fini_array_end = .)
+                0x0000000008005200                . = ALIGN (0x4)
+                0x0000000008005200                _sidata = LOADADDR (.data)
 
-.data           0x0000000020000000      0x444 load address 0x0000000008005680
+.data           0x0000000020000000      0x444 load address 0x0000000008005200
                 0x0000000020000000                . = ALIGN (0x4)
                 0x0000000020000000                _sdata = .
  *(.data)
@@ -4502,11 +4487,11 @@ LOAD /home/shay/a/ece362/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.ar
                 0x0000000020000444                . = ALIGN (0x4)
                 0x0000000020000444                _edata = .
 
-.igot.plt       0x0000000020000444        0x0 load address 0x0000000008005ac4
+.igot.plt       0x0000000020000444        0x0 load address 0x0000000008005644
  .igot.plt      0x0000000020000444        0x0 /home/shay/a/ece362/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.17.0.201812190825/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.3.1/thumb/v6-m/crtbegin.o
                 0x0000000020000444                . = ALIGN (0x4)
 
-.bss            0x0000000020000444      0x8c8 load address 0x0000000008005ac4
+.bss            0x0000000020000444      0x8c8 load address 0x0000000008005644
                 0x0000000020000444                _sbss = .
                 0x0000000020000444                __bss_start__ = _sbss
  *(.bss)
@@ -4545,7 +4530,7 @@ LOAD /home/shay/a/ece362/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.ar
                 0x0000000020000d0c                __bss_end__ = _ebss
 
 ._user_heap_stack
-                0x0000000020000d0c      0x404 load address 0x0000000008005ac4
+                0x0000000020000d0c      0x404 load address 0x0000000008005644
                 0x0000000020000d10                . = ALIGN (0x8)
  *fill*         0x0000000020000d0c        0x4 
                 0x0000000020000d10                PROVIDE (end = .)
@@ -4604,72 +4589,64 @@ LOAD /home/shay/a/ece362/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.ar
  .ARM.attributes
                 0x0000000000000302       0x1e /home/shay/a/ece362/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.17.0.201812190825/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.3.1/thumb/v6-m/libgcc.a(_arm_cmpsf2.o)
  .ARM.attributes
-                0x0000000000000320       0x2c /home/shay/a/ece362/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.17.0.201812190825/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.3.1/thumb/v6-m/libgcc.a(_fixunssfsi.o)
+                0x0000000000000320       0x2c /home/shay/a/ece362/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.17.0.201812190825/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.3.1/thumb/v6-m/libgcc.a(divsf3.o)
  .ARM.attributes
-                0x000000000000034c       0x2c /home/shay/a/ece362/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.17.0.201812190825/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.3.1/thumb/v6-m/libgcc.a(divsf3.o)
+                0x000000000000034c       0x2c /home/shay/a/ece362/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.17.0.201812190825/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.3.1/thumb/v6-m/libgcc.a(eqsf2.o)
  .ARM.attributes
-                0x0000000000000378       0x2c /home/shay/a/ece362/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.17.0.201812190825/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.3.1/thumb/v6-m/libgcc.a(eqsf2.o)
+                0x0000000000000378       0x2c /home/shay/a/ece362/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.17.0.201812190825/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.3.1/thumb/v6-m/libgcc.a(gesf2.o)
  .ARM.attributes
-                0x00000000000003a4       0x2c /home/shay/a/ece362/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.17.0.201812190825/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.3.1/thumb/v6-m/libgcc.a(gesf2.o)
+                0x00000000000003a4       0x2c /home/shay/a/ece362/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.17.0.201812190825/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.3.1/thumb/v6-m/libgcc.a(lesf2.o)
  .ARM.attributes
-                0x00000000000003d0       0x2c /home/shay/a/ece362/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.17.0.201812190825/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.3.1/thumb/v6-m/libgcc.a(lesf2.o)
+                0x00000000000003d0       0x2c /home/shay/a/ece362/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.17.0.201812190825/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.3.1/thumb/v6-m/libgcc.a(mulsf3.o)
  .ARM.attributes
-                0x00000000000003fc       0x2c /home/shay/a/ece362/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.17.0.201812190825/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.3.1/thumb/v6-m/libgcc.a(mulsf3.o)
+                0x00000000000003fc       0x2c /home/shay/a/ece362/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.17.0.201812190825/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.3.1/thumb/v6-m/libgcc.a(fixsfsi.o)
  .ARM.attributes
-                0x0000000000000428       0x2c /home/shay/a/ece362/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.17.0.201812190825/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.3.1/thumb/v6-m/libgcc.a(subsf3.o)
+                0x0000000000000428       0x2c /home/shay/a/ece362/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.17.0.201812190825/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.3.1/thumb/v6-m/libgcc.a(floatsisf.o)
  .ARM.attributes
-                0x0000000000000454       0x2c /home/shay/a/ece362/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.17.0.201812190825/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.3.1/thumb/v6-m/libgcc.a(fixsfsi.o)
+                0x0000000000000454       0x2c /home/shay/a/ece362/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.17.0.201812190825/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.3.1/thumb/v6-m/libgcc.a(adddf3.o)
  .ARM.attributes
-                0x0000000000000480       0x2c /home/shay/a/ece362/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.17.0.201812190825/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.3.1/thumb/v6-m/libgcc.a(floatsisf.o)
+                0x0000000000000480       0x2c /home/shay/a/ece362/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.17.0.201812190825/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.3.1/thumb/v6-m/libgcc.a(divdf3.o)
  .ARM.attributes
-                0x00000000000004ac       0x2c /home/shay/a/ece362/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.17.0.201812190825/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.3.1/thumb/v6-m/libgcc.a(adddf3.o)
+                0x00000000000004ac       0x2c /home/shay/a/ece362/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.17.0.201812190825/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.3.1/thumb/v6-m/libgcc.a(eqdf2.o)
  .ARM.attributes
-                0x00000000000004d8       0x2c /home/shay/a/ece362/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.17.0.201812190825/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.3.1/thumb/v6-m/libgcc.a(divdf3.o)
+                0x00000000000004d8       0x2c /home/shay/a/ece362/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.17.0.201812190825/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.3.1/thumb/v6-m/libgcc.a(gedf2.o)
  .ARM.attributes
-                0x0000000000000504       0x2c /home/shay/a/ece362/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.17.0.201812190825/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.3.1/thumb/v6-m/libgcc.a(eqdf2.o)
+                0x0000000000000504       0x2c /home/shay/a/ece362/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.17.0.201812190825/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.3.1/thumb/v6-m/libgcc.a(ledf2.o)
  .ARM.attributes
-                0x0000000000000530       0x2c /home/shay/a/ece362/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.17.0.201812190825/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.3.1/thumb/v6-m/libgcc.a(gedf2.o)
+                0x0000000000000530       0x2c /home/shay/a/ece362/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.17.0.201812190825/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.3.1/thumb/v6-m/libgcc.a(muldf3.o)
  .ARM.attributes
-                0x000000000000055c       0x2c /home/shay/a/ece362/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.17.0.201812190825/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.3.1/thumb/v6-m/libgcc.a(ledf2.o)
+                0x000000000000055c       0x2c /home/shay/a/ece362/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.17.0.201812190825/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.3.1/thumb/v6-m/libgcc.a(subdf3.o)
  .ARM.attributes
-                0x0000000000000588       0x2c /home/shay/a/ece362/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.17.0.201812190825/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.3.1/thumb/v6-m/libgcc.a(muldf3.o)
+                0x0000000000000588       0x2c /home/shay/a/ece362/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.17.0.201812190825/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.3.1/thumb/v6-m/libgcc.a(fixdfsi.o)
  .ARM.attributes
-                0x00000000000005b4       0x2c /home/shay/a/ece362/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.17.0.201812190825/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.3.1/thumb/v6-m/libgcc.a(subdf3.o)
+                0x00000000000005b4       0x2c /home/shay/a/ece362/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.17.0.201812190825/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.3.1/thumb/v6-m/libgcc.a(floatsidf.o)
  .ARM.attributes
-                0x00000000000005e0       0x2c /home/shay/a/ece362/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.17.0.201812190825/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.3.1/thumb/v6-m/libgcc.a(fixdfsi.o)
+                0x00000000000005e0       0x1e /home/shay/a/ece362/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.17.0.201812190825/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.3.1/thumb/v6-m/libgcc.a(_clzsi2.o)
  .ARM.attributes
-                0x000000000000060c       0x2c /home/shay/a/ece362/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.17.0.201812190825/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.3.1/thumb/v6-m/libgcc.a(floatsidf.o)
+                0x00000000000005fe       0x2c /home/shay/a/ece362/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.17.0.201812190825/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc.a(lib_a-impure.o)
  .ARM.attributes
-                0x0000000000000638       0x2c /home/shay/a/ece362/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.17.0.201812190825/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.3.1/thumb/v6-m/libgcc.a(extendsfdf2.o)
+                0x000000000000062a       0x2c /home/shay/a/ece362/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.17.0.201812190825/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc.a(lib_a-init.o)
  .ARM.attributes
-                0x0000000000000664       0x2c /home/shay/a/ece362/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.17.0.201812190825/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.3.1/thumb/v6-m/libgcc.a(truncdfsf2.o)
+                0x0000000000000656       0x2c /home/shay/a/ece362/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.17.0.201812190825/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc.a(lib_a-memset.o)
  .ARM.attributes
-                0x0000000000000690       0x1e /home/shay/a/ece362/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.17.0.201812190825/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.3.1/thumb/v6-m/libgcc.a(_clzsi2.o)
+                0x0000000000000682       0x2c /home/shay/a/ece362/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.17.0.201812190825/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc.a(lib_a-__call_atexit.o)
  .ARM.attributes
-                0x00000000000006ae       0x2c /home/shay/a/ece362/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.17.0.201812190825/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc.a(lib_a-impure.o)
+                0x00000000000006ae       0x2c /home/shay/a/ece362/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.17.0.201812190825/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc.a(lib_a-atexit.o)
  .ARM.attributes
-                0x00000000000006da       0x2c /home/shay/a/ece362/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.17.0.201812190825/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc.a(lib_a-init.o)
+                0x00000000000006da       0x2c /home/shay/a/ece362/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.17.0.201812190825/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc.a(lib_a-fini.o)
  .ARM.attributes
-                0x0000000000000706       0x2c /home/shay/a/ece362/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.17.0.201812190825/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc.a(lib_a-memset.o)
+                0x0000000000000706       0x2c /home/shay/a/ece362/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.17.0.201812190825/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc.a(lib_a-lock.o)
  .ARM.attributes
-                0x0000000000000732       0x2c /home/shay/a/ece362/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.17.0.201812190825/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc.a(lib_a-__call_atexit.o)
+                0x0000000000000732       0x2c /home/shay/a/ece362/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.17.0.201812190825/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc.a(lib_a-__atexit.o)
  .ARM.attributes
-                0x000000000000075e       0x2c /home/shay/a/ece362/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.17.0.201812190825/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc.a(lib_a-atexit.o)
- .ARM.attributes
-                0x000000000000078a       0x2c /home/shay/a/ece362/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.17.0.201812190825/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc.a(lib_a-fini.o)
- .ARM.attributes
-                0x00000000000007b6       0x2c /home/shay/a/ece362/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.17.0.201812190825/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc.a(lib_a-lock.o)
- .ARM.attributes
-                0x00000000000007e2       0x2c /home/shay/a/ece362/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.17.0.201812190825/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc.a(lib_a-__atexit.o)
- .ARM.attributes
-                0x000000000000080e       0x1e /home/shay/a/ece362/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.17.0.201812190825/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.3.1/thumb/v6-m/crtn.o
+                0x000000000000075e       0x1e /home/shay/a/ece362/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.17.0.201812190825/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.3.1/thumb/v6-m/crtn.o
 OUTPUT(lab7.elf elf32-littlearm)
 
-.debug_info     0x0000000000000000     0x2466
- .debug_info    0x0000000000000000     0x1273 src/main.o
- .debug_info    0x0000000000001273      0xecb src/support.o
- .debug_info    0x000000000000213e      0x306 src/system_stm32f0xx.o
- .debug_info    0x0000000000002444       0x22 startup/startup_stm32.o
+.debug_info     0x0000000000000000     0x2468
+ .debug_info    0x0000000000000000     0x1275 src/main.o
+ .debug_info    0x0000000000001275      0xecb src/support.o
+ .debug_info    0x0000000000002140      0x306 src/system_stm32f0xx.o
+ .debug_info    0x0000000000002446       0x22 startup/startup_stm32.o
 
 .debug_abbrev   0x0000000000000000      0x7fe
  .debug_abbrev  0x0000000000000000      0x364 src/main.o
@@ -4712,20 +4689,20 @@ OUTPUT(lab7.elf elf32-littlearm)
  .debug_macro   0x0000000000000e6e       0x35 src/support.o
  .debug_macro   0x0000000000000ea3      0x189 src/system_stm32f0xx.o
 
-.debug_line     0x0000000000000000     0x17bc
- .debug_line    0x0000000000000000      0x837 src/main.o
- .debug_line    0x0000000000000837      0x8b0 src/support.o
- .debug_line    0x00000000000010e7      0x659 src/system_stm32f0xx.o
- .debug_line    0x0000000000001740       0x7c startup/startup_stm32.o
+.debug_line     0x0000000000000000     0x17b4
+ .debug_line    0x0000000000000000      0x82f src/main.o
+ .debug_line    0x000000000000082f      0x8b0 src/support.o
+ .debug_line    0x00000000000010df      0x659 src/system_stm32f0xx.o
+ .debug_line    0x0000000000001738       0x7c startup/startup_stm32.o
 
-.debug_str      0x0000000000000000    0x4e4a9
- .debug_str     0x0000000000000000    0x4e262 src/main.o
-                                      0x4e5ad (size before relaxing)
- .debug_str     0x000000000004e262      0x166 src/support.o
+.debug_str      0x0000000000000000    0x4e4ad
+ .debug_str     0x0000000000000000    0x4e266 src/main.o
+                                      0x4e5b1 (size before relaxing)
+ .debug_str     0x000000000004e266      0x166 src/support.o
                                       0x4d9c3 (size before relaxing)
- .debug_str     0x000000000004e3c8       0xb8 src/system_stm32f0xx.o
+ .debug_str     0x000000000004e3cc       0xb8 src/system_stm32f0xx.o
                                       0x4aa8e (size before relaxing)
- .debug_str     0x000000000004e480       0x29 startup/startup_stm32.o
+ .debug_str     0x000000000004e484       0x29 startup/startup_stm32.o
                                          0x54 (size before relaxing)
 
 .comment        0x0000000000000000       0x7f
@@ -4734,7 +4711,7 @@ OUTPUT(lab7.elf elf32-littlearm)
  .comment       0x000000000000007f       0x80 src/support.o
  .comment       0x000000000000007f       0x80 src/system_stm32f0xx.o
 
-.debug_frame    0x0000000000000000      0xca0
+.debug_frame    0x0000000000000000      0xbe4
  .debug_frame   0x0000000000000000      0x204 src/main.o
  .debug_frame   0x0000000000000204      0x24c src/support.o
  .debug_frame   0x0000000000000450       0x6c src/system_stm32f0xx.o
@@ -4749,30 +4726,26 @@ OUTPUT(lab7.elf elf32-littlearm)
  .debug_frame   0x0000000000000654       0x2c /home/shay/a/ece362/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.17.0.201812190825/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/libm.a(lib_a-s_copysign.o)
  .debug_frame   0x0000000000000680       0x20 /home/shay/a/ece362/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.17.0.201812190825/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.3.1/thumb/v6-m/libgcc.a(_udivsi3.o)
  .debug_frame   0x00000000000006a0       0x20 /home/shay/a/ece362/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.17.0.201812190825/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.3.1/thumb/v6-m/libgcc.a(_divsi3.o)
- .debug_frame   0x00000000000006c0       0x28 /home/shay/a/ece362/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.17.0.201812190825/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.3.1/thumb/v6-m/libgcc.a(_fixunssfsi.o)
- .debug_frame   0x00000000000006e8       0x3c /home/shay/a/ece362/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.17.0.201812190825/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.3.1/thumb/v6-m/libgcc.a(divsf3.o)
- .debug_frame   0x0000000000000724       0x2c /home/shay/a/ece362/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.17.0.201812190825/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.3.1/thumb/v6-m/libgcc.a(eqsf2.o)
- .debug_frame   0x0000000000000750       0x2c /home/shay/a/ece362/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.17.0.201812190825/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.3.1/thumb/v6-m/libgcc.a(gesf2.o)
- .debug_frame   0x000000000000077c       0x2c /home/shay/a/ece362/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.17.0.201812190825/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.3.1/thumb/v6-m/libgcc.a(lesf2.o)
- .debug_frame   0x00000000000007a8       0x3c /home/shay/a/ece362/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.17.0.201812190825/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.3.1/thumb/v6-m/libgcc.a(mulsf3.o)
- .debug_frame   0x00000000000007e4       0x38 /home/shay/a/ece362/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.17.0.201812190825/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.3.1/thumb/v6-m/libgcc.a(subsf3.o)
- .debug_frame   0x000000000000081c       0x20 /home/shay/a/ece362/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.17.0.201812190825/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.3.1/thumb/v6-m/libgcc.a(fixsfsi.o)
- .debug_frame   0x000000000000083c       0x2c /home/shay/a/ece362/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.17.0.201812190825/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.3.1/thumb/v6-m/libgcc.a(floatsisf.o)
- .debug_frame   0x0000000000000868       0x38 /home/shay/a/ece362/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.17.0.201812190825/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.3.1/thumb/v6-m/libgcc.a(adddf3.o)
- .debug_frame   0x00000000000008a0       0x3c /home/shay/a/ece362/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.17.0.201812190825/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.3.1/thumb/v6-m/libgcc.a(divdf3.o)
- .debug_frame   0x00000000000008dc       0x38 /home/shay/a/ece362/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.17.0.201812190825/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.3.1/thumb/v6-m/libgcc.a(eqdf2.o)
- .debug_frame   0x0000000000000914       0x38 /home/shay/a/ece362/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.17.0.201812190825/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.3.1/thumb/v6-m/libgcc.a(gedf2.o)
- .debug_frame   0x000000000000094c       0x38 /home/shay/a/ece362/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.17.0.201812190825/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.3.1/thumb/v6-m/libgcc.a(ledf2.o)
- .debug_frame   0x0000000000000984       0x3c /home/shay/a/ece362/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.17.0.201812190825/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.3.1/thumb/v6-m/libgcc.a(muldf3.o)
- .debug_frame   0x00000000000009c0       0x3c /home/shay/a/ece362/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.17.0.201812190825/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.3.1/thumb/v6-m/libgcc.a(subdf3.o)
- .debug_frame   0x00000000000009fc       0x2c /home/shay/a/ece362/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.17.0.201812190825/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.3.1/thumb/v6-m/libgcc.a(fixdfsi.o)
- .debug_frame   0x0000000000000a28       0x2c /home/shay/a/ece362/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.17.0.201812190825/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.3.1/thumb/v6-m/libgcc.a(floatsidf.o)
- .debug_frame   0x0000000000000a54       0x2c /home/shay/a/ece362/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.17.0.201812190825/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.3.1/thumb/v6-m/libgcc.a(extendsfdf2.o)
- .debug_frame   0x0000000000000a80       0x30 /home/shay/a/ece362/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.17.0.201812190825/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.3.1/thumb/v6-m/libgcc.a(truncdfsf2.o)
- .debug_frame   0x0000000000000ab0       0x2c /home/shay/a/ece362/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.17.0.201812190825/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc.a(lib_a-init.o)
- .debug_frame   0x0000000000000adc       0x30 /home/shay/a/ece362/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.17.0.201812190825/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc.a(lib_a-memset.o)
- .debug_frame   0x0000000000000b0c       0x54 /home/shay/a/ece362/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.17.0.201812190825/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc.a(lib_a-__call_atexit.o)
- .debug_frame   0x0000000000000b60       0x28 /home/shay/a/ece362/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.17.0.201812190825/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc.a(lib_a-atexit.o)
- .debug_frame   0x0000000000000b88       0x2c /home/shay/a/ece362/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.17.0.201812190825/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc.a(lib_a-fini.o)
- .debug_frame   0x0000000000000bb4       0xb0 /home/shay/a/ece362/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.17.0.201812190825/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc.a(lib_a-lock.o)
- .debug_frame   0x0000000000000c64       0x3c /home/shay/a/ece362/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.17.0.201812190825/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc.a(lib_a-__atexit.o)
+ .debug_frame   0x00000000000006c0       0x3c /home/shay/a/ece362/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.17.0.201812190825/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.3.1/thumb/v6-m/libgcc.a(divsf3.o)
+ .debug_frame   0x00000000000006fc       0x2c /home/shay/a/ece362/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.17.0.201812190825/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.3.1/thumb/v6-m/libgcc.a(eqsf2.o)
+ .debug_frame   0x0000000000000728       0x2c /home/shay/a/ece362/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.17.0.201812190825/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.3.1/thumb/v6-m/libgcc.a(gesf2.o)
+ .debug_frame   0x0000000000000754       0x2c /home/shay/a/ece362/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.17.0.201812190825/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.3.1/thumb/v6-m/libgcc.a(lesf2.o)
+ .debug_frame   0x0000000000000780       0x3c /home/shay/a/ece362/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.17.0.201812190825/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.3.1/thumb/v6-m/libgcc.a(mulsf3.o)
+ .debug_frame   0x00000000000007bc       0x20 /home/shay/a/ece362/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.17.0.201812190825/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.3.1/thumb/v6-m/libgcc.a(fixsfsi.o)
+ .debug_frame   0x00000000000007dc       0x2c /home/shay/a/ece362/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.17.0.201812190825/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.3.1/thumb/v6-m/libgcc.a(floatsisf.o)
+ .debug_frame   0x0000000000000808       0x38 /home/shay/a/ece362/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.17.0.201812190825/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.3.1/thumb/v6-m/libgcc.a(adddf3.o)
+ .debug_frame   0x0000000000000840       0x3c /home/shay/a/ece362/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.17.0.201812190825/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.3.1/thumb/v6-m/libgcc.a(divdf3.o)
+ .debug_frame   0x000000000000087c       0x38 /home/shay/a/ece362/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.17.0.201812190825/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.3.1/thumb/v6-m/libgcc.a(eqdf2.o)
+ .debug_frame   0x00000000000008b4       0x38 /home/shay/a/ece362/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.17.0.201812190825/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.3.1/thumb/v6-m/libgcc.a(gedf2.o)
+ .debug_frame   0x00000000000008ec       0x38 /home/shay/a/ece362/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.17.0.201812190825/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.3.1/thumb/v6-m/libgcc.a(ledf2.o)
+ .debug_frame   0x0000000000000924       0x3c /home/shay/a/ece362/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.17.0.201812190825/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.3.1/thumb/v6-m/libgcc.a(muldf3.o)
+ .debug_frame   0x0000000000000960       0x3c /home/shay/a/ece362/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.17.0.201812190825/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.3.1/thumb/v6-m/libgcc.a(subdf3.o)
+ .debug_frame   0x000000000000099c       0x2c /home/shay/a/ece362/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.17.0.201812190825/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.3.1/thumb/v6-m/libgcc.a(fixdfsi.o)
+ .debug_frame   0x00000000000009c8       0x2c /home/shay/a/ece362/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.17.0.201812190825/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.3.1/thumb/v6-m/libgcc.a(floatsidf.o)
+ .debug_frame   0x00000000000009f4       0x2c /home/shay/a/ece362/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.17.0.201812190825/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc.a(lib_a-init.o)
+ .debug_frame   0x0000000000000a20       0x30 /home/shay/a/ece362/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.17.0.201812190825/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc.a(lib_a-memset.o)
+ .debug_frame   0x0000000000000a50       0x54 /home/shay/a/ece362/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.17.0.201812190825/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc.a(lib_a-__call_atexit.o)
+ .debug_frame   0x0000000000000aa4       0x28 /home/shay/a/ece362/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.17.0.201812190825/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc.a(lib_a-atexit.o)
+ .debug_frame   0x0000000000000acc       0x2c /home/shay/a/ece362/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.17.0.201812190825/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc.a(lib_a-fini.o)
+ .debug_frame   0x0000000000000af8       0xb0 /home/shay/a/ece362/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.17.0.201812190825/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc.a(lib_a-lock.o)
+ .debug_frame   0x0000000000000ba8       0x3c /home/shay/a/ece362/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.17.0.201812190825/tools/compiler/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc.a(lib_a-__atexit.o)

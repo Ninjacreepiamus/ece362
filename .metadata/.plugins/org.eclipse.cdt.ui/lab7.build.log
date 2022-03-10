@@ -1,4 +1,4 @@
-00:35:27 **** Incremental Build of configuration Debug for project lab7 ****
+13:17:04 **** Incremental Build of configuration Debug for project lab7 ****
 make -j16 all 
 Building file: ../src/main.c
 Invoking: MCU GCC Compiler
@@ -16,8 +16,8 @@ Generating binary and Printing size information:
 arm-none-eabi-objcopy -O binary "lab7.elf" "lab7.bin"
 arm-none-eabi-size "lab7.elf"
    text	   data	    bss	    dec	    hex	filename
-  22128	   1104	   3276	  26508	   678c	lab7.elf
+  20980	   1104	   3276	  25360	   6310	lab7.elf
  
 
-00:35:27 Build Finished (took 359ms)
+13:17:05 Build Finished (took 412ms)
 

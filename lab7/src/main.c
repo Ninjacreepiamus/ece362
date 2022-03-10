@@ -130,7 +130,7 @@ void init_tim7(void)
 //=============================================================================
 // Part 3: Analog-to-digital conversion for a volume level.
 //=============================================================================
-uint32_t volume = 2048;
+int volume = 2400;
 
 //============================================================================
 // setup_adc()
@@ -255,9 +255,9 @@ void TIM6_DAC_IRQHandler() {
         offset0 -= (N << 16);
     if (offset1 >= (N << 16))
         offset1 -= (N << 16);
-    int samp = wavetable[offset0>>16] + wavetable[offset1>>16];
-    samp = ((samp * volume)>>18) + 1200;
-    TIM1->CCR4 = samp;
+    int sample = wavetable[offset0>>16] + wavetable[offset1>>16];
+    sample = ((sample * volume)>>18) + 1200;
+    TIM1->CCR4 = sample;
 }
 
 //============================================================================
@@ -299,10 +299,11 @@ void setup_tim3(void)
 
 void setup_tim1(void)
 {
+    RCC->AHBENR |= RCC_AHBENR_GPIOAEN;
     GPIOA->MODER &= ~(GPIO_MODER_MODER8 | GPIO_MODER_MODER9 | GPIO_MODER_MODER10 | GPIO_MODER_MODER11);
     GPIOA->MODER |= GPIO_MODER_MODER8_1 | GPIO_MODER_MODER9_1 | GPIO_MODER_MODER10_1 | GPIO_MODER_MODER11_1;
-    GPIOC->AFR[1] &= ~0x0000ffff;
-    GPIOC->AFR[1] |= 0x00002222;
+    GPIOA->AFR[1] &= ~0x0000ffff;
+    GPIOA->AFR[1] |= 0x00002222;
     RCC->APB2ENR |= RCC_APB2ENR_TIM1EN;
     TIM1->BDTR |= TIM_BDTR_MOE;
     TIM1->PSC = 1-1;
@@ -314,17 +315,16 @@ void setup_tim1(void)
     TIM1->CCMR2 |= TIM_CCMR2_OC4PE;
     TIM1->CCER |= TIM_CCER_CC1E | TIM_CCER_CC2E | TIM_CCER_CC3E | TIM_CCER_CC4E;
     TIM1->CR1 |= TIM_CR1_CEN;
-    TIM1->CCR1 = 800;
-    TIM1->CCR2 = 400;
-    TIM1->CCR3 = 200;
-    TIM1->CCR4 = 100;
 }
 
 int getrgb(void);
 
+
 void setrgb(int rgb)
 {
-
+    TIM1->CCR1 = (100 - ((10 * ((rgb >> 20) & 0xf) + 1 * ((rgb >> 16) & 0xf)))) * 24;
+    TIM1->CCR2 = (100 - ((10 * ((rgb >> 12) & 0xf) + 1 * ((rgb >> 8) & 0xf)))) * 24;
+    TIM1->CCR3 = (100 - ((10 * ((rgb >> 4) & 0xf) + 1 * ((rgb >> 0) & 0xf)))) * 24;
 }
 
 //============================================================================
@@ -363,7 +363,7 @@ int main(void)
     setup_tim1();
 
     // demonstrate part 2
-#define TEST_TIM1
+//#define TEST_TIM1
 #ifdef TEST_TIM1
     for(;;) {
         for(float x=10; x<2400; x *= 1.1) {
@@ -386,7 +386,7 @@ int main(void)
 #endif
 
     // demonstrate part 4
-//#define TEST_SETRGB
+#define TEST_SETRGB
 #ifdef TEST_SETRGB
     for(;;) {
         char key = get_keypress();
