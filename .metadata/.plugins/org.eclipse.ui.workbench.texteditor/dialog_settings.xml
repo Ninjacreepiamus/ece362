@@ -2,29 +2,29 @@
 <section name="Workbench">
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
 		<item value="false" key="isRegEx"/>
-		<item value="MOE" key="selection"/>
+		<item value="DMA_CNDTR" key="selection"/>
 		<item value="false" key="casesensitive"/>
 		<item value="false" key="incremental"/>
 		<item value="true" key="wrap"/>
 		<item value="false" key="wholeword"/>
 		<list key="findhistory">
+			<item value="DMA_CNDTR"/>
+			<item value="rate"/>
 			<item value="moe"/>
 			<item value="cen"/>
 			<item value="tim_cen"/>
 			<item value="tim_en"/>
 			<item value="ccmr"/>
 			<item value="ocm"/>
-			<item value="tim3"/>
-			<item value="volume"/>
 		</list>
 		<list key="replacehistory">
 		</list>
 	</section>
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">
-		<item value="290" key="DIALOG_WIDTH"/>
-		<item value="1|Noto Sans|9.0|0|GTK|1|" key="DIALOG_FONT_NAME"/>
-		<item value="428" key="DIALOG_HEIGHT"/>
-		<item value="806" key="DIALOG_X_ORIGIN"/>
-		<item value="246" key="DIALOG_Y_ORIGIN"/>
+		<item value="1440" key="DIALOG_WIDTH"/>
+		<item value="1|.AppleSystemUIFont|11.0|0|COCOA|1|.AppleSystemUIFont" key="DIALOG_FONT_NAME"/>
+		<item value="820" key="DIALOG_HEIGHT"/>
+		<item value="0" key="DIALOG_X_ORIGIN"/>
+		<item value="0" key="DIALOG_Y_ORIGIN"/>
 	</section>
 </section>

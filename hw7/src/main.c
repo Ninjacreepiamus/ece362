@@ -69,7 +69,7 @@ void init_tim6(void)
     // TODO: you fill this in.
     RCC->APB1ENR |= RCC_APB1ENR_TIM6EN;
     TIM6->PSC = 2-1;
-    TIM6->ARR = (48000000) / (2 * RATE);
+    TIM6->ARR = ((48000000) / (2 * RATE)) - 1;
     TIM6->DIER |= TIM_DIER_UIE;
     TIM6->CR2 &= ~TIM_CR2_MMS;
     TIM6->CR2 |= TIM_CR2_MMS_1;
@@ -172,13 +172,12 @@ struct {
         {15368,91,0x00}, {15460,93,0x00},
 };
 
-#if 0
 int time = 0;
 int n = 0;
-void TIM2_IRQHandler(void)
+/*void TIM2_IRQHandler(void)
 {
     // TODO: Remember to acknowledge the interrupt here!
-
+    TIM2->SR &= ~TIM_SR_UIF;
     // Look at the next item in the event array and check if it is
     // time to play that note.
     while(events[n].when == time) {
@@ -195,14 +194,14 @@ void TIM2_IRQHandler(void)
         n = 0;
         time = 0;
     }
-}
-#endif
+}*/
 
 uint8_t notes[] = { 60,62,64,65,67,69,71,72,71,69,67,65,64,62,60,0 };
 uint8_t num = sizeof notes / sizeof notes[0] - 1;
-void TIM2_IRQHandler(void)
+/*void TIM2_IRQHandler(void)
 {
     // TODO: remember to acknowledge the interrupt here!
+    TIM2->SR &= ~TIM_SR_UIF;
 
     // turn off previous note
     note_off(0,0,notes[num],128);
@@ -210,7 +209,7 @@ void TIM2_IRQHandler(void)
     num = (num + 1) % (sizeof notes / sizeof notes[0]);
     // turn on note
     note_on(0,0,notes[num],128);
-}
+}*/
 
 // Configure timer 2 so that it invokes the Update interrupt
 // every n microseconds.  To do so, set the prescaler to divide
@@ -220,17 +219,55 @@ void TIM2_IRQHandler(void)
 // update before changing the effective ARR value.
 // Call NVIC_SetPriority() to set a low priority for Timer 2 interrupt.
 // See the lab 6 text to understand how to do so.
-void init_tim2(int n) {
-    // TODO: you fill this in.
+
+//STEP 4
+void TIM2_IRQHandler(void)
+{
+    // TODO: Remember to acknowledge the interrupt right here!
+    TIM2->SR &= ~TIM_SR_UIF;
+    midi_play();
 }
 
-int main(void)
+void init_tim2(int n) {
+    // TODO: you fill this in.
+    RCC->APB1ENR |= RCC_APB1ENR_TIM2EN;
+    TIM2->PSC = 48-1;
+    //TIM2->ARR = (48000000 / (n * 48)) - 1;
+    TIM2->ARR = n - 1;
+    TIM2->DIER |= TIM_DIER_UIE;
+    TIM2->CR1 |= TIM_CR1_ARPE;
+    NVIC->ISER[0] = (1<<TIM2_IRQn);
+    NVIC_SetPriority(TIM2_IRQn, 3);
+    TIM2->CR1 |= TIM_CR1_CEN;
+}
+
+//For previous steps:
+
+/*int main(void)
 {
-    init_wavetable_hybrid2(); // set up the wavetable
+    init_wavetable_hybrid2(); // set up wavetable
     init_dac();         // initialize the DAC
     init_tim6();        // initialize TIM6
-    note_on(0,0,60,128); // play C
-    note_on(0,0,64,128); // play E
-    note_on(0,0,67,128); // play G
+    init_tim2(1000);
+    for(;;)
+        asm("wfi");
     return 0;
+}*/
+
+//For Step 4
+int main(void)
+{
+    init_wavetable_hybrid2();
+    init_dac();
+    init_tim6();
+    MIDI_Player *mp = midi_init(midifile);
+    // The default rate for a MIDI file is 2 beats per second
+    // with 48 ticks per beat.  That's 500000/48 microseconds.
+    init_tim2(10417);
+    for(;;) {
+        asm("wfi");
+        // If we hit the end of the MIDI file, start over.
+        if (mp->nexttick == MAXTICKS)
+            mp = midi_init(midifile);
+    }
 }

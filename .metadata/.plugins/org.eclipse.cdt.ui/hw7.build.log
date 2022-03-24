@@ -1,0 +1,23 @@
+18:21:31 **** Incremental Build of configuration Debug for project hw7 ****
+make -j7 all 
+Building file: ../src/maple-leaf-rag.c
+Invoking: MCU GCC Compiler
+/Users/agentjaucqueninjasuperspy/Documents/workspace/hw7/Debug
+arm-none-eabi-gcc -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -DSTM32 -DSTM32F0 -DSTM32F091RCTx -DDEBUG -DSTM32F091 -DUSE_STDPERIPH_DRIVER -I"/Users/agentjaucqueninjasuperspy/Documents/workspace/hw7/StdPeriph_Driver/inc" -I"/Users/agentjaucqueninjasuperspy/Documents/workspace/hw7/inc" -I"/Users/agentjaucqueninjasuperspy/Documents/workspace/hw7/CMSIS/device" -I"/Users/agentjaucqueninjasuperspy/Documents/workspace/hw7/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/maple-leaf-rag.d" -MT"src/maple-leaf-rag.o" -o "src/maple-leaf-rag.o" "../src/maple-leaf-rag.c"
+Finished building: ../src/maple-leaf-rag.c
+ 
+Building target: hw7.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -T"/Users/agentjaucqueninjasuperspy/Documents/workspace/hw7/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "hw7.elf" @"objects.list"   -lm
+Finished building target: hw7.elf
+ 
+/Library/Developer/CommandLineTools/usr/bin/make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "hw7.elf" "hw7.bin"
+arm-none-eabi-size "hw7.elf"
+   text	   data	    bss	    dec	    hex	filename
+  39152	   1080	   3988	  44220	   acbc	hw7.elf
+ 
+
+18:21:32 Build Finished (took 843ms)
+

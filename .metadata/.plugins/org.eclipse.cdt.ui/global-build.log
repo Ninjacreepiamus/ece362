@@ -1,338 +1,548 @@
-12:16:02 **** Incremental Build of configuration Debug for project lab7 ****
-make -j16 all 
-make: Nothing to be done for 'all'.
-12:16:05 **** Incremental Build of configuration Debug for project lab7 ****
-make -j16 all 
-make: Nothing to be done for 'all'.
-12:17:20 **** Incremental Build of configuration Debug for project lab7 ****
-make -j16 all 
+11:25:32 **** Build of configuration Debug for project hw7 ****
+make -j7 all 
+Building file: ../startup/startup_stm32.s
 Building file: ../src/main.c
+Building file: ../src/midi.c
+Building file: ../src/step.c
+Building file: ../src/syscalls.c
 Invoking: MCU GCC Compiler
-/home/shay/a/will2253/workspace/lab7/Debug
-arm-none-eabi-gcc -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -DSTM32 -DSTM32F0 -DSTM32F091RCTx -DDEBUG -DSTM32F091 -DUSE_STDPERIPH_DRIVER -I"/home/shay/a/will2253/workspace/lab7/StdPeriph_Driver/inc" -I"/home/shay/a/will2253/workspace/lab7/inc" -I"/home/shay/a/will2253/workspace/lab7/CMSIS/device" -I"/home/shay/a/will2253/workspace/lab7/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+Invoking: MCU GCC Compiler
+Invoking: MCU GCC Compiler
+Invoking: MCU GCC Compiler
+Invoking: MCU GCC Assembler
+/Users/agentjaucqueninjasuperspy/Documents/workspace/hw7/Debug
+/Users/agentjaucqueninjasuperspy/Documents/workspace/hw7/Debug
+arm-none-eabi-gcc -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -DSTM32 -DSTM32F0 -DSTM32F091RCTx -DDEBUG -DSTM32F091 -DUSE_STDPERIPH_DRIVER -I"/Users/agentjaucqueninjasuperspy/Documents/workspace/hw7/StdPeriph_Driver/inc" -I"/Users/agentjaucqueninjasuperspy/Documents/workspace/hw7/inc" -I"/Users/agentjaucqueninjasuperspy/Documents/workspace/hw7/CMSIS/device" -I"/Users/agentjaucqueninjasuperspy/Documents/workspace/hw7/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/midi.d" -MT"src/midi.o" -o "src/midi.o" "../src/midi.c"
+/Users/agentjaucqueninjasuperspy/Documents/workspace/hw7/Debug
+arm-none-eabi-gcc -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -DSTM32 -DSTM32F0 -DSTM32F091RCTx -DDEBUG -DSTM32F091 -DUSE_STDPERIPH_DRIVER -I"/Users/agentjaucqueninjasuperspy/Documents/workspace/hw7/StdPeriph_Driver/inc" -I"/Users/agentjaucqueninjasuperspy/Documents/workspace/hw7/inc" -I"/Users/agentjaucqueninjasuperspy/Documents/workspace/hw7/CMSIS/device" -I"/Users/agentjaucqueninjasuperspy/Documents/workspace/hw7/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/syscalls.d" -MT"src/syscalls.o" -o "src/syscalls.o" "../src/syscalls.c"
+/Users/agentjaucqueninjasuperspy/Documents/workspace/hw7/Debug
+arm-none-eabi-gcc -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -DSTM32 -DSTM32F0 -DSTM32F091RCTx -DDEBUG -DSTM32F091 -DUSE_STDPERIPH_DRIVER -I"/Users/agentjaucqueninjasuperspy/Documents/workspace/hw7/StdPeriph_Driver/inc" -I"/Users/agentjaucqueninjasuperspy/Documents/workspace/hw7/inc" -I"/Users/agentjaucqueninjasuperspy/Documents/workspace/hw7/CMSIS/device" -I"/Users/agentjaucqueninjasuperspy/Documents/workspace/hw7/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+arm-none-eabi-gcc -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -DSTM32 -DSTM32F0 -DSTM32F091RCTx -DDEBUG -DSTM32F091 -DUSE_STDPERIPH_DRIVER -I"/Users/agentjaucqueninjasuperspy/Documents/workspace/hw7/StdPeriph_Driver/inc" -I"/Users/agentjaucqueninjasuperspy/Documents/workspace/hw7/inc" -I"/Users/agentjaucqueninjasuperspy/Documents/workspace/hw7/CMSIS/device" -I"/Users/agentjaucqueninjasuperspy/Documents/workspace/hw7/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/step.d" -MT"src/step.o" -o "src/step.o" "../src/step.c"
+/Users/agentjaucqueninjasuperspy/Documents/workspace/hw7/Debug
+arm-none-eabi-as -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -I"/Users/agentjaucqueninjasuperspy/Documents/workspace/hw7/StdPeriph_Driver/inc" -I"/Users/agentjaucqueninjasuperspy/Documents/workspace/hw7/inc" -I"/Users/agentjaucqueninjasuperspy/Documents/workspace/hw7/CMSIS/device" -I"/Users/agentjaucqueninjasuperspy/Documents/workspace/hw7/CMSIS/core" -g -o "startup/startup_stm32.o" "../startup/startup_stm32.s"
+Building file: ../src/system_stm32f0xx.c
+Building file: ../src/wavetable.c
+Invoking: MCU GCC Compiler
+Invoking: MCU GCC Compiler
+/Users/agentjaucqueninjasuperspy/Documents/workspace/hw7/Debug
+arm-none-eabi-gcc -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -DSTM32 -DSTM32F0 -DSTM32F091RCTx -DDEBUG -DSTM32F091 -DUSE_STDPERIPH_DRIVER -I"/Users/agentjaucqueninjasuperspy/Documents/workspace/hw7/StdPeriph_Driver/inc" -I"/Users/agentjaucqueninjasuperspy/Documents/workspace/hw7/inc" -I"/Users/agentjaucqueninjasuperspy/Documents/workspace/hw7/CMSIS/device" -I"/Users/agentjaucqueninjasuperspy/Documents/workspace/hw7/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/system_stm32f0xx.d" -MT"src/system_stm32f0xx.o" -o "src/system_stm32f0xx.o" "../src/system_stm32f0xx.c"
+/Users/agentjaucqueninjasuperspy/Documents/workspace/hw7/Debug
+arm-none-eabi-gcc -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -DSTM32 -DSTM32F0 -DSTM32F091RCTx -DDEBUG -DSTM32F091 -DUSE_STDPERIPH_DRIVER -I"/Users/agentjaucqueninjasuperspy/Documents/workspace/hw7/StdPeriph_Driver/inc" -I"/Users/agentjaucqueninjasuperspy/Documents/workspace/hw7/inc" -I"/Users/agentjaucqueninjasuperspy/Documents/workspace/hw7/CMSIS/device" -I"/Users/agentjaucqueninjasuperspy/Documents/workspace/hw7/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/wavetable.d" -MT"src/wavetable.o" -o "src/wavetable.o" "../src/wavetable.c"
+Finished building: ../startup/startup_stm32.s
+ 
+Building file: ../StdPeriph_Driver/src/stm32f0xx_adc.c
+Invoking: MCU GCC Compiler
+/Users/agentjaucqueninjasuperspy/Documents/workspace/hw7/Debug
+arm-none-eabi-gcc -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -DSTM32 -DSTM32F0 -DSTM32F091RCTx -DDEBUG -DSTM32F091 -DUSE_STDPERIPH_DRIVER -I"/Users/agentjaucqueninjasuperspy/Documents/workspace/hw7/StdPeriph_Driver/inc" -I"/Users/agentjaucqueninjasuperspy/Documents/workspace/hw7/inc" -I"/Users/agentjaucqueninjasuperspy/Documents/workspace/hw7/CMSIS/device" -I"/Users/agentjaucqueninjasuperspy/Documents/workspace/hw7/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"StdPeriph_Driver/src/stm32f0xx_adc.d" -MT"StdPeriph_Driver/src/stm32f0xx_adc.o" -o "StdPeriph_Driver/src/stm32f0xx_adc.o" "../StdPeriph_Driver/src/stm32f0xx_adc.c"
+Finished building: ../src/step.c
+ 
+Finished building: ../src/wavetable.c
+Finished building: ../src/syscalls.c
+Building file: ../StdPeriph_Driver/src/stm32f0xx_can.c
+Finished building: ../src/midi.c
+ 
+ 
+Invoking: MCU GCC Compiler
+ 
+Building file: ../StdPeriph_Driver/src/stm32f0xx_cec.c
+/Users/agentjaucqueninjasuperspy/Documents/workspace/hw7/Debug
+arm-none-eabi-gcc -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -DSTM32 -DSTM32F0 -DSTM32F091RCTx -DDEBUG -DSTM32F091 -DUSE_STDPERIPH_DRIVER -I"/Users/agentjaucqueninjasuperspy/Documents/workspace/hw7/StdPeriph_Driver/inc" -I"/Users/agentjaucqueninjasuperspy/Documents/workspace/hw7/inc" -I"/Users/agentjaucqueninjasuperspy/Documents/workspace/hw7/CMSIS/device" -I"/Users/agentjaucqueninjasuperspy/Documents/workspace/hw7/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"StdPeriph_Driver/src/stm32f0xx_can.d" -MT"StdPeriph_Driver/src/stm32f0xx_can.o" -o "StdPeriph_Driver/src/stm32f0xx_can.o" "../StdPeriph_Driver/src/stm32f0xx_can.c"
+Building file: ../StdPeriph_Driver/src/stm32f0xx_comp.c
+Invoking: MCU GCC Compiler
+Finished building: ../src/system_stm32f0xx.c
+Invoking: MCU GCC Compiler
+Building file: ../StdPeriph_Driver/src/stm32f0xx_crc.c
+/Users/agentjaucqueninjasuperspy/Documents/workspace/hw7/Debug
+arm-none-eabi-gcc -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -DSTM32 -DSTM32F0 -DSTM32F091RCTx -DDEBUG -DSTM32F091 -DUSE_STDPERIPH_DRIVER -I"/Users/agentjaucqueninjasuperspy/Documents/workspace/hw7/StdPeriph_Driver/inc" -I"/Users/agentjaucqueninjasuperspy/Documents/workspace/hw7/inc" -I"/Users/agentjaucqueninjasuperspy/Documents/workspace/hw7/CMSIS/device" -I"/Users/agentjaucqueninjasuperspy/Documents/workspace/hw7/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"StdPeriph_Driver/src/stm32f0xx_cec.d" -MT"StdPeriph_Driver/src/stm32f0xx_cec.o" -o "StdPeriph_Driver/src/stm32f0xx_cec.o" "../StdPeriph_Driver/src/stm32f0xx_cec.c"
+/Users/agentjaucqueninjasuperspy/Documents/workspace/hw7/Debug
+arm-none-eabi-gcc -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -DSTM32 -DSTM32F0 -DSTM32F091RCTx -DDEBUG -DSTM32F091 -DUSE_STDPERIPH_DRIVER -I"/Users/agentjaucqueninjasuperspy/Documents/workspace/hw7/StdPeriph_Driver/inc" -I"/Users/agentjaucqueninjasuperspy/Documents/workspace/hw7/inc" -I"/Users/agentjaucqueninjasuperspy/Documents/workspace/hw7/CMSIS/device" -I"/Users/agentjaucqueninjasuperspy/Documents/workspace/hw7/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"StdPeriph_Driver/src/stm32f0xx_comp.d" -MT"StdPeriph_Driver/src/stm32f0xx_comp.o" -o "StdPeriph_Driver/src/stm32f0xx_comp.o" "../StdPeriph_Driver/src/stm32f0xx_comp.c"
+Invoking: MCU GCC Compiler
+ 
+/Users/agentjaucqueninjasuperspy/Documents/workspace/hw7/Debug
+arm-none-eabi-gcc -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -DSTM32 -DSTM32F0 -DSTM32F091RCTx -DDEBUG -DSTM32F091 -DUSE_STDPERIPH_DRIVER -I"/Users/agentjaucqueninjasuperspy/Documents/workspace/hw7/StdPeriph_Driver/inc" -I"/Users/agentjaucqueninjasuperspy/Documents/workspace/hw7/inc" -I"/Users/agentjaucqueninjasuperspy/Documents/workspace/hw7/CMSIS/device" -I"/Users/agentjaucqueninjasuperspy/Documents/workspace/hw7/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"StdPeriph_Driver/src/stm32f0xx_crc.d" -MT"StdPeriph_Driver/src/stm32f0xx_crc.o" -o "StdPeriph_Driver/src/stm32f0xx_crc.o" "../StdPeriph_Driver/src/stm32f0xx_crc.c"
+Building file: ../StdPeriph_Driver/src/stm32f0xx_crs.c
+Invoking: MCU GCC Compiler
+Finished building: ../StdPeriph_Driver/src/stm32f0xx_adc.c
+/Users/agentjaucqueninjasuperspy/Documents/workspace/hw7/Debug
+arm-none-eabi-gcc -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -DSTM32 -DSTM32F0 -DSTM32F091RCTx -DDEBUG -DSTM32F091 -DUSE_STDPERIPH_DRIVER -I"/Users/agentjaucqueninjasuperspy/Documents/workspace/hw7/StdPeriph_Driver/inc" -I"/Users/agentjaucqueninjasuperspy/Documents/workspace/hw7/inc" -I"/Users/agentjaucqueninjasuperspy/Documents/workspace/hw7/CMSIS/device" -I"/Users/agentjaucqueninjasuperspy/Documents/workspace/hw7/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"StdPeriph_Driver/src/stm32f0xx_crs.d" -MT"StdPeriph_Driver/src/stm32f0xx_crs.o" -o "StdPeriph_Driver/src/stm32f0xx_crs.o" "../StdPeriph_Driver/src/stm32f0xx_crs.c"
+ 
 Finished building: ../src/main.c
  
-Building target: lab7.elf
+Building file: ../StdPeriph_Driver/src/stm32f0xx_dac.c
+Building file: ../StdPeriph_Driver/src/stm32f0xx_dbgmcu.c
+Invoking: MCU GCC Compiler
+Invoking: MCU GCC Compiler
+/Users/agentjaucqueninjasuperspy/Documents/workspace/hw7/Debug
+arm-none-eabi-gcc -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -DSTM32 -DSTM32F0 -DSTM32F091RCTx -DDEBUG -DSTM32F091 -DUSE_STDPERIPH_DRIVER -I"/Users/agentjaucqueninjasuperspy/Documents/workspace/hw7/StdPeriph_Driver/inc" -I"/Users/agentjaucqueninjasuperspy/Documents/workspace/hw7/inc" -I"/Users/agentjaucqueninjasuperspy/Documents/workspace/hw7/CMSIS/device" -I"/Users/agentjaucqueninjasuperspy/Documents/workspace/hw7/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"StdPeriph_Driver/src/stm32f0xx_dac.d" -MT"StdPeriph_Driver/src/stm32f0xx_dac.o" -o "StdPeriph_Driver/src/stm32f0xx_dac.o" "../StdPeriph_Driver/src/stm32f0xx_dac.c"
+/Users/agentjaucqueninjasuperspy/Documents/workspace/hw7/Debug
+arm-none-eabi-gcc -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -DSTM32 -DSTM32F0 -DSTM32F091RCTx -DDEBUG -DSTM32F091 -DUSE_STDPERIPH_DRIVER -I"/Users/agentjaucqueninjasuperspy/Documents/workspace/hw7/StdPeriph_Driver/inc" -I"/Users/agentjaucqueninjasuperspy/Documents/workspace/hw7/inc" -I"/Users/agentjaucqueninjasuperspy/Documents/workspace/hw7/CMSIS/device" -I"/Users/agentjaucqueninjasuperspy/Documents/workspace/hw7/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"StdPeriph_Driver/src/stm32f0xx_dbgmcu.d" -MT"StdPeriph_Driver/src/stm32f0xx_dbgmcu.o" -o "StdPeriph_Driver/src/stm32f0xx_dbgmcu.o" "../StdPeriph_Driver/src/stm32f0xx_dbgmcu.c"
+Finished building: ../StdPeriph_Driver/src/stm32f0xx_comp.c
+ 
+Finished building: ../StdPeriph_Driver/src/stm32f0xx_crc.c
+Finished building: ../StdPeriph_Driver/src/stm32f0xx_cec.c
+Building file: ../StdPeriph_Driver/src/stm32f0xx_dma.c
+ 
+ 
+Invoking: MCU GCC Compiler
+Building file: ../StdPeriph_Driver/src/stm32f0xx_exti.c
+/Users/agentjaucqueninjasuperspy/Documents/workspace/hw7/Debug
+Finished building: ../StdPeriph_Driver/src/stm32f0xx_crs.c
+arm-none-eabi-gcc -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -DSTM32 -DSTM32F0 -DSTM32F091RCTx -DDEBUG -DSTM32F091 -DUSE_STDPERIPH_DRIVER -I"/Users/agentjaucqueninjasuperspy/Documents/workspace/hw7/StdPeriph_Driver/inc" -I"/Users/agentjaucqueninjasuperspy/Documents/workspace/hw7/inc" -I"/Users/agentjaucqueninjasuperspy/Documents/workspace/hw7/CMSIS/device" -I"/Users/agentjaucqueninjasuperspy/Documents/workspace/hw7/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"StdPeriph_Driver/src/stm32f0xx_dma.d" -MT"StdPeriph_Driver/src/stm32f0xx_dma.o" -o "StdPeriph_Driver/src/stm32f0xx_dma.o" "../StdPeriph_Driver/src/stm32f0xx_dma.c"
+Invoking: MCU GCC Compiler
+Building file: ../StdPeriph_Driver/src/stm32f0xx_flash.c
+ 
+/Users/agentjaucqueninjasuperspy/Documents/workspace/hw7/Debug
+arm-none-eabi-gcc -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -DSTM32 -DSTM32F0 -DSTM32F091RCTx -DDEBUG -DSTM32F091 -DUSE_STDPERIPH_DRIVER -I"/Users/agentjaucqueninjasuperspy/Documents/workspace/hw7/StdPeriph_Driver/inc" -I"/Users/agentjaucqueninjasuperspy/Documents/workspace/hw7/inc" -I"/Users/agentjaucqueninjasuperspy/Documents/workspace/hw7/CMSIS/device" -I"/Users/agentjaucqueninjasuperspy/Documents/workspace/hw7/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"StdPeriph_Driver/src/stm32f0xx_exti.d" -MT"StdPeriph_Driver/src/stm32f0xx_exti.o" -o "StdPeriph_Driver/src/stm32f0xx_exti.o" "../StdPeriph_Driver/src/stm32f0xx_exti.c"
+Invoking: MCU GCC Compiler
+Finished building: ../StdPeriph_Driver/src/stm32f0xx_dbgmcu.c
+Finished building: ../StdPeriph_Driver/src/stm32f0xx_can.c
+/Users/agentjaucqueninjasuperspy/Documents/workspace/hw7/Debug
+ 
+arm-none-eabi-gcc -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -DSTM32 -DSTM32F0 -DSTM32F091RCTx -DDEBUG -DSTM32F091 -DUSE_STDPERIPH_DRIVER -I"/Users/agentjaucqueninjasuperspy/Documents/workspace/hw7/StdPeriph_Driver/inc" -I"/Users/agentjaucqueninjasuperspy/Documents/workspace/hw7/inc" -I"/Users/agentjaucqueninjasuperspy/Documents/workspace/hw7/CMSIS/device" -I"/Users/agentjaucqueninjasuperspy/Documents/workspace/hw7/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"StdPeriph_Driver/src/stm32f0xx_flash.d" -MT"StdPeriph_Driver/src/stm32f0xx_flash.o" -o "StdPeriph_Driver/src/stm32f0xx_flash.o" "../StdPeriph_Driver/src/stm32f0xx_flash.c"
+ 
+Building file: ../StdPeriph_Driver/src/stm32f0xx_gpio.c
+Finished building: ../StdPeriph_Driver/src/stm32f0xx_dac.c
+Building file: ../StdPeriph_Driver/src/stm32f0xx_i2c.c
+Invoking: MCU GCC Compiler
+ 
+Invoking: MCU GCC Compiler
+/Users/agentjaucqueninjasuperspy/Documents/workspace/hw7/Debug
+arm-none-eabi-gcc -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -DSTM32 -DSTM32F0 -DSTM32F091RCTx -DDEBUG -DSTM32F091 -DUSE_STDPERIPH_DRIVER -I"/Users/agentjaucqueninjasuperspy/Documents/workspace/hw7/StdPeriph_Driver/inc" -I"/Users/agentjaucqueninjasuperspy/Documents/workspace/hw7/inc" -I"/Users/agentjaucqueninjasuperspy/Documents/workspace/hw7/CMSIS/device" -I"/Users/agentjaucqueninjasuperspy/Documents/workspace/hw7/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"StdPeriph_Driver/src/stm32f0xx_gpio.d" -MT"StdPeriph_Driver/src/stm32f0xx_gpio.o" -o "StdPeriph_Driver/src/stm32f0xx_gpio.o" "../StdPeriph_Driver/src/stm32f0xx_gpio.c"
+Building file: ../StdPeriph_Driver/src/stm32f0xx_iwdg.c
+/Users/agentjaucqueninjasuperspy/Documents/workspace/hw7/Debug
+arm-none-eabi-gcc -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -DSTM32 -DSTM32F0 -DSTM32F091RCTx -DDEBUG -DSTM32F091 -DUSE_STDPERIPH_DRIVER -I"/Users/agentjaucqueninjasuperspy/Documents/workspace/hw7/StdPeriph_Driver/inc" -I"/Users/agentjaucqueninjasuperspy/Documents/workspace/hw7/inc" -I"/Users/agentjaucqueninjasuperspy/Documents/workspace/hw7/CMSIS/device" -I"/Users/agentjaucqueninjasuperspy/Documents/workspace/hw7/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"StdPeriph_Driver/src/stm32f0xx_i2c.d" -MT"StdPeriph_Driver/src/stm32f0xx_i2c.o" -o "StdPeriph_Driver/src/stm32f0xx_i2c.o" "../StdPeriph_Driver/src/stm32f0xx_i2c.c"
+Invoking: MCU GCC Compiler
+Building file: ../StdPeriph_Driver/src/stm32f0xx_misc.c
+/Users/agentjaucqueninjasuperspy/Documents/workspace/hw7/Debug
+arm-none-eabi-gcc -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -DSTM32 -DSTM32F0 -DSTM32F091RCTx -DDEBUG -DSTM32F091 -DUSE_STDPERIPH_DRIVER -I"/Users/agentjaucqueninjasuperspy/Documents/workspace/hw7/StdPeriph_Driver/inc" -I"/Users/agentjaucqueninjasuperspy/Documents/workspace/hw7/inc" -I"/Users/agentjaucqueninjasuperspy/Documents/workspace/hw7/CMSIS/device" -I"/Users/agentjaucqueninjasuperspy/Documents/workspace/hw7/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"StdPeriph_Driver/src/stm32f0xx_iwdg.d" -MT"StdPeriph_Driver/src/stm32f0xx_iwdg.o" -o "StdPeriph_Driver/src/stm32f0xx_iwdg.o" "../StdPeriph_Driver/src/stm32f0xx_iwdg.c"
+Invoking: MCU GCC Compiler
+/Users/agentjaucqueninjasuperspy/Documents/workspace/hw7/Debug
+arm-none-eabi-gcc -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -DSTM32 -DSTM32F0 -DSTM32F091RCTx -DDEBUG -DSTM32F091 -DUSE_STDPERIPH_DRIVER -I"/Users/agentjaucqueninjasuperspy/Documents/workspace/hw7/StdPeriph_Driver/inc" -I"/Users/agentjaucqueninjasuperspy/Documents/workspace/hw7/inc" -I"/Users/agentjaucqueninjasuperspy/Documents/workspace/hw7/CMSIS/device" -I"/Users/agentjaucqueninjasuperspy/Documents/workspace/hw7/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"StdPeriph_Driver/src/stm32f0xx_misc.d" -MT"StdPeriph_Driver/src/stm32f0xx_misc.o" -o "StdPeriph_Driver/src/stm32f0xx_misc.o" "../StdPeriph_Driver/src/stm32f0xx_misc.c"
+Finished building: ../StdPeriph_Driver/src/stm32f0xx_exti.c
+Finished building: ../StdPeriph_Driver/src/stm32f0xx_dma.c
+ 
+ 
+Building file: ../StdPeriph_Driver/src/stm32f0xx_pwr.c
+Building file: ../StdPeriph_Driver/src/stm32f0xx_rcc.c
+Invoking: MCU GCC Compiler
+Invoking: MCU GCC Compiler
+/Users/agentjaucqueninjasuperspy/Documents/workspace/hw7/Debug
+arm-none-eabi-gcc -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -DSTM32 -DSTM32F0 -DSTM32F091RCTx -DDEBUG -DSTM32F091 -DUSE_STDPERIPH_DRIVER -I"/Users/agentjaucqueninjasuperspy/Documents/workspace/hw7/StdPeriph_Driver/inc" -I"/Users/agentjaucqueninjasuperspy/Documents/workspace/hw7/inc" -I"/Users/agentjaucqueninjasuperspy/Documents/workspace/hw7/CMSIS/device" -I"/Users/agentjaucqueninjasuperspy/Documents/workspace/hw7/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"StdPeriph_Driver/src/stm32f0xx_rcc.d" -MT"StdPeriph_Driver/src/stm32f0xx_rcc.o" -o "StdPeriph_Driver/src/stm32f0xx_rcc.o" "../StdPeriph_Driver/src/stm32f0xx_rcc.c"
+/Users/agentjaucqueninjasuperspy/Documents/workspace/hw7/Debug
+arm-none-eabi-gcc -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -DSTM32 -DSTM32F0 -DSTM32F091RCTx -DDEBUG -DSTM32F091 -DUSE_STDPERIPH_DRIVER -I"/Users/agentjaucqueninjasuperspy/Documents/workspace/hw7/StdPeriph_Driver/inc" -I"/Users/agentjaucqueninjasuperspy/Documents/workspace/hw7/inc" -I"/Users/agentjaucqueninjasuperspy/Documents/workspace/hw7/CMSIS/device" -I"/Users/agentjaucqueninjasuperspy/Documents/workspace/hw7/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"StdPeriph_Driver/src/stm32f0xx_pwr.d" -MT"StdPeriph_Driver/src/stm32f0xx_pwr.o" -o "StdPeriph_Driver/src/stm32f0xx_pwr.o" "../StdPeriph_Driver/src/stm32f0xx_pwr.c"
+Finished building: ../StdPeriph_Driver/src/stm32f0xx_gpio.c
+Finished building: ../StdPeriph_Driver/src/stm32f0xx_iwdg.c
+Finished building: ../StdPeriph_Driver/src/stm32f0xx_flash.c
+ 
+ 
+ 
+Building file: ../StdPeriph_Driver/src/stm32f0xx_rtc.c
+Building file: ../StdPeriph_Driver/src/stm32f0xx_spi.c
+Building file: ../StdPeriph_Driver/src/stm32f0xx_syscfg.c
+Invoking: MCU GCC Compiler
+Finished building: ../StdPeriph_Driver/src/stm32f0xx_misc.c
+Invoking: MCU GCC Compiler
+/Users/agentjaucqueninjasuperspy/Documents/workspace/hw7/Debug
+arm-none-eabi-gcc -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -DSTM32 -DSTM32F0 -DSTM32F091RCTx -DDEBUG -DSTM32F091 -DUSE_STDPERIPH_DRIVER -I"/Users/agentjaucqueninjasuperspy/Documents/workspace/hw7/StdPeriph_Driver/inc" -I"/Users/agentjaucqueninjasuperspy/Documents/workspace/hw7/inc" -I"/Users/agentjaucqueninjasuperspy/Documents/workspace/hw7/CMSIS/device" -I"/Users/agentjaucqueninjasuperspy/Documents/workspace/hw7/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"StdPeriph_Driver/src/stm32f0xx_rtc.d" -MT"StdPeriph_Driver/src/stm32f0xx_rtc.o" -o "StdPeriph_Driver/src/stm32f0xx_rtc.o" "../StdPeriph_Driver/src/stm32f0xx_rtc.c"
+Invoking: MCU GCC Compiler
+ 
+/Users/agentjaucqueninjasuperspy/Documents/workspace/hw7/Debug
+/Users/agentjaucqueninjasuperspy/Documents/workspace/hw7/Debug
+arm-none-eabi-gcc -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -DSTM32 -DSTM32F0 -DSTM32F091RCTx -DDEBUG -DSTM32F091 -DUSE_STDPERIPH_DRIVER -I"/Users/agentjaucqueninjasuperspy/Documents/workspace/hw7/StdPeriph_Driver/inc" -I"/Users/agentjaucqueninjasuperspy/Documents/workspace/hw7/inc" -I"/Users/agentjaucqueninjasuperspy/Documents/workspace/hw7/CMSIS/device" -I"/Users/agentjaucqueninjasuperspy/Documents/workspace/hw7/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"StdPeriph_Driver/src/stm32f0xx_spi.d" -MT"StdPeriph_Driver/src/stm32f0xx_spi.o" -o "StdPeriph_Driver/src/stm32f0xx_spi.o" "../StdPeriph_Driver/src/stm32f0xx_spi.c"
+arm-none-eabi-gcc -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -DSTM32 -DSTM32F0 -DSTM32F091RCTx -DDEBUG -DSTM32F091 -DUSE_STDPERIPH_DRIVER -I"/Users/agentjaucqueninjasuperspy/Documents/workspace/hw7/StdPeriph_Driver/inc" -I"/Users/agentjaucqueninjasuperspy/Documents/workspace/hw7/inc" -I"/Users/agentjaucqueninjasuperspy/Documents/workspace/hw7/CMSIS/device" -I"/Users/agentjaucqueninjasuperspy/Documents/workspace/hw7/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"StdPeriph_Driver/src/stm32f0xx_syscfg.d" -MT"StdPeriph_Driver/src/stm32f0xx_syscfg.o" -o "StdPeriph_Driver/src/stm32f0xx_syscfg.o" "../StdPeriph_Driver/src/stm32f0xx_syscfg.c"
+Finished building: ../StdPeriph_Driver/src/stm32f0xx_i2c.c
+Building file: ../StdPeriph_Driver/src/stm32f0xx_tim.c
+ 
+Invoking: MCU GCC Compiler
+Building file: ../StdPeriph_Driver/src/stm32f0xx_usart.c
+/Users/agentjaucqueninjasuperspy/Documents/workspace/hw7/Debug
+arm-none-eabi-gcc -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -DSTM32 -DSTM32F0 -DSTM32F091RCTx -DDEBUG -DSTM32F091 -DUSE_STDPERIPH_DRIVER -I"/Users/agentjaucqueninjasuperspy/Documents/workspace/hw7/StdPeriph_Driver/inc" -I"/Users/agentjaucqueninjasuperspy/Documents/workspace/hw7/inc" -I"/Users/agentjaucqueninjasuperspy/Documents/workspace/hw7/CMSIS/device" -I"/Users/agentjaucqueninjasuperspy/Documents/workspace/hw7/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"StdPeriph_Driver/src/stm32f0xx_tim.d" -MT"StdPeriph_Driver/src/stm32f0xx_tim.o" -o "StdPeriph_Driver/src/stm32f0xx_tim.o" "../StdPeriph_Driver/src/stm32f0xx_tim.c"
+Invoking: MCU GCC Compiler
+/Users/agentjaucqueninjasuperspy/Documents/workspace/hw7/Debug
+arm-none-eabi-gcc -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -DSTM32 -DSTM32F0 -DSTM32F091RCTx -DDEBUG -DSTM32F091 -DUSE_STDPERIPH_DRIVER -I"/Users/agentjaucqueninjasuperspy/Documents/workspace/hw7/StdPeriph_Driver/inc" -I"/Users/agentjaucqueninjasuperspy/Documents/workspace/hw7/inc" -I"/Users/agentjaucqueninjasuperspy/Documents/workspace/hw7/CMSIS/device" -I"/Users/agentjaucqueninjasuperspy/Documents/workspace/hw7/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"StdPeriph_Driver/src/stm32f0xx_usart.d" -MT"StdPeriph_Driver/src/stm32f0xx_usart.o" -o "StdPeriph_Driver/src/stm32f0xx_usart.o" "../StdPeriph_Driver/src/stm32f0xx_usart.c"
+Finished building: ../StdPeriph_Driver/src/stm32f0xx_pwr.c
+ 
+Building file: ../StdPeriph_Driver/src/stm32f0xx_wwdg.c
+Invoking: MCU GCC Compiler
+Finished building: ../StdPeriph_Driver/src/stm32f0xx_rcc.c
+/Users/agentjaucqueninjasuperspy/Documents/workspace/hw7/Debug
+arm-none-eabi-gcc -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -DSTM32 -DSTM32F0 -DSTM32F091RCTx -DDEBUG -DSTM32F091 -DUSE_STDPERIPH_DRIVER -I"/Users/agentjaucqueninjasuperspy/Documents/workspace/hw7/StdPeriph_Driver/inc" -I"/Users/agentjaucqueninjasuperspy/Documents/workspace/hw7/inc" -I"/Users/agentjaucqueninjasuperspy/Documents/workspace/hw7/CMSIS/device" -I"/Users/agentjaucqueninjasuperspy/Documents/workspace/hw7/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"StdPeriph_Driver/src/stm32f0xx_wwdg.d" -MT"StdPeriph_Driver/src/stm32f0xx_wwdg.o" -o "StdPeriph_Driver/src/stm32f0xx_wwdg.o" "../StdPeriph_Driver/src/stm32f0xx_wwdg.c"
+ 
+Finished building: ../StdPeriph_Driver/src/stm32f0xx_syscfg.c
+ 
+Finished building: ../StdPeriph_Driver/src/stm32f0xx_spi.c
+ 
+Finished building: ../StdPeriph_Driver/src/stm32f0xx_rtc.c
+ 
+Finished building: ../StdPeriph_Driver/src/stm32f0xx_usart.c
+ 
+Finished building: ../StdPeriph_Driver/src/stm32f0xx_tim.c
+ 
+Finished building: ../StdPeriph_Driver/src/stm32f0xx_wwdg.c
+ 
+Building target: hw7.elf
 Invoking: MCU GCC Linker
-arm-none-eabi-gcc -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -T"/home/shay/a/will2253/workspace/lab7/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "lab7.elf" @"objects.list"   -lm
-Finished building target: lab7.elf
+arm-none-eabi-gcc -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -T"/Users/agentjaucqueninjasuperspy/Documents/workspace/hw7/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "hw7.elf" @"objects.list"   -lm
+Finished building target: hw7.elf
  
-make --no-print-directory post-build
+/Library/Developer/CommandLineTools/usr/bin/make --no-print-directory post-build
 Generating binary and Printing size information:
-arm-none-eabi-objcopy -O binary "lab7.elf" "lab7.bin"
-arm-none-eabi-size "lab7.elf"
+arm-none-eabi-objcopy -O binary "hw7.elf" "hw7.bin"
+arm-none-eabi-size "hw7.elf"
    text	   data	    bss	    dec	    hex	filename
-  22116	   1104	   3276	  26496	   6780	lab7.elf
+  16156	   1728	   3268	  21152	   52a0	hw7.elf
  
-12:18:14 **** Incremental Build of configuration Debug for project lab7 ****
-make -j16 all 
+11:28:12 **** Incremental Build of configuration Debug for project hw7 ****
+make -j7 all 
+make: Nothing to be done for `all'.
+11:29:26 **** Incremental Build of configuration Debug for project hw7 ****
+make -j7 all 
 Building file: ../src/main.c
 Invoking: MCU GCC Compiler
-/home/shay/a/will2253/workspace/lab7/Debug
-arm-none-eabi-gcc -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -DSTM32 -DSTM32F0 -DSTM32F091RCTx -DDEBUG -DSTM32F091 -DUSE_STDPERIPH_DRIVER -I"/home/shay/a/will2253/workspace/lab7/StdPeriph_Driver/inc" -I"/home/shay/a/will2253/workspace/lab7/inc" -I"/home/shay/a/will2253/workspace/lab7/CMSIS/device" -I"/home/shay/a/will2253/workspace/lab7/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+/Users/agentjaucqueninjasuperspy/Documents/workspace/hw7/Debug
+arm-none-eabi-gcc -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -DSTM32 -DSTM32F0 -DSTM32F091RCTx -DDEBUG -DSTM32F091 -DUSE_STDPERIPH_DRIVER -I"/Users/agentjaucqueninjasuperspy/Documents/workspace/hw7/StdPeriph_Driver/inc" -I"/Users/agentjaucqueninjasuperspy/Documents/workspace/hw7/inc" -I"/Users/agentjaucqueninjasuperspy/Documents/workspace/hw7/CMSIS/device" -I"/Users/agentjaucqueninjasuperspy/Documents/workspace/hw7/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
 Finished building: ../src/main.c
  
-Building target: lab7.elf
+Building target: hw7.elf
 Invoking: MCU GCC Linker
-arm-none-eabi-gcc -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -T"/home/shay/a/will2253/workspace/lab7/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "lab7.elf" @"objects.list"   -lm
-Finished building target: lab7.elf
+arm-none-eabi-gcc -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -T"/Users/agentjaucqueninjasuperspy/Documents/workspace/hw7/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "hw7.elf" @"objects.list"   -lm
+Finished building target: hw7.elf
  
-make --no-print-directory post-build
+/Library/Developer/CommandLineTools/usr/bin/make --no-print-directory post-build
 Generating binary and Printing size information:
-arm-none-eabi-objcopy -O binary "lab7.elf" "lab7.bin"
-arm-none-eabi-size "lab7.elf"
+arm-none-eabi-objcopy -O binary "hw7.elf" "hw7.bin"
+arm-none-eabi-size "hw7.elf"
    text	   data	    bss	    dec	    hex	filename
-   6276	   1104	   3276	  10656	   29a0	lab7.elf
+  16156	   1728	   3268	  21152	   52a0	hw7.elf
  
-12:18:37 **** Incremental Build of configuration Debug for project lab7 ****
-make -j16 all 
+11:33:52 **** Incremental Build of configuration Debug for project hw7 ****
+make -j7 all 
+make: Nothing to be done for `all'.
+11:35:03 **** Incremental Build of configuration Debug for project hw7 ****
+make -j7 all 
+Building file: ../src/scale.c
+Invoking: MCU GCC Compiler
+/Users/agentjaucqueninjasuperspy/Documents/workspace/hw7/Debug
+arm-none-eabi-gcc -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -DSTM32 -DSTM32F0 -DSTM32F091RCTx -DDEBUG -DSTM32F091 -DUSE_STDPERIPH_DRIVER -I"/Users/agentjaucqueninjasuperspy/Documents/workspace/hw7/StdPeriph_Driver/inc" -I"/Users/agentjaucqueninjasuperspy/Documents/workspace/hw7/inc" -I"/Users/agentjaucqueninjasuperspy/Documents/workspace/hw7/CMSIS/device" -I"/Users/agentjaucqueninjasuperspy/Documents/workspace/hw7/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/scale.d" -MT"src/scale.o" -o "src/scale.o" "../src/scale.c"
+Finished building: ../src/scale.c
+ 
+Building target: hw7.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -T"/Users/agentjaucqueninjasuperspy/Documents/workspace/hw7/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "hw7.elf" @"objects.list"   -lm
+Finished building target: hw7.elf
+ 
+/Library/Developer/CommandLineTools/usr/bin/make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "hw7.elf" "hw7.bin"
+arm-none-eabi-size "hw7.elf"
+   text	   data	    bss	    dec	    hex	filename
+  16156	   1728	   3268	  21152	   52a0	hw7.elf
+ 
+11:37:51 **** Incremental Build of configuration Debug for project hw7 ****
+make -j7 all 
 Building file: ../src/main.c
 Invoking: MCU GCC Compiler
-/home/shay/a/will2253/workspace/lab7/Debug
-arm-none-eabi-gcc -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -DSTM32 -DSTM32F0 -DSTM32F091RCTx -DDEBUG -DSTM32F091 -DUSE_STDPERIPH_DRIVER -I"/home/shay/a/will2253/workspace/lab7/StdPeriph_Driver/inc" -I"/home/shay/a/will2253/workspace/lab7/inc" -I"/home/shay/a/will2253/workspace/lab7/CMSIS/device" -I"/home/shay/a/will2253/workspace/lab7/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+/Users/agentjaucqueninjasuperspy/Documents/workspace/hw7/Debug
+arm-none-eabi-gcc -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -DSTM32 -DSTM32F0 -DSTM32F091RCTx -DDEBUG -DSTM32F091 -DUSE_STDPERIPH_DRIVER -I"/Users/agentjaucqueninjasuperspy/Documents/workspace/hw7/StdPeriph_Driver/inc" -I"/Users/agentjaucqueninjasuperspy/Documents/workspace/hw7/inc" -I"/Users/agentjaucqueninjasuperspy/Documents/workspace/hw7/CMSIS/device" -I"/Users/agentjaucqueninjasuperspy/Documents/workspace/hw7/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
 Finished building: ../src/main.c
  
-Building target: lab7.elf
+Building target: hw7.elf
 Invoking: MCU GCC Linker
-arm-none-eabi-gcc -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -T"/home/shay/a/will2253/workspace/lab7/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "lab7.elf" @"objects.list"   -lm
-Finished building target: lab7.elf
+arm-none-eabi-gcc -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -T"/Users/agentjaucqueninjasuperspy/Documents/workspace/hw7/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "hw7.elf" @"objects.list"   -lm
+Finished building target: hw7.elf
  
-make --no-print-directory post-build
+/Library/Developer/CommandLineTools/usr/bin/make --no-print-directory post-build
 Generating binary and Printing size information:
-arm-none-eabi-objcopy -O binary "lab7.elf" "lab7.bin"
-arm-none-eabi-size "lab7.elf"
+arm-none-eabi-objcopy -O binary "hw7.elf" "hw7.bin"
+arm-none-eabi-size "hw7.elf"
    text	   data	    bss	    dec	    hex	filename
-  22116	   1104	   3276	  26496	   6780	lab7.elf
+  16156	   1728	   3268	  21152	   52a0	hw7.elf
  
-12:23:01 **** Incremental Build of configuration Debug for project lab7 ****
-make -j16 all 
-make: Nothing to be done for 'all'.
-12:23:55 **** Incremental Build of configuration Debug for project lab7 ****
-make -j16 all 
-make: Nothing to be done for 'all'.
-12:27:57 **** Incremental Build of configuration Debug for project lab7 ****
-make -j16 all 
+11:52:21 **** Incremental Build of configuration Debug for project hw7 ****
+make -j7 all 
+make: Nothing to be done for `all'.
+11:52:28 **** Incremental Build of configuration Debug for project hw7 ****
+make -j7 all 
+make: Nothing to be done for `all'.
+12:06:29 **** Incremental Build of configuration Debug for project hw7 ****
+make -j7 all 
 Building file: ../src/main.c
 Invoking: MCU GCC Compiler
-/home/shay/a/will2253/workspace/lab7/Debug
-arm-none-eabi-gcc -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -DSTM32 -DSTM32F0 -DSTM32F091RCTx -DDEBUG -DSTM32F091 -DUSE_STDPERIPH_DRIVER -I"/home/shay/a/will2253/workspace/lab7/StdPeriph_Driver/inc" -I"/home/shay/a/will2253/workspace/lab7/inc" -I"/home/shay/a/will2253/workspace/lab7/CMSIS/device" -I"/home/shay/a/will2253/workspace/lab7/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+/Users/agentjaucqueninjasuperspy/Documents/workspace/hw7/Debug
+arm-none-eabi-gcc -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -DSTM32 -DSTM32F0 -DSTM32F091RCTx -DDEBUG -DSTM32F091 -DUSE_STDPERIPH_DRIVER -I"/Users/agentjaucqueninjasuperspy/Documents/workspace/hw7/StdPeriph_Driver/inc" -I"/Users/agentjaucqueninjasuperspy/Documents/workspace/hw7/inc" -I"/Users/agentjaucqueninjasuperspy/Documents/workspace/hw7/CMSIS/device" -I"/Users/agentjaucqueninjasuperspy/Documents/workspace/hw7/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
 Finished building: ../src/main.c
  
-Building target: lab7.elf
+Building target: hw7.elf
 Invoking: MCU GCC Linker
-arm-none-eabi-gcc -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -T"/home/shay/a/will2253/workspace/lab7/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "lab7.elf" @"objects.list"   -lm
-Finished building target: lab7.elf
+arm-none-eabi-gcc -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -T"/Users/agentjaucqueninjasuperspy/Documents/workspace/hw7/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "hw7.elf" @"objects.list"   -lm
+Finished building target: hw7.elf
  
-make --no-print-directory post-build
+/Library/Developer/CommandLineTools/usr/bin/make --no-print-directory post-build
 Generating binary and Printing size information:
-arm-none-eabi-objcopy -O binary "lab7.elf" "lab7.bin"
-arm-none-eabi-size "lab7.elf"
+arm-none-eabi-objcopy -O binary "hw7.elf" "hw7.bin"
+arm-none-eabi-size "hw7.elf"
    text	   data	    bss	    dec	    hex	filename
-  22120	   1104	   3276	  26500	   6784	lab7.elf
+  16228	   1728	   3268	  21224	   52e8	hw7.elf
  
-12:28:05 **** Incremental Build of configuration Debug for project lab7 ****
-make -j16 all 
-make: Nothing to be done for 'all'.
-12:29:37 **** Incremental Build of configuration Debug for project lab7 ****
-make -j16 all 
+12:11:23 **** Incremental Build of configuration Debug for project hw7 ****
+make -j7 all 
 Building file: ../src/main.c
 Invoking: MCU GCC Compiler
-/home/shay/a/will2253/workspace/lab7/Debug
-arm-none-eabi-gcc -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -DSTM32 -DSTM32F0 -DSTM32F091RCTx -DDEBUG -DSTM32F091 -DUSE_STDPERIPH_DRIVER -I"/home/shay/a/will2253/workspace/lab7/StdPeriph_Driver/inc" -I"/home/shay/a/will2253/workspace/lab7/inc" -I"/home/shay/a/will2253/workspace/lab7/CMSIS/device" -I"/home/shay/a/will2253/workspace/lab7/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+/Users/agentjaucqueninjasuperspy/Documents/workspace/hw7/Debug
+arm-none-eabi-gcc -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -DSTM32 -DSTM32F0 -DSTM32F091RCTx -DDEBUG -DSTM32F091 -DUSE_STDPERIPH_DRIVER -I"/Users/agentjaucqueninjasuperspy/Documents/workspace/hw7/StdPeriph_Driver/inc" -I"/Users/agentjaucqueninjasuperspy/Documents/workspace/hw7/inc" -I"/Users/agentjaucqueninjasuperspy/Documents/workspace/hw7/CMSIS/device" -I"/Users/agentjaucqueninjasuperspy/Documents/workspace/hw7/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
 Finished building: ../src/main.c
  
-Building target: lab7.elf
+Building target: hw7.elf
 Invoking: MCU GCC Linker
-arm-none-eabi-gcc -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -T"/home/shay/a/will2253/workspace/lab7/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "lab7.elf" @"objects.list"   -lm
-Finished building target: lab7.elf
+arm-none-eabi-gcc -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -T"/Users/agentjaucqueninjasuperspy/Documents/workspace/hw7/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "hw7.elf" @"objects.list"   -lm
+Finished building target: hw7.elf
  
-make --no-print-directory post-build
+/Library/Developer/CommandLineTools/usr/bin/make --no-print-directory post-build
 Generating binary and Printing size information:
-arm-none-eabi-objcopy -O binary "lab7.elf" "lab7.bin"
-arm-none-eabi-size "lab7.elf"
+arm-none-eabi-objcopy -O binary "hw7.elf" "hw7.bin"
+arm-none-eabi-size "hw7.elf"
    text	   data	    bss	    dec	    hex	filename
-  22148	   1104	   3276	  26528	   67a0	lab7.elf
+  16528	   1728	   3268	  21524	   5414	hw7.elf
  
-12:30:04 **** Incremental Build of configuration Debug for project lab7 ****
-make -j16 all 
+12:12:21 **** Incremental Build of configuration Debug for project hw7 ****
+make -j7 all 
 Building file: ../src/main.c
 Invoking: MCU GCC Compiler
-/home/shay/a/will2253/workspace/lab7/Debug
-arm-none-eabi-gcc -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -DSTM32 -DSTM32F0 -DSTM32F091RCTx -DDEBUG -DSTM32F091 -DUSE_STDPERIPH_DRIVER -I"/home/shay/a/will2253/workspace/lab7/StdPeriph_Driver/inc" -I"/home/shay/a/will2253/workspace/lab7/inc" -I"/home/shay/a/will2253/workspace/lab7/CMSIS/device" -I"/home/shay/a/will2253/workspace/lab7/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+/Users/agentjaucqueninjasuperspy/Documents/workspace/hw7/Debug
+arm-none-eabi-gcc -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -DSTM32 -DSTM32F0 -DSTM32F091RCTx -DDEBUG -DSTM32F091 -DUSE_STDPERIPH_DRIVER -I"/Users/agentjaucqueninjasuperspy/Documents/workspace/hw7/StdPeriph_Driver/inc" -I"/Users/agentjaucqueninjasuperspy/Documents/workspace/hw7/inc" -I"/Users/agentjaucqueninjasuperspy/Documents/workspace/hw7/CMSIS/device" -I"/Users/agentjaucqueninjasuperspy/Documents/workspace/hw7/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
 Finished building: ../src/main.c
  
-Building target: lab7.elf
+Building target: hw7.elf
 Invoking: MCU GCC Linker
-arm-none-eabi-gcc -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -T"/home/shay/a/will2253/workspace/lab7/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "lab7.elf" @"objects.list"   -lm
-Finished building target: lab7.elf
+arm-none-eabi-gcc -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -T"/Users/agentjaucqueninjasuperspy/Documents/workspace/hw7/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "hw7.elf" @"objects.list"   -lm
+Finished building target: hw7.elf
  
-make --no-print-directory post-build
+/Library/Developer/CommandLineTools/usr/bin/make --no-print-directory post-build
 Generating binary and Printing size information:
-arm-none-eabi-objcopy -O binary "lab7.elf" "lab7.bin"
-arm-none-eabi-size "lab7.elf"
+arm-none-eabi-objcopy -O binary "hw7.elf" "hw7.bin"
+arm-none-eabi-size "hw7.elf"
    text	   data	    bss	    dec	    hex	filename
-  22144	   1104	   3276	  26524	   679c	lab7.elf
+  16528	   1728	   3268	  21524	   5414	hw7.elf
  
-12:31:33 **** Incremental Build of configuration Debug for project lab7 ****
-make -j16 all 
+12:18:33 **** Incremental Build of configuration Debug for project hw7 ****
+make -j7 all 
 Building file: ../src/main.c
 Invoking: MCU GCC Compiler
-/home/shay/a/will2253/workspace/lab7/Debug
-arm-none-eabi-gcc -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -DSTM32 -DSTM32F0 -DSTM32F091RCTx -DDEBUG -DSTM32F091 -DUSE_STDPERIPH_DRIVER -I"/home/shay/a/will2253/workspace/lab7/StdPeriph_Driver/inc" -I"/home/shay/a/will2253/workspace/lab7/inc" -I"/home/shay/a/will2253/workspace/lab7/CMSIS/device" -I"/home/shay/a/will2253/workspace/lab7/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+/Users/agentjaucqueninjasuperspy/Documents/workspace/hw7/Debug
+arm-none-eabi-gcc -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -DSTM32 -DSTM32F0 -DSTM32F091RCTx -DDEBUG -DSTM32F091 -DUSE_STDPERIPH_DRIVER -I"/Users/agentjaucqueninjasuperspy/Documents/workspace/hw7/StdPeriph_Driver/inc" -I"/Users/agentjaucqueninjasuperspy/Documents/workspace/hw7/inc" -I"/Users/agentjaucqueninjasuperspy/Documents/workspace/hw7/CMSIS/device" -I"/Users/agentjaucqueninjasuperspy/Documents/workspace/hw7/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
 Finished building: ../src/main.c
  
-Building target: lab7.elf
+Building target: hw7.elf
 Invoking: MCU GCC Linker
-arm-none-eabi-gcc -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -T"/home/shay/a/will2253/workspace/lab7/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "lab7.elf" @"objects.list"   -lm
-Finished building target: lab7.elf
+arm-none-eabi-gcc -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -T"/Users/agentjaucqueninjasuperspy/Documents/workspace/hw7/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "hw7.elf" @"objects.list"   -lm
+Finished building target: hw7.elf
  
-make --no-print-directory post-build
+/Library/Developer/CommandLineTools/usr/bin/make --no-print-directory post-build
 Generating binary and Printing size information:
-arm-none-eabi-objcopy -O binary "lab7.elf" "lab7.bin"
-arm-none-eabi-size "lab7.elf"
+arm-none-eabi-objcopy -O binary "hw7.elf" "hw7.bin"
+arm-none-eabi-size "hw7.elf"
    text	   data	    bss	    dec	    hex	filename
-  22144	   1104	   3276	  26524	   679c	lab7.elf
+  16528	   1728	   3268	  21524	   5414	hw7.elf
  
-12:36:03 **** Incremental Build of configuration Debug for project lab7 ****
-make -j16 all 
+12:22:07 **** Incremental Build of configuration Debug for project hw7 ****
+make -j7 all 
 Building file: ../src/main.c
 Invoking: MCU GCC Compiler
-/home/shay/a/will2253/workspace/lab7/Debug
-arm-none-eabi-gcc -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -DSTM32 -DSTM32F0 -DSTM32F091RCTx -DDEBUG -DSTM32F091 -DUSE_STDPERIPH_DRIVER -I"/home/shay/a/will2253/workspace/lab7/StdPeriph_Driver/inc" -I"/home/shay/a/will2253/workspace/lab7/inc" -I"/home/shay/a/will2253/workspace/lab7/CMSIS/device" -I"/home/shay/a/will2253/workspace/lab7/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+/Users/agentjaucqueninjasuperspy/Documents/workspace/hw7/Debug
+arm-none-eabi-gcc -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -DSTM32 -DSTM32F0 -DSTM32F091RCTx -DDEBUG -DSTM32F091 -DUSE_STDPERIPH_DRIVER -I"/Users/agentjaucqueninjasuperspy/Documents/workspace/hw7/StdPeriph_Driver/inc" -I"/Users/agentjaucqueninjasuperspy/Documents/workspace/hw7/inc" -I"/Users/agentjaucqueninjasuperspy/Documents/workspace/hw7/CMSIS/device" -I"/Users/agentjaucqueninjasuperspy/Documents/workspace/hw7/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
 Finished building: ../src/main.c
  
-Building target: lab7.elf
+Building target: hw7.elf
 Invoking: MCU GCC Linker
-arm-none-eabi-gcc -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -T"/home/shay/a/will2253/workspace/lab7/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "lab7.elf" @"objects.list"   -lm
-Finished building target: lab7.elf
+arm-none-eabi-gcc -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -T"/Users/agentjaucqueninjasuperspy/Documents/workspace/hw7/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "hw7.elf" @"objects.list"   -lm
+Finished building target: hw7.elf
  
-make --no-print-directory post-build
+/Library/Developer/CommandLineTools/usr/bin/make --no-print-directory post-build
 Generating binary and Printing size information:
-arm-none-eabi-objcopy -O binary "lab7.elf" "lab7.bin"
-arm-none-eabi-size "lab7.elf"
+arm-none-eabi-objcopy -O binary "hw7.elf" "hw7.bin"
+arm-none-eabi-size "hw7.elf"
    text	   data	    bss	    dec	    hex	filename
-  20708	   1104	   3276	  25088	   6200	lab7.elf
+  16528	   1728	   3268	  21524	   5414	hw7.elf
  
-12:38:44 **** Incremental Build of configuration Debug for project lab7 ****
-make -j16 all 
-make: Nothing to be done for 'all'.
-12:40:23 **** Incremental Build of configuration Debug for project lab7 ****
-make -j16 all 
+12:23:45 **** Incremental Build of configuration Debug for project hw7 ****
+make -j7 all 
 Building file: ../src/main.c
 Invoking: MCU GCC Compiler
-/home/shay/a/will2253/workspace/lab7/Debug
-arm-none-eabi-gcc -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -DSTM32 -DSTM32F0 -DSTM32F091RCTx -DDEBUG -DSTM32F091 -DUSE_STDPERIPH_DRIVER -I"/home/shay/a/will2253/workspace/lab7/StdPeriph_Driver/inc" -I"/home/shay/a/will2253/workspace/lab7/inc" -I"/home/shay/a/will2253/workspace/lab7/CMSIS/device" -I"/home/shay/a/will2253/workspace/lab7/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+/Users/agentjaucqueninjasuperspy/Documents/workspace/hw7/Debug
+arm-none-eabi-gcc -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -DSTM32 -DSTM32F0 -DSTM32F091RCTx -DDEBUG -DSTM32F091 -DUSE_STDPERIPH_DRIVER -I"/Users/agentjaucqueninjasuperspy/Documents/workspace/hw7/StdPeriph_Driver/inc" -I"/Users/agentjaucqueninjasuperspy/Documents/workspace/hw7/inc" -I"/Users/agentjaucqueninjasuperspy/Documents/workspace/hw7/CMSIS/device" -I"/Users/agentjaucqueninjasuperspy/Documents/workspace/hw7/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
 Finished building: ../src/main.c
  
-Building target: lab7.elf
+Building target: hw7.elf
 Invoking: MCU GCC Linker
-arm-none-eabi-gcc -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -T"/home/shay/a/will2253/workspace/lab7/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "lab7.elf" @"objects.list"   -lm
-Finished building target: lab7.elf
+arm-none-eabi-gcc -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -T"/Users/agentjaucqueninjasuperspy/Documents/workspace/hw7/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "hw7.elf" @"objects.list"   -lm
+Finished building target: hw7.elf
  
-make --no-print-directory post-build
+/Library/Developer/CommandLineTools/usr/bin/make --no-print-directory post-build
 Generating binary and Printing size information:
-arm-none-eabi-objcopy -O binary "lab7.elf" "lab7.bin"
-arm-none-eabi-size "lab7.elf"
+arm-none-eabi-objcopy -O binary "hw7.elf" "hw7.bin"
+arm-none-eabi-size "hw7.elf"
    text	   data	    bss	    dec	    hex	filename
-  20708	   1104	   3276	  25088	   6200	lab7.elf
+  16508	   1728	   3268	  21504	   5400	hw7.elf
  
-12:43:26 **** Incremental Build of configuration Debug for project lab7 ****
-make -j16 all 
+17:54:58 **** Incremental Build of configuration Debug for project hw7 ****
+make -j7 all 
 Building file: ../src/main.c
 Invoking: MCU GCC Compiler
-/home/shay/a/will2253/workspace/lab7/Debug
-arm-none-eabi-gcc -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -DSTM32 -DSTM32F0 -DSTM32F091RCTx -DDEBUG -DSTM32F091 -DUSE_STDPERIPH_DRIVER -I"/home/shay/a/will2253/workspace/lab7/StdPeriph_Driver/inc" -I"/home/shay/a/will2253/workspace/lab7/inc" -I"/home/shay/a/will2253/workspace/lab7/CMSIS/device" -I"/home/shay/a/will2253/workspace/lab7/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
-../src/main.c: In function 'TIM6_DAC_IRQHandler':
-../src/main.c:260:18: error: 'samp' undeclared (first use in this function); did you mean 'sample'?
-src/subdir.mk:27: recipe for target 'src/main.o' failed
-     TIM1->CCR4 = samp;
-                  ^~~~
-                  sample
-../src/main.c:260:18: note: each undeclared identifier is reported only once for each function it appears in
+/Users/agentjaucqueninjasuperspy/Documents/workspace/hw7/Debug
+arm-none-eabi-gcc -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -DSTM32 -DSTM32F0 -DSTM32F091RCTx -DDEBUG -DSTM32F091 -DUSE_STDPERIPH_DRIVER -I"/Users/agentjaucqueninjasuperspy/Documents/workspace/hw7/StdPeriph_Driver/inc" -I"/Users/agentjaucqueninjasuperspy/Documents/workspace/hw7/inc" -I"/Users/agentjaucqueninjasuperspy/Documents/workspace/hw7/CMSIS/device" -I"/Users/agentjaucqueninjasuperspy/Documents/workspace/hw7/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c:201:6: error: redefinition of 'TIM2_IRQHandler'
+ void TIM2_IRQHandler(void)
+      ^~~~~~~~~~~~~~~
+../src/main.c:177:6: note: previous definition of 'TIM2_IRQHandler' was here
+ void TIM2_IRQHandler(void)
+      ^~~~~~~~~~~~~~~
 make: *** [src/main.o] Error 1
-12:43:36 **** Incremental Build of configuration Debug for project lab7 ****
-make -j16 all 
+17:55:37 **** Incremental Build of configuration Debug for project hw7 ****
+make -j7 all 
 Building file: ../src/main.c
 Invoking: MCU GCC Compiler
-/home/shay/a/will2253/workspace/lab7/Debug
-arm-none-eabi-gcc -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -DSTM32 -DSTM32F0 -DSTM32F091RCTx -DDEBUG -DSTM32F091 -DUSE_STDPERIPH_DRIVER -I"/home/shay/a/will2253/workspace/lab7/StdPeriph_Driver/inc" -I"/home/shay/a/will2253/workspace/lab7/inc" -I"/home/shay/a/will2253/workspace/lab7/CMSIS/device" -I"/home/shay/a/will2253/workspace/lab7/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+/Users/agentjaucqueninjasuperspy/Documents/workspace/hw7/Debug
+arm-none-eabi-gcc -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -DSTM32 -DSTM32F0 -DSTM32F091RCTx -DDEBUG -DSTM32F091 -DUSE_STDPERIPH_DRIVER -I"/Users/agentjaucqueninjasuperspy/Documents/workspace/hw7/StdPeriph_Driver/inc" -I"/Users/agentjaucqueninjasuperspy/Documents/workspace/hw7/inc" -I"/Users/agentjaucqueninjasuperspy/Documents/workspace/hw7/CMSIS/device" -I"/Users/agentjaucqueninjasuperspy/Documents/workspace/hw7/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
 Finished building: ../src/main.c
  
-Building target: lab7.elf
+Building target: hw7.elf
 Invoking: MCU GCC Linker
-arm-none-eabi-gcc -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -T"/home/shay/a/will2253/workspace/lab7/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "lab7.elf" @"objects.list"   -lm
-Finished building target: lab7.elf
+arm-none-eabi-gcc -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -T"/Users/agentjaucqueninjasuperspy/Documents/workspace/hw7/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "hw7.elf" @"objects.list"   -lm
+Finished building target: hw7.elf
  
-make --no-print-directory post-build
+/Library/Developer/CommandLineTools/usr/bin/make --no-print-directory post-build
 Generating binary and Printing size information:
-arm-none-eabi-objcopy -O binary "lab7.elf" "lab7.bin"
-arm-none-eabi-size "lab7.elf"
+arm-none-eabi-objcopy -O binary "hw7.elf" "hw7.bin"
+arm-none-eabi-size "hw7.elf"
    text	   data	    bss	    dec	    hex	filename
-  20684	   1104	   3276	  25064	   61e8	lab7.elf
+  16552	   1728	   3276	  21556	   5434	hw7.elf
  
-12:45:59 **** Incremental Build of configuration Debug for project lab7 ****
-make -j16 all 
-make: Nothing to be done for 'all'.
-12:46:34 **** Incremental Build of configuration Debug for project lab7 ****
-make -j16 all 
-make: Nothing to be done for 'all'.
-12:50:23 **** Incremental Build of configuration Debug for project lab7 ****
-make -j16 all 
+18:02:26 **** Incremental Build of configuration Debug for project hw7 ****
+make -j7 all 
 Building file: ../src/main.c
 Invoking: MCU GCC Compiler
-/home/shay/a/will2253/workspace/lab7/Debug
-arm-none-eabi-gcc -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -DSTM32 -DSTM32F0 -DSTM32F091RCTx -DDEBUG -DSTM32F091 -DUSE_STDPERIPH_DRIVER -I"/home/shay/a/will2253/workspace/lab7/StdPeriph_Driver/inc" -I"/home/shay/a/will2253/workspace/lab7/inc" -I"/home/shay/a/will2253/workspace/lab7/CMSIS/device" -I"/home/shay/a/will2253/workspace/lab7/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+/Users/agentjaucqueninjasuperspy/Documents/workspace/hw7/Debug
+arm-none-eabi-gcc -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -DSTM32 -DSTM32F0 -DSTM32F091RCTx -DDEBUG -DSTM32F091 -DUSE_STDPERIPH_DRIVER -I"/Users/agentjaucqueninjasuperspy/Documents/workspace/hw7/StdPeriph_Driver/inc" -I"/Users/agentjaucqueninjasuperspy/Documents/workspace/hw7/inc" -I"/Users/agentjaucqueninjasuperspy/Documents/workspace/hw7/CMSIS/device" -I"/Users/agentjaucqueninjasuperspy/Documents/workspace/hw7/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
 Finished building: ../src/main.c
  
-Building target: lab7.elf
+Building target: hw7.elf
 Invoking: MCU GCC Linker
-arm-none-eabi-gcc -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -T"/home/shay/a/will2253/workspace/lab7/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "lab7.elf" @"objects.list"   -lm
-Finished building target: lab7.elf
+arm-none-eabi-gcc -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -T"/Users/agentjaucqueninjasuperspy/Documents/workspace/hw7/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "hw7.elf" @"objects.list"   -lm
+Finished building target: hw7.elf
  
-make --no-print-directory post-build
+/Library/Developer/CommandLineTools/usr/bin/make --no-print-directory post-build
 Generating binary and Printing size information:
-arm-none-eabi-objcopy -O binary "lab7.elf" "lab7.bin"
-arm-none-eabi-size "lab7.elf"
+arm-none-eabi-objcopy -O binary "hw7.elf" "hw7.bin"
+arm-none-eabi-size "hw7.elf"
    text	   data	    bss	    dec	    hex	filename
-  22120	   1104	   3276	  26500	   6784	lab7.elf
+  21120	   1080	   3988	  26188	   664c	hw7.elf
  
-12:50:59 **** Incremental Build of configuration Debug for project lab7 ****
-make -j16 all 
-Building file: ../src/main.c
+18:04:00 **** Incremental Build of configuration Debug for project hw7 ****
+make -j7 all 
+Building file: ../src/maple-leaf-rag.c
 Invoking: MCU GCC Compiler
-/home/shay/a/will2253/workspace/lab7/Debug
-arm-none-eabi-gcc -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -DSTM32 -DSTM32F0 -DSTM32F091RCTx -DDEBUG -DSTM32F091 -DUSE_STDPERIPH_DRIVER -I"/home/shay/a/will2253/workspace/lab7/StdPeriph_Driver/inc" -I"/home/shay/a/will2253/workspace/lab7/inc" -I"/home/shay/a/will2253/workspace/lab7/CMSIS/device" -I"/home/shay/a/will2253/workspace/lab7/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
-Finished building: ../src/main.c
+/Users/agentjaucqueninjasuperspy/Documents/workspace/hw7/Debug
+arm-none-eabi-gcc -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -DSTM32 -DSTM32F0 -DSTM32F091RCTx -DDEBUG -DSTM32F091 -DUSE_STDPERIPH_DRIVER -I"/Users/agentjaucqueninjasuperspy/Documents/workspace/hw7/StdPeriph_Driver/inc" -I"/Users/agentjaucqueninjasuperspy/Documents/workspace/hw7/inc" -I"/Users/agentjaucqueninjasuperspy/Documents/workspace/hw7/CMSIS/device" -I"/Users/agentjaucqueninjasuperspy/Documents/workspace/hw7/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/maple-leaf-rag.d" -MT"src/maple-leaf-rag.o" -o "src/maple-leaf-rag.o" "../src/maple-leaf-rag.c"
+Finished building: ../src/maple-leaf-rag.c
  
-Building target: lab7.elf
+Building target: hw7.elf
 Invoking: MCU GCC Linker
-arm-none-eabi-gcc -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -T"/home/shay/a/will2253/workspace/lab7/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "lab7.elf" @"objects.list"   -lm
-Finished building target: lab7.elf
+arm-none-eabi-gcc -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -T"/Users/agentjaucqueninjasuperspy/Documents/workspace/hw7/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "hw7.elf" @"objects.list"   -lm
+Finished building target: hw7.elf
  
-make --no-print-directory post-build
+/Library/Developer/CommandLineTools/usr/bin/make --no-print-directory post-build
 Generating binary and Printing size information:
-arm-none-eabi-objcopy -O binary "lab7.elf" "lab7.bin"
-arm-none-eabi-size "lab7.elf"
+arm-none-eabi-objcopy -O binary "hw7.elf" "hw7.bin"
+arm-none-eabi-size "hw7.elf"
    text	   data	    bss	    dec	    hex	filename
-   6276	   1104	   3276	  10656	   29a0	lab7.elf
+  39152	   1080	   3988	  44220	   acbc	hw7.elf
  
-13:13:13 **** Incremental Build of configuration Debug for project lab7 ****
-make -j16 all 
+18:04:06 **** Incremental Build of configuration Debug for project hw7 ****
+make -j7 all 
+make: Nothing to be done for `all'.
+18:16:58 **** Incremental Build of configuration Debug for project hw7 ****
+make -j7 all 
 Building file: ../src/main.c
+Building file: ../src/maple-leaf-rag.c
 Invoking: MCU GCC Compiler
-/home/shay/a/will2253/workspace/lab7/Debug
-arm-none-eabi-gcc -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -DSTM32 -DSTM32F0 -DSTM32F091RCTx -DDEBUG -DSTM32F091 -DUSE_STDPERIPH_DRIVER -I"/home/shay/a/will2253/workspace/lab7/StdPeriph_Driver/inc" -I"/home/shay/a/will2253/workspace/lab7/inc" -I"/home/shay/a/will2253/workspace/lab7/CMSIS/device" -I"/home/shay/a/will2253/workspace/lab7/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+Invoking: MCU GCC Compiler
+/Users/agentjaucqueninjasuperspy/Documents/workspace/hw7/Debug
+/Users/agentjaucqueninjasuperspy/Documents/workspace/hw7/Debug
+arm-none-eabi-gcc -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -DSTM32 -DSTM32F0 -DSTM32F091RCTx -DDEBUG -DSTM32F091 -DUSE_STDPERIPH_DRIVER -I"/Users/agentjaucqueninjasuperspy/Documents/workspace/hw7/StdPeriph_Driver/inc" -I"/Users/agentjaucqueninjasuperspy/Documents/workspace/hw7/inc" -I"/Users/agentjaucqueninjasuperspy/Documents/workspace/hw7/CMSIS/device" -I"/Users/agentjaucqueninjasuperspy/Documents/workspace/hw7/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+arm-none-eabi-gcc -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -DSTM32 -DSTM32F0 -DSTM32F091RCTx -DDEBUG -DSTM32F091 -DUSE_STDPERIPH_DRIVER -I"/Users/agentjaucqueninjasuperspy/Documents/workspace/hw7/StdPeriph_Driver/inc" -I"/Users/agentjaucqueninjasuperspy/Documents/workspace/hw7/inc" -I"/Users/agentjaucqueninjasuperspy/Documents/workspace/hw7/CMSIS/device" -I"/Users/agentjaucqueninjasuperspy/Documents/workspace/hw7/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/maple-leaf-rag.d" -MT"src/maple-leaf-rag.o" -o "src/maple-leaf-rag.o" "../src/maple-leaf-rag.c"
+Finished building: ../src/maple-leaf-rag.c
+ 
 Finished building: ../src/main.c
  
-Building target: lab7.elf
+Building target: hw7.elf
 Invoking: MCU GCC Linker
-arm-none-eabi-gcc -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -T"/home/shay/a/will2253/workspace/lab7/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "lab7.elf" @"objects.list"   -lm
-Finished building target: lab7.elf
+arm-none-eabi-gcc -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -T"/Users/agentjaucqueninjasuperspy/Documents/workspace/hw7/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "hw7.elf" @"objects.list"   -lm
+Finished building target: hw7.elf
  
-make --no-print-directory post-build
+/Library/Developer/CommandLineTools/usr/bin/make --no-print-directory post-build
 Generating binary and Printing size information:
-arm-none-eabi-objcopy -O binary "lab7.elf" "lab7.bin"
-arm-none-eabi-size "lab7.elf"
+arm-none-eabi-objcopy -O binary "hw7.elf" "hw7.bin"
+arm-none-eabi-size "hw7.elf"
    text	   data	    bss	    dec	    hex	filename
-   6276	   1104	   3276	  10656	   29a0	lab7.elf
+  50088	   1080	   3988	  55156	   d774	hw7.elf
  
-13:13:40 **** Incremental Build of configuration Debug for project lab7 ****
-make -j16 all 
-Building file: ../src/main.c
+18:17:58 **** Incremental Build of configuration Debug for project hw7 ****
+make -j7 all 
+Building file: ../src/maple-leaf-rag.c
 Invoking: MCU GCC Compiler
-/home/shay/a/will2253/workspace/lab7/Debug
-arm-none-eabi-gcc -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -DSTM32 -DSTM32F0 -DSTM32F091RCTx -DDEBUG -DSTM32F091 -DUSE_STDPERIPH_DRIVER -I"/home/shay/a/will2253/workspace/lab7/StdPeriph_Driver/inc" -I"/home/shay/a/will2253/workspace/lab7/inc" -I"/home/shay/a/will2253/workspace/lab7/CMSIS/device" -I"/home/shay/a/will2253/workspace/lab7/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
-Finished building: ../src/main.c
+/Users/agentjaucqueninjasuperspy/Documents/workspace/hw7/Debug
+arm-none-eabi-gcc -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -DSTM32 -DSTM32F0 -DSTM32F091RCTx -DDEBUG -DSTM32F091 -DUSE_STDPERIPH_DRIVER -I"/Users/agentjaucqueninjasuperspy/Documents/workspace/hw7/StdPeriph_Driver/inc" -I"/Users/agentjaucqueninjasuperspy/Documents/workspace/hw7/inc" -I"/Users/agentjaucqueninjasuperspy/Documents/workspace/hw7/CMSIS/device" -I"/Users/agentjaucqueninjasuperspy/Documents/workspace/hw7/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/maple-leaf-rag.d" -MT"src/maple-leaf-rag.o" -o "src/maple-leaf-rag.o" "../src/maple-leaf-rag.c"
+Finished building: ../src/maple-leaf-rag.c
  
-Building target: lab7.elf
+Building target: hw7.elf
 Invoking: MCU GCC Linker
-arm-none-eabi-gcc -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -T"/home/shay/a/will2253/workspace/lab7/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "lab7.elf" @"objects.list"   -lm
-Finished building target: lab7.elf
+arm-none-eabi-gcc -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -T"/Users/agentjaucqueninjasuperspy/Documents/workspace/hw7/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "hw7.elf" @"objects.list"   -lm
+Finished building target: hw7.elf
  
-make --no-print-directory post-build
+/Library/Developer/CommandLineTools/usr/bin/make --no-print-directory post-build
 Generating binary and Printing size information:
-arm-none-eabi-objcopy -O binary "lab7.elf" "lab7.bin"
-arm-none-eabi-size "lab7.elf"
+arm-none-eabi-objcopy -O binary "hw7.elf" "hw7.bin"
+arm-none-eabi-size "hw7.elf"
    text	   data	    bss	    dec	    hex	filename
-  21000	   1104	   3276	  25380	   6324	lab7.elf
+  50080	   1080	   3988	  55148	   d76c	hw7.elf
  
-13:17:04 **** Incremental Build of configuration Debug for project lab7 ****
-make -j16 all 
-Building file: ../src/main.c
+18:20:36 **** Incremental Build of configuration Debug for project hw7 ****
+make -j7 all 
+Building file: ../src/maple-leaf-rag.c
 Invoking: MCU GCC Compiler
-/home/shay/a/will2253/workspace/lab7/Debug
-arm-none-eabi-gcc -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -DSTM32 -DSTM32F0 -DSTM32F091RCTx -DDEBUG -DSTM32F091 -DUSE_STDPERIPH_DRIVER -I"/home/shay/a/will2253/workspace/lab7/StdPeriph_Driver/inc" -I"/home/shay/a/will2253/workspace/lab7/inc" -I"/home/shay/a/will2253/workspace/lab7/CMSIS/device" -I"/home/shay/a/will2253/workspace/lab7/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
-Finished building: ../src/main.c
+/Users/agentjaucqueninjasuperspy/Documents/workspace/hw7/Debug
+arm-none-eabi-gcc -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -DSTM32 -DSTM32F0 -DSTM32F091RCTx -DDEBUG -DSTM32F091 -DUSE_STDPERIPH_DRIVER -I"/Users/agentjaucqueninjasuperspy/Documents/workspace/hw7/StdPeriph_Driver/inc" -I"/Users/agentjaucqueninjasuperspy/Documents/workspace/hw7/inc" -I"/Users/agentjaucqueninjasuperspy/Documents/workspace/hw7/CMSIS/device" -I"/Users/agentjaucqueninjasuperspy/Documents/workspace/hw7/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/maple-leaf-rag.d" -MT"src/maple-leaf-rag.o" -o "src/maple-leaf-rag.o" "../src/maple-leaf-rag.c"
+Finished building: ../src/maple-leaf-rag.c
  
-Building target: lab7.elf
+Building target: hw7.elf
 Invoking: MCU GCC Linker
-arm-none-eabi-gcc -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -T"/home/shay/a/will2253/workspace/lab7/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "lab7.elf" @"objects.list"   -lm
-Finished building target: lab7.elf
+arm-none-eabi-gcc -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -T"/Users/agentjaucqueninjasuperspy/Documents/workspace/hw7/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "hw7.elf" @"objects.list"   -lm
+Finished building target: hw7.elf
  
-make --no-print-directory post-build
+/Library/Developer/CommandLineTools/usr/bin/make --no-print-directory post-build
 Generating binary and Printing size information:
-arm-none-eabi-objcopy -O binary "lab7.elf" "lab7.bin"
-arm-none-eabi-size "lab7.elf"
+arm-none-eabi-objcopy -O binary "hw7.elf" "hw7.bin"
+arm-none-eabi-size "hw7.elf"
    text	   data	    bss	    dec	    hex	filename
-  20980	   1104	   3276	  25360	   6310	lab7.elf
+  36176	   1080	   3988	  41244	   a11c	hw7.elf
+ 
+18:21:31 **** Incremental Build of configuration Debug for project hw7 ****
+make -j7 all 
+Building file: ../src/maple-leaf-rag.c
+Invoking: MCU GCC Compiler
+/Users/agentjaucqueninjasuperspy/Documents/workspace/hw7/Debug
+arm-none-eabi-gcc -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -DSTM32 -DSTM32F0 -DSTM32F091RCTx -DDEBUG -DSTM32F091 -DUSE_STDPERIPH_DRIVER -I"/Users/agentjaucqueninjasuperspy/Documents/workspace/hw7/StdPeriph_Driver/inc" -I"/Users/agentjaucqueninjasuperspy/Documents/workspace/hw7/inc" -I"/Users/agentjaucqueninjasuperspy/Documents/workspace/hw7/CMSIS/device" -I"/Users/agentjaucqueninjasuperspy/Documents/workspace/hw7/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/maple-leaf-rag.d" -MT"src/maple-leaf-rag.o" -o "src/maple-leaf-rag.o" "../src/maple-leaf-rag.c"
+Finished building: ../src/maple-leaf-rag.c
+ 
+Building target: hw7.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -T"/Users/agentjaucqueninjasuperspy/Documents/workspace/hw7/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "hw7.elf" @"objects.list"   -lm
+Finished building target: hw7.elf
+ 
+/Library/Developer/CommandLineTools/usr/bin/make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "hw7.elf" "hw7.bin"
+arm-none-eabi-size "hw7.elf"
+   text	   data	    bss	    dec	    hex	filename
+  39152	   1080	   3988	  44220	   acbc	hw7.elf
  
